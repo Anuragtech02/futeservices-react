@@ -1,0 +1,42 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'open sans', sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.857em;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  top: 0;
+  z-index: 10000;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin: 0;
+}
+
+.dark {
+  background-color: transparent;
+  color: white;
+}
+
+.dark a {
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.light a {
+  color: black;
+}
+/*# sourceMappingURL=App.module.css.map */

@@ -1,0 +1,215 @@
+.noDecoration, a {
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+.btn, .btnFilled, .btnLight {
+  opacity: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 10px 10px;
+  font-family: "Bebas Neue",sans-serif;
+  font-size: 17px;
+  line-height: 2em;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  border-radius: 0;
+  border: 1px solid white;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+  padding: 8px 50px;
+  cursor: pointer;
+  pointer-events: all !important;
+  z-index: 1;
+}
+
+.btnFilled {
+  color: black;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.btnFilled::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.btnFilled:hover {
+  color: white;
+  background-color: none;
+}
+
+.btnFilled:hover::after {
+  -webkit-transform: translateY(100%) !important;
+          transform: translateY(100%) !important;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.btnLight:hover {
+  color: black;
+  background-color: none;
+}
+
+.btnLight:hover::after {
+  background-color: white;
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
+.btnLight {
+  color: white;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.btnLight::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  -webkit-transform: rotate(20deg) translateY(100%);
+          transform: rotate(20deg) translateY(100%);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.text, .outerDiv .innerDiv h2, .outerDiv .innerDiv span, h4 {
+  opacity: 0;
+  z-index: 10;
+  font-family: "Bebas Neue";
+  height: auto;
+  color: white;
+  text-decoration: none;
+  white-space: normal;
+  text-align: center;
+  line-height: 144px;
+  text-shadow: rgba(0, 0, 0, 0.25) 3px 4px 4px;
+  letter-spacing: 0px;
+  visibility: visible;
+}
+
+.sliderCard {
+  pointer-events: none;
+}
+
+.outerDiv {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.outerDiv .innerDiv {
+  height: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white !important;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.outerDiv .innerDiv h2, .outerDiv .innerDiv span {
+  width: 957px;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: 50%;
+  font-weight: 400;
+  font-size: 150px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.outerDiv .progressBarBg {
+  position: absolute;
+  right: 10%;
+  float: right;
+  width: 2px;
+  height: 100%;
+  min-width: 2px;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.outerDiv .progressBarBg .progressBar {
+  width: 100%;
+  min-height: 0;
+  max-height: 100%;
+  background-color: white;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h4 {
+  position: absolute;
+  opacity: 1;
+  z-index: 100;
+  float: right;
+  right: 4%;
+  top: 50%;
+  margin: auto;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 2.5em;
+}
+/*# sourceMappingURL=Carousel.module.css.map */
