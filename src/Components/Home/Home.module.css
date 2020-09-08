@@ -174,10 +174,13 @@ a {
   text-align: center;
   color: #fff;
   margin: 0 10px;
+  overflow: hidden;
 }
 
 .container .team .alignBottom .imgContainer img {
   width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .container .team .alignBottom .imgContainer h6 {
@@ -195,6 +198,12 @@ a {
   letter-spacing: .05em;
   word-wrap: break-word;
   text-shadow: rgba(0, 0, 0, 0.25) 3px 4px 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.container .team .alignBottom .imgContainer:hover .img {
+  scale: 1.01;
 }
 
 .heading {
@@ -265,5 +274,11 @@ a {
       -ms-flex: 1;
           flex: 1;
   margin: auto auto;
+}
+
+.imgContainer:hover .name {
+  padding-left: 10%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 /*# sourceMappingURL=Home.module.css.map */

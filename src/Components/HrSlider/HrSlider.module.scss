@@ -1,37 +1,4 @@
-.outerDiv{
-    height: 100vh;
-    overflow: hidden;
-    pointer-events: none;
-    align-items: center;
-    justify-content: center;
+.videoContainer {
+    min-width: 50vw;
 
-    .innerDiv{
-        height: auto;
-        margin: 50% auto;
-        overflow: hidden !important;
-        vertical-align: middle;
-        transition: 0.5s ease-in;
-
-    }
-
-    
-}
-.active{
-    flex: 1;
-    z-index: 1000 !important;
-    transition: 0.5s ease-in;
-}
-
-.inactive{
-    width: 100%;
-    height: auto;
-    z-index: -1 !important;
-    transition: 0.5s ease-in;
-}
-
-.slick-current{
-    scale: 2 !important;
-    position: absolute;
-    z-index: 100 !important;
-    transform: translateZ(100px) !important;
 }
