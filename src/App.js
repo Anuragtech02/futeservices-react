@@ -49,7 +49,6 @@ const App = () =>{
   
   return(
     <Router basename={process.env.PUBLIC_URL}>
-      <ScrollToTop />
       <div className={classNames(style.navbar, style.dark )} id="navbar">
         <Navbar />
       </div>

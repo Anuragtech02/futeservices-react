@@ -166,7 +166,7 @@ export const CustomStepper = ({steps, content}) => {
                         const stepProps = {}
                         const buttonProps = {}
                     return(
-                        <Step key={index}  {...stepProps}>
+                        <CustomStep key={index}  flex={lineWidth(steps, index)} {...stepProps}>
                             <StepLabel
                                 completed={completed[index]}
                                 onClick={() => handleStep(index)}
@@ -176,7 +176,7 @@ export const CustomStepper = ({steps, content}) => {
                             >
                                 <span className={style.labelText}>{label}</span>
                             </StepLabel>
-                        </Step>
+                        </CustomStep>
                     )
                 })}
             </Stepper>

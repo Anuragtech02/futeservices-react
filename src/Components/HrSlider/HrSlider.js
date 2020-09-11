@@ -8,14 +8,15 @@ import vdo1 from "../../Assets/video/Pexels_Videos_2629.mp4"
 import vdo2 from "../../Assets/video/Pexels_Videos_2795.mp4"
 import vdo3 from "../../Assets/video/Pexels_Videos_2915.mp4"
 import playBtn from '../../Assets/play-btn.png'
+import classNames from 'classnames'
 
 export const HrSlider = () => {
 
     const [current, setCurrent] = React.useState(0)
 
     const variants = {
-        focus: {width: 800} ,
-        other: {width: 500}
+        focus: {width: "150%"} ,
+        other: {width: "100%"}
     }
 
     const slideData = [
@@ -47,11 +48,10 @@ export const HrSlider = () => {
 
 
     const settings = {
+        centerPadding: "60px",
         className: "center",
+        centerMode: true,
         infinite: true,
-        centerPadding: "70px",
-        accessibility: true,
-        lazyload: true,
         slidesToShow: 3,
         swipeToSlide: 1,
         dots: false,
@@ -59,8 +59,6 @@ export const HrSlider = () => {
         autoplaySpeed: 3000,
         speed: 1000,
         ease: "cubic-bezier(0,.15,0,.24)",
-        centerMode: true,
-        variableWidth: true,
         focusOnSelect: false,
         afterChange: current => setCurrent(current)
     }
@@ -70,9 +68,9 @@ export const HrSlider = () => {
             {slideData.map((slides, index) =>{
                 return(
                     <motion.div 
-                        style={current==index ? {width: 800} : {width: 500}}
+                        
                         id={`vdo_slide_${index}`} 
-                        className={style.videoContainer} 
+                        className={classNames(style.videoContainer, current==index ? ".slick-center" : "" )} 
                         key={index}
                         custom={index}
                         variants={variants}
@@ -81,7 +79,9 @@ export const HrSlider = () => {
                     >
 
                         <motion.video 
-                            style={current==index ? {padding: "15% 0"} : {padding: "40% 0"}}
+                            className={current==index ? ".slick-center" : "" }
+                            width="100%"
+                            //style={current==index ? {padding: "15% 0"} : {padding: "40% 0"}}
                             id={`vdo_${index}`} 
                             src={slides.url}  
                             muted

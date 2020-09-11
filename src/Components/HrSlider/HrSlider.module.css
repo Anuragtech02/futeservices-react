@@ -1,15 +1,9 @@
 .container {
+  width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  overflow: hidden;
   margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -20,28 +14,12 @@
 }
 
 .container .videoContainer {
-  display: block;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.container .videoContainer button {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 74px;
-  border-color: transparent transparent transparent #202020;
-  -webkit-transition: 100ms all ease;
-  transition: 100ms all ease;
-  will-change: border-width;
-  cursor: pointer;
-  border-style: solid;
-  border-width: 37px 0 37px 60px;
+  display: inline-block;
 }
 
 .container .videoContainer video {
   width: 100%;
-  margin: auto;
-  vertical-align: middle;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
