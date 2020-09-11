@@ -138,6 +138,7 @@ a {
 
 .container .intro .para {
   max-width: 70%;
+  text-align: left;
 }
 
 .container .intro img {
@@ -181,6 +182,10 @@ a {
   width: 100%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .container .team .alignBottom .imgContainer h6 {
@@ -200,10 +205,6 @@ a {
   text-shadow: rgba(0, 0, 0, 0.25) 3px 4px 4px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-.container .team .alignBottom .imgContainer:hover .img {
-  scale: 1.01;
 }
 
 .heading {
@@ -276,9 +277,104 @@ a {
   margin: auto auto;
 }
 
+.imgContainer:hover img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 .imgContainer:hover .name {
   padding-left: 10%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
+}
+
+.thirdSection {
+  background-size: cover;
+}
+
+.testimonial {
+  width: 70%;
+  color: #fff !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial .testiContainer {
+  margin: auto;
+  max-width: 80%;
+  vertical-align: middle;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-left: 2px solid white;
+  padding: 0 20px;
+}
+
+.testimonial .testiContainer h1 {
+  color: white;
+  z-index: 10;
+  font-family: "Bebas Neue",sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 62px;
+  vertical-align: middle;
+  letter-spacing: .05em;
+  word-wrap: break-word;
+}
+
+.testimonial .testiContainer p {
+  text-align: left;
+  padding-left: 8px;
+  font-size: 0.9em;
+}
+
+.testimonial .testiContainer .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0 0 8px;
+}
+
+.testimonial .testiContainer .author img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 1px;
+}
+
+.testimonial .testiContainer .author .authorExtras {
+  padding-left: 15px;
+}
+
+.testimonial .testiContainer .author .authorExtras h6 {
+  color: white;
+  z-index: 10;
+  font-family: "Bebas Neue",sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 20px;
+  vertical-align: middle;
+  letter-spacing: .3em;
+  word-wrap: break-word;
+}
+
+.testimonial .testiContainer .author .authorExtras p {
+  padding: 0;
 }
 /*# sourceMappingURL=Home.module.css.map */

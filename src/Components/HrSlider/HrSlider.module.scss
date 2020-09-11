@@ -1,4 +1,40 @@
-.videoContainer {
-    min-width: 50vw;
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 
+    .videoContainer {
+        display: block;
+        transition: 0.2s ease-in-out;
+
+        button{
+            box-sizing: border-box;
+            height: 74px;
+            
+            border-color: transparent transparent transparent #202020;
+            transition: 100ms all ease;
+            will-change: border-width;
+            cursor: pointer;
+
+            // play state
+            border-style: solid;
+            border-width: 37px 0 37px 60px;
+        }
+
+        video{
+            width: 100%;
+            margin: auto;
+            vertical-align: middle; 
+            object-fit: contain;
+            object-position: center;
+            transition: 0.2s cubic-bezier(0,.15,0,.24);
+        }
+    
+    }
 }
+

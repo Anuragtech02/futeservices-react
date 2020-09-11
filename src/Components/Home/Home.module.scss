@@ -32,6 +32,7 @@
 
         .para{
             max-width: 70%;
+            text-align: left;
         }
         
         img{
@@ -67,6 +68,8 @@
                 img{
                     width: 100%;
                     transition: all 0.2s ease-in-out;
+                    object-fit: cover;
+                    object-position: center;
                 }
                 h6{
                     top: -70%;
@@ -84,10 +87,6 @@
                     text-shadow: rgba(0, 0, 0, 0.25) 3px 4px 4px;
                     transition: all 0.2s ease-in-out;
                 }
-            }
-
-            .imgContainer:hover .img{
-                scale: 1.01;
             }
         }
     }
@@ -157,7 +156,81 @@
 }
 
 
-.imgContainer:hover .name{
-    padding-left: 10%;
-    transform: translateX(50%) ;
+.imgContainer:hover {
+    img{
+        transform: scale(1.02);
+    }
+    .name{
+        padding-left: 10%;
+        transform: translateX(50%) ;
+    }
+}
+
+.thirdSection{
+    background-size: cover;
+}
+
+.testimonial{
+    width: 70%;
+    color: #fff !important;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+    .testiContainer{
+        margin: auto;
+        max-width: 80%;
+        vertical-align: middle;
+        flex: 1;
+        border-left: 2px solid white;
+        padding: 0 20px;
+        h1{
+            color: white;
+            z-index: 10;
+            font-family: "Bebas Neue",sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 40px;
+            line-height: 62px;
+            vertical-align: middle;
+            letter-spacing: .05em;
+            word-wrap: break-word;
+        }
+        p{
+            text-align: left;
+            padding-left: 8px;
+            font-size: 0.9em;
+        }
+        .author{
+            display: flex;
+            padding: 30px 0 0 8px;
+            img{
+                width: 70px;
+                height: 70px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 1px;
+            }
+
+            .authorExtras{
+                padding-left: 15px;
+                h6{
+                    color: white;
+                    z-index: 10;
+                    font-family: "Bebas Neue",sans-serif;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    vertical-align: middle;
+                    letter-spacing: .3em;
+                    word-wrap: break-word;
+                }
+                p{
+                    padding: 0;
+                }
+            }
+        }
+    }
 }

@@ -1,3 +1,35 @@
 .slick-next, .slick-prev{
     display: none !important;
 }
+
+/* .slick-current{
+    z-index: 1000 !important;
+}
+
+.slick-slide {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 10px;
+    z-index: 6;
+} */
+
+
+/*
+.slick-center + .slick-slide {
+    z-index: 8;
+}
+.slick-track {
+    display: flex;
+  }
+  .slick-track .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+.slick-list {
+    margin: 0 -10px;
+} */
