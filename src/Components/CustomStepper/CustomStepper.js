@@ -22,12 +22,12 @@ const CustomConnectorStyles = makeStyles({
     },
     active: {
       '& $line': {
-        borderColor: '#fff',
+        borderColor: (props) => (props.theme==="dark" ? '#fff' : '#000'),
       },
     },
     completed: {
       '& $line': {
-        borderColor: '#fff',
+        borderColor: (props) => (props.theme==="dark" ? '#fff' : '#000'),
       },
     },
     line: {
@@ -35,7 +35,7 @@ const CustomConnectorStyles = makeStyles({
       left: 0,
       margin: 0,
       padding: 0,
-      borderColor: '#999',
+      borderColor: (props) => (props.theme==="dark" ? '#999' : '#eee'),
       borderTopWidth: 1,
       borderRadius: 1,
     },
@@ -84,13 +84,13 @@ const CustomConnectorStyles = makeStyles({
 
   const useQontoStepIconStyles = makeStyles({
     root: {
-      color: '#999',
+      color: (props) => (props.theme==="dark" ? '#999' : '#eee'),
       display: 'flex',
       height: 22,
       alignItems: 'center',
     },
     active: {
-      color: '#fff',
+      color: (props) => (props.theme==="dark" ? '#fff' : '#000'),
     },
     circle: {
       width: 10,
@@ -102,13 +102,14 @@ const CustomConnectorStyles = makeStyles({
       width: 10,
       height: 10,
       borderRadius: '50%',
-      backgroundColor: '#fff',
+      backgroundColor: (props) => (props.theme==="dark" ? '#fff' : '#000'),
     }
   });
 
   function QontoStepIcon(props) {
-    const classes = useQontoStepIconStyles();
-    const { active, completed } = props;
+    const { active, completed, theme } = props;
+    const classes = useQontoStepIconStyles(theme);
+
   
     return (
       <div
@@ -139,7 +140,7 @@ const CustomConnectorStyles = makeStyles({
   };
 
 
-export const CustomStepper = ({steps, content}) => {
+export const CustomStepper = ({steps, content, theme}) => {
 
     const [activeStep, setActiveStep] = React.useState(0)
     const [completed, setCompleted] = React.useState({})
@@ -160,7 +161,7 @@ export const CustomStepper = ({steps, content}) => {
                 alternativeLabel 
                 completed={completed[activeStep]}
                 activeStep={activeStep}
-                connector={<CustomConnector />}
+                connector={<CustomConnector theme={theme}/>}
             >
                 {steps.map((label, index) => {
                         const stepProps = {}
@@ -174,7 +175,7 @@ export const CustomStepper = ({steps, content}) => {
                                 className={style.button}
                                 StepIconComponent={QontoStepIcon}
                             >
-                                <span className={style.labelText}>{label}</span>
+                                <span style={{color: theme==="dark" ? "#fff" : "#000" }} className={style.labelText}>{label}</span>
                             </StepLabel>
                         </CustomStep>
                     )

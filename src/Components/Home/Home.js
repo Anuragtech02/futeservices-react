@@ -1,12 +1,11 @@
 import React from 'react'
 import style from './Home.module.css'
 import {  motion  } from 'framer-motion'
-import classNames from 'classnames'
 import introImage from '../../Assets/pexels-daniel-absi-952670.jpg'
 import introImage2 from '../../Assets/pexels-caleb-oquendo-2918590.jpg'
 import bgImage2 from '../../Assets/josh-rose-trYl7JYATH0-unsplash.jpg';
-import { introData, teamData, testimonialData, timelineData, timeline } from '../../Static'
-import { Carousel, HrSlider, Footer } from '../index'
+import { introData, teamData, timelineData, timeline } from '../../Static'
+import { Carousel, HrSlider, Testimonial } from '../index'
 import Slider from 'react-slick'
 import CustomStepper from '../CustomStepper/CustomStepper'
 
@@ -69,50 +68,11 @@ export const Home = () => {
                         <Testimonial />
                 </section>
                 <section style={{backgroundColor: "rgba(0, 0, 0, 0.93"}}>
-                    <CustomStepper steps={timeline} content={timelineData}  />
+                    <CustomStepper steps={timeline} content={timelineData} theme="dark" />
                 </section>
             </section>
-            <Footer />
         </div>
     )
 }
-
-export const Testimonial = () => {
-
-    const settings = {
-        infinite: true,
-        dots: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 3000,
-        centerPadding: "60px",
-        className: "center",
-        ease: "cubic-bezier(0,.15,0,.24)",
-    }
-
-    return(
-        <Slider {...settings} className={style.testimonial}>
-            {testimonialData.map((testimonialData, index) =>{
-                return(
-                    <div key={index} className={style.testiContainer}>
-                        <h1>{`"${testimonialData.heading}"`}</h1>
-                        <p>{`"${testimonialData.para}"`}</p>
-                        <div className={style.author} >
-                            <img src={testimonialData.authorImg} alt="" />
-                            <div className={style.authorExtras}>
-                                <h6>{testimonialData.author}</h6>
-                                <p>{testimonialData.aboutAuthor}</p>
-                            </div>
-                        </div>
-                    </div>
-                )
-            })}
-        </Slider>
-    )
-}
-
-
 
 export default Home

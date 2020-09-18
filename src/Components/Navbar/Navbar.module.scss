@@ -1,19 +1,24 @@
 @import "../common.module.scss";
 
 .container{
-    width: 70%;
+    width: 100%;
     display: flex;
-    align-items: center;
     margin: auto;
     justify-content: space-between;
-    padding: 10px 0 ;
+    padding: 15px 5% ;
     background-color: transparent;
 
     .brandName{
         width: fit-content;
-        max-width: 300px;
+        max-width: 35%;
         flex: 1;
         margin-right: auto;
+        justify-content: flex-start;
+
+        img{
+            max-width: 150px;
+            min-width: 100px;
+        }
     }
 
     .nav{
@@ -23,7 +28,7 @@
         padding: 8px 0;
         .navItems{
             float: left;
-            margin: 0 8%;
+            padding: 0 4%; 
             .navLink{
                 font-family: bebas neue,sans-serif;
                 font-weight: 400;
@@ -83,15 +88,21 @@
 
 @media(max-width: 998px){
     .container{
+        flex-direction: column ;
+        text-align: left;
+        padding-left: 0;
         .nav{
-            flex: none;
-            display: block;
-            min-width: 70%;margin: 0 auto;
+            display: none;
+            min-width: 100%;
+            margin: 0;
+            justify-content: flex-start;
+            text-align: left;
+            flex-direction: column;
             padding: 34px 0;
             .navItems{
                 float: none;
                 width: 100%;
-                display: block;
+                display: none;
                 position: relative;
                 .navLink{
                     &::after{
@@ -111,8 +122,23 @@
                     -o-transition: transform .2s ease-out;
                     transition: transform .2s ease-out;
                     transition: transform .2s ease-out,-webkit-transform .2s ease-out;
+                    }
                 }
-                }
+            }
+        }
+    }
+
+    .dropdown{
+        .dropdownContent{
+            display: none;
+            opacity: 1;
+            position: relative;
+            background-color: #fff;
+            border: none;
+
+            .dropdownLink{
+                color: #111;
+                font-size: 14px;
             }
         }
     }

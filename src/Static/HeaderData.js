@@ -44,10 +44,11 @@ export const HeaderData = {
 
 export const FooterData = {
     tabs:[
-        {label: "FAQ", id: "pages", path: UrlStrings.FAQ},
-        {label: "Contact Us", id: "pages", path: UrlStrings.CONTACTUS},
-        {label: "Our Team", id: "pages", path: UrlStrings.OURTEAM},
-        {label: "About Us", id: "pages", path: UrlStrings.ABOUT},
         {label: "Home", id: "home", path: UrlStrings.HOME},
+        {label: "About Us", id: "pages", path: UrlStrings.ABOUT},
+        {label: "Our Team", id: "pages", path: UrlStrings.OURTEAM},
+        {label: "Contact Us", id: "pages", path: UrlStrings.CONTACTUS},
+        {label: "FAQ", id: "pages", path: UrlStrings.FAQ},
+
     ]
 }

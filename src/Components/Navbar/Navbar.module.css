@@ -102,19 +102,58 @@ a {
   transition: 0.3s ease-in-out;
 }
 
-.container {
-  width: 70%;
+.alignLeft {
+  float: left;
+  left: 0;
+  vertical-align: middle;
+}
+
+.alignRight {
+  vertical-align: middle;
+  float: right;
+  right: 0;
+}
+
+.alignTop {
+  float: top;
+  top: 0;
+}
+
+.alignBottom {
+  float: bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  bottom: 0;
+}
+
+.align, .alignLeft, .alignRight, .alignTop, .alignBottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto auto;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 0;
+  padding: 15px 5%;
   background-color: transparent;
 }
 
@@ -122,11 +161,19 @@ a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 300px;
+  max-width: 35%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .brandName img {
+  max-width: 150px;
+  min-width: 100px;
 }
 
 .container .nav {
@@ -141,7 +188,7 @@ a {
 
 .container .nav .navItems {
   float: left;
-  margin: 0 8%;
+  padding: 0 4%;
 }
 
 .container .nav .navItems .navLink {
@@ -195,19 +242,32 @@ a {
 }
 
 @media (max-width: 998px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    padding-left: 0;
+  }
   .container .nav {
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-    display: block;
-    min-width: 70%;
-    margin: 0 auto;
+    display: none;
+    min-width: 100%;
+    margin: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 34px 0;
   }
   .container .nav .navItems {
     float: none;
     width: 100%;
-    display: block;
+    display: none;
     position: relative;
   }
   .container .nav .navItems .navLink::after {
@@ -226,6 +286,17 @@ a {
     transition: transform .2s ease-out;
     transition: transform .2s ease-out, -webkit-transform .2s ease-out;
     transition: transform .2s ease-out,-webkit-transform .2s ease-out;
+  }
+  .dropdown .dropdownContent {
+    display: none;
+    opacity: 1;
+    position: relative;
+    background-color: #fff;
+    border: none;
+  }
+  .dropdown .dropdownContent .dropdownLink {
+    color: #111;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=Navbar.module.css.map */

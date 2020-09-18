@@ -1,0 +1,160 @@
+@import "../common.module.scss";
+
+.container{
+    top: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+
+    .banner{
+        width: 100vw;
+        height: 50vh;
+        background-image: url('../../Assets/pexels-debasish-sahoo-140221.jpg');
+        background-size: cover;
+        background-position-y: -200px ;
+        text-align: center;
+        justify-content: center;
+
+        div{
+            height: 100%;
+            padding: 10% 0;
+
+            h1{
+                width: 100%;
+                vertical-align: middle;
+                color: white;
+                z-index: 10;
+                font-family: "Bebas Neue",sans-serif;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 5em;
+                line-height: 62px;
+                vertical-align: middle;
+                letter-spacing: .05em;
+                word-wrap: break-word;
+            }
+        }
+    }
+
+    .aboutWork{
+        width: 100%;
+        min-height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px 15%;
+        background-color: #fff;
+    
+        .flex{
+            flex: 1;
+            margin: 8px 20px;
+            vertical-align: middle;
+            justify-content: center;
+            text-align: center;
+            h6{
+                z-index: 10;
+                font-family: "Bebas Neue",sans-serif;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 30px;
+                line-height: 62px;
+                vertical-align: middle;
+                letter-spacing: .05em;
+                word-wrap: break-word;
+            }
+            
+            p{
+                font-weight: 400;
+                letter-spacing: .02em;
+                color: #6d6d6d;
+                font-size: 0.9em;
+            }
+        }
+    }
+    
+    .carousel{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .section{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-color: #111;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+
+.team{
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+    padding-top: 80px;
+
+    .para{
+        text-align: center !important;
+        margin-bottom: 30px;
+    }
+
+    .alignBottom{
+        margin-top: 50px;
+        width: 70%;
+        justify-content: space-between;
+
+        .imgContainer{
+            text-align: center;
+            color: #fff;
+            margin: 0 10px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                transition: all 0.2s ease-in-out;
+                object-fit: cover;
+                object-position: center;
+            }
+            h6{
+                top: -70%;
+                transform: translateY(-70%);
+                color: white;
+                z-index: 10;
+                font-family: "Bebas Neue",sans-serif;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 30px;
+                line-height: 62px;
+                vertical-align: middle;
+                letter-spacing: .05em;
+                word-wrap: break-word;
+                text-shadow: rgba(0, 0, 0, 0.25) 3px 4px 4px;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
+
+@media(max-width : 998px){
+    .container{
+        .banner{
+            height: 40vh;
+            background-position-y: 80px;
+            div{
+                h1{
+                    margin: 20% 0;
+                    font-size: 3em;
+                }
+            }
+        }
+        .aboutWork{
+            flex-direction: column;
+        }
+    }
+}

@@ -98,3 +98,40 @@ a{
         }
 
       }
+
+    .alignLeft{
+        @extend .align;
+        float: left;
+        left: 0;
+        vertical-align: middle;
+    }
+    
+    .alignRight{
+        @extend .align;
+        vertical-align: middle;
+        float: right;
+        right: 0;
+    }
+    
+    .alignTop{
+        @extend .align;
+        float: top;
+        top: 0;
+    }
+    
+    .alignBottom{
+        @extend .align;
+        float: bottom;
+        display: flex;
+        flex-direction: row;
+        bottom: 0;
+    }
+
+    .align{
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      margin: auto auto;
+  }
+  
+  

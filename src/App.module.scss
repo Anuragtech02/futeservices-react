@@ -9,6 +9,14 @@
 
 body{
   overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.footer{
+    width: 100vw;
+    height: fit-content;
+    z-index: 1000;
+    background-color: #111;
 }
 
 .navbar{
@@ -16,7 +24,7 @@ body{
     z-index: 10000;
     position: fixed;
     display: inline-block;
-    width: 100%;
+    width: 100vw;
     vertical-align: top;
     margin: 0;
 
@@ -38,3 +46,10 @@ body{
             color: black;
         }
     }
+
+
+@media(max-width : 998px){
+    .navbar{
+        position: relative;
+    }
+}

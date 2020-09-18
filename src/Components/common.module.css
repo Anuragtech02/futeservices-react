@@ -101,4 +101,46 @@ a {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+
+.alignLeft {
+  float: left;
+  left: 0;
+  vertical-align: middle;
+}
+
+.alignRight {
+  vertical-align: middle;
+  float: right;
+  right: 0;
+}
+
+.alignTop {
+  float: top;
+  top: 0;
+}
+
+.alignBottom {
+  float: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  bottom: 0;
+}
+
+.align, .alignLeft, .alignRight, .alignTop, .alignBottom {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto auto;
+}
 /*# sourceMappingURL=common.module.css.map */

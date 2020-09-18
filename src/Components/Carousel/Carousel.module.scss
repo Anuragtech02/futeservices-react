@@ -48,7 +48,11 @@
       font-size: 150px;
       transform-origin: 50% 50%;
       transform: translate(0px, 0px);
-    }
+      -webkit-transform: translate(0px, 0px);
+      -moz-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      -o-transform: translate(0px, 0px);
+}
     
   }
 
@@ -91,4 +95,24 @@ h4{
   vertical-align: middle;
   font-weight: 400;
   font-size: 2.5em;
+}
+
+
+@media(max-width: 998px){
+  .flex{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h4{
+    right: 7%;
+  }
+
+  h2, span{
+    font-size: 100px;
+  }
+
+  .progressBarBg{
+    margin-right: 10%;
+  }
 }

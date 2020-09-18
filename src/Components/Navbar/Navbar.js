@@ -29,63 +29,65 @@ export const Navbar = () => {
     const [isHover, setIsHover] = React.useState(false)
 
     return(
-        <nav className={style.container}>
+        <header className={style.container}>
             <div className={style.brandName}>
-                <img src={logo} width="50%" alt="Fute Services" />
+                <img src={logo} alt="Fute Services" />
             </div>
-            <ul className={classNames(style.nav, style.noDecoration)}>
-            {HeaderData.tabs.map(({label, id, path, subheader}) => {
-                return(
-                    <li 
-                     className={classNames(style.navItems,style.dropdown)}
-                     id={id}
-                     key={"header-"+ label}
-                     onMouseEnter={() => setIsOpen(false)}
-                     onMouseLeave={() => setIsOpen(true)}
-                     onClick={() => setIsOpen(!isOpen)}
-                    >
-                        <Link 
-                            to={path}
-                            className={classNames(style.navLink,style.noDecoration)}                            
-                         >
-                         {label}
-                         </Link>
-                         { subheader && 
-                        <motion.ul 
-                            className={style.dropdownContent}
-                            animate={isOpen ? "open" : "closed"}
-                            variants={backgroundVariants}
-                            transition={{ duration: 0.2}}
-                            id="dropdown-content"
+            <nav className={style.nav}>
+                <ul className={style.noDecoration}>
+                {HeaderData.tabs.map(({label, id, path, subheader}) => {
+                    return(
+                        <li 
+                        className={classNames(style.navItems,style.dropdown)}
+                        id={id}
+                        key={"header-"+ label}
+                        onMouseEnter={() => setIsOpen(false)}
+                        onMouseLeave={() => setIsOpen(true)}
+                        onClick={() => setIsOpen(!isOpen)}
                         >
-                        {subheader.map(({label, path}) => {
-                            return(
-                                <motion.li
-                                 className={classNames(style.dropdownItems,style.noDecoration, pathname.includes(path) ? style.subheaderActive : "")}
-                                 key={"subheader-"+ label}
-                                 onMouseEnter={() => setIsHover(!isHover)}
-                                 onMouseLeave={() => setIsHover(!isHover)}
-                                 animate={isOpen ? "open" : "closed"}
-                                 variants={textVariants}
-                                 transition={{ duration: 0.2, delay: 0.1}}
-                                >
-                                    <Link 
-                                        to={path} 
-                                        key={"subheader-"+ label}
-                                        animate={isOpen ? "open" : "closed"}
-                                        variants={linkVariants}
-                                        className={classNames(style.dropdownLink,style.noDecoration, pathname.includes(path) ? style.subheaderActive : "")}
+                            <Link 
+                                to={path}
+                                className={classNames(style.navLink,style.noDecoration)}                            
+                            >
+                            {label}
+                            </Link>
+                            { subheader && 
+                            <motion.ul 
+                                className={style.dropdownContent}
+                                animate={isOpen ? "open" : "closed"}
+                                variants={backgroundVariants}
+                                transition={{ duration: 0.2}}
+                                id="dropdown-content"
+                            >
+                            {subheader.map(({label, path}) => {
+                                return(
+                                    <motion.li
+                                    className={classNames(style.dropdownItems,style.noDecoration, pathname.includes(path) ? style.subheaderActive : "")}
+                                    key={"subheader-"+ label}
+                                    onMouseEnter={() => setIsHover(!isHover)}
+                                    onMouseLeave={() => setIsHover(!isHover)}
+                                    animate={isOpen ? "open" : "closed"}
+                                    variants={textVariants}
+                                    transition={{ duration: 0.2, delay: 0.1}}
                                     >
-                                    {label}
-                                    </Link>
-                                </motion.li>
-                            )})}
-                        </motion.ul>
-                         }
-                    </li>
-                )})}
-            </ul>
-        </nav>
+                                        <Link 
+                                            to={path} 
+                                            key={"subheader-"+ label}
+                                            animate={isOpen ? "open" : "closed"}
+                                            variants={linkVariants}
+                                            className={classNames(style.dropdownLink,style.noDecoration, pathname.includes(path) ? style.subheaderActive : "")}
+                                        >
+                                        {label}
+                                        </Link>
+                                    </motion.li>
+                                )})}
+                            </motion.ul>
+                            }
+                        </li>
+                    )})}
+                </ul>
+            </nav>
+        </header>
     )
 }
 
