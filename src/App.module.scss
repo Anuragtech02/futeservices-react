@@ -20,9 +20,9 @@ body{
 }
 
 .navbar{
+    position: fixed;
     top: 0;
     z-index: 10000;
-    position: fixed;
     display: inline-block;
     width: 100vw;
     vertical-align: top;
@@ -30,22 +30,22 @@ body{
 
 }
 
-    .dark{
-        background-color: transparent;
+.dark{
+    background-color: transparent;
+    color: white;
+
+    a{
         color: white;
-
-        a{
-            color: white;
-        }
     }
+}
 
-    .light{
-        background-color: white;
+.light{
+    background-color: white;
+    color: black;
+    a{
         color: black;
-        a{
-            color: black;
-        }
     }
+}
 
 
 @media(max-width : 998px){

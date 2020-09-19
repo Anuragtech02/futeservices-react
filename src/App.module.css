@@ -23,9 +23,9 @@ body {
 }
 
 .navbar {
+  position: fixed;
   top: 0;
   z-index: 10000;
-  position: fixed;
   display: inline-block;
   width: 100vw;
   vertical-align: top;
