@@ -27,7 +27,7 @@ export const Home = () => {
                         <motion.p className={style.para}>
                             {introData.para}
                         </motion.p>
-                        <motion.button style={{opacity:1}} className={style.btnLight}>
+                        <motion.button style={{opacity:1, marginTop: 30}} className={style.btnLight}>
                             {introData.buttonTxt}
                         </motion.button>
                     </div>

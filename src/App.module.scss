@@ -1,25 +1,26 @@
-*, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'open sans', sans-serif;
-  scroll-behavior: smooth;
-  line-height: 1.857em;
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.857em;
 }
 
-body{
-  overflow-x: hidden;
-  max-width: 100vw;
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
-.footer{
+.footer {
     width: 100vw;
     height: fit-content;
     z-index: 1000;
     background-color: #111;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     z-index: 10000;
@@ -30,26 +31,27 @@ body{
 
 }
 
-.dark{
+.dark {
     background-color: transparent;
     color: white;
 
-    a{
+    a {
         color: white;
     }
 }
 
-.light{
+.light {
     background-color: white;
     color: black;
-    a{
+
+    a {
         color: black;
     }
 }
 
 
-@media(max-width : 998px){
-    .navbar{
+@media(max-width : 998px) {
+    .navbar {
         position: relative;
     }
 }

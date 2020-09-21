@@ -1,30 +1,30 @@
 @import "../common.module.scss";
 
-.container{
+.container {
     top: 0;
     margin: 0;
     display: block;
     width: 100%;
 
-    .banner{
+    .banner {
         width: 100vw;
         height: 50vh;
         background-image: url('../../Assets/pexels-debasish-sahoo-140221.jpg');
         background-size: cover;
-        background-position-y: -200px ;
+        background-position-y: -200px;
         text-align: center;
         justify-content: center;
 
-        div{
+        div {
             height: 100%;
             padding: 10% 0;
 
-            h1{
+            h1 {
                 width: 100%;
                 vertical-align: middle;
                 color: white;
                 z-index: 10;
-                font-family: "Bebas Neue",sans-serif;
+                font-family: "Bebas Neue", sans-serif;
                 font-weight: 400;
                 text-transform: uppercase;
                 font-size: 5em;
@@ -36,7 +36,7 @@
         }
     }
 
-    .aboutWork{
+    .aboutWork {
         width: 100%;
         min-height: 50%;
         display: flex;
@@ -46,16 +46,17 @@
         margin: 0 auto;
         padding: 10px 15%;
         background-color: #fff;
-    
-        .flex{
+
+        .flex {
             flex: 1;
             margin: 8px 20px;
             vertical-align: middle;
             justify-content: center;
             text-align: center;
-            h6{
+
+            h6 {
                 z-index: 10;
-                font-family: "Bebas Neue",sans-serif;
+                font-family: "Bebas Neue", sans-serif;
                 font-weight: 400;
                 text-transform: uppercase;
                 font-size: 30px;
@@ -64,8 +65,8 @@
                 letter-spacing: .05em;
                 word-wrap: break-word;
             }
-            
-            p{
+
+            p {
                 font-weight: 400;
                 letter-spacing: .02em;
                 color: #6d6d6d;
@@ -73,14 +74,14 @@
             }
         }
     }
-    
-    .carousel{
+
+    .carousel {
         width: 100vw;
         height: 100vh;
         margin: 0;
     }
 
-    .section{
+    .section {
         width: 100vw;
         height: 100vh;
         margin: 0;
@@ -93,40 +94,41 @@
 
 }
 
-.team{
+.team {
     align-items: center;
     justify-content: center;
     text-align: center !important;
     padding-top: 80px;
 
-    .para{
+    .para {
         text-align: center !important;
         margin-bottom: 30px;
     }
 
-    .alignBottom{
+    .alignBottom {
         margin-top: 50px;
         width: 70%;
         justify-content: space-between;
 
-        .imgContainer{
+        .imgContainer {
             text-align: center;
             color: #fff;
             margin: 0 10px;
             overflow: hidden;
 
-            img{
+            img {
                 width: 100%;
                 transition: all 0.2s ease-in-out;
                 object-fit: cover;
                 object-position: center;
             }
-            h6{
+
+            h6 {
                 top: -70%;
                 transform: translateY(-70%);
                 color: white;
                 z-index: 10;
-                font-family: "Bebas Neue",sans-serif;
+                font-family: "Bebas Neue", sans-serif;
                 font-weight: 400;
                 text-transform: uppercase;
                 font-size: 30px;
@@ -141,19 +143,21 @@
     }
 }
 
-@media(max-width : 998px){
-    .container{
-        .banner{
+@media(max-width : 998px) {
+    .container {
+        .banner {
             height: 40vh;
             background-position-y: 80px;
-            div{
-                h1{
+
+            div {
+                h1 {
                     margin: 20% 0;
                     font-size: 3em;
                 }
             }
         }
-        .aboutWork{
+
+        .aboutWork {
             flex-direction: column;
         }
     }

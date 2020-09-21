@@ -123,8 +123,8 @@ export const Carousel = () => {
                                     </motion.h2>
                                     <motion.div className={style.flex}>
                                         <motion.button 
-                                          className={style.btnLight}
-                                          
+                                            className={style.btnLight}
+                                            style={{margin: '20px 30px'}}
                                             custom={index}
                                             animate={isVisible? 'show' : 'hide'}
                                             variants={line1Variants}
@@ -132,8 +132,8 @@ export const Carousel = () => {
                                             onMouseEnter={() => setIsVisible(true)}
                                         >{slides.buttonText}</motion.button>
                                         <motion.button 
-                                         className={style.btnFilled}
-                                         
+                                            className={style.btnLightFilled}
+                                            style={{margin: '20px 30px'}}
                                             custom={index}
                                             animate={isVisible? 'show' : 'hide'}
                                             variants={line2Variants}

@@ -8,14 +8,13 @@ a {
   cursor: pointer;
 }
 
-.btn, .btnFilled, .btnLight {
+.btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
+  width: auto;
   opacity: 0;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: auto;
-  margin: 10px 10px;
-  font-family: "Bebas Neue",sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 17px;
   line-height: 2em;
   font-weight: 400;
@@ -23,25 +22,25 @@ a {
   text-transform: uppercase;
   letter-spacing: .2em;
   border-radius: 0;
-  border: 1px solid white;
   outline: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
-  transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
   padding: 8px 50px;
   cursor: pointer;
   pointer-events: all !important;
   z-index: 1;
 }
 
-.btnFilled {
-  color: black;
+.btnDrakFilled {
   background-color: transparent;
   overflow: hidden;
+  color: white;
+  border: 1px solid black;
 }
 
-.btnFilled::after {
+.btnDrakFilled::after {
   content: '';
   position: absolute;
   top: 0;
@@ -49,39 +48,70 @@ a {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: white;
-  border: 1px solid white;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  background-color: black;
+  border: 1px solid black;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
 
-.btnFilled:hover {
-  color: white;
+.btnDrakFilled:hover {
+  color: black;
   background-color: none;
+  border-color: black;
 }
 
-.btnFilled:hover::after {
+.btnDrakFilled:hover::after {
   -webkit-transform: translateY(100%) !important;
           transform: translateY(100%) !important;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
 }
 
-.btnLight:hover {
+.btnLightFilled {
+  background-color: transparent;
+  overflow: hidden;
   color: black;
-  background-color: none;
+  border: 1px solid white;
 }
 
-.btnLight:hover::after {
+.btnLightFilled::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
   background-color: white;
-  -webkit-transform: translateY(0) !important;
-          transform: translateY(0) !important;
+  border: 1px solid white;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.btnLightFilled:hover {
+  color: white;
+  background-color: none;
+  border-color: white;
+}
+
+.btnLightFilled:hover::after {
+  -webkit-transform: translateY(100%) !important;
+          transform: translateY(100%) !important;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 .btnLight {
   color: white;
   background-color: transparent;
   overflow: hidden;
+  border: 1px solid white;
 }
 
 .btnLight::after {
@@ -100,6 +130,53 @@ a {
           transform-origin: bottom left;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+.btnLight:hover {
+  color: black;
+  background-color: none;
+}
+
+.btnLight:hover::after {
+  background-color: white;
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
+.btnDark {
+  color: black;
+  background-color: transparent;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.btnDark::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid black;
+  -webkit-transform: rotate(20deg) translateY(100%);
+          transform: rotate(20deg) translateY(100%);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.btnDark:hover {
+  color: white;
+  background-color: none;
+}
+
+.btnDark:hover::after {
+  background-color: black;
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
 }
 
 .alignLeft {

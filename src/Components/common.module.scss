@@ -1,137 +1,196 @@
-.noDecoration{
-    text-decoration: none ;
-    list-style: none ;
-    outline: none ;
+.noDecoration {
+  text-decoration: none;
+  list-style: none;
+  outline: none;
 }
 
-a{
-    cursor: pointer;
-    @extend .noDecoration ;
+a {
+  cursor: pointer;
+  @extend .noDecoration;
 }
 
-.btn{
-      opacity: 0;
-      position: relative;
-      display: inline-block;
-      vertical-align: middle;
-      width: auto;
-      margin: 10px 10px;
-      font-family: "Bebas Neue",sans-serif;
-      font-size: 17px;
-      line-height: 2em;
-      font-weight: 400;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: .2em;
-      border-radius: 0;
-      border: 1px solid white;
-      outline: 0;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      -webkit-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
-      -o-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
-      transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
-      padding: 8px 50px;
-      cursor: pointer;
-      pointer-events: all !important;
-      z-index: 1;
-}
+@mixin button-type($dark, $filled) {
 
+  $text-color: black;
+  $background-color: white;
+  $border-color: white;
+  $hover-text-color: white;
+  $hover-background-color: black;
 
-.btnFilled {
-      @extend .btn;
-      color: black;
-      background-color: transparent;
-      overflow: hidden;
-        &::after{
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: -1;
-          width: 100%;
-          height: 100%;
-          background-color: white;
-          border: 1px solid white;
-          transition: 0.3s ease-in-out;
-        }
-      }
+  @extend .btn;
 
-      .btnFilled:hover{
-        &::after{
-          transform:  translateY(100%) !important;
-          transform-origin: bottom left;
-        }
-        color: white;
-        background-color: none;
-      }
+  @if $filled {
 
-      
-      .btnLight:hover{
-          &::after{
-            background-color: white;
-            transform:  translateY(0) !important;
-          }
-          color: black;
-          background-color: none;
-      }
-    
-      .btnLight{
-        @extend .btn;
-        color: white;
-        background-color: transparent;
-        overflow: hidden;
-        
-        &::after{
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: -1;
-          width: 100%;
-          height: 100%;
-          background-color: transparent;
-          border: 1px solid white;
-          transform: rotate(20deg) translateY(100%);
-          transform-origin: bottom left;
-          transition: 0.3s ease-in-out;
-        }
-
-      }
-
-    .alignLeft{
-        @extend .align;
-        float: left;
-        left: 0;
-        vertical-align: middle;
+    @if $dark {
+      $text-color: white;
+      $background-color: black;
+      $hover-text-color: black;
+      $border-color: black;
     }
-    
-    .alignRight{
-        @extend .align;
-        vertical-align: middle;
-        float: right;
-        right: 0;
-    }
-    
-    .alignTop{
-        @extend .align;
-        float: top;
-        top: 0;
-    }
-    
-    .alignBottom{
-        @extend .align;
-        float: bottom;
-        display: flex;
-        flex-direction: row;
-        bottom: 0;
+    @else{
+      $hover-background-color: white;
+      $border-color: white;
     }
 
-    .align{
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-      margin: auto auto;
+    background-color: transparent;
+    overflow: hidden;
+    color: $text-color;
+    border: 1px solid $border-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      transition: 0.3s ease-in-out;
+      background-color: $background-color;
+      border: 1px solid $border-color;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      -ms-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: $hover-text-color;
+      background-color: none;
+      border-color: $hover-background-color;
+
+      &::after {
+        transform: translateY(100%) !important;
+        transform-origin: bottom left;
+      }
+    }
   }
-  
-  
+
+  @else {
+
+    @if $dark {
+
+      $background-color: black;
+      $border-color: black;
+      $hover-text-color: white;
+
+    }
+
+    @else {
+
+      $text-color: white;
+      $hover-text-color: black;
+
+    }
+
+    color: $text-color;
+    background-color: transparent;
+    overflow: hidden;
+    border: 1px solid $border-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 1px solid $border-color;
+      transform: rotate(20deg) translateY(100%);
+      transform-origin: bottom left;
+      transition: 0.3s ease-in-out;
+    }
+
+
+    &:hover {
+      color: $hover-text-color;
+      background-color: none;
+
+      &::after {
+        background-color: $background-color;
+        transform: translateY(0) !important;
+      }
+    }
+
+  }
+
+}
+
+.btn {
+  width: auto;
+  opacity: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 17px;
+  line-height: 2em;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  border-radius: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  padding: 8px 50px;
+  cursor: pointer;
+  pointer-events: all !important;
+  z-index: 1;
+}
+
+.btnDrakFilled {
+  @include button-type(true, true);
+}
+
+.btnLightFilled {
+  @include button-type(false, true);
+}
+
+.btnLight {
+  @include button-type(false, false);
+}
+
+.btnDark {
+  @include button-type(true, false);
+}
+
+.alignLeft {
+  @extend .align;
+  float: left;
+  left: 0;
+  vertical-align: middle;
+}
+
+.alignRight {
+  @extend .align;
+  vertical-align: middle;
+  float: right;
+  right: 0;
+}
+
+.alignTop {
+  @extend .align;
+  float: top;
+  top: 0;
+}
+
+.alignBottom {
+  @extend .align;
+  float: bottom;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+}
+
+.align {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: auto auto;
+}

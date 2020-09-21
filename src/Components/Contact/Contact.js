@@ -58,8 +58,7 @@ export const Contact = () => {
                             <input name="name" type="text" placeholder="Your Name" />
                             <input name="email" type="email" placeholder="Your Email" />
                         </div>
-                        <br />
-                        <button type="submit" >Send</button>
+                        <button style={{opacity: 1}} className={style.btnDrakFilled} type="submit" >Send</button>
                     </form>
                 </div>
             </div>

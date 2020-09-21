@@ -1,0 +1,81 @@
+.container {
+  background-color: #111;
+}
+
+.container .banner {
+  width: 100vw;
+  height: 50vh;
+  background-image: url("../../Assets/pexels-debasish-sahoo-140221.jpg");
+  background-size: cover;
+  background-position-y: -200px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .banner div {
+  height: 100%;
+  padding: 10% 0;
+}
+
+.container .banner div h1 {
+  width: 100%;
+  vertical-align: middle;
+  color: white;
+  z-index: 10;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 5em;
+  line-height: 62px;
+  vertical-align: middle;
+  letter-spacing: .05em;
+  word-wrap: break-word;
+}
+
+.container .faq {
+  width: 100%;
+  height: 50vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+}
+
+.container .accordationContainer {
+  width: 70%;
+  margin: 0 auto;
+  direction: ltr;
+  text-align: left;
+}
+
+.container .accordationContainer .MuiAccordionRoot {
+  background-color: transparent;
+}
+
+.container .accordationContainer .heading {
+  text-align: left;
+  z-index: 10;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  line-height: 40px;
+  vertical-align: middle;
+  letter-spacing: .05em;
+  word-wrap: break-word;
+}
+
+.container .accordationContainer .summary {
+  text-align: left;
+  padding: 30px 2px;
+  font-weight: 400;
+  letter-spacing: .02em;
+  color: #fff;
+  font-size: 1em;
+}
+/*# sourceMappingURL=FAQ.module.css.map */
