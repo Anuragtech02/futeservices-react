@@ -184,9 +184,9 @@ export const CustomStepper = ({steps, content, theme}) => {
             <div className={style.content}>
                 <img src={content[activeStep].img} alt="" />
                 <div className={style.text}>
-                    <h1>{`"${content[activeStep].heading}"`}</h1>
-                    <p>{content[activeStep].para}</p>
-                    <a style={{opacity:1}} className={style.btnLight} href={content[activeStep].link}>Learn More</a>
+                    <h1 style={{color: theme==="dark" ? "#fff" : "#000" }}>{`"${content[activeStep].heading}"`}</h1>
+                    <p style={{color: theme==="dark" ? "#fff" : "#000" }}>{content[activeStep].para}</p>
+                    <button style={{opacity: 1}} className={style.btnDark} href={content[activeStep].link}>Learn More</button>
                 </div>
             </div>
         </div>

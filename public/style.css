@@ -9,3 +9,7 @@
 .slick-list{
     box-sizing: border-box;
 }
+
+.Mui-expanded .heading{
+    color: #fff !important;
+}

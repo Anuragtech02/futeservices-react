@@ -67,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#fff",
         borderColor: "#fff",
         transition: 'all .5s ease-out',
+
       }
   }));
 
@@ -110,11 +111,13 @@ const ControlledAccordions = (props) => {
                                 expanded: classes.expanded
                             }}  
                             expandIcon={<Add style={{fontSize: 30 }}/>}
-
                             aria-controls={`panel${index}bh-content`}
                             id={`panel${index}bh-header`}
                         >
-                            <Typography className={clsx(style.heading, classes.heading)}>{faq.summary}</Typography>
+                            <Typography 
+                                style={{color : `${expanded === `pannel${index}` ? "#fff" : ""}`}} 
+                                className={clsx(style.heading, classes.heading)}
+                            >{faq.summary}</Typography>
                         </AccordionSummary>
                         <Collapse timeout={5} in={expanded} unmountOnExit>
                             <AccordionDetails>

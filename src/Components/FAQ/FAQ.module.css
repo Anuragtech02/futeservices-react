@@ -78,4 +78,8 @@
   color: #fff;
   font-size: 1em;
 }
+
+.Mui-expanded .heading {
+  color: #fff !important;
+}
 /*# sourceMappingURL=FAQ.module.css.map */
