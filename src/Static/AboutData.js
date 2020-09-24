@@ -31,3 +31,25 @@ export const AboutWork = [
         para: "Lorem ipsum dolor sit amet, consec tur adipisicing elit, sed do.",
     },
  ]
+
+ export const mainTeamData = {
+    heading: "Our Team",
+    para: "A handfull of characters",
+    imgData: [
+        {
+            img: "https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h1-team-image-1.jpg",
+            name: "Alex Pearson",
+            position: "Main Director",
+        },
+        {
+            img: "https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h1-team-image-2.jpg",
+            name: "Lana Ray Vaugh",
+            position: "Main Writer",
+        },
+        {
+            img: "https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h1-team-image-3.jpg",
+            name: "Eva Rose ",
+            position: "Main Producer",
+        },
+    ]
+}

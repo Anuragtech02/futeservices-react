@@ -228,6 +228,18 @@ a {
   width: 100%;
 }
 
+.container .midSection {
+  padding-top: 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .midSection .experience,
+.container .midSection .testimonial {
+  margin-top: 15%;
+}
+
 .container .banner {
   width: 100vw;
   height: 50vh;
@@ -260,6 +272,42 @@ a {
   word-wrap: break-word;
 }
 
+.container .experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: right;
+}
+
+.container .experience .alignLeft {
+  width: 100%;
+  margin: auto 0;
+  padding: 6% 4%;
+  background-color: #ebebeb;
+}
+
+.container .experience .para {
+  text-align: right;
+  padding-left: 30%;
+  font-size: 0.9em;
+  color: #6d6d6d;
+}
+
+.container .experience .alignRight {
+  margin: 0;
+  padding: 0;
+}
+
+.container .experience img {
+  margin: auto 0;
+  -webkit-box-shadow: 8px 8px 16px rgba(238, 238, 238, 0.25);
+          box-shadow: 8px 8px 16px rgba(238, 238, 238, 0.25);
+}
+
 .container .aboutWork {
   width: 100%;
   min-height: 50%;
@@ -276,7 +324,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 10px 15%;
   background-color: #fff;
 }
@@ -329,6 +377,7 @@ a {
 }
 
 .team {
+  margin-top: 5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -354,9 +403,27 @@ a {
 
 .team .alignBottom .imgContainer {
   text-align: center;
-  color: #fff;
+  color: #000;
   margin: 0 10px;
   overflow: hidden;
+}
+
+.team .alignBottom .imgContainer .imgOverlay {
+  position: relative;
+}
+
+.team .alignBottom .imgContainer .imgOverlay::after {
+  content: '';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 30%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.8) 0, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
 }
 
 .team .alignBottom .imgContainer img {
@@ -373,19 +440,34 @@ a {
   top: -70%;
   -webkit-transform: translateY(-70%);
           transform: translateY(-70%);
-  color: white;
+  color: black;
   z-index: 10;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 30px;
-  line-height: 62px;
+  font-size: 2.4em;
   vertical-align: middle;
   letter-spacing: .05em;
+  line-height: 1em;
   word-wrap: break-word;
   text-shadow: rgba(0, 0, 0, 0.25) 3px 4px 4px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.team .alignBottom .imgContainer p {
+  color: #222;
+  top: -90%;
+  transform: translateY(-90%);
+  word-wrap: break-word;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.8em;
+  z-index: 10;
+  -webkit-transform: translateY(-90%);
+  -moz-transform: translateY(-90%);
+  -ms-transform: translateY(-90%);
+  -o-transform: translateY(-90%);
 }
 
 @media (max-width: 998px) {
@@ -403,5 +485,44 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.subheading {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ABABAB;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: .4em;
+  margin: 25px 0;
+  z-index: 10;
+  vertical-align: middle;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.heading {
+  color: black;
+  z-index: 10;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 65px;
+  line-height: 62px;
+  vertical-align: middle;
+  letter-spacing: .05em;
+  word-wrap: break-word;
+}
+
+.imgContainer:hover img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.imgContainer:hover .name, .imgContainer:hover p {
+  padding-left: 10%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 /*# sourceMappingURL=About.module.css.map */

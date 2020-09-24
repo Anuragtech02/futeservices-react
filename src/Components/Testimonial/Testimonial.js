@@ -4,7 +4,7 @@ import { testimonialData } from '../../Static'
 import style from './Testimonial.module.css'
 
 
-export const Testimonial = () => {
+export const Testimonial = (props) => {
 
     const settings = {
         infinite: true,
@@ -21,16 +21,16 @@ export const Testimonial = () => {
 
     return(
         <Slider {...settings} className={style.testimonial}>
-            {testimonialData.map((testimonialData, index) =>{
+            {testimonialData.map((testimonialData, index) =>{ 
                 return(
-                    <div key={index} className={style.testiContainer}>
-                        <h1>{`"${testimonialData.heading}"`}</h1>
-                        <p>{`"${testimonialData.para}"`}</p>
+                    <div key={index} className={props.theme === 'dark' ? style.testiContainerDark : style.testiContainerLight}>
+                        <h1 style={{color: props.theme === 'dark' ? '#fff' : '#000'}}>{`"${testimonialData.heading}"`}</h1>
+                        <p style={{color: props.theme === 'dark' ? '#fff' : '#000'}}>{`"${testimonialData.para}"`}</p>
                         <div className={style.author} >
                             <img src={testimonialData.authorImg} alt="" />
                             <div className={style.authorExtras}>
-                                <h6>{testimonialData.author}</h6>
-                                <p>{testimonialData.aboutAuthor}</p>
+                                <h6 style={{color: props.theme === 'dark' ? '#fff' : '#000'}}>{testimonialData.author}</h6>
+                                <p style={{color: props.theme === 'dark' ? '#fff' : '#000'}}>{testimonialData.aboutAuthor}</p>
                             </div>
                         </div>
                     </div>

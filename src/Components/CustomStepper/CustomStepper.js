@@ -35,7 +35,7 @@ const CustomConnectorStyles = makeStyles({
       left: 0,
       margin: 0,
       padding: 0,
-      borderColor: (props) => (props.theme==="dark" ? '#999' : '#eee'),
+      borderColor: (props) => (props.theme==="dark" ? '#999' : '#ccc'),
       borderTopWidth: 1,
       borderRadius: 1,
     },
@@ -84,7 +84,7 @@ const CustomConnectorStyles = makeStyles({
 
   const useQontoStepIconStyles = makeStyles({
     root: {
-      color: (props) => (props.theme==="dark" ? '#999' : '#eee'),
+      color: (props) => (props.theme==="dark" ? '#999' : '#aaa'),
       display: 'flex',
       height: 22,
       alignItems: 'center',
@@ -165,7 +165,7 @@ export const CustomStepper = ({steps, content, theme}) => {
             >
                 {steps.map((label, index) => {
                         const stepProps = {}
-                        const buttonProps = {}
+                        const buttonProps = {theme}
                     return(
                         <CustomStep key={index}  flex={lineWidth(steps, index)} {...stepProps}>
                             <StepLabel
@@ -186,7 +186,7 @@ export const CustomStepper = ({steps, content, theme}) => {
                 <div className={style.text}>
                     <h1 style={{color: theme==="dark" ? "#fff" : "#000" }}>{`"${content[activeStep].heading}"`}</h1>
                     <p style={{color: theme==="dark" ? "#fff" : "#000" }}>{content[activeStep].para}</p>
-                    <button style={{opacity: 1}} className={style.btnDark} href={content[activeStep].link}>Learn More</button>
+                    <button style={{opacity: 1}} className={theme==="dark" ? style.btnLight : style.btnDark} href={content[activeStep].link}>Learn More</button>
                 </div>
             </div>
         </div>

@@ -7,141 +7,142 @@
         height: 50vh;
     }
 
-    .content {
-        color: black;
-        width: 100vw;
-        height: 75vh;
-        display: flex;
-        text-align: right;
+}
 
-        .floatLeft {
-            flex: 1;
-            float: left;
-            margin: auto auto;
-            left: 0;
-            vertical-align: middle;
-            justify-content: right;
-            align-items: flex-end;
+.content {
+    color: black;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    text-align: right;
 
-            div {
-                width: 100%;
-                display: inline-block;
+    .floatLeft {
+        flex: 1;
+        float: left;
+        margin: auto auto;
+        left: 0;
+        vertical-align: middle;
+        justify-content: right;
+        align-items: flex-end;
 
-                ul {
+        div {
+            width: 100%;
+            display: inline-block;
+
+            ul {
+                color: black;
+                text-decoration: none;
+                list-style: none;
+                outline: none;
+                text-align: right;
+                margin-top: 30px;
+
+                li {
+                    float: right;
+                    padding: 0 10px;
+                }
+
+                a {
                     color: black;
-                    text-decoration: none;
-                    list-style: none;
-                    outline: none;
-                    text-align: right;
-                    margin-top: 30px;
-
-                    li {
-                        float: right;
-                        padding: 0 10px;
-                    }
-
-                    a {
-                        color: black;
-                    }
                 }
             }
         }
-
-        .floatRight {
-            margin: auto auto;
-            flex: 1;
-            vertical-align: middle;
-
-            form {
-                width: 60%;
-                display: block;
-                margin: auto 8%;
-
-                .flex {
-                    width: 100%;
-                    flex-direction: row;
-                }
-
-                textarea {
-                    display: inline-block;
-                    width: 100%;
-                    letter-spacing: normal;
-                    word-spacing: normal;
-                    text-transform: none;
-                    text-indent: 0px;
-                    text-shadow: none;
-                    text-align: start;
-                    flex-direction: column;
-                    resize: auto;
-                    white-space: pre-wrap;
-                    overflow-wrap: break-word;
-                }
-            }
-
-            input[type="text"] {
-                float: left;
-            }
-
-            input[type=email],
-            input[type=text],
-            textarea {
-                width: max-content;
-                position: relative;
-                margin: 10px 0;
-                padding: 17px 25px;
-                font-family: inherit;
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: inherit;
-                color: #6d6d6d;
-                background-color: transparent;
-                border: 2px solid rgba(0, 0, 0, .2);
-                border-radius: 0;
-                outline: 0;
-                cursor: text;
-
-                &:focus {
-                    border-left: 2px solid black;
-                    color: #111
-                }
-            }
-
-            button {
-                margin: 10px 0;
-                width: 100%;
-            }
-        }
-
-        .heading {
-            font-family: "Bebas Neue", sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: #ABABAB;
-            font-size: 18px;
-            line-height: 26px;
-            letter-spacing: .4em;
-            margin: 25px 0;
-            z-index: 10;
-            vertical-align: middle;
-            -ms-word-wrap: break-word;
-            word-wrap: break-word;
-        }
-
-        .para {
-            float: right;
-            color: black;
-            z-index: 10;
-            font-family: "Bebas Neue", sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            font-size: 65px;
-            line-height: 62px;
-            vertical-align: middle;
-            letter-spacing: .05em;
-            word-wrap: break-word;
-            max-width: 45%;
-            text-align: right;
-        }
-
     }
+
+    .floatRight {
+        margin: auto auto;
+        flex: 1;
+        vertical-align: middle;
+
+        form {
+            width: 60%;
+            display: block;
+            margin: auto 8%;
+
+            .flex {
+                width: 100%;
+                flex-direction: row;
+            }
+
+            textarea {
+                display: inline-block;
+                width: 100%;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0px;
+                text-shadow: none;
+                text-align: start;
+                flex-direction: column;
+                resize: auto;
+                white-space: pre-wrap;
+                overflow-wrap: break-word;
+            }
+        }
+
+        input[type="text"] {
+            float: left;
+        }
+
+        input[type=email],
+        input[type=text],
+        textarea {
+            width: max-content;
+            position: relative;
+            margin: 10px 0;
+            padding: 17px 25px;
+            font-family: inherit;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: inherit;
+            color: #6d6d6d;
+            background-color: transparent;
+            border: 2px solid rgba(0, 0, 0, .2);
+            border-radius: 0;
+            outline: 0;
+            cursor: text;
+
+            &:focus {
+                border-left: 2px solid black;
+                color: #111
+            }
+        }
+
+        button {
+            margin: 10px 0;
+            width: 100%;
+        }
+    }
+
+    .heading {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ABABAB;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: .4em;
+        margin: 25px 0;
+        z-index: 10;
+        vertical-align: middle;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .para {
+        float: right;
+        color: black;
+        z-index: 10;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 65px;
+        line-height: 62px;
+        vertical-align: middle;
+        letter-spacing: .05em;
+        word-wrap: break-word;
+        max-width: 45%;
+        text-align: right;
+    }
+
 }

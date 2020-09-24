@@ -12,8 +12,9 @@
         max-width: 80%;
         vertical-align: middle;
         flex: 1;
-        border-left: 2px solid white;
+        border-left: 2px solid;
         padding: 0 20px;
+    
         h1{
             color: white;
             z-index: 10;
@@ -60,5 +61,15 @@
                 }
             }
         }
+    }
+
+    .testiContainerDark{
+        @extend .testiContainer;
+        border-color: #fff;
+    }
+
+    .testiContainerLight{   
+        @extend .testiContainer;
+        border-color: #000;
     }
 }

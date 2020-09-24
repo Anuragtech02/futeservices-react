@@ -284,7 +284,7 @@ a {
   height: 50vh;
 }
 
-.container .content {
+.content {
   color: black;
   width: 100vw;
   height: 75vh;
@@ -294,7 +294,7 @@ a {
   text-align: right;
 }
 
-.container .content .floatLeft {
+.content .floatLeft {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -310,12 +310,12 @@ a {
           align-items: flex-end;
 }
 
-.container .content .floatLeft div {
+.content .floatLeft div {
   width: 100%;
   display: inline-block;
 }
 
-.container .content .floatLeft div ul {
+.content .floatLeft div ul {
   color: black;
   text-decoration: none;
   list-style: none;
@@ -324,16 +324,16 @@ a {
   margin-top: 30px;
 }
 
-.container .content .floatLeft div ul li {
+.content .floatLeft div ul li {
   float: right;
   padding: 0 10px;
 }
 
-.container .content .floatLeft div ul a {
+.content .floatLeft div ul a {
   color: black;
 }
 
-.container .content .floatRight {
+.content .floatRight {
   margin: auto auto;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -341,13 +341,13 @@ a {
   vertical-align: middle;
 }
 
-.container .content .floatRight form {
+.content .floatRight form {
   width: 60%;
   display: block;
   margin: auto 8%;
 }
 
-.container .content .floatRight form .flex {
+.content .floatRight form .flex {
   width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -355,7 +355,7 @@ a {
           flex-direction: row;
 }
 
-.container .content .floatRight form textarea {
+.content .floatRight form textarea {
   display: inline-block;
   width: 100%;
   letter-spacing: normal;
@@ -373,13 +373,13 @@ a {
   overflow-wrap: break-word;
 }
 
-.container .content .floatRight input[type="text"] {
+.content .floatRight input[type="text"] {
   float: left;
 }
 
-.container .content .floatRight input[type=email],
-.container .content .floatRight input[type=text],
-.container .content .floatRight textarea {
+.content .floatRight input[type=email],
+.content .floatRight input[type=text],
+.content .floatRight textarea {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -398,19 +398,19 @@ a {
   cursor: text;
 }
 
-.container .content .floatRight input[type=email]:focus,
-.container .content .floatRight input[type=text]:focus,
-.container .content .floatRight textarea:focus {
+.content .floatRight input[type=email]:focus,
+.content .floatRight input[type=text]:focus,
+.content .floatRight textarea:focus {
   border-left: 2px solid black;
   color: #111;
 }
 
-.container .content .floatRight button {
+.content .floatRight button {
   margin: 10px 0;
   width: 100%;
 }
 
-.container .content .heading {
+.content .heading {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -425,7 +425,7 @@ a {
   word-wrap: break-word;
 }
 
-.container .content .para {
+.content .para {
   float: right;
   color: black;
   z-index: 10;

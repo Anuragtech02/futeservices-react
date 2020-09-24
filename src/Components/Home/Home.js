@@ -65,7 +65,7 @@ export const Home = () => {
                     </div>
                 </section>
                 <section id="test" style={{width: "100vw", height: "50vh", backgroundColor: "rgba(0, 0, 0, 0.93"}} >
-                        <Testimonial />
+                        <Testimonial theme="dark" />
                 </section>
                 <section style={{backgroundColor: "rgba(0, 0, 0, 0.93"}}>
                     <CustomStepper steps={timeline} content={timelineData} theme="dark" />

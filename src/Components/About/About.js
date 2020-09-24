@@ -1,7 +1,13 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import { CustomStepper, Testimonial } from '..'
-import { AboutWork, ExperienceData, teamData, timeline, timelineData } from '../../Static'
+import { CustomStepper, Testimonial, ContactForm } from '..'
+import { 
+    AboutWork, 
+    ExperienceData, 
+    mainTeamData, 
+    timeline, 
+    timelineData 
+} from '../../Static'
 import style from './About.module.css'
 
 export const About = () => {
@@ -25,39 +31,67 @@ export const About = () => {
                     })}
                 </section>
             </section>
-            <section className={style.section}>
-                <CustomStepper steps={timeline} content={timelineData} theme="light" />
-            </section>
-            <section className={style.section}>
-            </section>
-            <section className={style.section} >
-                <Testimonial />
+            <section className={style.midSection}>
+                
+                <div className={style.stepper}>
+                    <CustomStepper steps={timeline} content={timelineData} theme="light" />
+                </div>
+
+                <div className={style.experience}>
+                    <div className={style.alignLeft}>
+                        <motion.h6 className={style.subheading}>
+                            {ExperienceData.subheading}
+                        </motion.h6>
+                        <motion.h6 className={style.heading}>
+                            {ExperienceData.heading}
+                        </motion.h6>
+                        <motion.p className={style.para}>
+                            {ExperienceData.para}
+                        </motion.p>
+                        <motion.button style={{opacity:1, marginTop: 30}} className={style.btnDark}>
+                            {ExperienceData.btnText}
+                        </motion.button>
+                    </div>
+                    <div className={style.alignRight}>
+                        <img width="100%" src={ExperienceData.img} alt="" />
+                    </div>
+                </div>
+
+                <div className={style.testimonial}>
+                    <Testimonial theme='light' />
+                </div>
             </section>
             <section className={style.section} >
                 <div className={style.team}>
                     <div className={style.alignTop}>
-                            <motion.h6 className={style.heading}>
-                                {teamData.heading}
+                            <motion.h6 className={style.subheading}>
+                                {mainTeamData.heading}
                             </motion.h6>
-                            <motion.p className={style.para}>
-                                {teamData.para}
+                            <motion.p className={style.heading}>
+                                {mainTeamData.para}
                             </motion.p>
                         </div>
                         <div className={style.alignBottom}>
-                        {teamData.imgData.map((imgData, index) => {
+                        {mainTeamData.imgData.map((imgData, index) => {
                             return(
                                 <motion.div key={index} id={`imgContainer${index}`} className={style.imgContainer}>
-                                    <motion.img 
-                                        className={style.img}
-                                        src={imgData.img}
-                                        alt=""
-                                    />
+                                    <div className={style.imgOverlay}>
+                                        <motion.img 
+                                            className={style.img}
+                                            src={imgData.img}
+                                            alt=""
+                                        />
+                                    </div>
                                     <motion.h6 className={style.name}>{imgData.name}</motion.h6>
+                                    <motion.p className={style.position}>{imgData.position}</motion.p>
                                 </motion.div>
                             )
                         })}
                         </div>
                     </div>
+            </section>
+            <section className={style.section} >
+                <ContactForm />
             </section>
         </div>
     )

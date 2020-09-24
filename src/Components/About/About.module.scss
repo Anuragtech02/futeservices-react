@@ -6,6 +6,17 @@
     display: block;
     width: 100%;
 
+    .midSection {
+        padding-top: 30px;
+        justify-content: space-evenly;
+
+        .experience,
+        .testimonial {
+            margin-top: 15%;
+        }
+
+    }
+
     .banner {
         width: 100vw;
         height: 50vh;
@@ -36,6 +47,39 @@
         }
     }
 
+    .experience {
+
+        display: flex;
+        flex-direction: row;
+        text-align: right;
+
+        .alignLeft {
+            width: 100%;
+            margin: auto 0;
+            padding: 6% 4%;
+            background-color: #ebebeb;
+        }
+
+        .para {
+            text-align: right;
+            padding-left: 30%;
+            font-size: 0.9em;
+            color: #6d6d6d;
+        }
+
+        .alignRight {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            margin: auto 0;
+            box-shadow: 8px 8px 16px rgba($color: #eee, $alpha: 0.25);
+        }
+
+    }
+
+
     .aboutWork {
         width: 100%;
         min-height: 50%;
@@ -43,7 +87,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 0 auto;
+        margin: 20px auto;
         padding: 10px 15%;
         background-color: #fff;
 
@@ -94,6 +138,7 @@
 }
 
 .team {
+    margin-top: 5%;
     align-items: center;
     justify-content: center;
     text-align: center !important;
@@ -111,9 +156,26 @@
 
         .imgContainer {
             text-align: center;
-            color: #fff;
+            color: #000;
             margin: 0 10px;
             overflow: hidden;
+
+            .imgOverlay{
+                position: relative;
+                &::after {
+                    content: '';
+                    box-sizing: border-box;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 30%;
+                    background: -webkit-gradient(linear,left bottom,left top,from(rgba(255,255,255,.8)),to(rgba(255,255,255,0)));
+                    background: -o-linear-gradient(bottom,rgba(255,255,255,.8) 0,rgba(255,255,255,0) 100%);
+                    background: linear-gradient(to top,rgba(255,255,255,.8) 0,rgba(255,255,255,0) 100%);
+                    pointer-events: none;
+                }
+            }
 
             img {
                 width: 100%;
@@ -125,19 +187,33 @@
             h6 {
                 top: -70%;
                 transform: translateY(-70%);
-                color: white;
+                color: black;
                 z-index: 10;
                 font-family: "Bebas Neue", sans-serif;
                 font-weight: 400;
                 text-transform: uppercase;
-                font-size: 30px;
-                line-height: 62px;
+                font-size: 2.4em;
                 vertical-align: middle;
                 letter-spacing: .05em;
+                line-height: 1em;
                 word-wrap: break-word;
                 text-shadow: rgba(0, 0, 0, 0.25) 3px 4px 4px;
                 transition: all 0.2s ease-in-out;
             }
+
+            p{
+                color: #222;
+                top: -90%;
+                transform: translateY(-90%);
+                word-wrap: break-word;
+                transition: all 0.2s ease-in-out;
+                font-size: 0.8em;
+                z-index: 10;
+                -webkit-transform: translateY(-90%);
+                -moz-transform: translateY(-90%);
+                -ms-transform: translateY(-90%);
+                -o-transform: translateY(-90%);
+}
         }
     }
 }
@@ -159,5 +235,45 @@
         .aboutWork {
             flex-direction: column;
         }
+    }
+}
+
+.subheading {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ABABAB;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: .4em;
+    margin: 25px 0;
+    z-index: 10;
+    vertical-align: middle;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.heading {
+    color: black;
+    z-index: 10;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 65px;
+    line-height: 62px;
+    vertical-align: middle;
+    letter-spacing: .05em;
+    word-wrap: break-word;
+}
+
+
+.imgContainer:hover {
+    img {
+        transform: scale(1.02);
+    }
+
+    .name,p {
+        padding-left: 10%;
+        transform: translateX(50%);
     }
 }
