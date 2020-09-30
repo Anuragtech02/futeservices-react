@@ -21,11 +21,13 @@ const CustomConnectorStyles = makeStyles({
       right: 'calc(50% + 16px)',
     },
     active: {
+      color: (props) => (props.theme==="dark" ? '#fff' : '#000'),
       '& $line': {
         borderColor: (props) => (props.theme==="dark" ? '#fff' : '#000'),
       },
     },
     completed: {
+      color: (props) => (props.theme==="dark" ? '#fff' : '#000'),
       '& $line': {
         borderColor: (props) => (props.theme==="dark" ? '#fff' : '#000'),
       },
@@ -107,8 +109,8 @@ const CustomConnectorStyles = makeStyles({
   });
 
   function QontoStepIcon(props) {
-    const { active, completed, theme } = props;
-    const classes = useQontoStepIconStyles(theme);
+    const { active, completed } = props;
+    const classes = useQontoStepIconStyles();
 
   
     return (
@@ -137,6 +139,8 @@ const CustomConnectorStyles = makeStyles({
      * Mark the step as completed. Is passed to child components.
      */
     completed: PropTypes.bool,
+
+    theme: PropTypes.string,
   };
 
 

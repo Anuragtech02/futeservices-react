@@ -451,8 +451,11 @@ a {
   line-height: 1em;
   word-wrap: break-word;
   text-shadow: rgba(0, 0, 0, 0.25) 3px 4px 4px;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 
 .team .alignBottom .imgContainer p {
@@ -487,6 +490,18 @@ a {
   }
 }
 
+.imgContainer:hover img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.imgContainer:hover .name,
+.imgContainer:hover p {
+  padding-left: 10%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
 .subheading {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -513,16 +528,5 @@ a {
   vertical-align: middle;
   letter-spacing: .05em;
   word-wrap: break-word;
-}
-
-.imgContainer:hover img {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
-
-.imgContainer:hover .name, .imgContainer:hover p {
-  padding-left: 10%;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
 }
 /*# sourceMappingURL=About.module.css.map */

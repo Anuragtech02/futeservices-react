@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Home, Navbar, About, Footer, FAQ } from './Components'
+import { Home, Navbar, About, Footer, FAQ, Team, Portfolio } from './Components'
 import { 
   BrowserRouter as Router, 
   Switch, 
@@ -59,6 +59,8 @@ const App = () =>{
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
         <Route path="/faq" component={FAQ}/>
+        <Route path="/team" component={Team}/>
+        <Route path="/portfolio" component={Portfolio}/>
       </Switch>
       <div className={style.footer} >
         <Footer />

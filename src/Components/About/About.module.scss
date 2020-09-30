@@ -160,8 +160,9 @@
             margin: 0 10px;
             overflow: hidden;
 
-            .imgOverlay{
+            .imgOverlay {
                 position: relative;
+
                 &::after {
                     content: '';
                     box-sizing: border-box;
@@ -170,9 +171,9 @@
                     right: 0;
                     width: 100%;
                     height: 30%;
-                    background: -webkit-gradient(linear,left bottom,left top,from(rgba(255,255,255,.8)),to(rgba(255,255,255,0)));
-                    background: -o-linear-gradient(bottom,rgba(255,255,255,.8) 0,rgba(255,255,255,0) 100%);
-                    background: linear-gradient(to top,rgba(255,255,255,.8) 0,rgba(255,255,255,0) 100%);
+                    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, .8)), to(rgba(255, 255, 255, 0)));
+                    background: -o-linear-gradient(bottom, rgba(255, 255, 255, .8) 0, rgba(255, 255, 255, 0) 100%);
+                    background: linear-gradient(to top, rgba(255, 255, 255, .8) 0, rgba(255, 255, 255, 0) 100%);
                     pointer-events: none;
                 }
             }
@@ -199,9 +200,13 @@
                 word-wrap: break-word;
                 text-shadow: rgba(0, 0, 0, 0.25) 3px 4px 4px;
                 transition: all 0.2s ease-in-out;
-            }
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+}
 
-            p{
+            p {
                 color: #222;
                 top: -90%;
                 transform: translateY(-90%);
@@ -213,7 +218,7 @@
                 -moz-transform: translateY(-90%);
                 -ms-transform: translateY(-90%);
                 -o-transform: translateY(-90%);
-}
+            }
         }
     }
 }
@@ -238,6 +243,19 @@
     }
 }
 
+
+.imgContainer:hover {
+    img {
+        transform: scale(1.02);
+    }
+
+    .name,
+    p {
+        padding-left: 10%;
+        transform: translateX(50%);
+    }
+}
+
 .subheading {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -251,9 +269,9 @@
     vertical-align: middle;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
-}
-
-.heading {
+  }
+  
+  .heading {
     color: black;
     z-index: 10;
     font-family: "Bebas Neue", sans-serif;
@@ -264,16 +282,4 @@
     vertical-align: middle;
     letter-spacing: .05em;
     word-wrap: break-word;
-}
-
-
-.imgContainer:hover {
-    img {
-        transform: scale(1.02);
-    }
-
-    .name,p {
-        padding-left: 10%;
-        transform: translateX(50%);
-    }
-}
+  }
