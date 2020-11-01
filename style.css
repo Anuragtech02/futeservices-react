@@ -1,3 +1,15 @@
 .slick-next, .slick-prev{
     display: none !important;
 }
+
+.slick-center{
+    transform: scale(1.5);
+}
+
+.slick-list{
+    box-sizing: border-box;
+}
+
+.Mui-expanded .heading{
+    color: #fff !important;
+}
