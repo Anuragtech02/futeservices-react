@@ -4,3 +4,4 @@ export {introData, teamData, testimonialData, timeline, timelineData} from './Ho
 export {AboutWork, ExperienceData, mainTeamData} from './AboutData'
 export {FaqData} from './FaqData'
 export {PortfolioData} from './PortfolioData'
+export {Logos} from './Logos'

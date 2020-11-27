@@ -1,0 +1,30 @@
+.sliderBase {
+  width: 100px !important;
+  height: 100px !important;
+  text-align: center;
+  margin: 30px;
+}
+
+.sliderBase img {
+  height: 100px !important;
+  width: 100px !important;
+  background-size: cover;
+  display: block;
+}
+
+.sliderBase div {
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.slider {
+  margin: auto;
+  background-color: #292828;
+}
+
+.slider h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=MultipleSlider.module.css.map */
