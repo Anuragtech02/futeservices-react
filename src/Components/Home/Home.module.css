@@ -380,13 +380,14 @@ a {
   margin: 0px;
   padding: 0px;
   color: #fff;
+  width: 100%;
   -webkit-perspective: 1px;
           perspective: 1px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   height: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   cursor: none;
 }
 

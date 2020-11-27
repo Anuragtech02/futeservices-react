@@ -8,7 +8,7 @@ import { introData, teamData, timelineData, timeline } from '../../Static'
 import { Carousel, HrSlider, Testimonial } from '../index'
 import Slider from 'react-slick'
 import CustomStepper from '../CustomStepper/CustomStepper'
-
+import MultipleSlider from '../MultipleSlider/MultipleSlider'
 
 export const Home = () => {
 
@@ -106,6 +106,7 @@ return(
        <header className={style.header5}>
            <img src="https://lh3.googleusercontent.com/proxy/hTDZa9pjFCqaMNZZY8DX3gGU88ZgV6Zhk8kZYzSltaBNvp1LleMQ3OT1Wt0zP7mGBKGmh_c0aGEBOx7OWbyCZvs0SoYyHzFNo2T37VBBa8TJiXu3xd65acD637idln9Z-VwEow"/>
        </header>
+       <MultipleSlider/>
        </div>
 )
 }
