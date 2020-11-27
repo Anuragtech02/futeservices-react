@@ -1,31 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49e985972265cc9ac0700cea7ecca64c",
+    "revision": "0851b566c37c372ea5ecac68889086e1",
     "url": "/index.html"
   },
   {
-    "revision": "a0ba323ea578dbac85c0",
+    "revision": "f0f0fff199737469b394",
     "url": "/static/css/2.bf0413c3.chunk.css"
   },
   {
-    "revision": "f51320c928e71803b445",
-    "url": "/static/css/main.224ffcc4.chunk.css"
+    "revision": "9e8a3aaccab06098ff92",
+    "url": "/static/css/main.5d2e2fa7.chunk.css"
   },
   {
-    "revision": "a0ba323ea578dbac85c0",
-    "url": "/static/js/2.0445d7a3.chunk.js"
+    "revision": "f0f0fff199737469b394",
+    "url": "/static/js/2.8e69c3b7.chunk.js"
   },
   {
     "revision": "bac9fc82fc4008e98d25b3c49c19b4cb",
-    "url": "/static/js/2.0445d7a3.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.8e69c3b7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f51320c928e71803b445",
-    "url": "/static/js/main.89e0bfa9.chunk.js"
+    "revision": "9e8a3aaccab06098ff92",
+    "url": "/static/js/main.9d495c9a.chunk.js"
   },
   {
     "revision": "526f32a406e179ae8fbb",
     "url": "/static/js/runtime-main.2b3827de.js"
+  },
+  {
+    "revision": "7ecd28822250ac267ab9f2c10dd62126",
+    "url": "/static/media/1280px-Quechua_company_logo.7ecd2882.png"
+  },
+  {
+    "revision": "2ac4e6e09d908f83c185f2606135bd6e",
+    "url": "/static/media/58428e7da6515b1e0ad75ab5.2ac4e6e0.png"
+  },
+  {
+    "revision": "ed56d63e2398bee90508ef3c49ea8bed",
+    "url": "/static/media/Always-Logo.ed56d63e.png"
+  },
+  {
+    "revision": "59ad89993f6be59765d338643c3e9600",
+    "url": "/static/media/AsusTek-black-logo.59ad8999.png"
   },
   {
     "revision": "eaf1774c9f692369a265c74761c9bf7a",
@@ -40,8 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Pexels_Videos_2915.2d3908b4.mp4"
   },
   {
+    "revision": "469fc461a252e8bdfe7a8f0dab4ce569",
+    "url": "/static/media/ford-logo-2003.469fc461.png"
+  },
+  {
     "revision": "c0f9f257f8397f1bd1c648e5ec2bbc58",
     "url": "/static/media/josh-rose-trYl7JYATH0-unsplash.c0f9f257.jpg"
+  },
+  {
+    "revision": "2b39ed723b60f68b0f251e1c2062ab44",
+    "url": "/static/media/logo-transparent.2b39ed72.png"
   },
   {
     "revision": "d4e2aea7f09589c077bf9ff2feb81064",
@@ -106,5 +130,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
     "url": "/static/media/slick.f97e3bbf.svg"
+  },
+  {
+    "revision": "4db66e3fab21191ad5e4a14df6f9ef43",
+    "url": "/static/media/unilever.4db66e3f.jpg"
   }
 ]);
