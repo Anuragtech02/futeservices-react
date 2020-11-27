@@ -389,6 +389,42 @@ a {
   overflow-x: hidden;
   overflow-y: hidden;
   cursor: none;
+  /*.header1 :hover {
+       
+        height:100vh;
+        text-align: center;
+        width:100%;
+        transition: .5s ease;
+        background: linear-gradient(25deg, rgb(255, 21, 0),rgb(251, 170, 170),rgb(255, 0, 200)); 
+        opacity: 0.5; 
+    }
+    .header2 :hover {
+       
+        height:100vh;
+        text-align: center;
+        width:100%;
+        transition: .5s ease;
+        background: linear-gradient(25deg, rgb(255, 21, 0),rgb(251, 170, 170),rgb(255, 0, 200)); 
+        opacity: 0.5; 
+    }
+    .header3 :hover {
+       
+        height:100vh;
+        text-align: center;
+        width:100%;
+        transition: .5s ease;
+        background: linear-gradient(25deg, rgb(255, 21, 0),rgb(251, 170, 170),rgb(255, 0, 200)); 
+        opacity: 0.5; 
+    }
+    .header4 :hover {
+       
+        height:100vh;
+        text-align: center;
+        width:100%;
+        transition: .5s ease;
+        background: linear-gradient(25deg, rgb(255, 21, 0),rgb(251, 170, 170),rgb(255, 0, 200)); 
+        opacity: 0.5; 
+    }*/
 }
 
 .container .customCursor {
@@ -478,45 +514,5 @@ a {
   vertical-align: middle;
   width: 50%;
   z-index: 1;
-}
-
-.container .header1 :hover {
-  height: 100vh;
-  text-align: center;
-  width: 100%;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  background: linear-gradient(25deg, #ff1500, #fbaaaa, #ff00c8);
-  opacity: 0.5;
-}
-
-.container .header2 :hover {
-  height: 100vh;
-  text-align: center;
-  width: 100%;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  background: linear-gradient(25deg, #ff1500, #fbaaaa, #ff00c8);
-  opacity: 0.5;
-}
-
-.container .header3 :hover {
-  height: 100vh;
-  text-align: center;
-  width: 100%;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  background: linear-gradient(25deg, #ff1500, #fbaaaa, #ff00c8);
-  opacity: 0.5;
-}
-
-.container .header4 :hover {
-  height: 100vh;
-  text-align: center;
-  width: 100%;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  background: linear-gradient(25deg, #ff1500, #fbaaaa, #ff00c8);
-  opacity: 0.5;
 }
 /*# sourceMappingURL=Home.module.css.map */
