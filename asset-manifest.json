@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d2e2fa7.chunk.css",
-    "main.js": "/static/js/main.9d495c9a.chunk.js",
-    "main.js.map": "/static/js/main.9d495c9a.chunk.js.map",
+    "main.css": "/static/css/main.18e1cd89.chunk.css",
+    "main.js": "/static/js/main.81b3a75d.chunk.js",
+    "main.js.map": "/static/js/main.81b3a75d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2b3827de.js",
     "runtime-main.js.map": "/static/js/runtime-main.2b3827de.js.map",
     "static/css/2.bf0413c3.chunk.css": "/static/css/2.bf0413c3.chunk.css",
-    "static/js/2.8e69c3b7.chunk.js": "/static/js/2.8e69c3b7.chunk.js",
-    "static/js/2.8e69c3b7.chunk.js.map": "/static/js/2.8e69c3b7.chunk.js.map",
+    "static/js/2.60381017.chunk.js": "/static/js/2.60381017.chunk.js",
+    "static/js/2.60381017.chunk.js.map": "/static/js/2.60381017.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a810453fc973da94aa654b38b4bc0bd6.js": "/precache-manifest.a810453fc973da94aa654b38b4bc0bd6.js",
+    "precache-manifest.1e4413e285fe2b0c3cca53cd4ecf8d53.js": "/precache-manifest.1e4413e285fe2b0c3cca53cd4ecf8d53.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.bf0413c3.chunk.css.map": "/static/css/2.bf0413c3.chunk.css.map",
-    "static/css/main.5d2e2fa7.chunk.css.map": "/static/css/main.5d2e2fa7.chunk.css.map",
-    "static/js/2.8e69c3b7.chunk.js.LICENSE.txt": "/static/js/2.8e69c3b7.chunk.js.LICENSE.txt",
+    "static/css/main.18e1cd89.chunk.css.map": "/static/css/main.18e1cd89.chunk.css.map",
+    "static/js/2.60381017.chunk.js.LICENSE.txt": "/static/js/2.60381017.chunk.js.LICENSE.txt",
+    "static/media/1.png": "/static/media/1.554d9c33.png",
     "static/media/1280px-Quechua_company_logo.png": "/static/media/1280px-Quechua_company_logo.7ecd2882.png",
     "static/media/58428e7da6515b1e0ad75ab5.png": "/static/media/58428e7da6515b1e0ad75ab5.2ac4e6e0.png",
     "static/media/Always-Logo.png": "/static/media/Always-Logo.ed56d63e.png",
-    "static/media/AsusTek-black-logo.png": "/static/media/AsusTek-black-logo.59ad8999.png",
     "static/media/Pexels_Videos_2629.mp4": "/static/media/Pexels_Videos_2629.eaf1774c.mp4",
     "static/media/Pexels_Videos_2795.mp4": "/static/media/Pexels_Videos_2795.eabec8da.mp4",
     "static/media/Pexels_Videos_2915.mp4": "/static/media/Pexels_Videos_2915.2d3908b4.mp4",
@@ -42,8 +42,8 @@
   "entrypoints": [
     "static/js/runtime-main.2b3827de.js",
     "static/css/2.bf0413c3.chunk.css",
-    "static/js/2.8e69c3b7.chunk.js",
-    "static/css/main.5d2e2fa7.chunk.css",
-    "static/js/main.9d495c9a.chunk.js"
+    "static/js/2.60381017.chunk.js",
+    "static/css/main.18e1cd89.chunk.css",
+    "static/js/main.81b3a75d.chunk.js"
   ]
 }

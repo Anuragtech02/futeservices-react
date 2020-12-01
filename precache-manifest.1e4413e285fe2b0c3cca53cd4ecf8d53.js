@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0851b566c37c372ea5ecac68889086e1",
+    "revision": "35127389eba443029675f7513026cb2c",
     "url": "/index.html"
   },
   {
-    "revision": "f0f0fff199737469b394",
+    "revision": "e3063ea84fa8722e06bc",
     "url": "/static/css/2.bf0413c3.chunk.css"
   },
   {
-    "revision": "9e8a3aaccab06098ff92",
-    "url": "/static/css/main.5d2e2fa7.chunk.css"
+    "revision": "11c335cd041db433777e",
+    "url": "/static/css/main.18e1cd89.chunk.css"
   },
   {
-    "revision": "f0f0fff199737469b394",
-    "url": "/static/js/2.8e69c3b7.chunk.js"
+    "revision": "e3063ea84fa8722e06bc",
+    "url": "/static/js/2.60381017.chunk.js"
   },
   {
     "revision": "bac9fc82fc4008e98d25b3c49c19b4cb",
-    "url": "/static/js/2.8e69c3b7.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.60381017.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9e8a3aaccab06098ff92",
-    "url": "/static/js/main.9d495c9a.chunk.js"
+    "revision": "11c335cd041db433777e",
+    "url": "/static/js/main.81b3a75d.chunk.js"
   },
   {
     "revision": "526f32a406e179ae8fbb",
     "url": "/static/js/runtime-main.2b3827de.js"
+  },
+  {
+    "revision": "554d9c33f2b92c56cf5b98cd7bf41176",
+    "url": "/static/media/1.554d9c33.png"
   },
   {
     "revision": "7ecd28822250ac267ab9f2c10dd62126",
@@ -38,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ed56d63e2398bee90508ef3c49ea8bed",
     "url": "/static/media/Always-Logo.ed56d63e.png"
-  },
-  {
-    "revision": "59ad89993f6be59765d338643c3e9600",
-    "url": "/static/media/AsusTek-black-logo.59ad8999.png"
   },
   {
     "revision": "eaf1774c9f692369a265c74761c9bf7a",
