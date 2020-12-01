@@ -48,9 +48,34 @@ const App = () =>{
       window.removeEventListener("scroll", setBackground)
     }
   }, [])
+   
+  const cursor=(e)=>{
+    var mouseCursor = document.querySelector("#cursor");
+      
+    if(mouseCursor)
+    {
+       mouseCursor.style.top = e.pageY+"px";
+       mouseCursor.style.left = e.pageX+"px";
+    }
+ 
+}
+
+React.useEffect(()=>{
+   function watchCursor()
+   {
+    window.addEventListener('mousemove',cursor);
+   }
+   watchCursor();
+
   
+ return () => {
+    window.addEventListener('mousemove',cursor);
+    }
+  }, [])
+
   return(
     <Router basename={process.env.PUBLIC_URL}>
+       <div id="cursor" className={style.customCursor} ></div>
       <div className={classNames(style.navbar, style.dark )} id="navbar">
         <Navbar />
       </div>

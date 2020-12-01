@@ -7,6 +7,7 @@ body {
   font-family: 'open sans', sans-serif;
   scroll-behavior: smooth;
   line-height: 1.857em;
+  cursor: none;
 }
 
 body {
@@ -49,6 +50,29 @@ body {
 
 .light a {
   color: black;
+}
+
+.customCursor {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid red;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition-property: background,-webkit-transform;
+  transition-property: background,-webkit-transform;
+  transition-property: background,transform;
+  transition-property: background,transform,-webkit-transform;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  z-index: 50000;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 @media (max-width: 998px) {

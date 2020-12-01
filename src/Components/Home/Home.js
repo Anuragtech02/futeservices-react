@@ -9,23 +9,30 @@ import { Carousel, HrSlider, Testimonial } from '../index'
 import Slider from 'react-slick'
 import CustomStepper from '../CustomStepper/CustomStepper'
 import MultipleSlider from '../MultipleSlider/MultipleSlider'
+import img1 from '../../Assets/1.png';
 
 export const Home = () => {
 
-    const cursor=(e)=>{
+    
+  
+    React.useEffect(()=>{
         var mouseCursor = document.querySelector("#cursor");
-          
-        if(mouseCursor)
-        {
-           mouseCursor.style.top = e.pageY+"px";
-           mouseCursor.style.left = e.pageX+"px";
-        }
-      
-       
-   }
-   window.addEventListener('mousemove',cursor);
+        var images = document.querySelectorAll('#img') ;
 
-
+         images.forEach(img=>{
+             img.addEventListener('mouseover',()=>{
+                 mouseCursor.style.height="3rem";
+                 mouseCursor.style.width="3rem";
+                 mouseCursor.style.backgroundColor="transparent";
+                 mouseCursor.style.backdropFilter="blur";
+             })
+             img.addEventListener('mouseleave',()=>{
+                mouseCursor.style.height="1rem";
+                mouseCursor.style.width="1rem";
+                mouseCursor.style.backgroundColor="red";
+            })
+         })
+    },[])
 
 return(
   /* <div id="container" className={style.container}>
@@ -89,22 +96,28 @@ return(
        </section>
    </div>*/
    <div id="container" className={style.container}>
-       <div id="cursor" className={style.customCursor} ></div>
       
-       <header className={style.header1}>
+      
+       <header className={style.header1} id="img">
            <h1>Lorem Ipsum is simply dummy text of the.</h1>
        </header>
-       <header className={style.header2}>
+       <header className={style.header2} id="img">
            <h1>Lorem Ipsum is simply dummy text of the.</h1>
        </header>
-       <header className={style.header3}>
+       <header className={style.header3} id="img">
            <h1>Lorem Ipsum is simply dummy text of the.</h1>
        </header>
-       <header className={style.header4}>
+       <header className={style.header4} id="img">
            <h1>Lorem Ipsum is simply dummy text of the.</h1>
        </header>
-       <header className={style.header5}>
-           <img src="https://lh3.googleusercontent.com/proxy/hTDZa9pjFCqaMNZZY8DX3gGU88ZgV6Zhk8kZYzSltaBNvp1LleMQ3OT1Wt0zP7mGBKGmh_c0aGEBOx7OWbyCZvs0SoYyHzFNo2T37VBBa8TJiXu3xd65acD637idln9Z-VwEow"/>
+       <header className={style.header5} >
+           <div className={style.subheader}>
+               <div>
+               <h1>Lorem Ipsum</h1>
+               <p>Lorem Ipsum is simply dummy text of the</p>
+            </div>
+        <img id="img" src={img1} />
+           </div>
        </header>
        <MultipleSlider/>
        </div>
