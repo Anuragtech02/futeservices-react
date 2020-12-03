@@ -1,0 +1,17 @@
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 100%;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 99999;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  background-color: red;
+}
+/*# sourceMappingURL=Cursor.module.css.map */

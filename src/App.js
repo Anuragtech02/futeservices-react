@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Home, Navbar, About, Footer, FAQ, Team, Portfolio } from './Components'
+import { Home, Navbar, About, Footer, FAQ, Team, Portfolio ,Cursor} from './Components'
 import { 
   BrowserRouter as Router, 
   Switch, 
@@ -9,7 +9,6 @@ import {
 import style from './App.module.css'
 import classNames from 'classnames'
 import Contact from './Components/Contact/Contact'
-import { StylesProvider } from '@material-ui/core'
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -39,7 +38,7 @@ const App = () =>{
   }
 
   useEffect(() => {
-
+  
     function watchScroll(){
       window.addEventListener("scroll", setBackground)
     }
@@ -50,35 +49,13 @@ const App = () =>{
     }
   }, [])
    
-  const cursor=(e)=>{
-    var mouseCursor = document.querySelector("#cursor");
-     
-    if(mouseCursor)
-    {
-       mouseCursor.style.top = e.pageY+"px";
-       mouseCursor.style.left = e.pageX+"px";
-    }
- 
-}
-
-React.useEffect(()=>{
-   function watchCursor()
-   {
-    window.addEventListener('mousemove',cursor);
-   }
-   watchCursor();
-
   
- return () => {
-    window.addEventListener('mousemove',cursor);
-    }
-  }, [])
+
+
 
   return(
     <Router basename={process.env.PUBLIC_URL}>
-     
-      <div id="cursor" className={style.customCursor} ></div>
-       
+     <Cursor/>
       <div className={classNames(style.navbar, style.dark )} id="navbar">
         <Navbar />
       </div>

@@ -5,7 +5,7 @@
 }
 
 a {
-  cursor: pointer;
+  cursor: none;
 }
 
 .btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
@@ -531,5 +531,26 @@ a {
   z-index: 1;
   margin-left: 30px;
   position: relative;
+}
+
+.parallax {
+  text-align: center;
+}
+
+.insideStyles {
+  color: "#fff";
+  padding: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Bebas Neue",sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: .2em;
+  z-index: 10;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=Home.module.css.map */

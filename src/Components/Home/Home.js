@@ -15,7 +15,7 @@ import bg1 from "../../Assets/pexels-artem-beliaikin-1319795.jpg";
 import bg2 from "../../Assets/pexels-bich-tran-669996.jpg";
 import bg3 from "../../Assets/pexels-caleb-oquendo-2918590.jpg";
 import bg4 from "../../Assets/pexels-debasish-sahoo-140221.jpg";
-import { StylesProvider } from '@material-ui/core'
+
 
 export const Home = () => {
 
@@ -40,17 +40,7 @@ export const Home = () => {
          
     },[])
 
-    const insideStyles ={
-
-        fontSize: "30px",
-        color: "#fff",
-        padding: 20,
-        position:"absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%,-50%)",
-        fontFamily: "Bebas Neue", 
-      }
+    
 return(
   /* <div id="container" className={style.container}>
        <div id="cursor" className={style.customCursor} ></div>
@@ -119,22 +109,22 @@ return(
 <div className={style.Parallax}>
 <Parallax bgImage={bg1} strength={500}>
       <div style={{ height: 700 , width:"100%" }}>
-        <div style={insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing .</div>
+        <div className={style.insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing .</div>
       </div>
     </Parallax>
     <Parallax bgImage={bg2} strength={500}>
       <div style={{ height: 700 , width:"100%"}}>
-        <div style={insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+        <div className={style.insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
       </div>
     </Parallax>
     <Parallax bgImage={bg3} strength={500}>
       <div style={{ height: 700 , width:"100%"}}>
-        <div style={insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+        <div className={style.insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
       </div>
     </Parallax>
     <Parallax bgImage={bg4} strength={500}>
       <div style={{ height: 700 , width:"100%"}}>
-        <div style={insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+        <div className={style.insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
       </div>
     </Parallax>
    

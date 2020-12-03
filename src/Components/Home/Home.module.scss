@@ -301,3 +301,21 @@
 .parallax{
     text-align: center;
 }
+
+.insideStyles{
+    
+    color: "#fff";
+    padding: 20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Bebas Neue",sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: .2em;
+    z-index: 10;
+    vertical-align: middle;
+    
+}
