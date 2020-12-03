@@ -9,6 +9,7 @@ import {
 import style from './App.module.css'
 import classNames from 'classnames'
 import Contact from './Components/Contact/Contact'
+import { StylesProvider } from '@material-ui/core'
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -51,7 +52,7 @@ const App = () =>{
    
   const cursor=(e)=>{
     var mouseCursor = document.querySelector("#cursor");
-      
+     
     if(mouseCursor)
     {
        mouseCursor.style.top = e.pageY+"px";
@@ -75,7 +76,9 @@ React.useEffect(()=>{
 
   return(
     <Router basename={process.env.PUBLIC_URL}>
-       <div id="cursor" className={style.customCursor} ></div>
+     
+      <div id="cursor" className={style.customCursor} ></div>
+       
       <div className={classNames(style.navbar, style.dark )} id="navbar">
         <Navbar />
       </div>
