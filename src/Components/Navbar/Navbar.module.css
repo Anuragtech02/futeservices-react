@@ -4,6 +4,10 @@
   outline: none;
 }
 
+a {
+  cursor: none;
+}
+
 .btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
   width: auto;
   opacity: 0;
@@ -271,11 +275,13 @@
   font-size: 18px;
   letter-spacing: .2em;
   line-height: 1.857em;
-  z-index: 10000;
+  z-index: 500;
+  position: relative;
 }
 
 .dropdown {
   display: block;
+  z-index: -10;
 }
 
 .dropdown .dropdownContent {

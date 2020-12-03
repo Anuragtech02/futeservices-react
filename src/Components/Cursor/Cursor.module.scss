@@ -1,0 +1,13 @@
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid red;
+    border-radius: 100%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 99999;
+    transition: all 150ms ease;
+  transition-property: opacity;
+  background-color:red;
+  }
