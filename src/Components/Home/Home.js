@@ -10,6 +10,12 @@ import Slider from 'react-slick'
 import CustomStepper from '../CustomStepper/CustomStepper'
 import MultipleSlider from '../MultipleSlider/MultipleSlider'
 import img1 from '../../Assets/1.png';
+import { Parallax , Background } from 'react-parallax';
+import bg1 from "../../Assets/pexels-artem-beliaikin-1319795.jpg";
+import bg2 from "../../Assets/pexels-bich-tran-669996.jpg";
+import bg3 from "../../Assets/pexels-caleb-oquendo-2918590.jpg";
+import bg4 from "../../Assets/pexels-debasish-sahoo-140221.jpg";
+import { StylesProvider } from '@material-ui/core'
 
 export const Home = () => {
 
@@ -17,9 +23,9 @@ export const Home = () => {
   
     React.useEffect(()=>{
         var mouseCursor = document.querySelector("#cursor");
-        var images = document.querySelectorAll('#img') ;
+        var img = document.querySelector('#img') ;
 
-         images.forEach(img=>{
+         
              img.addEventListener('mouseover',()=>{
                  mouseCursor.style.height="3rem";
                  mouseCursor.style.width="3rem";
@@ -31,9 +37,20 @@ export const Home = () => {
                 mouseCursor.style.width="1rem";
                 mouseCursor.style.backgroundColor="red";
             })
-         })
+         
     },[])
 
+    const insideStyles ={
+
+        fontSize: "30px",
+        color: "#fff",
+        padding: 20,
+        position:"absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%,-50%)",
+        fontFamily: "Bebas Neue", 
+      }
 return(
   /* <div id="container" className={style.container}>
        <div id="cursor" className={style.customCursor} ></div>
@@ -98,19 +115,33 @@ return(
    <div id="container" className={style.container}>
       
       
-       <header className={style.header1} id="img">
-           <h1>Lorem Ipsum is simply dummy text of the.</h1>
-       </header>
-       <header className={style.header2} id="img">
-           <h1>Lorem Ipsum is simply dummy text of the.</h1>
-       </header>
-       <header className={style.header3} id="img">
-           <h1>Lorem Ipsum is simply dummy text of the.</h1>
-       </header>
-       <header className={style.header4} id="img">
-           <h1>Lorem Ipsum is simply dummy text of the.</h1>
-       </header>
-       <header className={style.header5} >
+
+<div className={style.Parallax}>
+<Parallax bgImage={bg1} strength={500}>
+      <div style={{ height: 700 , width:"100%" }}>
+        <div style={insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing .</div>
+      </div>
+    </Parallax>
+    <Parallax bgImage={bg2} strength={500}>
+      <div style={{ height: 700 , width:"100%"}}>
+        <div style={insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+      </div>
+    </Parallax>
+    <Parallax bgImage={bg3} strength={500}>
+      <div style={{ height: 700 , width:"100%"}}>
+        <div style={insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+      </div>
+    </Parallax>
+    <Parallax bgImage={bg4} strength={500}>
+      <div style={{ height: 700 , width:"100%"}}>
+        <div style={insideStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+      </div>
+    </Parallax>
+   
+</div>
+
+   
+<header className={style.header5} >
            <div className={style.subheader}>
                <div>
                <h1>Lorem Ipsum</h1>
