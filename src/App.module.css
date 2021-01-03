@@ -7,6 +7,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
   line-height: 1.857em;
+  cursor: none;
 }
 
 body {
@@ -49,11 +50,18 @@ body {
 
 .light a {
   color: black;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 99999;
 }
 
 @media (max-width: 998px) {
   .navbar {
     position: relative;
   }
+}
+
+a:hover {
+  color: black;
 }
 /*# sourceMappingURL=App.module.css.map */

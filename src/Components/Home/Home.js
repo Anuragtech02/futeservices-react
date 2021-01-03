@@ -11,7 +11,7 @@ import CustomStepper from "../CustomStepper/CustomStepper";
 import MultipleSlider from "../MultipleSlider/MultipleSlider";
 import img1 from "../../Assets/1.png";
 import portrait1 from "../../Assets/portrait1.jpg";
-import portrait2 from "../../Assets/portrait2.jpg";
+import portrait2 from "../../Assets/portrait2.png";
 import displacement from "../../Assets/displacement.png";
 import { Parallax, Background } from "react-parallax";
 import bg1 from "../../Assets/pexels-artem-beliaikin-1319795.jpg";
@@ -28,7 +28,7 @@ export const Home = () => {
     const mouseCursor = document.getElementById("cursor");
     const img = distortion.current;
     img.addEventListener("mouseover", () => {
-      mouseCursor.style.transition = "all 0.5s ease-out";
+      mouseCursor.style.transition = "all 0.3s ease-out";
       mouseCursor.style.height = "4rem";
       mouseCursor.style.width = "4rem";
       mouseCursor.style.backgroundColor = "transparent";
@@ -40,10 +40,6 @@ export const Home = () => {
       mouseCursor.style.width = "2rem";
       mouseCursor.style.backgroundColor = "transparent";
     });
-    mouseCursor.addEventListener("mousemove", (e) => {
-      mouseCursor.style.top = e.pageY + "px";
-      mouseCursor.style.left = e.pageX + "px";
-    });
   }, []);
 
   const distortion = useRef();
@@ -52,78 +48,43 @@ export const Home = () => {
     const imageDistortion = new hoverEffect({
       parent: distortion.current,
       intensity: 0.3,
-      image1: portrait1,
+      image1: portrait2,
       image2: portrait1,
       angle2: Math.PI / 2,
       displacementImage: displacement,
-      imagesRatio: 9 / 16,
+      // imagesRatio: 9 / 16,
     });
     // imageDistortion();
   }, []);
 
   return (
-    /* <div id="container" className={style.container}>
-       <div id="cursor" className={style.customCursor} ></div>
-       <Carousel className={style.carousel}  />
-       <section className={style.section} style={{backgroundImage: `url(${introImage})`}}>
-           <div className={style.intro}>
-               <div className={style.alignLeft}>
-                   <img width="50%" src={introImage2} alt="" />
-               </div>
-               <div className={style.alignRight}>
-                   <motion.h6 className={style.heading}>
-                       {introData.heading}
-                   </motion.h6>
-                   <motion.p className={style.para}>
-                       {introData.para}
-                   </motion.p>
-                   <motion.button style={{opacity:1, marginTop: 30}} className={style.btnLight}>
-                       {introData.buttonTxt}
-                   </motion.button>
-               </div>
-           </div>
-       </section>
-       
-       <section className={style.section} style={{backgroundColor: "#111"}}>
-           <HrSlider className={style.hrSlider}/>
-       </section>
-       <section className={style.thirdSection} style={{backgroundImage: `url(${bgImage2})`}}>
-           <section className={style.section} style={{backgroundColor: "rgba(0, 0, 0, 0.93"}}>
-               <div className={style.team}>
-                   <div className={style.alignTop}>
-                       <motion.h6 className={style.heading}>
-                           {teamData.heading}
-                       </motion.h6>
-                       <motion.p className={style.para}>
-                           {teamData.para}
-                       </motion.p>
-                   </div>
-                   <div className={style.alignBottom}>
-                   {teamData.imgData.map((imgData, index) => {
-                       return(
-                           <motion.div key={index} id={`imgContainer${index}`} className={style.imgContainer}>
-                               <motion.img 
-                                   className={style.img}
-                                   src={imgData.img}
-                                   alt=""
-                               />
-                               <motion.h6 className={style.name}>{imgData.name}</motion.h6>
-                           </motion.div>
-                       )
-                   })}
-                   </div>
-               </div>
-           </section>
-           <section id="test" style={{width: "100vw", height: "50vh", backgroundColor: "rgba(0, 0, 0, 0.93"}} >
-                   <Testimonial theme="dark" />
-           </section>
-           <section style={{backgroundColor: "rgba(0, 0, 0, 0.93"}}>
-               <CustomStepper steps={timeline} content={timelineData} theme="dark" />
-           </section>
-       </section>
-   </div>*/
     <div id="container" className={style.container}>
-      {/* <div ref={cursor} className={style.customCursor}></div> */}
+      <div id="cursor" className={style.customCursor}></div>
+      <Carousel className={style.carousel} />
+      <section
+        className={style.section}
+        style={{ backgroundImage: `url(${introImage})` }}
+      >
+        <div className={style.intro}>
+          <div className={style.alignLeft}>
+            <img width="50%" src={introImage2} alt="" />
+          </div>
+          <div className={style.alignRight}>
+            <motion.h6 className={style.heading}>{introData.heading}</motion.h6>
+            <motion.p className={style.para}>{introData.para}</motion.p>
+            <motion.button
+              style={{ opacity: 1, marginTop: 30 }}
+              className={style.btnLight}
+            >
+              {introData.buttonTxt}
+            </motion.button>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className={style.section} style={{ backgroundColor: "#111" }}>
+        <HrSlider className={style.hrSlider} />
+      </section> */}
       <div className={style.Parallax}>
         <Parallax bgImage={bg1} strength={500}>
           <div style={{ height: "100vh", width: "100%" }}>
@@ -154,7 +115,55 @@ export const Home = () => {
           </div>
         </Parallax>
       </div>
-
+      <section
+        className={style.thirdSection}
+        style={{ backgroundImage: `url(${bgImage2})` }}
+      >
+        <section
+          className={style.section}
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.93" }}
+        >
+          <div className={style.team}>
+            <div className={style.alignTop}>
+              <motion.h6 className={style.heading}>
+                {teamData.heading}
+              </motion.h6>
+              <motion.p className={style.para}>{teamData.para}</motion.p>
+            </div>
+            <div className={style.alignBottom}>
+              {teamData.imgData.map((imgData, index) => {
+                return (
+                  <motion.div
+                    key={index}
+                    id={`imgContainer${index}`}
+                    className={style.imgContainer}
+                  >
+                    <motion.img
+                      className={style.img}
+                      src={imgData.img}
+                      alt=""
+                    />
+                    <motion.h6 className={style.name}>{imgData.name}</motion.h6>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+        <section
+          id="test"
+          style={{
+            width: "100vw",
+            height: "50vh",
+            backgroundColor: "rgba(0, 0, 0, 0.93",
+          }}
+        >
+          <Testimonial theme="dark" />
+        </section>
+        <section style={{ backgroundColor: "rgba(0, 0, 0, 0.93" }}>
+          <CustomStepper steps={timeline} content={timelineData} theme="dark" />
+        </section>
+      </section>
       <div className={classNames(style.flexRow, style.about)}>
         <div className={style.title}>
           <h1>Michael Brown</h1>

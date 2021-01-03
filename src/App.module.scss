@@ -6,7 +6,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
   line-height: 1.857em;
-  // cursor: none;
+  cursor: none;
 }
 
 body {
@@ -46,6 +46,8 @@ body {
 
   a {
     color: black;
+    transition: all 0.2s ease-in-out;
+    z-index: 99999;
   }
 }
 
@@ -53,4 +55,7 @@ body {
   .navbar {
     position: relative;
   }
+}
+a:hover {
+  color: black;
 }
