@@ -25,19 +25,21 @@ export const Home = () => {
   const cursor = useRef(null);
 
   useEffect(() => {
-    const mouseCursor = cursor.current;
+    const mouseCursor = document.getElementById("cursor");
     const img = distortion.current;
     img.addEventListener("mouseover", () => {
-      //   mouseCursor.style.height = "3rem";
-      //   mouseCursor.style.width = "3rem";
-      //   mouseCursor.style.backgroundColor = "transparent";
-      //   mouseCursor.style.backdropFilter = "blur";
+      mouseCursor.style.transition = "all 0.5s ease-out";
+      mouseCursor.style.height = "4rem";
+      mouseCursor.style.width = "4rem";
+      mouseCursor.style.backgroundColor = "transparent";
+      mouseCursor.style.backdropFilter = "blur";
     });
-    // img.addEventListener("mouseleave", () => {
-    //   mouseCursor.style.height = "1rem";
-    //   mouseCursor.style.width = "1rem";
-    //   mouseCursor.style.backgroundColor = "red";
-    // });
+    img.addEventListener("mouseleave", () => {
+      mouseCursor.style.transition = "all 0.12s ease-out";
+      mouseCursor.style.height = "2rem";
+      mouseCursor.style.width = "2rem";
+      mouseCursor.style.backgroundColor = "transparent";
+    });
     mouseCursor.addEventListener("mousemove", (e) => {
       mouseCursor.style.top = e.pageY + "px";
       mouseCursor.style.left = e.pageX + "px";
@@ -50,11 +52,11 @@ export const Home = () => {
     const imageDistortion = new hoverEffect({
       parent: distortion.current,
       intensity: 0.3,
-      image1: portrait2,
+      image1: portrait1,
       image2: portrait1,
       angle2: Math.PI / 2,
       displacementImage: displacement,
-      imagesRatio: 1080 / 1920,
+      imagesRatio: 9 / 16,
     });
     // imageDistortion();
   }, []);
@@ -121,7 +123,7 @@ export const Home = () => {
        </section>
    </div>*/
     <div id="container" className={style.container}>
-      <div ref={cursor} className={style.customCursor}></div>
+      {/* <div ref={cursor} className={style.customCursor}></div> */}
       <div className={style.Parallax}>
         <Parallax bgImage={bg1} strength={500}>
           <div style={{ height: "100vh", width: "100%" }}>

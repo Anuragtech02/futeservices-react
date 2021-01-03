@@ -241,9 +241,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /*.container{
@@ -601,34 +598,13 @@ a {
 }
 
 .distortion {
-  width: 50%;
-  height: 70vh;
+  width: 40%;
+  height: 700px;
   margin: 0 10px;
 }
 
 .transition {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.customCursor {
-  width: 3rem;
-  height: 3rem;
-  border: 2px solid blue !important;
-  background-color: blue !important;
-  border-radius: 50%;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  pointer-events: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition-property: background, -webkit-transform;
-  transition-property: background, -webkit-transform;
-  transition-property: background, transform;
-  transition-property: background, transform, -webkit-transform;
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-  z-index: 1;
 }
 /*# sourceMappingURL=Home.module.css.map */
