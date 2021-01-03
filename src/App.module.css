@@ -4,7 +4,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'open sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
   line-height: 1.857em;
   cursor: none;

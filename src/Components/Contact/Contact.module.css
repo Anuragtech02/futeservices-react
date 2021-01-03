@@ -52,31 +52,6 @@ body {
   color: black;
 }
 
-.customCursor {
-  width: 1rem;
-  height: 1rem;
-  border: 2px solid red;
-  background-color: red;
-  border-radius: 50%;
-  position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  pointer-events: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition-property: background,-webkit-transform;
-  transition-property: background,-webkit-transform;
-  transition-property: background,transform;
-  transition-property: background,transform,-webkit-transform;
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-  z-index: 50000;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  top: 50%;
-  left: 50%;
-}
-
 @media (max-width: 998px) {
   .navbar {
     position: relative;
@@ -105,13 +80,13 @@ a {
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   border-radius: 0;
   outline: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
-  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   padding: 8px 50px;
   cursor: pointer;
   pointer-events: all !important;
@@ -126,7 +101,7 @@ a {
 }
 
 .btnDrakFilled::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -163,7 +138,7 @@ a {
 }
 
 .btnLightFilled::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -200,7 +175,7 @@ a {
 }
 
 .btnLight::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -236,7 +211,7 @@ a {
 }
 
 .btnDark::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -304,6 +279,31 @@ a {
       -ms-flex: 1;
           flex: 1;
   margin: auto auto;
+}
+
+.flexRow,
+.flexColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexColumn {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container .map {

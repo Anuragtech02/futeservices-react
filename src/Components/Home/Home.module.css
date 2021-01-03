@@ -20,13 +20,13 @@ a {
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   border-radius: 0;
   outline: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
-  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   padding: 8px 50px;
   cursor: pointer;
   pointer-events: all !important;
@@ -41,7 +41,7 @@ a {
 }
 
 .btnDrakFilled::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -78,7 +78,7 @@ a {
 }
 
 .btnLightFilled::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -115,7 +115,7 @@ a {
 }
 
 .btnLight::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -151,7 +151,7 @@ a {
 }
 
 .btnDark::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -219,6 +219,31 @@ a {
       -ms-flex: 1;
           flex: 1;
   margin: auto auto;
+}
+
+.flexRow,
+.flexColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexColumn {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*.container{
@@ -427,27 +452,6 @@ a {
     }*/
 }
 
-.container .customCursor {
-  width: 1rem;
-  height: 1rem;
-  border: 1px solid red;
-  background-color: red;
-  border-radius: 50%;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  pointer-events: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition-property: background,-webkit-transform;
-  transition-property: background,-webkit-transform;
-  transition-property: background,transform;
-  transition-property: background,transform,-webkit-transform;
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-  z-index: 1;
-}
-
 .container .header1 {
   height: 100vh;
   width: 100%;
@@ -545,12 +549,86 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-family: "Bebas Neue",sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   z-index: 10;
   vertical-align: middle;
+}
+
+.about {
+  padding: 50px 0;
+  background: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about img {
+  margin: 0 10px;
+}
+
+.title h1,
+.otherName h1 {
+  font-weight: 400;
+  font-family: "Playfair Display", serif !important;
+}
+
+.title p,
+.otherName p {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  margin-left: 20px;
+  font-size: 0.8rem;
+}
+
+.otherName {
+  margin-top: 10rem;
+  text-align: right;
+}
+
+.otherName h1 {
+  font-size: 1rem;
+}
+
+.otherName p {
+  text-align: right;
+  margin: 0;
+}
+
+.distortion {
+  width: 50%;
+  height: 70vh;
+  margin: 0 10px;
+}
+
+.transition {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.customCursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid blue !important;
+  background-color: blue !important;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition-property: background, -webkit-transform;
+  transition-property: background, -webkit-transform;
+  transition-property: background, transform;
+  transition-property: background, transform, -webkit-transform;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  z-index: 1;
 }
 /*# sourceMappingURL=Home.module.css.map */

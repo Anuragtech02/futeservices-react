@@ -20,13 +20,13 @@ a {
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   border-radius: 0;
   outline: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
-  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   padding: 8px 50px;
   cursor: pointer;
   pointer-events: all !important;
@@ -41,7 +41,7 @@ a {
 }
 
 .btnDrakFilled::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -78,7 +78,7 @@ a {
 }
 
 .btnLightFilled::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -115,7 +115,7 @@ a {
 }
 
 .btnLight::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -151,7 +151,7 @@ a {
 }
 
 .btnDark::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -219,5 +219,30 @@ a {
       -ms-flex: 1;
           flex: 1;
   margin: auto auto;
+}
+
+.flexRow,
+.flexColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexColumn {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=common.module.css.map */
