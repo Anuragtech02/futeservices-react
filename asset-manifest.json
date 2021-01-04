@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c484baf3.chunk.css",
-    "main.js": "/static/js/main.7456d3a8.chunk.js",
-    "main.js.map": "/static/js/main.7456d3a8.chunk.js.map",
+    "main.css": "/static/css/main.8d1e1993.chunk.css",
+    "main.js": "/static/js/main.79f67882.chunk.js",
+    "main.js.map": "/static/js/main.79f67882.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2b3827de.js",
     "runtime-main.js.map": "/static/js/runtime-main.2b3827de.js.map",
     "static/css/2.bf0413c3.chunk.css": "/static/css/2.bf0413c3.chunk.css",
-    "static/js/2.ecff52d6.chunk.js": "/static/js/2.ecff52d6.chunk.js",
-    "static/js/2.ecff52d6.chunk.js.map": "/static/js/2.ecff52d6.chunk.js.map",
+    "static/js/2.fd945154.chunk.js": "/static/js/2.fd945154.chunk.js",
+    "static/js/2.fd945154.chunk.js.map": "/static/js/2.fd945154.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.971b8df55822aaa85e842bc9d2dbe2d9.js": "/precache-manifest.971b8df55822aaa85e842bc9d2dbe2d9.js",
+    "precache-manifest.b0f9b338bc9ee0967e55cb726b55a707.js": "/precache-manifest.b0f9b338bc9ee0967e55cb726b55a707.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.bf0413c3.chunk.css.map": "/static/css/2.bf0413c3.chunk.css.map",
-    "static/css/main.c484baf3.chunk.css.map": "/static/css/main.c484baf3.chunk.css.map",
-    "static/js/2.ecff52d6.chunk.js.LICENSE.txt": "/static/js/2.ecff52d6.chunk.js.LICENSE.txt",
+    "static/css/main.8d1e1993.chunk.css.map": "/static/css/main.8d1e1993.chunk.css.map",
+    "static/js/2.fd945154.chunk.js.LICENSE.txt": "/static/js/2.fd945154.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.554d9c33.png",
     "static/media/1280px-Quechua_company_logo.png": "/static/media/1280px-Quechua_company_logo.7ecd2882.png",
     "static/media/58428e7da6515b1e0ad75ab5.png": "/static/media/58428e7da6515b1e0ad75ab5.2ac4e6e0.png",
@@ -21,6 +21,7 @@
     "static/media/Pexels_Videos_2629.mp4": "/static/media/Pexels_Videos_2629.eaf1774c.mp4",
     "static/media/Pexels_Videos_2795.mp4": "/static/media/Pexels_Videos_2795.eabec8da.mp4",
     "static/media/Pexels_Videos_2915.mp4": "/static/media/Pexels_Videos_2915.2d3908b4.mp4",
+    "static/media/displacement.png": "/static/media/displacement.3408054e.png",
     "static/media/ford-logo-2003.png": "/static/media/ford-logo-2003.469fc461.png",
     "static/media/josh-rose-trYl7JYATH0-unsplash.jpg": "/static/media/josh-rose-trYl7JYATH0-unsplash.c0f9f257.jpg",
     "static/media/logo-transparent.png": "/static/media/logo-transparent.2b39ed72.png",
@@ -36,14 +37,15 @@
     "static/media/pexels-slondotpics-408518.jpg": "/static/media/pexels-slondotpics-408518.12f86131.jpg",
     "static/media/pexels-thorn-yang-230659.jpg": "/static/media/pexels-thorn-yang-230659.c124b638.jpg",
     "static/media/pexels-tranmautritam-326501.jpg": "/static/media/pexels-tranmautritam-326501.9947f1d6.jpg",
+    "static/media/portrait2.png": "/static/media/portrait2.adcd289c.png",
     "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg",
     "static/media/unilever.jpg": "/static/media/unilever.4db66e3f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2b3827de.js",
     "static/css/2.bf0413c3.chunk.css",
-    "static/js/2.ecff52d6.chunk.js",
-    "static/css/main.c484baf3.chunk.css",
-    "static/js/main.7456d3a8.chunk.js"
+    "static/js/2.fd945154.chunk.js",
+    "static/css/main.8d1e1993.chunk.css",
+    "static/js/main.79f67882.chunk.js"
   ]
 }
