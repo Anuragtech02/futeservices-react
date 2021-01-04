@@ -1,6 +1,7 @@
 {
   "name": "fute-services",
   "version": "0.1.0",
+  "homepage": "https://anuragtech02.github.io/futeservices-react",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
