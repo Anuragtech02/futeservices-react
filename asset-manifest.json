@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/futeservices-react/static/css/main.0f44fdaa.chunk.css",
-    "main.js": "/futeservices-react/static/js/main.4570225d.chunk.js",
-    "main.js.map": "/futeservices-react/static/js/main.4570225d.chunk.js.map",
+    "main.css": "/futeservices-react/static/css/main.311761d6.chunk.css",
+    "main.js": "/futeservices-react/static/js/main.b91d35a6.chunk.js",
+    "main.js.map": "/futeservices-react/static/js/main.b91d35a6.chunk.js.map",
     "runtime-main.js": "/futeservices-react/static/js/runtime-main.834cc66b.js",
     "runtime-main.js.map": "/futeservices-react/static/js/runtime-main.834cc66b.js.map",
     "static/css/2.b08dfef2.chunk.css": "/futeservices-react/static/css/2.b08dfef2.chunk.css",
-    "static/js/2.fd945154.chunk.js": "/futeservices-react/static/js/2.fd945154.chunk.js",
-    "static/js/2.fd945154.chunk.js.map": "/futeservices-react/static/js/2.fd945154.chunk.js.map",
+    "static/js/2.2be0244d.chunk.js": "/futeservices-react/static/js/2.2be0244d.chunk.js",
+    "static/js/2.2be0244d.chunk.js.map": "/futeservices-react/static/js/2.2be0244d.chunk.js.map",
     "index.html": "/futeservices-react/index.html",
-    "precache-manifest.f36fb0e99d524e47dc22ed33f23a9ec5.js": "/futeservices-react/precache-manifest.f36fb0e99d524e47dc22ed33f23a9ec5.js",
+    "precache-manifest.dc6adee42b3fcedbda162691805754bf.js": "/futeservices-react/precache-manifest.dc6adee42b3fcedbda162691805754bf.js",
     "service-worker.js": "/futeservices-react/service-worker.js",
     "static/css/2.b08dfef2.chunk.css.map": "/futeservices-react/static/css/2.b08dfef2.chunk.css.map",
-    "static/css/main.0f44fdaa.chunk.css.map": "/futeservices-react/static/css/main.0f44fdaa.chunk.css.map",
-    "static/js/2.fd945154.chunk.js.LICENSE.txt": "/futeservices-react/static/js/2.fd945154.chunk.js.LICENSE.txt",
+    "static/css/main.311761d6.chunk.css.map": "/futeservices-react/static/css/main.311761d6.chunk.css.map",
+    "static/js/2.2be0244d.chunk.js.LICENSE.txt": "/futeservices-react/static/js/2.2be0244d.chunk.js.LICENSE.txt",
     "static/media/1.png": "/futeservices-react/static/media/1.554d9c33.png",
     "static/media/1280px-Quechua_company_logo.png": "/futeservices-react/static/media/1280px-Quechua_company_logo.7ecd2882.png",
     "static/media/58428e7da6515b1e0ad75ab5.png": "/futeservices-react/static/media/58428e7da6515b1e0ad75ab5.2ac4e6e0.png",
@@ -37,6 +37,7 @@
     "static/media/pexels-slondotpics-408518.jpg": "/futeservices-react/static/media/pexels-slondotpics-408518.12f86131.jpg",
     "static/media/pexels-thorn-yang-230659.jpg": "/futeservices-react/static/media/pexels-thorn-yang-230659.c124b638.jpg",
     "static/media/pexels-tranmautritam-326501.jpg": "/futeservices-react/static/media/pexels-tranmautritam-326501.9947f1d6.jpg",
+    "static/media/portrait1.png": "/futeservices-react/static/media/portrait1.10dcaa95.png",
     "static/media/portrait2.png": "/futeservices-react/static/media/portrait2.adcd289c.png",
     "static/media/slick-theme.css": "/futeservices-react/static/media/slick.f97e3bbf.svg",
     "static/media/unilever.jpg": "/futeservices-react/static/media/unilever.4db66e3f.jpg"
@@ -44,8 +45,8 @@
   "entrypoints": [
     "static/js/runtime-main.834cc66b.js",
     "static/css/2.b08dfef2.chunk.css",
-    "static/js/2.fd945154.chunk.js",
-    "static/css/main.0f44fdaa.chunk.css",
-    "static/js/main.4570225d.chunk.js"
+    "static/js/2.2be0244d.chunk.js",
+    "static/css/main.311761d6.chunk.css",
+    "static/js/main.b91d35a6.chunk.js"
   ]
 }
