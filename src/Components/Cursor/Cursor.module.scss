@@ -9,7 +9,7 @@
   pointer-events: none;
   z-index: 10;
   transition: all 0.12s ease-out;
-  // transition-property: opacity;
+  transition-property: width, height, opacity, background;
   // background-color: red;
   transform-origin: 100% 100%;
 }
@@ -21,5 +21,5 @@
   position: fixed;
   z-index: 10;
   transform: translate(-50%, -50%);
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 }

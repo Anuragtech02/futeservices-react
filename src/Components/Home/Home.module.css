@@ -562,7 +562,7 @@ a {
 }
 
 .about {
-  padding: 50px 0;
+  padding-top: 100px;
   background: black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -606,7 +606,7 @@ a {
 }
 
 .distortion {
-  width: 40%;
+  width: 35%;
   height: 700px;
   margin: 0 10px;
 }

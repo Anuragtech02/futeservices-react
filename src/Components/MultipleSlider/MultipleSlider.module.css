@@ -1,12 +1,21 @@
 .slider {
   margin: auto;
-  background-color: black;
-  padding: 30px;
+  background-color: white;
+  padding: 100px 30px;
 }
 
 .slider .imgContainer {
   height: 100px;
   width: 100px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slider .imgContainer img {

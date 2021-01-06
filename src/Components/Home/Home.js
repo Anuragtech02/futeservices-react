@@ -10,7 +10,7 @@ import Slider from "react-slick";
 import CustomStepper from "../CustomStepper/CustomStepper";
 import MultipleSlider from "../MultipleSlider/MultipleSlider";
 import img1 from "../../Assets/1.png";
-import portrait1 from "../../Assets/portrait1.jpg";
+import portrait1 from "../../Assets/portrait1.png";
 import portrait2 from "../../Assets/portrait2.png";
 import displacement from "../../Assets/displacement.png";
 import { Parallax, Background } from "react-parallax";
@@ -28,14 +28,16 @@ export const Home = () => {
     const mouseCursor = document.getElementById("cursor");
     const img = distortion.current;
     img.addEventListener("mouseover", () => {
-      mouseCursor.style.transition = "all 0.3s ease-out";
+      mouseCursor.style.transition = "0.15s ease-out";
       mouseCursor.style.height = "4rem";
       mouseCursor.style.width = "4rem";
       mouseCursor.style.backgroundColor = "transparent";
       mouseCursor.style.backdropFilter = "blur";
     });
     img.addEventListener("mouseleave", () => {
-      mouseCursor.style.transition = "all 0.12s ease-out";
+      mouseCursor.style.transition = "0.12s ease-out";
+      mouseCursor.style.transitionProperty =
+        "width, height, opacity, background";
       mouseCursor.style.height = "2rem";
       mouseCursor.style.width = "2rem";
       mouseCursor.style.backgroundColor = "transparent";
@@ -57,9 +59,24 @@ export const Home = () => {
     // imageDistortion();
   }, []);
 
+  const [showAction, setShowAction] = React.useState(false);
+  const [lastY, setLastY] = React.useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const yPos = window.scrollY;
+      const isScrollingDown = lastY < yPos;
+
+      setShowAction(isScrollingDown);
+      setLastY(yPos);
+    };
+    window.addEventListener("scroll", handleScroll, false);
+    return () => window.removeEventListener("scroll", handleScroll, false);
+  }, [lastY]);
+
   return (
     <div id="container" className={style.container}>
-      <div id="cursor" className={style.customCursor}></div>
+      {/* <div id="cursor" className={style.customCursor}></div> */}
       <Carousel className={style.carousel} />
       <section
         className={style.section}
@@ -86,28 +103,28 @@ export const Home = () => {
         <HrSlider className={style.hrSlider} />
       </section> */}
       <div className={style.Parallax}>
-        <Parallax bgImage={bg1} strength={500}>
+        <Parallax bgImage={bg1} strength={200}>
           <div style={{ height: "100vh", width: "100%" }}>
             <div className={style.insideStyles}>
               Lorem ipsum dolor sit amet, consectetur adipiscing .
             </div>
           </div>
         </Parallax>
-        <Parallax bgImage={bg2} strength={500}>
+        <Parallax bgImage={bg2} strength={200}>
           <div style={{ height: "100vh", width: "100%" }}>
             <div className={style.insideStyles}>
               Lorem ipsum dolor sit amet, consectetur adipiscing.
             </div>
           </div>
         </Parallax>
-        <Parallax bgImage={bg3} strength={500}>
+        <Parallax bgImage={bg3} strength={200}>
           <div style={{ height: "100vh", width: "100%" }}>
             <div className={style.insideStyles}>
               Lorem ipsum dolor sit amet, consectetur adipiscing.
             </div>
           </div>
         </Parallax>
-        <Parallax bgImage={bg4} strength={500}>
+        <Parallax bgImage={bg4} strength={200}>
           <div style={{ height: "100vh", width: "100%" }}>
             <div className={style.insideStyles}>
               Lorem ipsum dolor sit amet, consectetur adipiscing.
@@ -165,18 +182,36 @@ export const Home = () => {
         </section>
       </section>
       <div className={classNames(style.flexRow, style.about)}>
-        <div className={style.title}>
+        <motion.div
+          initial={{ x: -30, opacity: 0 }}
+          animate={{ x: showAction ? 0 : -30, opacity: showAction ? 1 : 0 }}
+          transition={{
+            type: "tween",
+            duration: 0.5,
+          }}
+          className={style.title}
+        >
           <h1>Michael Brown</h1>
           <p>Co-Founder and head of the company.</p>
-        </div>
+        </motion.div>
         {/* <img id="img" alt="portrait" src={portrait1} /> */}
-        <div ref={distortion} className={style.distortion}></div>
-        <div className={classNames(style.title, style.otherName)}>
+        <motion.div ref={distortion} className={style.distortion}></motion.div>
+        <motion.div
+          initial={{ x: 30, opacity: 0 }}
+          animate={{ x: showAction ? 0 : 30, opacity: showAction ? 1 : 0 }}
+          transition={{
+            type: "tween",
+            duration: 0.5,
+          }}
+          className={classNames(style.title, style.otherName)}
+        >
           <h1>Michael Brown</h1>
           <p>New Delhi, India</p>
-        </div>
+        </motion.div>
       </div>
-      <MultipleSlider />
+      <div style={{ background: "white" }}>
+        <MultipleSlider />
+      </div>
     </div>
   );
 };

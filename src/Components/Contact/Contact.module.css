@@ -50,12 +50,19 @@ body {
 
 .light a {
   color: black;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 99999;
 }
 
 @media (max-width: 998px) {
   .navbar {
     position: relative;
   }
+}
+
+a:hover {
+  color: black;
 }
 
 .noDecoration, a {
