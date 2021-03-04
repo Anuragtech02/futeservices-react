@@ -102,7 +102,7 @@ export const Home = () => {
       {/* <section className={style.section} style={{ backgroundColor: "#111" }}>
         <HrSlider className={style.hrSlider} />
       </section> */}
-      <div className={style.Parallax}>
+      {/* <div className={style.Parallax}>
         <Parallax bgImage={bg1} strength={200}>
           <div style={{ height: "100vh", width: "100%" }}>
             <div className={style.insideStyles}>
@@ -131,7 +131,8 @@ export const Home = () => {
             </div>
           </div>
         </Parallax>
-      </div>
+      </div> */}
+      <CategoriesGallery />
       <section
         className={style.thirdSection}
         style={{ backgroundImage: `url(${bgImage2})` }}
@@ -216,3 +217,42 @@ export const Home = () => {
   );
 };
 export default Home;
+
+const CategoriesGallery = () => {
+  const data = [
+    {
+      title: "Residential",
+      image: bg1,
+    },
+    {
+      title: "Interiar Visualisation",
+      image: bg2,
+    },
+    {
+      title: "Exterior Visualisation",
+      image: bg3,
+    },
+    {
+      title: "Productt Visualisation",
+      image: bg4,
+    },
+    {
+      title: "Animation Visualisation",
+      image: bg1,
+    },
+  ];
+  return (
+    <div className={style.categoriesContainer}>
+      {data.map((item) => (
+        <div
+          style={{ backgroundImage: `url(${item.image})` }}
+          className={style.categoryCard}
+        >
+          <div className={style.categoryCardTitle}>
+            <h2>{item.title}</h2>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
