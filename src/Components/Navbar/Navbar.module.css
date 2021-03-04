@@ -252,7 +252,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 5%;
+  padding: 30px 5%;
   background-color: transparent;
 }
 
@@ -276,26 +276,28 @@ a {
 }
 
 .container .nav {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 40%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   text-align: left;
   padding: 8px 0;
 }
 
-.container .nav .navItems {
-  float: left;
-  padding: 0 4%;
+.container .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container .nav .navItems .navLink {
-  font-family: bebas neue,sans-serif;
+  font-family: bebas neue, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   line-height: 1.857em;
   z-index: 500;
   position: relative;
@@ -315,8 +317,8 @@ a {
   border-top: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 2px;
   opacity: 0;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .dropdown .dropdownContent .dropdownLink {
@@ -372,7 +374,7 @@ a {
     position: relative;
   }
   .container .nav .navItems .navLink::after {
-    content: '\f054';
+    content: "\f054";
     position: absolute;
     top: 10px;
     right: 0;
@@ -382,11 +384,10 @@ a {
     color: #989898;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    -webkit-transition: -webkit-transform .2s ease-out;
-    transition: -webkit-transform .2s ease-out;
-    transition: transform .2s ease-out;
-    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
-    transition: transform .2s ease-out,-webkit-transform .2s ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
   }
   .dropdown .dropdownContent {
     display: none;

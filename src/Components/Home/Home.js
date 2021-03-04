@@ -20,6 +20,7 @@ import bg3 from "../../Assets/pexels-caleb-oquendo-2918590.jpg";
 import bg4 from "../../Assets/pexels-debasish-sahoo-140221.jpg";
 import classNames from "classnames";
 import hoverEffect from "hover-effect";
+import BgVideo from "../../Assets/video/fute-video-bg.mp4";
 
 export const Home = () => {
   const cursor = useRef(null);
@@ -77,7 +78,19 @@ export const Home = () => {
   return (
     <div id="container" className={style.container}>
       {/* <div id="cursor" className={style.customCursor}></div> */}
-      <Carousel className={style.carousel} />
+      {/* <Carousel className={style.carousel} /> */}
+      <section className={style.largeVideoBg}>
+        <video autoPlay loop>
+          <source src={BgVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className={style.heading}>
+          <h1>
+            We bring visionary places,
+            <br /> spaces and ideas to life.
+          </h1>
+        </div>
+      </section>
       <section
         className={style.section}
         style={{ backgroundImage: `url(${introImage})` }}
