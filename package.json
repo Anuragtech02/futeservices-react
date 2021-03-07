@@ -1,7 +1,6 @@
 {
   "name": "fute-services",
   "version": "0.1.0",
-  "homepage": "https://anuragtech02.github.io/futeservices-react",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -17,6 +16,7 @@
     "google": "^2.1.0",
     "google-maps-react": "^2.0.6",
     "hover-effect": "^1.1.0",
+    "isotope-layout": "^3.0.6",
     "kursor": "^0.1.6",
     "react": "^16.13.1",
     "react-animated-cursor": "^2.1.8",

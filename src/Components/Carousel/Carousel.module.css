@@ -4,10 +4,6 @@
   outline: none;
 }
 
-a {
-  cursor: none;
-}
-
 .btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
   width: auto;
   opacity: 0;
@@ -243,7 +239,8 @@ a {
           justify-content: center;
 }
 
-.text, .outerDiv .innerDiv h2, .outerDiv .innerDiv span, h4 {
+.text, .outerDiv .innerDiv h2,
+.outerDiv .innerDiv span, h4 {
   opacity: 0;
   z-index: 10;
   font-family: "Bebas Neue";
@@ -290,7 +287,8 @@ a {
   background: rgba(0, 0, 0, 0.75);
 }
 
-.outerDiv .innerDiv h2, .outerDiv .innerDiv span {
+.outerDiv .innerDiv h2,
+.outerDiv .innerDiv span {
   width: 957px;
   min-height: 0px;
   min-width: 0px;
@@ -370,7 +368,8 @@ h4 {
   h4 {
     right: 7%;
   }
-  h2, span {
+  h2,
+  span {
     font-size: 100px;
   }
   .progressBarBg {

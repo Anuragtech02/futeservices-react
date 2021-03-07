@@ -1,66 +1,65 @@
-@import '../common.module.scss';
+@import "../common.module.scss";
 
-.container{
-    width: 100%;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    .stepper{
-        background-color: transparent;
-        pointer-events: none;
-        
-        .button{
-            pointer-events: all;
-        }
-        .labelText{
-            color: white ;
-        }
+.container {
+  width: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  .stepper {
+    background-color: transparent;
+    pointer-events: none;
+
+    .button {
+      pointer-events: all;
+    }
+    .labelText {
+      color: white;
+    }
+  }
+
+  .content {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    padding-top: 30px;
+    vertical-align: baseline;
+
+    img {
+      width: 600px;
+      height: auto;
+      flex: 1;
     }
 
-    .content{
-        width: 70%;
-        display: flex;
-        margin: auto;
-        padding-top: 30px;
-        vertical-align: baseline;
+    .text {
+      text-align: left;
+      padding-left: 10%;
+      margin: auto;
+      vertical-align: center;
 
-        img{
-            width: 600px;
-            height: auto;
-            flex: 1;
-        }
+      h1 {
+        color: white;
+        z-index: 10;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 62px;
+        vertical-align: middle;
+        letter-spacing: 0.05em;
+        word-wrap: break-word;
+        padding: 10px 0;
+      }
 
-        .text{
-            text-align: left;
-            padding-left: 10%;
-            margin: auto;
-            vertical-align: center;
-
-            h1{
-                color: white;
-                z-index: 10;
-                font-family: "Bebas Neue",sans-serif;
-                font-weight: 300;
-                text-transform: uppercase;
-                font-size: 40px;
-                line-height: 62px;
-                vertical-align: middle;
-                letter-spacing: .05em;
-                word-wrap: break-word;
-                padding: 10px 0;
-            }
-
-            p{
-                text-align: left;
-                padding-left: 8px;
-                font-size: 0.9em;
-                padding-bottom: 40px;
-            }
-        }
+      p {
+        text-align: left;
+        padding-left: 8px;
+        font-size: 0.9em;
+        padding-bottom: 40px;
+      }
     }
+  }
 }
 
-.MuiStep-alternativeLabel{
-    flex: 0 !important;
+.MuiStep-alternativeLabel {
+  flex: 0 !important;
 }
-

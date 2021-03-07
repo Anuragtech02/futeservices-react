@@ -4,10 +4,6 @@
   outline: none;
 }
 
-a {
-  cursor: none;
-}
-
 .btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
   width: auto;
   opacity: 0;
@@ -248,7 +244,6 @@ a {
   margin: 0;
   display: block;
   width: 100vw;
-  cursor: none;
 }
 
 .container .largeVideoBg {
@@ -422,7 +417,7 @@ a {
   background-position: center;
   overflow: hidden;
   margin: 60px 0;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .container .categoriesContainer .categoryCard .categoryCardTitle {
@@ -440,6 +435,7 @@ a {
   background: rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer !important;
 }
 
 .container .categoriesContainer .categoryCard .categoryCardTitle h2 {

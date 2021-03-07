@@ -1,0 +1,33 @@
+@import "../common.module.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 5%;
+
+  .brandName {
+    width: fit-content;
+    max-width: 35%;
+    flex: 1;
+    margin-right: auto;
+    justify-content: flex-start;
+
+    img {
+      max-width: 150px;
+      min-width: 100px;
+      cursor: pointer !important;
+    }
+  }
+
+  .navLinks {
+    @extend .flexRow;
+    list-style: none;
+    justify-content: space-between;
+    width: 20%;
+    .navLink,
+    a {
+      cursor: pointer !important;
+    }
+  }
+}

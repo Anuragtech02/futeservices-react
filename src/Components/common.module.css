@@ -4,10 +4,6 @@
   outline: none;
 }
 
-a {
-  cursor: none;
-}
-
 .btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
   width: auto;
   opacity: 0;

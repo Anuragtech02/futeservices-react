@@ -7,11 +7,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
   line-height: 1.857em;
-  cursor: none;
+  cursor: auto;
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   max-width: 100vw;
 }
 
@@ -27,7 +27,7 @@ body {
 .navbar {
   position: fixed;
   top: 0;
-  z-index: 10000;
+  z-index: 100;
   display: inline-block;
   width: 100vw;
   vertical-align: top;
@@ -69,10 +69,6 @@ a:hover {
   text-decoration: none;
   list-style: none;
   outline: none;
-}
-
-a {
-  cursor: none;
 }
 
 .btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
@@ -407,8 +403,8 @@ a {
   float: left;
 }
 
-.content .floatRight input[type=email],
-.content .floatRight input[type=text],
+.content .floatRight input[type="email"],
+.content .floatRight input[type="text"],
 .content .floatRight textarea {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -425,11 +421,10 @@ a {
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 0;
   outline: 0;
-  cursor: text;
 }
 
-.content .floatRight input[type=email]:focus,
-.content .floatRight input[type=text]:focus,
+.content .floatRight input[type="email"]:focus,
+.content .floatRight input[type="text"]:focus,
 .content .floatRight textarea:focus {
   border-left: 2px solid black;
   color: #111;
@@ -444,10 +439,10 @@ a {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  color: #ABABAB;
+  color: #ababab;
   font-size: 18px;
   line-height: 26px;
-  letter-spacing: .4em;
+  letter-spacing: 0.4em;
   margin: 25px 0;
   z-index: 10;
   vertical-align: middle;
@@ -465,7 +460,7 @@ a {
   font-size: 65px;
   line-height: 62px;
   vertical-align: middle;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   word-wrap: break-word;
   max-width: 45%;
   text-align: right;

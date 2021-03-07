@@ -1,81 +1,80 @@
 .container {
+  background-color: #111;
 
-    background-color: #111;
+  .banner {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../../Assets/pexels-debasish-sahoo-140221.jpg");
+    background-size: cover;
+    background-position-y: -200px;
+    text-align: center;
+    justify-content: center;
 
-    .banner {
-        width: 100vw;
-        height: 50vh;
-        background-image: url('../../Assets/pexels-debasish-sahoo-140221.jpg');
-        background-size: cover;
-        background-position-y: -200px;
-        text-align: center;
-        justify-content: center;
+    div {
+      height: 100%;
+      padding: 10% 0;
 
-        div {
-            height: 100%;
-            padding: 10% 0;
+      h1 {
+        width: 100%;
+        vertical-align: middle;
+        color: white;
+        z-index: 10;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 5em;
+        line-height: 62px;
+        vertical-align: middle;
+        letter-spacing: 0.05em;
+        word-wrap: break-word;
+      }
+    }
+  }
 
-            h1 {
-                width: 100%;
-                vertical-align: middle;
-                color: white;
-                z-index: 10;
-                font-family: "Bebas Neue", sans-serif;
-                font-weight: 400;
-                text-transform: uppercase;
-                font-size: 5em;
-                line-height: 62px;
-                vertical-align: middle;
-                letter-spacing: .05em;
-                word-wrap: break-word;
-            }
-        }
+  .faq {
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+  }
+
+  .accordationContainer {
+    width: 70%;
+    margin: 0 auto;
+    direction: ltr;
+    text-align: left;
+
+    .MuiAccordionRoot {
+      background-color: transparent;
     }
 
-        .faq {
-            width: 100%;
-            height: 50vh;
-            align-items: center;
-            justify-content: center;
-            padding-top: 25px;
-        }
+    .heading {
+      text-align: left;
+      z-index: 10;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.8em;
+      line-height: 40px;
+      vertical-align: middle;
+      letter-spacing: 0.05em;
+      word-wrap: break-word;
+    }
 
-        .accordationContainer {
-            width: 70%;
-            margin: 0 auto;
-            direction: ltr;
-            text-align: left;
-
-            .MuiAccordionRoot {
-                background-color: transparent;
-            }
-
-            .heading {
-                text-align: left;
-                z-index: 10;
-                font-family: "Bebas Neue", sans-serif;
-                font-weight: 400;
-                text-transform: uppercase;
-                font-size: 1.8em;
-                line-height: 40px;
-                vertical-align: middle;
-                letter-spacing: .05em;
-                word-wrap: break-word;
-            }
-
-            .summary {
-                text-align: left;
-                padding: 30px 2px;
-                font-weight: 400;
-                letter-spacing: .02em;
-                color: #fff;
-                font-size: 1em;
-            }
-        }
+    .summary {
+      text-align: left;
+      padding: 30px 2px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #fff;
+      font-size: 1em;
+    }
+  }
 }
 
 .Mui-expanded {
-    .heading{
-        color: #fff !important;
-    }
+  .heading {
+    color: #fff !important;
+  }
 }

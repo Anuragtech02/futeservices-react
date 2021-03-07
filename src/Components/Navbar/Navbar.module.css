@@ -4,10 +4,6 @@
   outline: none;
 }
 
-a {
-  cursor: none;
-}
-
 .btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
   width: auto;
   opacity: 0;
@@ -301,6 +297,7 @@ a {
   line-height: 1.857em;
   z-index: 500;
   position: relative;
+  cursor: pointer;
 }
 
 .dropdown {

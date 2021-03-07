@@ -7,11 +7,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
   line-height: 1.857em;
-  cursor: none;
+  cursor: auto;
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   max-width: 100vw;
 }
 
@@ -27,7 +27,7 @@ body {
 .navbar {
   position: fixed;
   top: 0;
-  z-index: 10000;
+  z-index: 100;
   display: inline-block;
   width: 100vw;
   vertical-align: top;

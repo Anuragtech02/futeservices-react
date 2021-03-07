@@ -1,23 +1,139 @@
-import img1 from '../Assets/Portfolio/pexels-caio-56759.jpg'
-import img2 from '../Assets/Portfolio/pexels-pixabay-2097.jpg'
-import img3 from '../Assets/Portfolio/pexels-tranmautritam-326501.jpg'
-import img4 from '../Assets/Portfolio/pexels-thorn-yang-230659.jpg'
+import cat1 from "../Assets/category1.jpg";
+import cat2 from "../Assets/category2.jpg";
+import cat3 from "../Assets/category3.jpg";
+import cat4 from "../Assets/category4.jpg";
+import cat5 from "../Assets/category5.jpg";
 
 export const PortfolioData = [
-    {
-        img: img1,
-        name: 'Lorem ipsum',
-    },
-    {
-        img: img2,
-        name: 'Lorem ipsum',
-    },
-    {
-        img: img3,
-        name: 'Lorem ipsum',
-    },
-    {
-        img: img4,
-        name: 'Lorem ipsum',
-    },
-]
+  {
+    name: "Residential",
+    image: cat1,
+    images: [
+      {
+        title: "This is title",
+        src: cat5,
+      },
+      {
+        title: "This is title",
+        src: cat5,
+      },
+      {
+        title: "This is title",
+        src: cat5,
+      },
+      {
+        title: "This is title",
+        src: cat5,
+      },
+      {
+        title: "This is title",
+        src: cat5,
+      },
+    ],
+  },
+  {
+    name: "Product",
+    image: cat2,
+    images: [
+      {
+        title: "This is title",
+        src: cat4,
+      },
+      {
+        title: "This is title",
+        src: cat4,
+      },
+      {
+        title: "This is title",
+        src: cat4,
+      },
+      {
+        title: "This is title",
+        src: cat4,
+      },
+      {
+        title: "This is title",
+        src: cat4,
+      },
+    ],
+  },
+  {
+    name: "Animation",
+    image: cat3,
+    images: [
+      {
+        title: "This is title",
+        src: cat1,
+      },
+      {
+        title: "This is title",
+        src: cat1,
+      },
+
+      {
+        title: "This is title",
+        src: cat1,
+      },
+      {
+        title: "This is title",
+        src: cat1,
+      },
+    ],
+  },
+  {
+    name: "VR",
+    image: cat4,
+    images: [
+      {
+        title: "This is title",
+        src: cat2,
+      },
+      {
+        title: "This is title",
+        src: cat2,
+      },
+      {
+        title: "This is title",
+        src: cat2,
+      },
+      {
+        title: "This is title",
+        src: cat2,
+      },
+      {
+        title: "This is title",
+        src: cat2,
+      },
+      {
+        title: "This is title",
+        src: cat2,
+      },
+    ],
+  },
+  {
+    name: "Photomontage",
+    image: cat5,
+    images: [
+      {
+        title: "This is title",
+        src: cat1,
+      },
+      {
+        title: "This is title",
+        src: cat1,
+      },
+      {
+        title: "This is title",
+        src: cat1,
+      },
+      {
+        title: "This is title",
+        src: cat1,
+      },
+      {
+        title: "This is title",
+        src: cat1,
+      },
+    ],
+  },
+];

@@ -26,29 +26,30 @@ import bg4 from "../../Assets/pexels-debasish-sahoo-140221.jpg";
 import classNames from "classnames";
 import hoverEffect from "hover-effect";
 import BgVideo from "../../Assets/video/fute-video-bg.mp4";
+import { withRouter } from "react-router";
 
-export const Home = () => {
+export const Home = ({ history }) => {
   const cursor = useRef(null);
 
-  useEffect(() => {
-    const mouseCursor = document.getElementById("cursor");
-    const img = distortion.current;
-    img.addEventListener("mouseover", () => {
-      mouseCursor.style.transition = "0.15s ease-out";
-      mouseCursor.style.height = "4rem";
-      mouseCursor.style.width = "4rem";
-      mouseCursor.style.backgroundColor = "transparent";
-      mouseCursor.style.backdropFilter = "blur";
-    });
-    img.addEventListener("mouseleave", () => {
-      mouseCursor.style.transition = "0.12s ease-out";
-      mouseCursor.style.transitionProperty =
-        "width, height, opacity, background";
-      mouseCursor.style.height = "2rem";
-      mouseCursor.style.width = "2rem";
-      mouseCursor.style.backgroundColor = "transparent";
-    });
-  }, []);
+  // useEffect(() => {
+  //   const mouseCursor = document.getElementById("cursor");
+  //   const img = distortion.current;
+  //   img.addEventListener("mouseover", () => {
+  //     mouseCursor.style.transition = "0.15s ease-out";
+  //     mouseCursor.style.height = "4rem";
+  //     mouseCursor.style.width = "4rem";
+  //     mouseCursor.style.backgroundColor = "transparent";
+  //     mouseCursor.style.backdropFilter = "blur";
+  //   });
+  //   img.addEventListener("mouseleave", () => {
+  //     mouseCursor.style.transition = "0.12s ease-out";
+  //     mouseCursor.style.transitionProperty =
+  //       "width, height, opacity, background";
+  //     mouseCursor.style.height = "2rem";
+  //     mouseCursor.style.width = "2rem";
+  //     mouseCursor.style.backgroundColor = "transparent";
+  //   });
+  // }, []);
 
   const distortion = useRef();
 
@@ -150,7 +151,7 @@ export const Home = () => {
           </div>
         </Parallax>
       </div> */}
-      <CategoriesGallery />
+      <CategoriesGallery history={history} />
       {/* <section
         className={style.thirdSection}
         style={{ backgroundImage: `url(${bgImage2})` }}
@@ -234,9 +235,9 @@ export const Home = () => {
     </div>
   );
 };
-export default Home;
+export default withRouter(Home);
 
-const CategoriesGallery = () => {
+const CategoriesGallery = ({ history }) => {
   const data = [
     {
       title: "Residential",
@@ -265,6 +266,7 @@ const CategoriesGallery = () => {
         <div
           style={{ backgroundImage: `url(${item.image})` }}
           className={style.categoryCard}
+          onClick={() => history.push(`/portfolio/${item.title}`)}
         >
           <div className={style.categoryCardTitle}>
             <h2>{item.title}</h2>

@@ -6,12 +6,6 @@ import styles from "./MultipleSlider.module.css";
 import { Logos } from "../../Static";
 
 export const MultipleSlider = () => {
-  const imgSlides = () =>
-    Logos.map((logo) => (
-      <div key={logo.key} className={styles.imgContainer}>
-        <img src={logo.img} alt="logo" />
-      </div>
-    ));
   return (
     <Slider
       className={styles.slider}
@@ -21,7 +15,11 @@ export const MultipleSlider = () => {
       autoplay={true}
       autoplaySpeed={2000}
     >
-      {imgSlides()}
+      {Logos.map((logo) => (
+        <div key={logo.key} className={styles.imgContainer}>
+          <img src={logo.img} alt="logo" />
+        </div>
+      ))}
     </Slider>
   );
 };

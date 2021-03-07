@@ -4,10 +4,6 @@
   outline: none;
 }
 
-a {
-  cursor: none;
-}
-
 .btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
   width: auto;
   opacity: 0;
@@ -259,7 +255,7 @@ a {
 }
 
 .container .imgContainer .imgOverlay::after {
-  content: '';
+  content: "";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
@@ -293,7 +289,7 @@ a {
   text-transform: uppercase;
   font-size: 2.8em;
   vertical-align: middle;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   line-height: 1em;
   word-wrap: break-word;
   text-shadow: rgba(0, 0, 0, 0.25) 3px 4px 4px;
@@ -324,10 +320,10 @@ a {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  color: #ABABAB;
+  color: #ababab;
   font-size: 18px;
   line-height: 26px;
-  letter-spacing: .4em;
+  letter-spacing: 0.4em;
   margin: 25px 0;
   z-index: 10;
   vertical-align: middle;
@@ -344,7 +340,7 @@ a {
   font-size: 65px;
   line-height: 62px;
   vertical-align: middle;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   word-wrap: break-word;
 }
 
