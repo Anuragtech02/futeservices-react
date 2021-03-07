@@ -50,7 +50,7 @@ export const Navbar = () => {
                 >
                   {label}
                 </Link>
-                {subheader && (
+                {/* {subheader && (
                   <motion.ul
                     className={style.dropdownContent}
                     animate={isOpen ? "open" : "closed"}
@@ -92,7 +92,7 @@ export const Navbar = () => {
                       );
                     })}
                   </motion.ul>
-                )}
+                )} */}
               </li>
             );
           })}

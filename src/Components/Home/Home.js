@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 import introImage from "../../Assets/pexels-daniel-absi-952670.jpg";
 import introImage2 from "../../Assets/pexels-caleb-oquendo-2918590.jpg";
 import bgImage2 from "../../Assets/josh-rose-trYl7JYATH0-unsplash.jpg";
+import cat1 from "../../Assets/category1.jpg";
+import cat2 from "../../Assets/category2.jpg";
+import cat3 from "../../Assets/category3.jpg";
+import cat4 from "../../Assets/category4.jpg";
+import cat5 from "../../Assets/category5.jpg";
 import { introData, teamData, timelineData, timeline } from "../../Static";
 import { Carousel, HrSlider, Testimonial } from "../index";
 import Slider from "react-slick";
@@ -80,7 +85,7 @@ export const Home = () => {
       {/* <div id="cursor" className={style.customCursor}></div> */}
       {/* <Carousel className={style.carousel} /> */}
       <section className={style.largeVideoBg}>
-        <video autoPlay loop>
+        <video autoPlay loop={true}>
           <source src={BgVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -146,7 +151,7 @@ export const Home = () => {
         </Parallax>
       </div> */}
       <CategoriesGallery />
-      <section
+      {/* <section
         className={style.thirdSection}
         style={{ backgroundImage: `url(${bgImage2})` }}
       >
@@ -194,7 +199,7 @@ export const Home = () => {
         <section style={{ backgroundColor: "rgba(0, 0, 0, 0.93" }}>
           <CustomStepper steps={timeline} content={timelineData} theme="dark" />
         </section>
-      </section>
+      </section> */}
       <div className={classNames(style.flexRow, style.about)}>
         <motion.div
           initial={{ x: -30, opacity: 0 }}
@@ -235,23 +240,23 @@ const CategoriesGallery = () => {
   const data = [
     {
       title: "Residential",
-      image: bg1,
+      image: cat1,
     },
     {
-      title: "Interiar Visualisation",
-      image: bg2,
+      title: "Product",
+      image: cat2,
     },
     {
-      title: "Exterior Visualisation",
-      image: bg3,
+      title: "Animation",
+      image: cat3,
     },
     {
-      title: "Productt Visualisation",
-      image: bg4,
+      title: "VR",
+      image: cat4,
     },
     {
-      title: "Animation Visualisation",
-      image: bg1,
+      title: "Photomontage",
+      image: cat5,
     },
   ];
   return (
