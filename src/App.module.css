@@ -32,6 +32,8 @@ body {
   width: 100vw;
   vertical-align: top;
   margin: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .dark {
@@ -46,6 +48,8 @@ body {
 .light {
   background-color: white;
   color: black;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .light a {
@@ -53,12 +57,6 @@ body {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   z-index: 99999;
-}
-
-@media (max-width: 998px) {
-  .navbar {
-    position: relative;
-  }
 }
 
 a:hover {

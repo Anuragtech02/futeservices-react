@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Home,
   Navbar,
@@ -20,6 +20,7 @@ import style from "./App.module.css";
 import classNames from "classnames";
 import Contact from "./Components/Contact/Contact";
 import PortfolioPage from "./Components/PortfolioPage/PortfolioPage";
+import NavWrapper from "./Components/Nav/NavWrapper";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,31 +33,34 @@ function ScrollToTop() {
 }
 
 const App = () => {
-  function setBackground() {
-    if (
-      (document.body.scrollTop > 200 ||
-        document.documentElement.scrollTop < 200) &&
-      (!window.location.pathname.includes("contact") ||
-        !window.location.pathname.includes("portfolio"))
-    ) {
-      document.getElementById("navbar").classList.remove(style.light);
-      document.getElementById("navbar").classList.add(style.dark);
-    } else {
-      document.getElementById("navbar").classList.remove(style.dark);
-      document.getElementById("navbar").classList.add(style.light);
-    }
-  }
+  // const [navClass, setNavClass] = useState(style.dark);
 
-  useEffect(() => {
-    function watchScroll() {
-      window.addEventListener("scroll", setBackground);
-    }
-    watchScroll();
+  // useEffect(() => {
+  //   function setBackground() {
+  //     if (
+  //       document.body.scrollTop > 200 ||
+  //       document.documentElement.scrollTop < 200 ||
+  //       window.location.pathname.includes("contact") ||
+  //       window.location.pathname.includes("portfolio")
+  //     ) {
+  //       // document.getElementById("navbar").classList.remove(style.light);
+  //       // document.getElementById("navbar").classList.add(style.dark);
+  //       setNavClass(style.dark);
+  //     } else {
+  //       // document.getElementById("navbar").classList.remove(style.dark);
+  //       // document.getElementById("navbar").classList.add(style.light);
+  //       setNavClass(style.light);
+  //     }
+  //   }
+  //   function watchScroll() {
+  //     window.addEventListener("scroll", setBackground);
+  //   }
+  //   watchScroll();
 
-    return () => {
-      window.removeEventListener("scroll", setBackground);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", setBackground);
+  //   };
+  // }, []);
 
   useEffect(() => {
     const mouseCursor = document.getElementById("cursor");
@@ -87,12 +91,14 @@ const App = () => {
     // }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
       {/* <Cursor /> */}
-      <div className={classNames(style.navbar, style.dark)} id="navbar">
-        <Nav />
-      </div>
+      <NavWrapper />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />

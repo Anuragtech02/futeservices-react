@@ -32,6 +32,8 @@ body {
   width: 100vw;
   vertical-align: top;
   margin: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .dark {
@@ -53,12 +55,6 @@ body {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   z-index: 99999;
-}
-
-@media (max-width: 998px) {
-  .navbar {
-    position: relative;
-  }
 }
 
 a:hover {
@@ -306,8 +302,11 @@ a:hover {
           justify-content: center;
 }
 
-.container .map {
-  height: 50vh;
+.container .bgImage {
+  height: 40vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .content {
