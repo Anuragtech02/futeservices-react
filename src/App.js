@@ -105,7 +105,7 @@ const App = () => {
         <Route path="/contact" exact component={Contact} />
         <Route path="/faq" exact component={FAQ} />
         <Route path="/team" exact component={Team} />
-        <Route path="/portfolio" exact component={Portfolio} />
+        {/* <Route path="/portfolio" exact component={Portfolio} /> */}
         <Route path="/portfolio/:name" exact component={PortfolioPage} />
       </Switch>
       <div className={style.footer}>

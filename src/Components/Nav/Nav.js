@@ -12,11 +12,33 @@ const Nav = ({ history }) => {
         <img onClick={() => history.push("/")} src={logo} alt="logo-fute" />
       </div>
       <ul className={styles.navLinks}>
-        {HeaderData.tabs.map((link) => (
-          <li className={styles.navLink}>
-            <Link to={link.path}>{link.label}</Link>
-          </li>
-        ))}
+        {HeaderData.tabs.map((link) =>
+          link.path.includes("#") ? (
+            <li
+              onClick={() => {
+                if (history.location.pathname === "/") {
+                  document
+                    .getElementById("portfolio")
+                    .scrollIntoView({ behavior: "smooth" });
+                } else {
+                  history.push("/");
+                  setTimeout(() => {
+                    document
+                      .getElementById("portfolio")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }, 500);
+                }
+              }}
+              className={styles.navLink}
+            >
+              {link.label}
+            </li>
+          ) : (
+            <li className={styles.navLink}>
+              <Link to={link.path}>{link.label}</Link>
+            </li>
+          )
+        )}
       </ul>
     </nav>
   );

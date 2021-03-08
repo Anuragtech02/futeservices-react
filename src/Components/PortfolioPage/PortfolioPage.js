@@ -13,6 +13,7 @@ const PortfolioPage = () => {
   const [isotope, setIsotope] = useState(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (name && name.length) {
       const portfolio = PortfolioData.find((item) => item.name === name);
       console.log({ portfolio });

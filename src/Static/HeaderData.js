@@ -4,7 +4,7 @@ export const UrlStrings = {
   OURTEAM: "/team",
   CONTACTUS: "/contact",
   FAQ: "/faq",
-  PORTFOLIO: "/portfolio",
+  PORTFOLIO: "#portfolio",
 };
 
 export const HeaderData = {

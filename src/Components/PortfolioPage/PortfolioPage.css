@@ -255,7 +255,8 @@
   font-family: "Playfair Display", serif;
   font-size: 100px;
   color: white;
-  text-transform: uppercase;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .container .portfolioContainer {

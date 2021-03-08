@@ -261,7 +261,7 @@ const CategoriesGallery = ({ history }) => {
     },
   ];
   return (
-    <div className={style.categoriesContainer}>
+    <div id="portfolio" className={style.categoriesContainer}>
       {data.map((item) => (
         <div
           style={{ backgroundImage: `url(${item.image})` }}

@@ -3,19 +3,57 @@
 
 .container {
   .bgImage {
-    height: 40vh;
+    height: 350px;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    @extend .flexRow;
+    h2 {
+      font-size: 4rem;
+      color: white;
+      font-family: "Playfair Display", serif;
+    }
   }
 }
 
 .content {
   color: black;
   width: 100vw;
-  height: 75vh;
+  // height: 75vh;
   display: flex;
   text-align: right;
+  padding: 50px 10px;
+
+  .contactDetails {
+    @extend .flexRow;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    span {
+      @extend .flexRow;
+      justify-content: flex-start;
+      p {
+        width: fit-content;
+        margin-left: 10px;
+      }
+    }
+  }
+  .socialLinks {
+    width: 100%;
+    margin: 20px 0;
+    ul {
+      @extend .flexRow;
+      list-style: none;
+      width: 100%;
+      justify-content: flex-start;
+      li {
+        margin-left: 20px;
+        &:first-of-type {
+          margin: 0;
+        }
+      }
+    }
+  }
 
   .floatLeft {
     flex: 1;

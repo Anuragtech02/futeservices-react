@@ -8,6 +8,9 @@ import {
 import React from "react";
 import style from "./Contact.module.css";
 import cat1 from "../../Assets/category1.jpg";
+import { Grid } from "@material-ui/core";
+import CallIcon from "@material-ui/icons/Call";
+import MailIcon from "@material-ui/icons/Mail";
 
 export const Contact = () => {
   //   React.useEffect(() => {
@@ -21,7 +24,9 @@ export const Contact = () => {
       <div
         style={{ backgroundImage: `url(${cat1})` }}
         className={style.bgImage}
-      ></div>
+      >
+        <h2>Contact Details</h2>
+      </div>
       <ContactForm />
     </div>
   );
@@ -49,21 +54,38 @@ export const ContactForm = () => {
 
   return (
     <div className={style.content}>
-      <div className={style.floatLeft}>
-        <h6 className={style.heading}>COLLABORATE</h6>
-        <p className={style.para}>WANT TO WORK WITH US? LEAVE US A MESSAGE!</p>
-        <div>
-          <ul>
-            {socialMedia.map((data, index) => (
-              <li key={index}>
-                <a href={data.link}>{data.icon}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      <Grid container spacing={2}>
+        <Grid item md={6} xs={12}>
+          <div>
+            <h6 className={style.heading}>COLLABORATE</h6>
+            <p className={style.para}>WANT TO WORK WITH US? CONNECT NOW</p>
+          </div>
+        </Grid>
+        <Grid item md={6} xs={12}>
+          <div className={style.contactDetails}>
+            <div className={style.detail}>
+              <span>
+                <CallIcon /> <p>+91 9876543210</p>
+              </span>
+              <span>
+                <MailIcon /> <p>contact@futeservices.com</p>
+              </span>
+            </div>
+            <div className={style.socialLinks}>
+              <ul>
+                {socialMedia.map((data, index) => (
+                  <li key={index}>
+                    <a href={data.link}>{data.icon}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Grid>
+      </Grid>
+      <div className={style.floatLeft}></div>
       <div className={style.floatRight}>
-        <form>
+        {/* <form>
           <textarea
             rows="10"
             col="40"
@@ -82,7 +104,7 @@ export const ContactForm = () => {
           >
             Send
           </button>
-        </form>
+        </form> */}
       </div>
     </div>
   );
