@@ -140,11 +140,12 @@
   //Category Cards
   .categoriesContainer {
     width: 60vw;
-    margin: 100px auto;
+    margin: 40px auto;
 
     .categoryCard {
       width: 100%;
       height: 60vh;
+      min-height: 300px;
       background-size: cover;
       background-position: center;
       overflow: hidden;
@@ -197,6 +198,18 @@
 }
 @media screen and (max-width: 500px) {
   .container {
+    .categoriesContainer {
+      margin-top: 0;
+      .categoryCard {
+        height: 40vh;
+        margin: 20px 0;
+        .categoryCardTitle {
+          h2 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
     .largeVideoBg {
       .heading {
         font-size: 1.8rem;

@@ -363,6 +363,7 @@ a:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin-left: 10px;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -387,7 +388,7 @@ a:hover {
   font-weight: 400;
   text-transform: uppercase;
   color: #ababab;
-  font-size: 18px;
+  font-size: 18px !important;
   line-height: 26px;
   letter-spacing: 0.4em;
   margin: 25px 0;
@@ -398,7 +399,6 @@ a:hover {
 }
 
 .content .para {
-  float: right;
   color: black;
   z-index: 10;
   font-family: "Bebas Neue", sans-serif;
@@ -410,5 +410,34 @@ a:hover {
   letter-spacing: 0.05em;
   word-wrap: break-word;
   max-width: 45%;
+}
+
+@media screen and (max-width: 800px) {
+  .content .para {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .bgImage h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content .para {
+    max-width: 80%;
+    font-size: 2.2rem;
+    line-height: normal;
+  }
+  .content .details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=Contact.module.css.map */
