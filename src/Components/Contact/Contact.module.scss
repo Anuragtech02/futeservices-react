@@ -21,26 +21,34 @@
   width: 100vw;
   // height: 75vh;
   display: flex;
-  text-align: right;
-  padding: 50px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 10px;
 
-  .contactDetails {
+  .details {
     @extend .flexRow;
-    flex-direction: column;
+    padding: 20px 0;
+    // flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     span {
       @extend .flexRow;
       justify-content: flex-start;
-      p {
+      margin: 0 10px;
+      svg {
+        fill: rgba(0, 0, 0, 0.6);
+      }
+      a {
         width: fit-content;
         margin-left: 10px;
+        color: rgba(0, 0, 0, 0.6);
       }
     }
   }
   .socialLinks {
-    width: 100%;
-    margin: 20px 0;
+    // width: 100%;
     ul {
       @extend .flexRow;
       list-style: none;
@@ -52,104 +60,6 @@
           margin: 0;
         }
       }
-    }
-  }
-
-  .floatLeft {
-    flex: 1;
-    float: left;
-    margin: auto auto;
-    left: 0;
-    vertical-align: middle;
-    justify-content: right;
-    align-items: flex-end;
-
-    div {
-      width: 100%;
-      display: inline-block;
-
-      ul {
-        color: black;
-        text-decoration: none;
-        list-style: none;
-        outline: none;
-        text-align: right;
-        margin-top: 30px;
-
-        li {
-          float: right;
-          padding: 0 10px;
-        }
-
-        a {
-          color: black;
-        }
-      }
-    }
-  }
-
-  .floatRight {
-    margin: auto auto;
-    flex: 1;
-    vertical-align: middle;
-
-    form {
-      width: 60%;
-      display: block;
-      margin: auto 8%;
-
-      .flex {
-        width: 100%;
-        flex-direction: row;
-      }
-
-      textarea {
-        display: inline-block;
-        width: 100%;
-        letter-spacing: normal;
-        word-spacing: normal;
-        text-transform: none;
-        text-indent: 0px;
-        text-shadow: none;
-        text-align: start;
-        flex-direction: column;
-        resize: auto;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-      }
-    }
-
-    input[type="text"] {
-      float: left;
-    }
-
-    input[type="email"],
-    input[type="text"],
-    textarea {
-      width: max-content;
-      position: relative;
-      margin: 10px 0;
-      padding: 17px 25px;
-      font-family: inherit;
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: inherit;
-      color: #6d6d6d;
-      background-color: transparent;
-      border: 2px solid rgba(0, 0, 0, 0.2);
-      border-radius: 0;
-      outline: 0;
-      // cursor: text;
-
-      &:focus {
-        border-left: 2px solid black;
-        color: #111;
-      }
-    }
-
-    button {
-      margin: 10px 0;
-      width: 100%;
     }
   }
 
@@ -181,6 +91,6 @@
     letter-spacing: 0.05em;
     word-wrap: break-word;
     max-width: 45%;
-    text-align: right;
+    // text-align: right;
   }
 }

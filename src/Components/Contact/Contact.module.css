@@ -282,7 +282,7 @@ a:hover {
   margin: auto auto;
 }
 
-.flexRow, .container .bgImage, .content .contactDetails, .content .contactDetails span, .content .socialLinks ul,
+.flexRow, .container .bgImage, .content .details, .content .details span, .content .socialLinks ul,
 .flexColumn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,15 +323,22 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
-  padding: 50px 10px;
-}
-
-.content .contactDetails {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 80px 10px;
+}
+
+.content .details {
+  padding: 20px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -340,22 +347,23 @@ a:hover {
           align-items: flex-start;
 }
 
-.content .contactDetails span {
+.content .details span {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: 0 10px;
 }
 
-.content .contactDetails span p {
+.content .details span svg {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.content .details span a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: 10px;
-}
-
-.content .socialLinks {
-  width: 100%;
-  margin: 20px 0;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .content .socialLinks ul {
@@ -372,121 +380,6 @@ a:hover {
 
 .content .socialLinks ul li:first-of-type {
   margin: 0;
-}
-
-.content .floatLeft {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  float: left;
-  margin: auto auto;
-  left: 0;
-  vertical-align: middle;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.content .floatLeft div {
-  width: 100%;
-  display: inline-block;
-}
-
-.content .floatLeft div ul {
-  color: black;
-  text-decoration: none;
-  list-style: none;
-  outline: none;
-  text-align: right;
-  margin-top: 30px;
-}
-
-.content .floatLeft div ul li {
-  float: right;
-  padding: 0 10px;
-}
-
-.content .floatLeft div ul a {
-  color: black;
-}
-
-.content .floatRight {
-  margin: auto auto;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  vertical-align: middle;
-}
-
-.content .floatRight form {
-  width: 60%;
-  display: block;
-  margin: auto 8%;
-}
-
-.content .floatRight form .flex {
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.content .floatRight form textarea {
-  display: inline-block;
-  width: 100%;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  text-align: start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  resize: auto;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-}
-
-.content .floatRight input[type="text"] {
-  float: left;
-}
-
-.content .floatRight input[type="email"],
-.content .floatRight input[type="text"],
-.content .floatRight textarea {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  position: relative;
-  margin: 10px 0;
-  padding: 17px 25px;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: inherit;
-  color: #6d6d6d;
-  background-color: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  outline: 0;
-}
-
-.content .floatRight input[type="email"]:focus,
-.content .floatRight input[type="text"]:focus,
-.content .floatRight textarea:focus {
-  border-left: 2px solid black;
-  color: #111;
-}
-
-.content .floatRight button {
-  margin: 10px 0;
-  width: 100%;
 }
 
 .content .heading {
@@ -517,6 +410,5 @@ a:hover {
   letter-spacing: 0.05em;
   word-wrap: break-word;
   max-width: 45%;
-  text-align: right;
 }
 /*# sourceMappingURL=Contact.module.css.map */

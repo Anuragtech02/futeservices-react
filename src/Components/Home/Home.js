@@ -27,6 +27,7 @@ import classNames from "classnames";
 import hoverEffect from "hover-effect";
 import BgVideo from "../../Assets/video/fute-video-bg.mp4";
 import { withRouter } from "react-router";
+import HomeSlider from "../HomeSlider/HomeSlider";
 
 export const Home = ({ history }) => {
   const cursor = useRef(null);
@@ -97,7 +98,10 @@ export const Home = ({ history }) => {
           </h1>
         </div>
       </section>
-      <section
+      <section className={style.homeSliderContainer}>
+        <HomeSlider />
+      </section>
+      {/* <section
         className={style.section}
         style={{ backgroundImage: `url(${introImage})` }}
       >
@@ -116,7 +120,7 @@ export const Home = ({ history }) => {
             </motion.button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className={style.section} style={{ backgroundColor: "#111" }}>
         <HrSlider className={style.hrSlider} />

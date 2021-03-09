@@ -54,57 +54,25 @@ export const ContactForm = () => {
 
   return (
     <div className={style.content}>
-      <Grid container spacing={2}>
-        <Grid item md={6} xs={12}>
-          <div>
-            <h6 className={style.heading}>COLLABORATE</h6>
-            <p className={style.para}>WANT TO WORK WITH US? CONNECT NOW</p>
-          </div>
-        </Grid>
-        <Grid item md={6} xs={12}>
-          <div className={style.contactDetails}>
-            <div className={style.detail}>
-              <span>
-                <CallIcon /> <p>+91 9876543210</p>
-              </span>
-              <span>
-                <MailIcon /> <p>contact@futeservices.com</p>
-              </span>
-            </div>
-            <div className={style.socialLinks}>
-              <ul>
-                {socialMedia.map((data, index) => (
-                  <li key={index}>
-                    <a href={data.link}>{data.icon}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </Grid>
-      </Grid>
-      <div className={style.floatLeft}></div>
-      <div className={style.floatRight}>
-        {/* <form>
-          <textarea
-            rows="10"
-            col="40"
-            name="message"
-            placeholder="Enter Your Message"
-          />
-          <br />
-          <div className={style.flex}>
-            <input name="name" type="text" placeholder="Your Name" />
-            <input name="email" type="email" placeholder="Your Email" />
-          </div>
-          <button
-            style={{ opacity: 1 }}
-            className={style.btnDrakFilled}
-            type="submit"
-          >
-            Send
-          </button>
-        </form> */}
+      {/* <h6 className={style.heading}>COLLABORATE</h6> */}
+      <p className={style.para}>WANT TO WORK WITH US? CONNECT NOW</p>
+      <div className={style.details}>
+        <span>
+          <CallIcon /> <a href="tel:+919876543210">+91 9876543210</a>
+        </span>
+        <span>
+          <MailIcon />{" "}
+          <a href="mailto:contact@futeservices.com">contact@futeservices.com</a>
+        </span>
+      </div>
+      <div className={style.socialLinks}>
+        <ul>
+          {socialMedia.map((data, index) => (
+            <li key={index}>
+              <a href={data.link}>{data.icon}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

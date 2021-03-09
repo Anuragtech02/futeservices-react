@@ -17,3 +17,6 @@
 html {
   overflow-x: hidden !important;
 }
+.slick-slide div:first-of-type {
+  outline: none !important;
+}
