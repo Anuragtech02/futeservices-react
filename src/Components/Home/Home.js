@@ -92,10 +92,7 @@ export const Home = ({ history }) => {
           Your browser does not support the video tag.
         </video>
         <div className={style.heading}>
-          <h1>
-            We bring visionary places,
-            <br /> spaces and ideas to life.
-          </h1>
+          <h1>We bring visionary places, spaces and ideas to life.</h1>
         </div>
       </section>
       <section className={style.homeSliderContainer}>

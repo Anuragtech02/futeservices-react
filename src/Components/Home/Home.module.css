@@ -458,6 +458,15 @@
   .container .categoriesContainer .categoryCard {
     height: 80vh;
   }
+  .container .largeVideoBg .heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container .largeVideoBg .heading {
+    font-size: 1.8rem;
+  }
 }
 
 .heading {
@@ -501,134 +510,6 @@
 
 .thirdSection {
   background-size: cover;
-}
-
-.container {
-  /*.header1 :hover {
-       
-        height:100vh;
-        text-align: center;
-        width:100%;
-        transition: .5s ease;
-        background: linear-gradient(25deg, rgb(255, 21, 0),rgb(251, 170, 170),rgb(255, 0, 200)); 
-        opacity: 0.5; 
-    }
-    .header2 :hover {
-       
-        height:100vh;
-        text-align: center;
-        width:100%;
-        transition: .5s ease;
-        background: linear-gradient(25deg, rgb(255, 21, 0),rgb(251, 170, 170),rgb(255, 0, 200)); 
-        opacity: 0.5; 
-    }
-    .header3 :hover {
-       
-        height:100vh;
-        text-align: center;
-        width:100%;
-        transition: .5s ease;
-        background: linear-gradient(25deg, rgb(255, 21, 0),rgb(251, 170, 170),rgb(255, 0, 200)); 
-        opacity: 0.5; 
-    }
-    .header4 :hover {
-       
-        height:100vh;
-        text-align: center;
-        width:100%;
-        transition: .5s ease;
-        background: linear-gradient(25deg, rgb(255, 21, 0),rgb(251, 170, 170),rgb(255, 0, 200)); 
-        opacity: 0.5; 
-    }*/
-}
-
-.container .header1 {
-  height: 100vh;
-  width: 100%;
-  background-image: url("../../Assets/pexels-artem-beliaikin-1319795.jpg");
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-  position: relative;
-}
-
-.container .header2 {
-  height: 100vh;
-  width: 100%;
-  background-image: url("../../Assets/pexels-bich-tran-669996.jpg");
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-  position: relative;
-}
-
-.container .header3 {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image: url("../../Assets/pexels-caleb-oquendo-2918590.jpg");
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-}
-
-.container .header4 {
-  height: 100vh;
-  width: 100%;
-  background-image: url("../../Assets/pexels-debasish-sahoo-140221.jpg");
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-  position: relative;
-}
-
-.container .header5 {
-  height: 100vh;
-  width: 100%;
-  background: black;
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-  padding: 40px;
-  position: relative;
-}
-
-.container header h1 {
-  font-size: 48px;
-  color: #fff;
-  margin: 0px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.container header .subheader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 30px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container header .subheader img {
-  width: 50%;
-  z-index: 1;
-  margin-left: 30px;
-  position: relative;
-}
-
-.parallax {
-  text-align: center;
 }
 
 .insideStyles {
