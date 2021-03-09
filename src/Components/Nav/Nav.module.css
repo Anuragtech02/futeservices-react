@@ -218,7 +218,8 @@
 }
 
 .flexRow, .container .navLinks,
-.flexColumn {
+.flexColumn,
+.sidebarContainer .navLinksMobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +230,9 @@
           align-items: center;
 }
 
-.flexColumn {
+
+.flexColumn,
+.sidebarContainer .navLinksMobile {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -278,10 +281,106 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 20%;
+  position: relative;
 }
 
 .container .navLinks .navLink,
 .container .navLinks a {
   cursor: pointer !important;
+}
+
+.container .burgerMenu {
+  width: 30px;
+  display: none;
+  z-index: 1300 !important;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .burgerMenu .burger {
+  height: 5px;
+  width: 100%;
+  background: #b30202;
+  margin: 5px 0;
+  cursor: pointer;
+  z-index: 1300 !important;
+}
+
+.sidebarContainer {
+  width: 300px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.sidebarContainer .burgerMenu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.sidebarContainer .burgerMenu .burger {
+  height: 5px;
+  width: 100%;
+  background: #b30202;
+  margin: 5px 0;
+  cursor: pointer;
+  z-index: 1300 !important;
+}
+
+.sidebarContainer .burgerActive {
+  z-index: 1300;
+}
+
+.sidebarContainer .burgerActive .burger {
+  background: black !important;
+}
+
+.sidebarContainer .burgerActive .burger:nth-child(2) {
+  display: none;
+}
+
+.sidebarContainer .burgerActive .burger:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(4px, 4px);
+          transform: rotate(45deg) translate(4px, 4px);
+}
+
+.sidebarContainer .burgerActive .burger:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(3px, -3px);
+          transform: rotate(-45deg) translate(3px, -3px);
+}
+
+.sidebarContainer .navLinksMobile {
+  list-style: none;
+}
+
+.sidebarContainer .navLinksMobile .brandName {
+  margin-top: 100px;
+}
+
+.sidebarContainer .navLinksMobile .brandName img {
+  max-width: 150px;
+  min-width: 100px;
+  cursor: pointer !important;
+}
+
+.sidebarContainer .navLinksMobile .navLink {
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .container .navLinks {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container .navLinks {
+    display: none;
+  }
+  .container .burgerMenu {
+    display: block;
+  }
 }
 /*# sourceMappingURL=Nav.module.css.map */
