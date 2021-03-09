@@ -1,15 +1,22 @@
-.slick-next, .slick-prev{
-    display: none !important;
+.slick-next,
+.slick-prev {
+  display: none !important;
 }
 
-.slick-center{
-    transform: scale(1.5);
+.slick-center {
+  transform: scale(1.5);
 }
 
-.slick-list{
-    box-sizing: border-box;
+.slick-list {
+  box-sizing: border-box;
 }
 
-.Mui-expanded .heading{
-    color: #fff !important;
+.Mui-expanded .heading {
+  color: #fff !important;
+}
+html {
+  overflow-x: hidden !important;
+}
+.slick-slide div:first-of-type {
+  outline: none !important;
 }
