@@ -5,7 +5,7 @@ import introImage from "../../Assets/pexels-daniel-absi-952670.jpg";
 import introImage2 from "../../Assets/pexels-caleb-oquendo-2918590.jpg";
 import bgImage2 from "../../Assets/josh-rose-trYl7JYATH0-unsplash.jpg";
 import cat1 from "../../Assets/category1.jpg";
-import cat2 from "../../Assets/category2.jpg";
+import cat2 from "../../Assets/category2.webp";
 import cat3 from "../../Assets/category3.jpg";
 import cat4 from "../../Assets/category4.jpg";
 import cat5 from "../../Assets/category5.jpg";
@@ -65,6 +65,7 @@ export const Home = ({ history }) => {
       // imagesRatio: 9 / 16,
     });
     // imageDistortion();
+    window.scrollTo(0, 0);
   }, []);
 
   const [showAction, setShowAction] = React.useState(false);

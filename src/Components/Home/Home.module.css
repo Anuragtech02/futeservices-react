@@ -282,7 +282,7 @@
   line-height: normal;
   text-transform: none;
   letter-spacing: normal;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Playfair Display", serif !important;
 }
 
 .container .customCursor {
@@ -446,6 +446,7 @@
   color: white;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .container .categoriesContainer .categoryCard:hover .categoryCardTitle {

@@ -21,22 +21,22 @@ const PortfolioPage = () => {
     }
   }, [name]);
 
-  useEffect(() => {
-    if (isotope) {
-      isotope.reloadItems();
-    } else {
-      setIsotope(
-        new Isotope(isoRef.current, {
-          itemSelector: ".grid-item",
-          // percentPosition: true,
-          layoutMode: "masonry",
-          masonry: {
-            columnWidth: ".grid-sizer",
-          },
-        })
-      );
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (isotope) {
+  //     isotope.reloadItems();
+  //   } else {
+  //     setIsotope(
+  //       new Isotope(isoRef.current, {
+  //         itemSelector: ".grid-item",
+  //         // percentPosition: true,
+  //         layoutMode: "masonry",
+  //         masonry: {
+  //           columnWidth: ".grid-sizer",
+  //         },
+  //       })
+  //     );
+  //   }
+  // }, []);
 
   return (
     <div className="container">
@@ -53,7 +53,7 @@ const PortfolioPage = () => {
         {/* <div className="grid-sizer"></div> */}
         {current?.images?.map((image, i) => (
           <div className={`grid-item`}>
-            <img src={image.src} alt="isotope-item" />
+            <img src={image.src} alt="portfolio-item" />
           </div>
         ))}
       </section>
