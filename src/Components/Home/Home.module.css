@@ -586,13 +586,13 @@
 }
 
 .distortion {
-  width: 35%;
+  width: 40%;
   height: 700px;
   margin: 0 10px;
 }
 
-.distortion canvas {
-  mix-blend-mode: screen !important;
+.distortion img {
+  height: 100%;
 }
 
 .transition {

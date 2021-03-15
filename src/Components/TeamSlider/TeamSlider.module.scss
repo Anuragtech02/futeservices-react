@@ -1,0 +1,105 @@
+@import "../common.module.scss";
+
+.container {
+  background: black;
+
+  .about {
+    padding-top: 100px;
+    justify-content: center;
+    display: flex !important;
+    img {
+      margin: 0 10px;
+    }
+  }
+  .title,
+  .otherName {
+    h1 {
+      font-weight: 400;
+      font-family: "Playfair Display", serif !important;
+      color: white;
+    }
+    p {
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      margin-left: 20px;
+      font-size: 0.8rem;
+    }
+  }
+  .otherName {
+    margin-top: 10rem;
+    text-align: right;
+    h1 {
+      font-size: 1rem;
+      color: white;
+    }
+    p {
+      text-align: right;
+      margin: 0;
+    }
+  }
+  .distortion {
+    width: 40%;
+    height: 700px;
+    margin: 0 10px;
+    // .bgContainer{
+    //   background-size: cover;
+    //   height: 100%;
+    //   width: 100%;
+    //   background-repeat: no-repeat;
+    //   width: auto;
+    // }
+    img {
+      height: 100%;
+    }
+  }
+  .transition {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    .distortion {
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    position: relative;
+    .distortion {
+      height: 450px;
+      width: auto;
+    }
+    .title,
+    .otherName {
+      position: absolute;
+      left: 20px;
+      bottom: 30%;
+      h1 {
+        font-size: 1.3rem;
+      }
+    }
+    .otherName {
+      left: auto;
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    .about {
+      padding-top: 50px;
+    }
+    .title {
+      p {
+        margin-left: 0px !important;
+      }
+    }
+  }
+}

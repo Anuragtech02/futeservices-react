@@ -25,9 +25,11 @@ import bg3 from "../../Assets/pexels-caleb-oquendo-2918590.jpg";
 import bg4 from "../../Assets/pexels-debasish-sahoo-140221.jpg";
 import classNames from "classnames";
 import hoverEffect from "hover-effect";
-import BgVideo from "../../Assets/video/fute-video-bg.mp4";
+import BgVideo from "../../Assets/video/fute-video-bg.webm";
 import { withRouter } from "react-router";
 import HomeSlider from "../HomeSlider/HomeSlider";
+// import member2 from "../../Assets/team/member2.png";
+import TeamSlider from "../TeamSlider/TeamSlider";
 
 export const Home = ({ history }) => {
   const cursor = useRef(null);
@@ -88,12 +90,12 @@ export const Home = ({ history }) => {
       {/* <div id="cursor" className={style.customCursor}></div> */}
       {/* <Carousel className={style.carousel} /> */}
       <section className={style.largeVideoBg}>
-        <video autoPlay loop={true}>
+        <video muted autoPlay loop={true}>
           <source src={BgVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className={style.heading}>
-          <h1>We bring visionary places, spaces and ideas to life.</h1>
+          {/* <h1>We bring visionary places, spaces and ideas to life.</h1> */}
         </div>
       </section>
       <section className={style.homeSliderContainer}>
@@ -203,34 +205,8 @@ export const Home = ({ history }) => {
           <CustomStepper steps={timeline} content={timelineData} theme="dark" />
         </section>
       </section> */}
-      <div className={classNames(style.flexRow, style.about)}>
-        <motion.div
-          initial={{ x: -30, opacity: 0 }}
-          animate={{ x: showAction ? 0 : -30, opacity: showAction ? 1 : 0 }}
-          transition={{
-            type: "tween",
-            duration: 0.5,
-          }}
-          className={style.title}
-        >
-          <h1>Michael Brown</h1>
-          <p>Co-Founder and head of the company.</p>
-        </motion.div>
-        {/* <img id="img" alt="portrait" src={portrait1} /> */}
-        <motion.div ref={distortion} className={style.distortion}></motion.div>
-        <motion.div
-          initial={{ x: 30, opacity: 0 }}
-          animate={{ x: showAction ? 0 : 30, opacity: showAction ? 1 : 0 }}
-          transition={{
-            type: "tween",
-            duration: 0.5,
-          }}
-          className={classNames(style.title, style.otherName)}
-        >
-          <h1>Michael Brown</h1>
-          <p>New Delhi, India</p>
-        </motion.div>
-      </div>
+
+      <TeamSlider />
       <div style={{ background: "white" }}>
         <MultipleSlider />
       </div>
