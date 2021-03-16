@@ -217,7 +217,7 @@
   margin: auto auto;
 }
 
-.flexRow,
+.flexRow, .bottomFoot, .bottomFoot .socialLinks,
 .flexColumn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,12 +323,33 @@ hr {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-p {
+.bottomFoot {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5%;
+}
+
+.bottomFoot p {
   padding: 5px 0;
   color: #989898;
-  width: 100%;
   text-align: center;
   font-family: "open sans", sans-serif;
+}
+
+.bottomFoot .socialLinks {
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bottomFoot .socialLinks .socialLink {
+  cursor: pointer;
+}
+
+.bottomFoot .socialLinks .socialLink svg {
+  fill: white;
 }
 
 @media (max-width: 998px) {

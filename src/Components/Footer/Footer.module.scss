@@ -57,12 +57,28 @@ hr {
   border-color: rgba($color: #fff, $alpha: 0.2);
 }
 
-p {
-  padding: 5px 0;
-  color: #989898;
-  width: 100%;
-  text-align: center;
-  font-family: "open sans", sans-serif;
+.bottomFoot {
+  @extend .flexRow;
+  justify-content: space-between;
+  padding: 0 5%;
+  p {
+    padding: 5px 0;
+    color: #989898;
+    text-align: center;
+    font-family: "open sans", sans-serif;
+  }
+
+  .socialLinks {
+    @extend .flexRow;
+    list-style: none;
+    justify-content: space-between;
+    .socialLink {
+      cursor: pointer;
+      svg {
+        fill: white;
+      }
+    }
+  }
 }
 
 @media (max-width: 998px) {

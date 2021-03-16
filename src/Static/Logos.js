@@ -1,36 +1,43 @@
-import img1 from "../Assets/brands/logo-transparent.png";
-import img2 from "../Assets/brands/1280px-Quechua_company_logo.png";
-import img3 from "../Assets/brands/58428e7da6515b1e0ad75ab5.png";
-import img4 from "../Assets/brands/Always-Logo.png";
-import img5 from "../Assets/brands/unilever.jpg";
-import img6 from "../Assets/brands/ford-logo-2003.png";
-
+import brand1 from "../Assets/brands/brand1.webp";
+import brand2 from "../Assets/brands/brand2.webp";
+import brand3 from "../Assets/brands/brand3.webp";
+import brand4 from "../Assets/brands/brand4.webp";
+import brand5 from "../Assets/brands/brand5.webp";
+import brand6 from "../Assets/brands/brand6.webp";
+import brand7 from "../Assets/brands/brand7.webp";
+import brand8 from "../Assets/brands/brand8.webp";
 
 export const Logos = [
-    {
-        img : img1,
-        key:1,
-    },
-    {
-        img : img2,
-        key:2,
-    },
-    {
-         img : img3,
-         key:3,
-    },
-    {
-        img : img4,
-        key:4,
-    },
-    {
-        img : img5,
-        key:5,
-    },
-    {
-        img : img6,
-        key:6,
-    },
-    
-    
-]
+  {
+    img: brand1,
+    key: 1,
+  },
+  {
+    img: brand2,
+    key: 2,
+  },
+  {
+    img: brand3,
+    key: 3,
+  },
+  {
+    img: brand4,
+    key: 4,
+  },
+  {
+    img: brand5,
+    key: 5,
+  },
+  {
+    img: brand6,
+    key: 6,
+  },
+  {
+    img: brand7,
+    key: 7,
+  },
+  {
+    img: brand8,
+    key: 8,
+  },
+];

@@ -280,7 +280,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 20%;
+  width: 30%;
   position: relative;
 }
 
@@ -369,13 +369,19 @@
   margin: 20px 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .container .navLinks {
-    width: 30%;
+    width: 40%;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
+  .container .navLinks {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .container .navLinks {
     display: none;
   }

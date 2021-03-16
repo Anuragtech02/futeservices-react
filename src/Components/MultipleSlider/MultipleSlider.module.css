@@ -20,6 +20,6 @@
 
 .slider .imgContainer img {
   max-width: 200px !important;
-  height: 100px !important;
+  max-height: 100px !important;
 }
 /*# sourceMappingURL=MultipleSlider.module.css.map */
