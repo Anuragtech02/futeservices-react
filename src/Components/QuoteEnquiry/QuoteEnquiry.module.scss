@@ -1,0 +1,168 @@
+@import "../../App.module.scss";
+@import "../common.module.scss";
+
+.container {
+  .bgImage {
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    @extend .flexRow;
+    h2 {
+      font-size: 4rem;
+      color: white;
+      font-family: "Playfair Display", serif;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    .bgImage {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.content {
+  color: black;
+  width: 100vw;
+  min-height: 75vh;
+  padding: 50px 0;
+  display: flex;
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+
+  .floatLeft {
+    width: 100%;
+    // margin: auto auto;
+    @extend .flexColumn;
+    align-items: flex-end;
+  }
+
+  @media screen and(max-width: 960px) {
+    padding: 20px 0;
+    .floatLeft {
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .floatRight {
+    // margin: auto auto;
+    // flex: 1;
+    // vertical-align: middle;
+
+    form {
+      // width: 60%;
+      display: block;
+      margin: auto 8%;
+
+      .flex {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      textarea {
+        display: inline-block;
+        width: 100%;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        text-align: start;
+        flex-direction: column;
+        resize: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    }
+
+    // input[type="text"] {
+    //   float: left;
+    // }
+
+    input[type="email"],
+    input[type="text"],
+    textarea {
+      width: 100%;
+      position: relative;
+      margin: 10px 0;
+      padding: 17px 25px;
+      font-family: inherit;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: inherit;
+      color: #6d6d6d;
+      background-color: transparent;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      border-radius: 0;
+      outline: 0;
+      cursor: text;
+
+      &:focus {
+        border-left: 2px solid black;
+        color: #111;
+      }
+    }
+
+    input[name="name"],
+    input[type="email"] {
+      width: 48%;
+      @media screen and (max-width: 400px) {
+        width: 100%;
+      }
+    }
+
+    button {
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+
+  .heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ababab;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.4em;
+    margin: 25px 0;
+    z-index: 10;
+    vertical-align: middle;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .para {
+    // float: right;
+    color: black;
+    z-index: 10;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    // text-transform: uppercase;
+    font-size: 2rem;
+    line-height: normal;
+    // vertical-align: middle;
+    letter-spacing: 0.05em;
+    word-wrap: break-word;
+    // max-width: 45%;
+    width: 60%;
+    text-align: right;
+    @media screen and(max-width: 960px) {
+      text-align: center;
+      width: 85%;
+      font-size: 1.8rem;
+    }
+  }
+  .companyInput {
+    width: 100% !important;
+  }
+}

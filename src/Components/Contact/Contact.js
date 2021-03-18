@@ -7,10 +7,10 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import style from "./Contact.module.css";
-import cat1 from "../../Assets/category1.jpg";
-import { Grid } from "@material-ui/core";
+import cat1 from "../../Assets/projects/category1.webp";
 import CallIcon from "@material-ui/icons/Call";
 import MailIcon from "@material-ui/icons/Mail";
+import vimeoIcon from "../../Assets/vimeo-brands.svg";
 
 export const Contact = () => {
   //   React.useEffect(() => {
@@ -35,7 +35,11 @@ export const Contact = () => {
 export const ContactForm = () => {
   const socialMedia = [
     {
-      icon: <YouTube fontSize="small" />,
+      icon: <Twitter fontSize="small" />,
+      link: "#",
+    },
+    {
+      icon: <Facebook fontSize="small" />,
       link: "#",
     },
     {
@@ -43,11 +47,11 @@ export const ContactForm = () => {
       link: "#",
     },
     {
-      icon: <Twitter fontSize="small" />,
+      icon: <LinkedIn fontSize="small" />,
       link: "#",
     },
     {
-      icon: <Facebook fontSize="small" />,
+      icon: <img width={15} src={vimeoIcon} alt="vimeo-fute" />,
       link: "#",
     },
   ];

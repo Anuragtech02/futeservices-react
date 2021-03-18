@@ -19,13 +19,13 @@ const TeamSlider = () => {
     className: "center",
     infinite: true,
     centerPadding: "60px",
-    accessibility: true,
-    lazyload: true,
-    slidesToShow: "1",
-    swipeToSlide: false,
+    // accessibility: true,
+    // lazyload: true,
+    slidesToShow: 1,
+    swipeToSlide: true,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     speed: 2000,
     ease: "ease-in",
     beforeChange: (current, next) => setShowAction(false),
@@ -40,8 +40,9 @@ const TeamSlider = () => {
               initial={{ x: -30, opacity: 0 }}
               animate={{ x: showAction ? 0 : -30, opacity: showAction ? 1 : 0 }}
               transition={{
-                type: "spring",
-                duration: 0.8,
+                // type: "keyframes",
+                duration: 0.5,
+                ease: [0.49, 1.13, 0.48, 0.74],
               }}
               className={styles.title}
             >
@@ -60,8 +61,9 @@ const TeamSlider = () => {
               initial={{ x: 30, opacity: 0 }}
               animate={{ x: showAction ? 0 : 30, opacity: showAction ? 1 : 0 }}
               transition={{
-                type: "spring",
-                duration: 0.8,
+                // type: "spring",
+                duration: 0.5,
+                ease: [0.49, 1.13, 0.48, 0.74],
               }}
               className={classNames(styles.title, styles.otherName)}
             >

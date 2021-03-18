@@ -3,7 +3,7 @@ export const UrlStrings = {
   ABOUT: "/about",
   OURTEAM: "/team",
   CONTACTUS: "/contact",
-  QUOTE: "/contact",
+  QUOTE: "/quote",
   FAQ: "/faq",
   PORTFOLIO: "#portfolio",
 };

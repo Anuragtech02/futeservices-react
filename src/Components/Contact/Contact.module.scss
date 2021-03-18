@@ -55,7 +55,9 @@
       list-style: none;
       width: 100%;
       justify-content: flex-start;
+
       li {
+        cursor: pointer !important;
         margin-left: 20px;
         &:first-of-type {
           margin: 0;

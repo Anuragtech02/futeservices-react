@@ -1,8 +1,8 @@
-import cat1 from "../Assets/category1.jpg";
-import cat2 from "../Assets/category2.webp";
-import cat3 from "../Assets/category3.jpg";
-import cat4 from "../Assets/category4.jpg";
-import cat5 from "../Assets/category5.jpg";
+import cat1 from "../Assets/projects/category1.webp";
+import cat2 from "../Assets/projects/category2.webp";
+import cat3 from "../Assets/projects/category3.webp";
+import cat4 from "../Assets/projects/category4.webp";
+import cat5 from "../Assets/projects/category5.webp";
 
 export const PortfolioData = [
   {
