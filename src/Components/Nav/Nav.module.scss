@@ -24,7 +24,7 @@
     @extend .flexRow;
     list-style: none;
     justify-content: space-between;
-    width: 30%;
+    width: 35%;
     position: relative;
     .navLink,
     a {
@@ -106,7 +106,7 @@
     }
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .container {
     .navLinks {
       width: 40%;
@@ -114,10 +114,18 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .container {
     .navLinks {
       width: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    .navLinks {
+      width: 50%;
     }
   }
 }

@@ -303,7 +303,8 @@
 .container .sliderContainer .imgContainer .slideTitle h4 {
   color: white;
   font-size: 2rem;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-right: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }

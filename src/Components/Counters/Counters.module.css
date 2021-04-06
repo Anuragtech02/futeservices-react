@@ -217,9 +217,9 @@
   margin: auto auto;
 }
 
-.flexRow, .container .navLinks,
+.flexRow, .container,
 .flexColumn,
-.sidebarContainer .navLinksMobile {
+.container .counter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,7 +232,7 @@
 
 
 .flexColumn,
-.sidebarContainer .navLinksMobile {
+.container .counter {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -243,156 +243,21 @@
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 5%;
+  padding: 100px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.container .brandName {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-width: 35%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: auto;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.container .counter {
+  margin: 0 50px;
 }
 
-.container .brandName img {
-  max-width: 150px;
-  min-width: 100px;
-  cursor: pointer !important;
+.container .counter h1,
+.container .counter span {
+  font-size: 3rem;
+  color: #fa3554;
 }
-
-.container .navLinks {
-  list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 35%;
-  position: relative;
-}
-
-.container .navLinks .navLink,
-.container .navLinks a {
-  cursor: pointer !important;
-}
-
-.container .burgerMenu {
-  width: 30px;
-  display: none;
-  z-index: 1300 !important;
-  position: relative;
-  cursor: pointer;
-}
-
-.container .burgerMenu .burger {
-  height: 5px;
-  width: 100%;
-  background: #b30202;
-  margin: 5px 0;
-  cursor: pointer;
-  z-index: 1300 !important;
-}
-
-.sidebarContainer {
-  width: 300px;
-  position: relative;
-  margin-top: 30px;
-}
-
-.sidebarContainer .burgerMenu {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  cursor: pointer;
-}
-
-.sidebarContainer .burgerMenu .burger {
-  height: 5px;
-  width: 100%;
-  background: #b30202;
-  margin: 5px 0;
-  cursor: pointer;
-  z-index: 1300 !important;
-}
-
-.sidebarContainer .burgerActive {
-  z-index: 1300;
-}
-
-.sidebarContainer .burgerActive .burger {
-  background: black !important;
-}
-
-.sidebarContainer .burgerActive .burger:nth-child(2) {
-  display: none;
-}
-
-.sidebarContainer .burgerActive .burger:nth-child(1) {
-  -webkit-transform: rotate(45deg) translate(4px, 4px);
-          transform: rotate(45deg) translate(4px, 4px);
-}
-
-.sidebarContainer .burgerActive .burger:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translate(3px, -3px);
-          transform: rotate(-45deg) translate(3px, -3px);
-}
-
-.sidebarContainer .navLinksMobile {
-  list-style: none;
-}
-
-.sidebarContainer .navLinksMobile .brandName {
-  margin-top: 100px;
-}
-
-.sidebarContainer .navLinksMobile .brandName img {
-  max-width: 150px;
-  min-width: 100px;
-  cursor: pointer !important;
-}
-
-.sidebarContainer .navLinksMobile .navLink {
-  margin: 20px 0;
-}
-
-@media screen and (max-width: 1300px) {
-  .container .navLinks {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .container .navLinks {
-    width: 45%;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .container .navLinks {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .container .navLinks {
-    display: none;
-  }
-  .container .burgerMenu {
-    display: block;
-  }
-}
-/*# sourceMappingURL=Nav.module.css.map */
+/*# sourceMappingURL=Counters.module.css.map */

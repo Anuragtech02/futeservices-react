@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import style from "./Home.module.css";
 import cat1 from "../../Assets/projects/category1.webp";
 import cat2 from "../../Assets/projects/category2.webp";
@@ -15,9 +15,11 @@ import { withRouter } from "react-router";
 import HomeSlider from "../HomeSlider/HomeSlider";
 // import member2 from "../../Assets/team/member2.png";
 import TeamSlider from "../TeamSlider/TeamSlider";
+import Counters from "../Counters/Counters";
 
 export const Home = ({ history }) => {
   const cursor = useRef(null);
+  const [enableCounter, setEnableCounter] = useState(false);
 
   // useEffect(() => {
   //   const mouseCursor = document.getElementById("cursor");
@@ -88,12 +90,14 @@ export const Home = ({ history }) => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel minima
             mollitia ratione nisi vero doloremque deserunt voluptatum saepe
             porro assumenda voluptate laudantium expedita doloribus qui, neque
+            exercitationem, obcaecati totam necessitatibus!, neque
             exercitationem, obcaecati totam necessitatibus!
           </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel minima
             mollitia ratione nisi vero doloremque deserunt voluptatum saepe
             porro assumenda voluptate laudantium expedita doloribus qui, neque
+            exercitationem, obcaecati totam necessitatibus!, neque
             exercitationem, obcaecati totam necessitatibus!
           </p>
         </div>
@@ -202,7 +206,12 @@ export const Home = ({ history }) => {
           <CustomStepper steps={timeline} content={timelineData} theme="dark" />
         </section>
       </section> */}
-
+      <div
+        onClick={() => setEnableCounter(true)}
+        className={style.countersContainer}
+      >
+        <Counters start={enableCounter} />
+      </div>
       <TeamSlider />
       <div style={{ background: "white" }}>
         <MultipleSlider />
