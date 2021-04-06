@@ -72,8 +72,6 @@ export const Home = ({ history }) => {
 
   return (
     <div id="container" className={style.container}>
-      {/* <div id="cursor" className={style.customCursor}></div> */}
-      {/* <Carousel className={style.carousel} /> */}
       <section className={style.largeVideoBg}>
         <video muted autoPlay loop={true}>
           <source src={BgVideo} type="video/mp4" />
@@ -85,6 +83,20 @@ export const Home = ({ history }) => {
       </section>
       <section className={style.homeSliderContainer}>
         <HomeSlider />
+        <div className={style.aboutContainer}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel minima
+            mollitia ratione nisi vero doloremque deserunt voluptatum saepe
+            porro assumenda voluptate laudantium expedita doloribus qui, neque
+            exercitationem, obcaecati totam necessitatibus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel minima
+            mollitia ratione nisi vero doloremque deserunt voluptatum saepe
+            porro assumenda voluptate laudantium expedita doloribus qui, neque
+            exercitationem, obcaecati totam necessitatibus!
+          </p>
+        </div>
       </section>
       {/* <section
         className={style.section}

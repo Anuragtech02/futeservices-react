@@ -24,7 +24,7 @@
   -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   padding: 8px 50px;
-  cursor: pointer;
+  cursor: pointer !important;
   pointer-events: all !important;
   z-index: 1;
 }

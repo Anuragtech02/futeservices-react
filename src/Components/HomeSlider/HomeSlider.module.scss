@@ -24,7 +24,7 @@
     .imgContainer {
       width: 100%;
       //   min-width: 1000px;
-      height: 400px;
+      height: 500px;
       position: relative;
 
       //   padding: 0 20px;
@@ -43,7 +43,8 @@
         position: absolute;
         width: 95%;
         top: 0;
-        left: 12px;
+        left: 50%;
+        transform: translate(-50%, 0);
         height: 100%;
         z-index: 100;
         background: rgba(0, 0, 0, 0.5);

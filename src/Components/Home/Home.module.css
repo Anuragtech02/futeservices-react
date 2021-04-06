@@ -24,7 +24,7 @@
   -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   padding: 8px 50px;
-  cursor: pointer;
+  cursor: pointer !important;
   pointer-events: all !important;
   z-index: 1;
 }
@@ -217,7 +217,7 @@
   margin: auto auto;
 }
 
-.flexRow,
+.flexRow, .container .homeSliderContainer .aboutContainer,
 .flexColumn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,14 +406,51 @@
   transition: all 0.2s ease-in-out;
 }
 
+.container .homeSliderContainer {
+  background: #f5f5f8;
+}
+
+.container .homeSliderContainer .aboutContainer {
+  padding-bottom: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .homeSliderContainer .aboutContainer p {
+  width: 40%;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.container .homeSliderContainer .aboutContainer p:nth-child(2) {
+  font-weight: 400;
+  color: #888888;
+}
+
+@media screen and (max-width: 850px) {
+  .container .homeSliderContainer .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .homeSliderContainer .aboutContainer p {
+    width: 90%;
+    margin: 10px 0;
+  }
+}
+
 .container .categoriesContainer {
-  width: 60vw;
+  width: 90vw;
   margin: 40px auto;
 }
 
 .container .categoriesContainer .categoryCard {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   min-height: 300px;
   background-size: cover;
   background-position: center;

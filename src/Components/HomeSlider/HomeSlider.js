@@ -66,7 +66,7 @@ function HomeSlider() {
     // accessibility: true,
     // dots: true,
     lazyload: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     // centerMode: true,
     infinite: true,
     swipeToSlide: true,
@@ -75,7 +75,7 @@ function HomeSlider() {
       {
         breakpoint: 1700,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
         },
       },
       {
@@ -85,7 +85,7 @@ function HomeSlider() {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 950,
         settings: {
           slidesToShow: 1,
         },
