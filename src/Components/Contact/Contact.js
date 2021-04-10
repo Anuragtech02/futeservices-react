@@ -62,14 +62,19 @@ export const ContactForm = () => {
       <p className={style.para}>WANT TO WORK WITH US? CONNECT NOW</p>
       <div className={style.details}>
         <span>
-          <CallIcon /> <a href="tel:+919876543210">+91 9876543210</a>
+          <CallIcon /> <a href="tel:+916362396806">+91 63623 96806</a>
         </span>
-        <span>
+        <span style={{ cursor: "pointer" }}>
           <MailIcon />{" "}
-          <a href="mailto:contact@futeservices.com">contact@futeservices.com</a>
+          <a
+            style={{ cursor: "pointer" }}
+            href="mailto:marketing@futeservices.com"
+          >
+            marketing@futeservices.com
+          </a>
         </span>
       </div>
-      <div className={style.socialLinks}>
+      {/* <div className={style.socialLinks}>
         <ul>
           {socialMedia.map((data, index) => (
             <li key={index}>
@@ -77,7 +82,7 @@ export const ContactForm = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

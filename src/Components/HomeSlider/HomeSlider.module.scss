@@ -11,6 +11,10 @@
     left: 20px;
     transform: translate(0, -50%);
     z-index: 1000;
+    span,
+    svg {
+      cursor: pointer;
+    }
     svg {
       fill: white;
     }

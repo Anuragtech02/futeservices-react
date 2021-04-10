@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montblanc", sans-serif;
   scroll-behavior: smooth;
   line-height: 1.857em;
   // cursor: none;
@@ -59,6 +59,17 @@ body {
 //     position: relative;
 //   }
 // }
-a:hover {
-  color: black;
+// a:hover {
+//   color: black;
+// }
+
+@font-face {
+  font-family: "Montblanc", sans-serif;
+  font-weight: 400;
+  src: url(./Assets/fonts/Montblanc-Regular.ttf);
+}
+@font-face {
+  font-family: "Montblanc", sans-serif;
+  font-weight: 700;
+  src: url(./Assets/fonts/MontBlancExtraBold.ttf);
 }

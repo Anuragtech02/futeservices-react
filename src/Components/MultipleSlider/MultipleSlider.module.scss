@@ -15,3 +15,26 @@
     }
   }
 }
+.container {
+  position: relative;
+  .arrowLeft,
+  .arrowRight {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+    z-index: 1000;
+    span,
+    svg {
+      cursor: pointer;
+    }
+    svg {
+      fill: rgb(49, 49, 49);
+    }
+  }
+  .arrowRight {
+    left: auto;
+    right: 20px;
+    transform: translate(0, -50%);
+  }
+}

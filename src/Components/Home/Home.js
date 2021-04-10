@@ -16,6 +16,7 @@ import HomeSlider from "../HomeSlider/HomeSlider";
 // import member2 from "../../Assets/team/member2.png";
 import TeamSlider from "../TeamSlider/TeamSlider";
 import Counters from "../Counters/Counters";
+import ScrollTrigger from "react-scroll-trigger";
 
 export const Home = ({ history }) => {
   const cursor = useRef(null);
@@ -210,12 +211,11 @@ export const Home = ({ history }) => {
           <CustomStepper steps={timeline} content={timelineData} theme="dark" />
         </section>
       </section> */}
-      <div
-        onClick={() => setEnableCounter(true)}
-        className={style.countersContainer}
-      >
-        <Counters start={enableCounter} />
-      </div>
+      <ScrollTrigger onEnter={() => setEnableCounter(true)}>
+        <div className={style.countersContainer}>
+          <Counters start={enableCounter} />
+        </div>
+      </ScrollTrigger>
       <TeamSlider />
       <div style={{ background: "white" }}>
         <MultipleSlider />

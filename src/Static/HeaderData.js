@@ -66,9 +66,10 @@ export const FooterData = {
   tabs: [
     { label: "Home", id: "home", path: UrlStrings.HOME },
     // { label: "About Us", id: "pages", path: UrlStrings.ABOUT },
-    { label: "Portfolio", id: "pages", path: UrlStrings.PORTFOLIO },
+    { label: "Our Services", id: "services", path: UrlStrings.SERVICES },
     // { label: "Our Team", id: "pages", path: UrlStrings.OURTEAM },
     { label: "Contact", id: "pages", path: UrlStrings.CONTACTUS },
+    { label: "Quote Enquiry", id: "pages", path: UrlStrings.QUOTE },
 
     // { label: "FAQ", id: "pages", path: UrlStrings.FAQ },
   ],

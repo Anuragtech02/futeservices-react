@@ -316,6 +316,7 @@
   letter-spacing: 0.2em;
   line-height: 1.857em;
   z-index: 10000;
+  cursor: pointer !important;
 }
 
 hr {
@@ -350,6 +351,15 @@ hr {
 
 .bottomFoot .socialLinks .socialLink svg {
   fill: white;
+}
+
+@media screen and (max-width: 500px) {
+  .bottomFoot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 998px) {
