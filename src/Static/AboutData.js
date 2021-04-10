@@ -67,20 +67,20 @@ export const mainTeamData = {
 export const teamData = [
   {
     image: member1,
-    name: "Michael Brown",
-    position: "Co-Founder and head of the company.",
-    location: "New Delhi, India",
+    name: "Ms. Soma",
+    position: "MANAGING DIRECTOR",
+    location: "India",
   },
   {
     image: member2,
-    name: "Michael Brown",
-    position: "Co-Founder and head of the company.",
-    location: "New Delhi, India",
+    name: "Ms. Payel Saha",
+    position: "CHIEF OPERATIONS OFFICER",
+    location: "India",
   },
   {
     image: member3,
-    name: "Michael Brown",
-    position: "Co-Founder and head of the company.",
-    location: "New Delhi, India",
+    name: "Mr. Ratish Kovvammal",
+    position: "CHIEF EXECUTIVE OFFICER",
+    location: "India",
   },
 ];

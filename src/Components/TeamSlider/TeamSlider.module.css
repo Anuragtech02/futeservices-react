@@ -241,6 +241,36 @@
 
 .container {
   background: black;
+  position: relative;
+}
+
+.container .arrowLeft,
+.container .arrowRight {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 1000;
+}
+
+.container .arrowLeft span,
+.container .arrowLeft svg,
+.container .arrowRight span,
+.container .arrowRight svg {
+  cursor: pointer;
+}
+
+.container .arrowLeft svg,
+.container .arrowRight svg {
+  fill: white;
+}
+
+.container .arrowRight {
+  left: auto;
+  right: 20px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .container .about {
