@@ -1,0 +1,22 @@
+@import "../common.module.scss";
+@import "../Contact/Contact.module.scss";
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+  .services {
+    width: 70%;
+    margin: auto;
+    padding: 50px 0;
+    .card {
+      h5 {
+        font-size: 1.1rem;
+      }
+      p {
+        margin-top: 10px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}

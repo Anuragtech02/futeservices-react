@@ -87,18 +87,22 @@ export const Home = ({ history }) => {
         <HomeSlider />
         <div className={style.aboutContainer}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel minima
-            mollitia ratione nisi vero doloremque deserunt voluptatum saepe
-            porro assumenda voluptate laudantium expedita doloribus qui, neque
-            exercitationem, obcaecati totam necessitatibus!, neque
-            exercitationem, obcaecati totam necessitatibus!
+            Ever since our inception, Fute Services has been proactive in
+            delivering a mesmerizingly cinematic experience to our audiences,
+            creating breathtaking architectural imagery perfected to the
+            minutest of details. This philosophy helps us not just enhance the
+            viewing experience but engross audiences while they actually feel
+            physically present at the location themselves.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel minima
-            mollitia ratione nisi vero doloremque deserunt voluptatum saepe
-            porro assumenda voluptate laudantium expedita doloribus qui, neque
-            exercitationem, obcaecati totam necessitatibus!, neque
-            exercitationem, obcaecati totam necessitatibus!
+            Our customized solutions approach ensures your project is the star
+            of the show. We listen to your specific needs, your precise
+            requirements, and your idea behind the conceptualization of your
+            dream project. There onwards we masterfully use the technology and
+            creative power in our hands to create and develop a show-stopping
+            solutions for your brand, catering to and designed to your specific
+            requirements and mimicking your dream in the most fascinating way
+            possible.
           </p>
         </div>
       </section>

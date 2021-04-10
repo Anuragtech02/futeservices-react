@@ -22,6 +22,7 @@ import Contact from "./Components/Contact/Contact";
 import PortfolioPage from "./Components/PortfolioPage/PortfolioPage";
 import NavWrapper from "./Components/Nav/NavWrapper";
 import QuoteEnquiry from "./Components/QuoteEnquiry/QuoteEnquiry";
+import Services from "./Components/Services/Services";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -105,6 +106,7 @@ const App = () => {
         <Route path="/about" exact component={About} />
         <Route path="/contact" exact component={Contact} />
         <Route path="/faq" exact component={FAQ} />
+        <Route path="/services" exact component={Services} />
         <Route path="/team" exact component={Team} />
         <Route path="/quote" exact component={QuoteEnquiry} />
         {/* <Route path="/portfolio" exact component={Portfolio} /> */}
