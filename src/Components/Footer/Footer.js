@@ -9,6 +9,7 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 import vimeoIcon from "../../Assets/vimeo-brands.svg";
 
 export const Footer = () => {
@@ -65,6 +66,11 @@ export const Footer = () => {
           <li className={style.socialLink}>
             <IconButton>
               <img width={15} src={vimeoIcon} alt="vimeo-fute" />
+            </IconButton>
+          </li>
+          <li className={style.socialLink}>
+            <IconButton>
+              <YouTubeIcon fontSize="small" />
             </IconButton>
           </li>
         </ul>
