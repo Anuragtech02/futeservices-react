@@ -6,22 +6,25 @@ export const UrlStrings = {
   QUOTE: "/quote",
   FAQ: "/faq",
   PORTFOLIO: "#portfolio",
+  PORT: "/portfolio",
   SERVICES: "/services",
 };
 
 export const HeaderData = {
   tabs: [
-    // {
-    //   label: "Home",
-    //   id: "home",
-    //   path: UrlStrings.HOME,
-    //   exact: true,
-    //   subheader: null,
-    // },
+    {
+      label: "Home",
+      id: "home",
+      path: UrlStrings.HOME,
+      left: true,
+      exact: true,
+      subheader: null,
+    },
     {
       label: "What We Do",
       id: "pages",
       path: UrlStrings.PORTFOLIO,
+      left: true,
       exact: true,
       // subheader: [
       //     {label: "About Us", id: "pages", path: UrlStrings.ABOUT},
@@ -29,6 +32,14 @@ export const HeaderData = {
       //     {label: "Contact Us", id: "pages", path: UrlStrings.CONTACTUS},
       //     {label: "FAQ", id: "pages", path: UrlStrings.FAQ},
       // ],
+    },
+    {
+      label: "Portfolio",
+      id: "portfolio",
+      path: UrlStrings.PORT,
+      left: true,
+      exact: true,
+      subheader: null,
     },
     {
       label: "Our Services",
@@ -39,7 +50,7 @@ export const HeaderData = {
     },
     {
       label: "Contact",
-      id: "portfolio",
+      id: "contact",
       path: UrlStrings.CONTACTUS,
       exact: true,
       // subheader: [

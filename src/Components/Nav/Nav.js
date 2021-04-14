@@ -6,18 +6,16 @@ import { Link } from "react-router-dom";
 import logo from "../../Assets/logo.png";
 import { SwipeableDrawer } from "@material-ui/core";
 import classNames from "classnames";
+import HoverMenu from "./HoverMenu";
 
 const Nav = ({ history }) => {
   const [open, setOpen] = useState(false);
 
   return (
     <nav className={styles.container}>
-      <div className={styles.brandName}>
-        <img onClick={() => history.push("/")} src={logo} alt="logo-fute" />
-      </div>
       <ul className={styles.navLinks}>
         {HeaderData.tabs.map((link) =>
-          link.path.includes("#") ? (
+          link.left && link.path.includes("#") ? (
             <li
               onClick={() => {
                 if (history.location.pathname === "/") {
@@ -37,11 +35,28 @@ const Nav = ({ history }) => {
             >
               {link.label}
             </li>
-          ) : (
-            <li className={styles.navLink}>
-              <Link to={link.path}>{link.label}</Link>
-            </li>
-          )
+          ) : link.left ? (
+            link.label === "Portfolio" ? (
+              <HoverMenu styles={styles} />
+            ) : (
+              <li className={styles.navLink}>
+                <Link to={link.path}>{link.label}</Link>
+              </li>
+            )
+          ) : null
+        )}
+      </ul>
+      <div className={styles.brandName}>
+        <img onClick={() => history.push("/")} src={logo} alt="logo-fute" />
+      </div>
+      <ul className={styles.navLinks}>
+        {HeaderData.tabs.map(
+          (link) =>
+            !link.left && (
+              <li className={styles.navLink}>
+                <Link to={link.path}>{link.label}</Link>
+              </li>
+            )
         )}
       </ul>
       <div

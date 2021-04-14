@@ -58,16 +58,4 @@ body {
   transition: all 0.2s ease-in-out;
   z-index: 99999;
 }
-
-@font-face {
-  font-family: "Montblanc", sans-serif;
-  font-weight: 400;
-  src: url(./Assets/fonts/Montblanc-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Montblanc", sans-serif;
-  font-weight: 700;
-  src: url(./Assets/fonts/MontBlancExtraBold.ttf);
-}
 /*# sourceMappingURL=App.module.css.map */

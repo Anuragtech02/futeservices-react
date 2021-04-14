@@ -217,7 +217,7 @@
   margin: auto auto;
 }
 
-.flexRow, .container .navLinks,
+.flexRow, .container .navLinks, .container .navLinks .portfolioMenu,
 .flexColumn,
 .sidebarContainer .navLinksMobile {
   display: -webkit-box;
@@ -259,14 +259,10 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 35%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: auto;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .brandName img {
@@ -280,13 +276,57 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 35%;
+  width: 30%;
   position: relative;
 }
 
 .container .navLinks .navLink,
 .container .navLinks a {
   cursor: pointer !important;
+  font-size: 0.9rem;
+}
+
+.container .navLinks .portfolioMenu .innerMenuContainer {
+  position: absolute;
+  bottom: 100%;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  pointer-events: none;
+}
+
+.container .navLinks .portfolioMenu .innerMenu {
+  padding: 10px;
+  list-style: none;
+  background: white;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .navLinks .portfolioMenu .innerMenu li {
+  margin: 10px 0;
+  font-size: 0.8rem !important;
+}
+
+.container .navLinks .portfolioMenu .innerMenu a {
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.container .navLinks .portfolioMenu:hover .innerMenuContainer,
+.container .navLinks .portfolioMenu .innerMenuContainer:hover {
+  pointer-events: all;
+}
+
+.container .navLinks .portfolioMenu:hover .innerMenu,
+.container .navLinks .portfolioMenu .innerMenuContainer:hover .innerMenu {
+  opacity: 1;
+  pointer-events: all;
+  margin-top: 30px;
 }
 
 .container .burgerMenu {
@@ -369,25 +409,26 @@
   margin: 20px 0;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
+  .container .navLinks {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .container .navLinks {
     width: 40%;
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .container .navLinks {
-    width: 45%;
-  }
-}
-
 @media screen and (max-width: 950px) {
-  .container .navLinks {
-    width: 50%;
+  .container .brandName {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-right: auto;
+    margin-left: 0;
   }
-}
-
-@media screen and (max-width: 800px) {
   .container .navLinks {
     display: none;
   }

@@ -8,10 +8,10 @@
 
   .brandName {
     width: fit-content;
-    max-width: 35%;
-    flex: 1;
-    margin-right: auto;
-    justify-content: flex-start;
+    // max-width: 35%;
+    // flex: 1;
+    margin: auto;
+    justify-content: center;
 
     img {
       max-width: 150px;
@@ -24,11 +24,51 @@
     @extend .flexRow;
     list-style: none;
     justify-content: space-between;
-    width: 35%;
+    width: 30%;
     position: relative;
     .navLink,
     a {
       cursor: pointer !important;
+      font-size: 0.9rem;
+    }
+    .portfolioMenu {
+      @extend .flexRow;
+      .innerMenuContainer {
+        position: absolute;
+        bottom: 100%;
+        transform: translate(0, 100%);
+        pointer-events: none;
+      }
+      .innerMenu {
+        padding: 10px;
+        list-style: none;
+        background: white;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+        margin-top: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s ease-in-out;
+        li {
+          margin: 10px 0;
+          font-size: 0.8rem !important;
+        }
+        a {
+          text-transform: capitalize;
+          color: rgba(0, 0, 0, 0.7) !important;
+        }
+      }
+      &:hover .innerMenuContainer,
+      .innerMenuContainer:hover {
+        pointer-events: all;
+      }
+      &:hover,
+      .innerMenuContainer:hover {
+        .innerMenu {
+          opacity: 1;
+          pointer-events: all;
+          margin-top: 30px;
+        }
+      }
     }
   }
   .burgerMenu {
@@ -106,7 +146,16 @@
     }
   }
 }
-@media screen and (max-width: 1300px) {
+
+@media screen and (max-width: 1200px) {
+  .container {
+    .navLinks {
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .container {
     .navLinks {
       width: 40%;
@@ -114,24 +163,13 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .container {
-    .navLinks {
-      width: 45%;
-    }
-  }
-}
-
 @media screen and (max-width: 950px) {
   .container {
-    .navLinks {
-      width: 50%;
+    .brandName {
+      justify-content: flex-start;
+      margin-right: auto;
+      margin-left: 0;
     }
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .container {
     .navLinks {
       display: none;
     }
