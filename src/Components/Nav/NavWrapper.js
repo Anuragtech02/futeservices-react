@@ -4,7 +4,7 @@ import style from "../../App.module.css";
 import Nav from "../Nav/Nav";
 import classNames from "classnames";
 
-const NavWrapper = () => {
+const NavWrapper = ({ isScrollingUp }) => {
   const [navClass, setNavClass] = useState(style.dark);
 
   const { pathname } = useLocation();
@@ -59,7 +59,14 @@ const NavWrapper = () => {
   }, [pathname]);
 
   return (
-    <div className={classNames(style.navbar, navClass)} id="navbar">
+    <div
+      className={classNames(
+        style.navbar,
+        navClass,
+        isScrollingUp ? style.showNav : style.hideNav
+      )}
+      id="navbar"
+    >
       <Nav />
     </div>
   );

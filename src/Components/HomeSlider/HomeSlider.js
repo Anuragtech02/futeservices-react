@@ -32,32 +32,32 @@ function HomeSlider() {
     {
       slide: 1,
       url: img1,
-      title: "Title",
+      title: "Embassy Group, Chennai",
     },
     {
       slide: 2,
       url: img2,
-      title: "Title",
+      title: "Godrej Properties, Godrej",
     },
     {
       slide: 3,
       url: img3,
-      title: "Title",
+      title: "Hilton Hotel ",
     },
     {
       slide: 4,
       url: img4,
-      title: "Title",
+      title: "L&T Realty Raintree Boulevard",
     },
     {
       slide: 5,
       url: img5,
-      title: "Title",
+      title: "LULU GROUP",
     },
     {
       slide: 6,
       url: img6,
-      title: "Title",
+      title: "Runwal Group Eirene",
     },
   ];
 

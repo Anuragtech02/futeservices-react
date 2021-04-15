@@ -7,8 +7,8 @@
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  z-index: 100000;
-  transition: all 0.12s ease-out;
+  z-index: 1000;
+  transition: all 0.4s ease-out;
   transition-property: width, height, opacity, background;
   // background-color: red;
   transform-origin: 100% 100%;
@@ -18,8 +18,9 @@
   height: 0.3rem;
   background: red;
   border-radius: 50%;
-  position: fixed;
-  z-index: 1000000;
-  transform: translate(-50%, -50%);
-  transition: all 0.2s ease-out;
+  // position: fixed;
+  // z-index: 1000000;
+  // transform: translate(-50%, -50%);
+  // transition: all 0.05s ease-out;
+  transition-property: top left;
 }

@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import style from "./Home.module.css";
-import cat1 from "../../Assets/projects/category1.webp";
-import cat2 from "../../Assets/projects/category2.webp";
+import cat1 from "../../Assets/projects/cat1.webp";
+import cat2 from "../../Assets/projects/cat2.webp";
 import cat3 from "../../Assets/projects/category3.webp";
-import cat4 from "../../Assets/projects/category4.webp";
+import cat4 from "../../Assets/projects/cat4.webp";
 import cat5 from "../../Assets/projects/category5.webp";
 import MultipleSlider from "../MultipleSlider/MultipleSlider";
 import portrait1 from "../../Assets/portrait1.png";
@@ -44,19 +44,19 @@ export const Home = ({ history }) => {
 
   const distortion = useRef();
 
-  useEffect(() => {
-    const imageDistortion = new hoverEffect({
-      parent: distortion.current,
-      intensity: 0.3,
-      image1: portrait2,
-      image2: portrait1,
-      angle2: Math.PI / 2,
-      displacementImage: displacement,
-      // imagesRatio: 9 / 16,
-    });
-    // imageDistortion();
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   const imageDistortion = new hoverEffect({
+  //     parent: distortion.current,
+  //     intensity: 0.3,
+  //     image1: portrait2,
+  //     image2: portrait1,
+  //     angle2: Math.PI / 2,
+  //     displacementImage: displacement,
+  //     // imagesRatio: 9 / 16,
+  //   });
+  //   // imageDistortion();
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   const [showAction, setShowAction] = React.useState(false);
   const [lastY, setLastY] = React.useState(0);
@@ -235,18 +235,18 @@ const CategoriesGallery = ({ history }) => {
       title: "Product",
       image: cat2,
     },
-    {
-      title: "Animation",
-      image: cat3,
-    },
+    // {
+    //   title: "Animation",
+    //   image: cat3,
+    // },
     {
       title: "VR",
       image: cat4,
     },
-    {
-      title: "Photomontage",
-      image: cat5,
-    },
+    // {
+    //   title: "Photomontage",
+    //   image: cat5,
+    // },
   ];
   return (
     <div id="portfolio" className={style.categoriesContainer}>

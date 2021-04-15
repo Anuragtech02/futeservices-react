@@ -68,30 +68,48 @@ const App = () => {
     const mouseCursor = document.getElementById("cursor");
     const inner = document.getElementById("inner-cursor");
     const links = document.getElementsByTagName("a");
-    // console.log(links);
-    // if (links && links.length) {
-    //   [...links].forEach((link) => {
-    //     link.addEventListener("mouseover", () => {
-    //       mouseCursor.style.height =
-    //         link.getAttribute("name") === "logo" ? "5rem" : "3.5rem";
-    //       mouseCursor.style.width =
-    //         link.getAttribute("name") === "logo" ? "5rem" : "3.5rem";
-    //       mouseCursor.style.backgroundColor = "white";
-    //       mouseCursor.style.border = "none";
-    //       inner.style.opacity = "0";
-    //       link.style.color = "black";
-    //     });
-    //     link.addEventListener("mouseleave", () => {
-    //       mouseCursor.style.height = "2rem";
-    //       mouseCursor.style.width = "2rem";
-    //       mouseCursor.style.border = "2px solid red";
-    //       mouseCursor.style.backgroundColor = "transparent";
-    //       inner.style.opacity = "1";
-    //       link.style.color = "white";
-    //     });
-    //   });
-    // }
+    console.log(links);
+    if (links && links.length) {
+      [...links].forEach((link) => {
+        link.addEventListener("mouseover", () => {
+          mouseCursor.style.height =
+            link.getAttribute("name") === "logo" ? "5rem" : "3.5rem";
+          mouseCursor.style.width =
+            link.getAttribute("name") === "logo" ? "5rem" : "3.5rem";
+          mouseCursor.style.backgroundColor = "white";
+          mouseCursor.style.border = "none";
+          inner.style.opacity = "0";
+          mouseCursor.classList.add(style.blendDifference);
+          // link.style.color = "black";
+        });
+        link.addEventListener("mouseleave", () => {
+          mouseCursor.style.height = "2rem";
+          mouseCursor.style.width = "2rem";
+          mouseCursor.style.border = "2px solid red";
+          mouseCursor.style.backgroundColor = "transparent";
+          inner.style.opacity = "1";
+          mouseCursor.classList.remove(style.blendDifference);
+          // link.style.color = "white";
+        });
+      });
+    }
   }, []);
+
+  const [isScrollingUp, setIsSCrollingUp] = useState(false);
+  const [lastY, setLastY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const yPos = window.scrollY;
+      const isScrollingDown = lastY < yPos && yPos > 400;
+      setTimeout(() => {
+        setIsSCrollingUp(!isScrollingDown);
+      }, 300);
+      setLastY(yPos);
+    };
+    window.addEventListener("scroll", handleScroll, false);
+    return () => window.removeEventListener("scroll", handleScroll, false);
+  }, [lastY]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -99,8 +117,8 @@ const App = () => {
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      {/* <Cursor /> */}
-      <NavWrapper />
+      <Cursor />
+      <NavWrapper isScrollingUp={isScrollingUp} />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />

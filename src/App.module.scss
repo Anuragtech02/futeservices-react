@@ -5,9 +5,11 @@ body {
   box-sizing: border-box;
   font-family: "Montblanc", sans-serif;
   scroll-behavior: smooth;
-  line-height: 1.857em;
-  // cursor: none;
-  cursor: auto;
+  // line-height: 1.857em;
+  // cursor: auto;
+}
+body {
+  cursor: none !important;
 }
 
 body {
@@ -32,6 +34,12 @@ body {
   margin: 0;
   transition: all 0.2s ease-in-out;
 }
+.showNav {
+  top: 0;
+}
+.hideNav {
+  top: -100px;
+}
 
 .dark {
   background-color: transparent;
@@ -53,7 +61,9 @@ body {
     z-index: 99999;
   }
 }
-
+.blendDifference {
+  mix-blend-mode: difference;
+}
 // @media (max-width: 998px) {
 //   .navbar {
 //     position: relative;
