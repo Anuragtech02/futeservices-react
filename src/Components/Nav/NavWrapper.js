@@ -19,7 +19,7 @@ const NavWrapper = () => {
 
   useLayoutEffect(() => {
     function setBackground() {
-      if (window.pageYOffset > 200) {
+      if (window.pageYOffset > 150) {
         setNavClass(style.light);
       } else {
         setNavClass(style.dark);

@@ -34,7 +34,7 @@
       //   padding: 0 20px;
       @extend .flexRow;
       overflow: hidden;
-      img {
+      .mainImage {
         width: 95%;
         margin: auto;
         height: 100%;
@@ -53,24 +53,37 @@
         z-index: 100;
         background: rgba(0, 0, 0, 0.5);
         opacity: 0;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        @extend .flexRow;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 20px;
         h4 {
           color: white;
-          font-size: 2rem;
-          margin-top: 50px;
-          margin-right: 20px;
-          transition: all 0.2s ease-in-out;
+          font-size: 1rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: -100px;
+          transition: all 0.5s ease-in-out;
+          line-height: normal;
+        }
+        img {
+          width: 150px;
+          margin-bottom: -100px;
+          transition: all 0.5s ease-in-out;
         }
         &:hover {
           opacity: 1;
-          h4 {
-            margin-top: 0;
+          h4,
+          img {
+            margin-bottom: 0;
           }
         }
+        //Logo on bottom left
       }
     }
     .activeSlide {
-      img {
+      .mainImage {
         filter: grayscale(0);
       }
     }

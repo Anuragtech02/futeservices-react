@@ -217,7 +217,7 @@
   margin: auto auto;
 }
 
-.flexRow, .container .sliderContainer .imgContainer,
+.flexRow, .container .sliderContainer .imgContainer, .container .sliderContainer .imgContainer .slideTitle,
 .flexColumn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,7 +280,7 @@
   overflow: hidden;
 }
 
-.container .sliderContainer .imgContainer img {
+.container .sliderContainer .imgContainer .mainImage {
   width: 95%;
   margin: auto;
   height: 100%;
@@ -303,28 +303,45 @@
   z-index: 100;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
 }
 
 .container .sliderContainer .imgContainer .slideTitle h4 {
   color: white;
-  font-size: 2rem;
-  margin-top: 50px;
-  margin-right: 20px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: -100px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  line-height: normal;
+}
+
+.container .sliderContainer .imgContainer .slideTitle img {
+  width: 150px;
+  margin-bottom: -100px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .container .sliderContainer .imgContainer .slideTitle:hover {
   opacity: 1;
 }
 
-.container .sliderContainer .imgContainer .slideTitle:hover h4 {
-  margin-top: 0;
+.container .sliderContainer .imgContainer .slideTitle:hover h4,
+.container .sliderContainer .imgContainer .slideTitle:hover img {
+  margin-bottom: 0;
 }
 
-.container .sliderContainer .activeSlide img {
+.container .sliderContainer .activeSlide .mainImage {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }

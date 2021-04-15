@@ -10,6 +10,10 @@
     margin: auto;
     padding: 50px 0;
     .card {
+      margin-top: 10px;
+      img {
+        height: 50px;
+      }
       h5 {
         font-size: 1rem;
         font-weight: 700;
@@ -17,7 +21,31 @@
       p {
         margin-top: 10px;
         font-size: 0.9rem;
-        color: rgba(0, 0, 0, 0.8);
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 2rem;
+      }
+      span {
+        font-weight: 700;
+        font-size: 0.7rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .gallery {
+    margin: auto;
+    width: 95%;
+    padding: 50px 0;
+    .galleryImage {
+      min-height: 450px;
+      height: 70vh;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      @media only screen and (max-width: 600px) {
+        height: 250px;
       }
     }
   }

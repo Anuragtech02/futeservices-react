@@ -14,6 +14,22 @@
       font-family: "Playfair Display", serif;
     }
   }
+  .content {
+    width: 80%;
+    margin: 0 auto;
+    p {
+      width: 75%;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 95%;
+    }
+    @media only screen and (max-width: 400px) {
+      p {
+        width: 90%;
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 @media screen and (max-width: 600px) {
   .container {

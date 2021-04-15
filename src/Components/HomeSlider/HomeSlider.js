@@ -11,6 +11,7 @@ import img3 from "../../Assets/homeSlider/img3.jpg";
 import img4 from "../../Assets/homeSlider/img4.jpeg";
 import img5 from "../../Assets/homeSlider/img5.jpg";
 import img6 from "../../Assets/homeSlider/img6.jpg";
+import logo from "../../Assets/logo.png";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
@@ -114,8 +115,13 @@ function HomeSlider() {
               key={index}
               //animate={current==index ? "focus" : "other"}
             >
-              <img src={slide.url} alt="slider-fute" />
+              <img
+                className={styles.mainImage}
+                src={slide.url}
+                alt="slider-fute"
+              />
               <div className={styles.slideTitle}>
+                <img src={logo} alt="logo-fute" />
                 <h4>{slide.title}</h4>
               </div>
             </div>

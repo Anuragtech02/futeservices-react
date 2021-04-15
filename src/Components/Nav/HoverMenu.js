@@ -5,12 +5,12 @@ import classNames from "classnames";
 
 const HoverMenu = ({ styles }) => {
   const innerData = [
-    { name: "Drone Shoot", link: "/dron-shoot" },
-    { name: "Curtain Raisers", link: "/curtain-raisers" },
-    { name: "Walkthroughs (3D+Cinematic)", link: "/walkthroughs" },
-    { name: "3D Views & Renders", link: "/3d-views" },
-    { name: "Scale Model", link: "/scale-model" },
-    { name: "Interactive AR & VR", link: "/ar-vr" },
+    { name: "Drone Shoot", path: "/portfolio/dron-shoot" },
+    { name: "Curtain Raisers", path: "/portfolio/curtain-raisers" },
+    { name: "Walkthroughs (3D+Cinematic)", path: "/portfolio/walkthroughs" },
+    { name: "3D Views & Renders", path: "/portfolio/3d-views" },
+    { name: "Scale Model", path: "/portfolio/scale-model" },
+    { name: "Interactive AR & VR", path: "/portfolio/ar-vr" },
   ];
 
   return (
