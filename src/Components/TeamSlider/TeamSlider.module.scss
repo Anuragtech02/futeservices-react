@@ -27,12 +27,17 @@
     padding-top: 100px;
     justify-content: center;
     display: flex !important;
+    position: relative;
     img {
-      margin: 0 10px;
+      // margin: 0 10px;
     }
   }
   .title,
   .otherName {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%) !important;
     h1 {
       font-weight: 400;
       font-family: "Playfair Display", serif !important;
@@ -40,23 +45,37 @@
     }
     p {
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.6);
       font-family: "Josefin Sans", sans-serif;
       font-weight: 300;
       margin-left: 20px;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
+      line-height: 1.4rem;
     }
   }
   .otherName {
-    margin-top: 10rem;
+    // margin-top: 10rem;
+    left: auto;
+    right: 12%;
+    width: 20%;
     text-align: right;
+    z-index: 10;
     h1 {
       font-size: 1rem;
       color: white;
+      display: none;
     }
     p {
       text-align: right;
       margin: 0;
+      transform-origin: center;
+      span {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 0.7rem;
+        text-decoration: underline;
+        cursor: pointer !important;
+      }
     }
   }
   .distortion {
@@ -76,6 +95,23 @@
   }
   .transition {
     transition: all 0.3s ease-in-out;
+  }
+}
+.readMoreDialog {
+  & div[role="dialog"] {
+    overflow: hidden !important;
+    background: #181818;
+  }
+  .styledCloseBtn {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+  h2 {
+    color: white;
+  }
+  p {
+    color: rgb(180, 180, 180) !important;
   }
 }
 

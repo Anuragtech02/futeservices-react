@@ -6,7 +6,16 @@ import "slick-carousel/slick/slick-theme.css";
 import { teamData } from "../../Static/AboutData";
 import { motion } from "framer-motion";
 import classNames from "classnames";
-import { IconButton } from "@material-ui/core";
+import {
+  IconButton,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  makeStyles,
+} from "@material-ui/core";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
@@ -22,12 +31,12 @@ const TeamSlider = () => {
     className: "center",
     infinite: true,
     centerPadding: "60px",
-    // accessibility: true,
+    accessibility: true,
     // lazyload: true,
     slidesToShow: 1,
     swipeToSlide: true,
     dots: false,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
     speed: 2000,
     ease: "ease-in",
@@ -53,42 +62,7 @@ const TeamSlider = () => {
 
       <Slider ref={slider} {...settings} className={styles.slider}>
         {teamData.map((item) => (
-          <div className={classNames(styles.flexRow, styles.about)}>
-            <motion.div
-              initial={{ x: -30, opacity: 0 }}
-              animate={{ x: showAction ? 0 : -30, opacity: showAction ? 1 : 0 }}
-              transition={{
-                // type: "keyframes",
-                duration: 0.5,
-                ease: [0.49, 1.13, 0.48, 0.74],
-              }}
-              className={styles.title}
-            >
-              <h1>{item.name}</h1>
-              <p>{item.position}</p>
-            </motion.div>
-            {/* <img id="img" alt="portrait" src={portrait1} /> */}
-            <motion.div className={styles.distortion}>
-              {/* <div
-                    style={{ backgroundImage: `url(${member2})` }}
-                    className={style.bgContainer}
-                ></div> */}
-              <img src={item.image} alt="fute" />
-            </motion.div>
-            <motion.div
-              initial={{ x: 30, opacity: 0 }}
-              animate={{ x: showAction ? 0 : 30, opacity: showAction ? 1 : 0 }}
-              transition={{
-                // type: "spring",
-                duration: 0.5,
-                ease: [0.49, 1.13, 0.48, 0.74],
-              }}
-              className={classNames(styles.title, styles.otherName)}
-            >
-              {/* <h1>{item.name}</h1> */}
-              <p>{item.location}</p>
-            </motion.div>
-          </div>
+          <Content item={item} showAction={showAction} />
         ))}
       </Slider>
       <IconButton onClick={() => gotoNext()} className={styles.arrowRight}>
@@ -99,3 +73,97 @@ const TeamSlider = () => {
 };
 
 export default TeamSlider;
+
+const Content = ({ item, showAction }) => {
+  const [more, setMore] = useState(false);
+
+  return (
+    <div className={classNames(styles.flexRow, styles.about)}>
+      <motion.div
+        initial={{ x: -30, opacity: 0 }}
+        animate={{ x: showAction ? 0 : -30, opacity: showAction ? 1 : 0 }}
+        transition={{
+          duration: 0.5,
+          ease: [0.49, 1.13, 0.48, 0.74],
+        }}
+        className={styles.title}
+      >
+        <h1>{item.name}</h1>
+        <p>{item.position}</p>
+      </motion.div>
+      <motion.div className={styles.distortion}>
+        <img src={item.image} alt="fute" />
+      </motion.div>
+      <motion.div
+        initial={{ x: 30, opacity: 0 }}
+        animate={{ x: showAction ? 0 : 30, opacity: showAction ? 1 : 0 }}
+        transition={{
+          duration: 0.5,
+          ease: [0.49, 1.13, 0.48, 0.74],
+        }}
+        className={classNames(styles.otherName)}
+      >
+        <p>
+          {item?.desc?.slice(0, 100)}{" "}
+          <span onClick={() => setMore(!more)}>
+            Read {more ? "Less" : "More"}
+          </span>{" "}
+        </p>
+      </motion.div>
+      <ReadMore
+        open={more}
+        setOpen={setMore}
+        title={item.name}
+        content={item.desc}
+      />
+    </div>
+  );
+};
+
+const ReadMore = ({ open, setOpen, title, content }) => {
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const descriptionElementRef = React.useRef(null);
+  React.useEffect(() => {
+    if (open) {
+      const { current: descriptionElement } = descriptionElementRef;
+      if (descriptionElement !== null) {
+        descriptionElement.focus();
+      }
+    }
+  }, [open]);
+
+  return (
+    <Dialog
+      open={open}
+      onClose={handleClose}
+      scroll={"paper"}
+      aria-labelledby="scroll-dialog-title"
+      aria-describedby="scroll-dialog-description"
+      className={styles.readMoreDialog}
+    >
+      <DialogTitle id="scroll-dialog-title">{title}</DialogTitle>
+
+      <DialogContent dividers={false}>
+        <DialogContentText
+          id="scroll-dialog-description"
+          ref={descriptionElementRef}
+          tabIndex={-1}
+        >
+          {content}
+        </DialogContentText>
+      </DialogContent>
+      <DialogActions>
+        <Button
+          className={styles.styledCloseBtn}
+          onClick={handleClose}
+          color="primary"
+        >
+          Close
+        </Button>
+      </DialogActions>
+    </Dialog>
+  );
+};

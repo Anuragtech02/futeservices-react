@@ -247,8 +247,10 @@ body {
           box-sizing: border-box;
   font-family: "Montblanc", sans-serif;
   scroll-behavior: smooth;
-  line-height: 1.857em;
-  cursor: auto;
+}
+
+body {
+  cursor: none !important;
 }
 
 body {
@@ -277,6 +279,14 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+.showNav {
+  top: 0;
+}
+
+.hideNav {
+  top: -100px;
+}
+
 .dark {
   background-color: transparent;
   color: white;
@@ -298,6 +308,10 @@ body {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   z-index: 99999;
+}
+
+.blendDifference {
+  mix-blend-mode: difference;
 }
 
 .noDecoration, a {

@@ -281,10 +281,16 @@
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+  position: relative;
 }
 
-.container .about img {
-  margin: 0 10px;
+.container .title,
+.container .otherName {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  -webkit-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
 }
 
 .container .title h1,
@@ -297,26 +303,41 @@
 .container .title p,
 .container .otherName p {
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   margin-left: 20px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  line-height: 1.4rem;
 }
 
 .container .otherName {
-  margin-top: 10rem;
+  left: auto;
+  right: 12%;
+  width: 20%;
   text-align: right;
+  z-index: 10;
 }
 
 .container .otherName h1 {
   font-size: 1rem;
   color: white;
+  display: none;
 }
 
 .container .otherName p {
   text-align: right;
   margin: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.container .otherName p span {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-decoration: underline;
+  cursor: pointer !important;
 }
 
 .container .distortion {
@@ -332,6 +353,25 @@
 .container .transition {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.readMoreDialog div[role="dialog"] {
+  overflow: hidden !important;
+  background: #181818;
+}
+
+.readMoreDialog .styledCloseBtn {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.readMoreDialog h2 {
+  color: white;
+}
+
+.readMoreDialog p {
+  color: #b4b4b4 !important;
 }
 
 @media screen and (max-width: 1000px) {

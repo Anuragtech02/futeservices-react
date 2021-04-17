@@ -95,7 +95,7 @@ const App = () => {
     }
   }, []);
 
-  const [isScrollingUp, setIsSCrollingUp] = useState(false);
+  const [isScrollingUp, setIsSCrollingUp] = useState(true);
   const [lastY, setLastY] = useState(0);
 
   useEffect(() => {
