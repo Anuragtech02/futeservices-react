@@ -2,15 +2,12 @@ import React, { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import "./PortfolioPage.css";
 import { PortfolioData } from "../../Static/PortfolioData";
-import Isotope from "isotope-layout";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const PortfolioPage = () => {
   const { name } = useParams();
 
   const [current, setCurrent] = useState({});
-  const isoRef = useRef(null);
-
-  const [isotope, setIsotope] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,23 +18,6 @@ const PortfolioPage = () => {
     }
   }, [name]);
 
-  // useEffect(() => {
-  //   if (isotope) {
-  //     isotope.reloadItems();
-  //   } else {
-  //     setIsotope(
-  //       new Isotope(isoRef.current, {
-  //         itemSelector: ".grid-item",
-  //         // percentPosition: true,
-  //         layoutMode: "masonry",
-  //         masonry: {
-  //           columnWidth: ".grid-sizer",
-  //         },
-  //       })
-  //     );
-  //   }
-  // }, []);
-
   return (
     <div className="container">
       <section
@@ -47,15 +27,18 @@ const PortfolioPage = () => {
         <h1>{current.name}</h1>
       </section>
       <section className={"portfolioContainer"}>
-        <div className="portfolio-title">
-          <h3>Portfolio Title</h3>
-        </div>
-        {/* <div className="grid-sizer"></div> */}
-        {current?.images?.map((image, i) => (
-          <div className={`grid-item`}>
-            <img src={image.src} alt="portfolio-item" />
-          </div>
-        ))}
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry>
+            {current?.images?.map((image, i) => (
+              <img
+                key={i}
+                src={image?.src}
+                style={{ width: "100%", display: "block" }}
+                alt=""
+              />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
       </section>
     </div>
   );

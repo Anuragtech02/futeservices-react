@@ -1,4 +1,4 @@
-import workImg from "../Assets/pexels-slondotpics-408518.jpg";
+// import workImg from "../Assets/pexels-slondotpics-408518.jpg";
 import member1 from "../Assets/team/member1.webp";
 import member2 from "../Assets/team/member2.webp";
 import member3 from "../Assets/team/member3.webp";
@@ -8,7 +8,7 @@ export const ExperienceData = {
   heading: "8 YEARS OF INNOVATION",
   para:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
-  img: workImg,
+  // img: workImg,
   btnText: "Learn More",
 };
 

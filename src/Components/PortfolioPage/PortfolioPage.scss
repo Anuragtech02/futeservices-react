@@ -20,6 +20,7 @@
   }
   .portfolioContainer {
     margin: 20px auto;
+    padding: 50px 20px;
     @extend .flexRow;
     .portfolio-title {
       padding: 50px 0;
@@ -33,9 +34,9 @@
       // cursor: pointer;
       height: 60vh;
       img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        // width: 100%;
+        // height: 100%;
+        // object-fit: cover;
       }
     }
     .grid-sizer {

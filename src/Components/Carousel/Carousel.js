@@ -5,9 +5,9 @@ import style from "./Carousel.module.css";
 import classNames from "classnames";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img1 from "../../Assets/pexels-artem-beliaikin-1319795.jpg";
-import img2 from "../../Assets/pexels-bich-tran-669996.jpg";
-import img3 from "../../Assets/pexels-simon-migaj-747964.jpg";
+// import img1 from "../../Assets/pexels-artem-beliaikin-1319795.jpg";
+// import img2 from "../../Assets/pexels-bich-tran-669996.jpg";
+// import img3 from "../../Assets/pexels-simon-migaj-747964.jpg";
 
 export const Carousel = () => {
   const [isVisible, setIsVisible] = React.useState(true);
@@ -27,29 +27,29 @@ export const Carousel = () => {
     show: { opacity: 1, y: 0 },
   };
 
-  const slideData = [
-    {
-      slide: 1,
-      url: img1,
-      contentLine1: "Hello! this is ",
-      contentLine2: "first slide",
-      buttonText: "Show More",
-    },
-    {
-      slide: 2,
-      url: img2,
-      contentLine1: "Hello! this is ",
-      contentLine2: "Second slide",
-      buttonText: "Show More",
-    },
-    {
-      slide: 3,
-      url: img3,
-      contentLine1: "Hello! this is ",
-      contentLine2: "Third slide",
-      buttonText: "Show More",
-    },
-  ];
+  // const slideData = [
+  //   {
+  //     slide: 1,
+  //     url: img1,
+  //     contentLine1: "Hello! this is ",
+  //     contentLine2: "first slide",
+  //     buttonText: "Show More",
+  //   },
+  //   {
+  //     slide: 2,
+  //     url: img2,
+  //     contentLine1: "Hello! this is ",
+  //     contentLine2: "Second slide",
+  //     buttonText: "Show More",
+  //   },
+  //   {
+  //     slide: 3,
+  //     url: img3,
+  //     contentLine1: "Hello! this is ",
+  //     contentLine2: "Third slide",
+  //     buttonText: "Show More",
+  //   },
+  // ];
 
   const settings = {
     fade: true,
@@ -70,7 +70,7 @@ export const Carousel = () => {
   };
   return (
     <Slider {...settings} className={style.sliderCard}>
-      {slideData.map((slides, index) => {
+      {[].map((slides, index) => {
         return (
           <motion.div
             id={`slide${slides.slide}`}

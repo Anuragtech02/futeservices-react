@@ -9,10 +9,10 @@ import scaleIcon from "../../Assets/services-icon/scale.svg";
 import cinemaIcon from "../../Assets/services-icon/clapperboard.svg";
 import mobileIcon from "../../Assets/services-icon/mobile.svg";
 
-import image1 from "../../Assets/services/image1-fute.jpg";
-import image2 from "../../Assets/services/image2-fute.jpeg";
-import image3 from "../../Assets/services/image3-fute.jpg";
-import image4 from "../../Assets/services/image4-fute.jpeg";
+import image1 from "../../Assets/services/image1-fute.webp";
+import image2 from "../../Assets/services/image2-fute.webp";
+import image3 from "../../Assets/services/image3-fute.webp";
+import image4 from "../../Assets/services/image4-fute.webp";
 
 const Services = () => {
   const data = [
