@@ -37,6 +37,14 @@ body {
 .showNav {
   top: 0;
 }
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hideNav {
   top: -120px;
 }

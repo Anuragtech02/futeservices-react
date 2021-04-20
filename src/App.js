@@ -1,12 +1,18 @@
-import React, { useEffect, useState } from "react";
-import { Home, Footer, Cursor } from "./Components";
+import React, { Suspense, lazy, useEffect, useState } from "react";
+import { Footer, Cursor, NavWrapper } from "./Components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import style from "./App.module.css";
-import Contact from "./Components/Contact/Contact";
-import PortfolioPage from "./Components/PortfolioPage/PortfolioPage";
-import NavWrapper from "./Components/Nav/NavWrapper";
-import QuoteEnquiry from "./Components/QuoteEnquiry/QuoteEnquiry";
-import Services from "./Components/Services/Services";
+import { CircularProgress } from "@material-ui/core";
+
+const Home = lazy(() => import("./Components/Home/Home"));
+const Contact = lazy(() => import("./Components/Contact/Contact"));
+const PortfolioPage = lazy(() =>
+  import("./Components/PortfolioPage/PortfolioPage")
+);
+const QuoteEnquiry = lazy(() =>
+  import("./Components/QuoteEnquiry/QuoteEnquiry")
+);
+const Services = lazy(() => import("./Components/Services/Services"));
 
 const App = () => {
   useEffect(() => {
@@ -68,20 +74,28 @@ const App = () => {
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <Cursor />
-      <NavWrapper isScrollingUp={isScrollingUp} />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        {/* <Route path="/about" exact component={About} /> */}
-        <Route path="/contact" exact component={Contact} />
-        <Route path="/services" exact component={Services} />
-        <Route path="/quote" exact component={QuoteEnquiry} />
-        {/* <Route path="/portfolio" exact component={Portfolio} /> */}
-        <Route path="/portfolio/:name" exact component={PortfolioPage} />
-      </Switch>
-      <div className={style.footer}>
-        <Footer />
-      </div>
+      <Suspense
+        fallback={
+          <div className={style.loading}>
+            <CircularProgress />
+          </div>
+        }
+      >
+        <Cursor />
+        <NavWrapper isScrollingUp={isScrollingUp} />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          {/* <Route path="/about" exact component={About} /> */}
+          <Route path="/contact" exact component={Contact} />
+          <Route path="/services" exact component={Services} />
+          <Route path="/quote" exact component={QuoteEnquiry} />
+          {/* <Route path="/portfolio" exact component={Portfolio} /> */}
+          <Route path="/portfolio/:name" exact component={PortfolioPage} />
+        </Switch>
+        <div className={style.footer}>
+          <Footer />
+        </div>
+      </Suspense>
     </Router>
   );
 };
