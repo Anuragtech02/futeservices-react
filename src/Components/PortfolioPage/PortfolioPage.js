@@ -15,7 +15,10 @@ const PortfolioPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     if (name && name.length) {
-      const portfolio = PortfolioData.find((item) => item.name === name) ?? {};
+      const portfolio =
+        PortfolioData.find(
+          (item) => item.name.toLowerCase() === name.toLowerCase()
+        ) ?? {};
       // console.log({ portfolio });
       setCurrent(portfolio);
       setCapName(capitalize(portfolio.name ?? name));

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./Home.module.css";
 import cat1 from "../../Assets/projects/cat1.webp";
 import cat2 from "../../Assets/projects/cat2.webp";
@@ -98,8 +98,6 @@ export const Home = ({ history }) => {
 export default withRouter(Home);
 
 const CategoriesGallery = ({ history }) => {
-  const aLink = useRef(null);
-
   const data = [
     {
       title: "Residential",
@@ -128,9 +126,9 @@ const CategoriesGallery = ({ history }) => {
         <div
           style={{ backgroundImage: `url(${item.image})` }}
           className={style.categoryCard}
-          onClick={() => aLink.current.click()}
+          onClick={() => history.push(`/portfolio/${item.title}`)}
         >
-          <Link ref={aLink} to={`/portfolio/${item.title}`} />
+          <Link to={`/portfolio/${item.title}`} />
           <div className={style.categoryCardTitle}>
             <h2>{item.title}</h2>
           </div>
