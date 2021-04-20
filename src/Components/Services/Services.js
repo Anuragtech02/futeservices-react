@@ -13,6 +13,7 @@ import image1 from "../../Assets/services/image1-fute.webp";
 import image2 from "../../Assets/services/image2-fute.webp";
 import image3 from "../../Assets/services/image3-fute.webp";
 import image4 from "../../Assets/services/image4-fute.webp";
+import { Helmet } from "react-helmet";
 
 const Services = () => {
   const data = [
@@ -58,6 +59,32 @@ const Services = () => {
 
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title>Services | FuteServices</title>
+        <meta
+          name="description"
+          content="Our customized solutions approach ensures your project is the star of the show. We
+            listen to your specific needs, your precise requirements, and your idea behind the
+            conceptualization of your dream project. There onwards we masterfully use the
+            technology and creative power in our hands to create and develop a show-stopping
+            solutions for your brand, catering to and designed to your specific requirements and
+            mimicking your dream in the most fascinating way possible."
+        />
+        <meta name="name" content="Services | FuteServices" />
+        <meta property="og:title" content="Services | FuteServices" />
+        <meta
+          property="og:description"
+          content="Our customized solutions approach ensures your project is the star of the show. We
+            listen to your specific needs, your precise requirements, and your idea behind the
+            conceptualization of your dream project. There onwards we masterfully use the
+            technology and creative power in our hands to create and develop a show-stopping
+            solutions for your brand, catering to and designed to your specific requirements and
+            mimicking your dream in the most fascinating way possible."
+        />
+        <meta property="og:image" content={image1} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+      </Helmet>
       <div
         style={{ backgroundImage: `url(${cat1})` }}
         className={styles.bgImage}

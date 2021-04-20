@@ -42,6 +42,21 @@ body {
   top: 0;
 }
 
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .hideNav {
   top: -120px;
 }
@@ -71,17 +86,5 @@ body {
 
 .blendDifference {
   mix-blend-mode: difference;
-}
-
-@font-face {
-  font-family: "Montblanc", sans-serif;
-  font-weight: 400;
-  src: url(./Assets/fonts/Mont-Blanc-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Montblanc", sans-serif;
-  font-weight: 700;
-  src: url(./Assets/fonts/Mont-Blanc-ExtraBold.ttf);
 }
 /*# sourceMappingURL=App.module.css.map */

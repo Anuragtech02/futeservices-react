@@ -51,6 +51,7 @@
   }
   .notFoundPortfolio {
     @extend .flexRow;
+    justify-content: center;
     img {
       width: 250px;
       filter: grayscale(1);

@@ -2,6 +2,7 @@ import React from "react";
 import style from "./QuoteEnquiry.module.css";
 import { Grid } from "@material-ui/core";
 import cat1 from "../../Assets/projects/cat1.webp";
+import { Helmet } from "react-helmet";
 
 export const QuoteEnquiry = () => {
   return (
@@ -20,6 +21,30 @@ export const QuoteEnquiry = () => {
 const QuoteEnquiryForm = () => {
   return (
     <div className={style.content}>
+      <Helmet>
+        <title>Quote Enquiry | Portfolio</title>
+        <meta
+          name="description"
+          content="Ever since our inception, Fute Services has been proactive in delivering a
+            mesmerizingly cinematic experience to our audiences, creating breathtaking
+            architectural imagery perfected to the minutest of details. This philosophy helps us not
+            just enhance the viewing experience but engross audiences while they actually feel
+            physically present at the location themselves."
+        />
+        <meta name="name" content="Quote Enquiry | FuteServices" />
+        <meta property="og:title" content="Quote Enquiry | FuteServices" />
+        <meta
+          property="og:description"
+          content="Ever since our inception, Fute Services has been proactive in delivering a
+            mesmerizingly cinematic experience to our audiences, creating breathtaking
+            architectural imagery perfected to the minutest of details. This philosophy helps us not
+            just enhance the viewing experience but engross audiences while they actually feel
+            physically present at the location themselves."
+        />
+        <meta property="og:image" content={cat1} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+      </Helmet>
       <Grid container spacing={2}>
         <Grid item md={6} sm={12}>
           <div className={style.floatLeft}>

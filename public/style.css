@@ -20,3 +20,13 @@ html {
 .slick-slide div:first-of-type {
   outline: none !important;
 }
+@font-face {
+  font-family: "Montblanc", sans-serif;
+  font-weight: 400;
+  src: url(../fonts/Mont-Blanc-Regular.ttf);
+}
+@font-face {
+  font-family: "Montblanc", sans-serif;
+  font-weight: 700;
+  src: url(../fonts/Mont-Blanc-ExtraBold.ttf);
+}

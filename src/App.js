@@ -19,7 +19,8 @@ const App = () => {
     const mouseCursor = document.getElementById("cursor");
     const inner = document.getElementById("inner-cursor");
     const links = document.getElementsByTagName("a");
-    console.log(links);
+
+    // console.log(links);
     if (links && links.length) {
       [...links].forEach((link) => {
         link.addEventListener("mouseover", () => {
@@ -44,12 +45,6 @@ const App = () => {
         });
       });
     }
-    return () => {
-      [...links].forEach((link) => {
-        link.removeEventListener("mouseover");
-        link.removeEventListener("mouseleave");
-      });
-    };
   }, []);
 
   const [isScrollingUp, setIsSCrollingUp] = useState(true);
@@ -73,7 +68,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Suspense
         fallback={
           <div className={style.loading}>

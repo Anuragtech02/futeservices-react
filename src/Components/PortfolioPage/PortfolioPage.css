@@ -297,6 +297,12 @@
   width: 1%;
 }
 
+.container .notFoundPortfolio {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .container .notFoundPortfolio img {
   width: 250px;
   -webkit-filter: grayscale(1);

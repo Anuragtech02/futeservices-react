@@ -26,6 +26,7 @@ const Nav = ({ history }) => {
         {HeaderData.tabs.map((link) =>
           link.left && link.path.includes("#") ? (
             <li
+              key={link.path}
               onClick={() => {
                 if (history.location.pathname === "/") {
                   document
@@ -46,9 +47,9 @@ const Nav = ({ history }) => {
             </li>
           ) : link.left ? (
             link.label === "Portfolio" ? (
-              <HoverMenu styles={styles} />
+              <HoverMenu key={link.path} styles={styles} />
             ) : (
-              <li className={styles.navLink}>
+              <li key={link.path} className={styles.navLink}>
                 <Link to={link.path}>{link.label}</Link>
               </li>
             )
@@ -62,7 +63,7 @@ const Nav = ({ history }) => {
         {HeaderData.tabs.map(
           (link) =>
             !link.left && (
-              <li className={styles.navLink}>
+              <li key={link.path} className={styles.navLink}>
                 <Link to={link.path}>{link.label}</Link>
               </li>
             )
@@ -105,6 +106,7 @@ const Nav = ({ history }) => {
             {HeaderData.tabs.map((link) =>
               link.path.includes("#") ? (
                 <li
+                  key={link.path}
                   onClick={() => {
                     if (history.location.pathname === "/") {
                       document
@@ -125,7 +127,7 @@ const Nav = ({ history }) => {
                   {link.label}
                 </li>
               ) : link.label === "Portfolio" ? (
-                <li className="nav-link-mobile pages-mobile">
+                <li key={link.path} className="nav-link-mobile pages-mobile">
                   <List component="nav" aria-labelledby="nested-list-subheader">
                     <ListItem
                       button
@@ -138,7 +140,7 @@ const Nav = ({ history }) => {
                     <Collapse in={portOpen} timeout="auto" unmountOnExit>
                       <List component="div" disablePadding>
                         {innerData?.map((item) => (
-                          <ListItem button>
+                          <ListItem key={item.name} button>
                             <Link
                               className={styles.noDecoration}
                               to={item.path}
@@ -152,7 +154,7 @@ const Nav = ({ history }) => {
                   </List>
                 </li>
               ) : (
-                <li className={styles.navLink}>
+                <li key={link.path} className={styles.navLink}>
                   <Link to={link.path}>{link.label}</Link>
                 </li>
               )

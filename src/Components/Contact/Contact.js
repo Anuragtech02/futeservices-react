@@ -3,6 +3,8 @@ import style from "./Contact.module.css";
 import cat1 from "../../Assets/projects/cat1.webp";
 import CallIcon from "@material-ui/icons/Call";
 import MailIcon from "@material-ui/icons/Mail";
+import { Helmet } from "react-helmet";
+import logo from "../../Assets/logo.png";
 
 export const Contact = () => {
   return (
@@ -21,6 +23,28 @@ export const Contact = () => {
 export const ContactForm = () => {
   return (
     <div className={style.content}>
+      <Helmet>
+        <title>Contact | FuteServices</title>
+        <meta
+          name="description"
+          content="Our home base is situated in Bengaluru, with branches in Mumbai, Hyderabad,
+            & Dubai. We are immensely proud to provide all our services in-house with the
+            added access to our Prague modeling studios time zones, allowing a fast and
+            reliable 24/7 service for our local as well as international clients."
+        />
+        <meta name="name" content="Contact | FuteServices" />
+        <meta property="og:title" content="Contact | FuteServices" />
+        <meta
+          property="og:description"
+          content="Our home base is situated in Bengaluru, with branches in Mumbai, Hyderabad,
+            & Dubai. We are immensely proud to provide all our services in-house with the
+            added access to our Prague modeling studios time zones, allowing a fast and
+            reliable 24/7 service for our local as well as international clients."
+        />
+        <meta property="og:image" content={logo} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+      </Helmet>
       {/* <h6 className={style.heading}>COLLABORATE</h6> */}
       <p className={style.para}>WANT TO WORK WITH US? CONNECT NOW</p>
       <div className={style.details}>

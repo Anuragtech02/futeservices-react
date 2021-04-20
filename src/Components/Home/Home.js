@@ -11,6 +11,7 @@ import HomeSlider from "../HomeSlider/HomeSlider";
 import TeamSlider from "../TeamSlider/TeamSlider";
 import Counters from "../Counters/Counters";
 import ScrollTrigger from "react-scroll-trigger";
+import { Helmet } from "react-helmet";
 
 export const Home = ({ history }) => {
   const [enableCounter, setEnableCounter] = useState(false);
@@ -21,6 +22,30 @@ export const Home = ({ history }) => {
 
   return (
     <div id="container" className={style.container}>
+      <Helmet>
+        <title>Home | FuteServices</title>
+        <meta
+          name="description"
+          content="Ever since our inception, Fute Services has been proactive in delivering a
+            mesmerizingly cinematic experience to our audiences, creating breathtaking
+            architectural imagery perfected to the minutest of details. This philosophy helps us not
+            just enhance the viewing experience but engross audiences while they actually feel
+            physically present at the location themselves."
+        />
+        <meta name="name" content="FuteServices" />
+        <meta property="og:title" content="Home | FuteServices" />
+        <meta
+          property="og:description"
+          content="Ever since our inception, Fute Services has been proactive in delivering a
+            mesmerizingly cinematic experience to our audiences, creating breathtaking
+            architectural imagery perfected to the minutest of details. This philosophy helps us not
+            just enhance the viewing experience but engross audiences while they actually feel
+            physically present at the location themselves."
+        />
+        <meta property="og:image" content="../../Assets/logo.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+      </Helmet>
       <section className={style.largeVideoBg}>
         <video muted autoPlay loop={true}>
           <source src={BgVideo} type="video/mp4" />
