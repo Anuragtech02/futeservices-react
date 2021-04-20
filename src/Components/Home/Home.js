@@ -44,19 +44,9 @@ export const Home = ({ history }) => {
 
   const distortion = useRef();
 
-  // useEffect(() => {
-  //   const imageDistortion = new hoverEffect({
-  //     parent: distortion.current,
-  //     intensity: 0.3,
-  //     image1: portrait2,
-  //     image2: portrait1,
-  //     angle2: Math.PI / 2,
-  //     displacementImage: displacement,
-  //     // imagesRatio: 9 / 16,
-  //   });
-  //   // imageDistortion();
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [showAction, setShowAction] = React.useState(false);
   const [lastY, setLastY] = React.useState(0);

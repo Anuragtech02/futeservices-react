@@ -36,7 +36,7 @@ const TeamSlider = () => {
     slidesToShow: 1,
     swipeToSlide: true,
     dots: false,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     speed: 2000,
     ease: "ease-in",

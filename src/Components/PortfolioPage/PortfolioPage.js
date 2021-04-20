@@ -3,11 +3,16 @@ import { useParams } from "react-router-dom";
 import "./PortfolioPage.css";
 import { PortfolioData } from "../../Static/PortfolioData";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Isotope from "isotope-layout";
 
 const PortfolioPage = () => {
   const { name } = useParams();
 
+  const [isotope, setIsotope] = useState(null);
+
   const [current, setCurrent] = useState({});
+
+  const isoRef = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,6 +23,25 @@ const PortfolioPage = () => {
     }
   }, [name]);
 
+  useEffect(() => {
+    if (current?.images) {
+      if (isotope) {
+        isotope.reloadItems();
+      } else {
+        setIsotope(
+          new Isotope(isoRef.current, {
+            itemSelector: ".grid-item",
+            // percentPosition: true,
+            layoutMode: "masonry",
+            masonry: {
+              columnWidth: ".grid-sizer",
+            },
+          })
+        );
+      }
+    }
+  }, [isotope, current]);
+
   return (
     <div className="container">
       <section
@@ -27,18 +51,19 @@ const PortfolioPage = () => {
         <h1>{current.name}</h1>
       </section>
       <section className={"portfolioContainer"}>
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry>
-            {current?.images?.map((image, i) => (
-              <img
-                key={i}
-                src={image?.src}
-                style={{ width: "100%", display: "block" }}
-                alt=""
-              />
-            ))}
-          </Masonry>
-        </ResponsiveMasonry>
+        <div ref={isoRef} className="grid gallery">
+          <div className="grid-sizer"></div>
+          {current?.images?.map((image, i) => {
+            return (
+              <div key={i} className={`grid-item`}>
+                <img src={image.src} alt={image.title} />
+                {/* <div className="title">
+                <h4>{image.title}</h4>
+              </div> */}
+              </div>
+            );
+          })}
+        </div>
       </section>
     </div>
   );
