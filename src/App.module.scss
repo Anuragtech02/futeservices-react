@@ -38,7 +38,7 @@ body {
   top: 0;
 }
 .hideNav {
-  top: -100px;
+  top: -120px;
 }
 
 .dark {
@@ -73,13 +73,13 @@ body {
 //   color: black;
 // }
 
-// @font-face {
-//   font-family: "Montblanc", sans-serif;
-//   font-weight: 400;
-//   src: url(./Assets/fonts/Montblanc-Regular.ttf);
-// }
-// @font-face {
-//   font-family: "Montblanc", sans-serif;
-//   font-weight: 700;
-//   src: url(./Assets/fonts/MontBlancExtraBold.ttf);
-// }
+@font-face {
+  font-family: "Montblanc", sans-serif;
+  font-weight: 400;
+  src: url(./Assets/fonts/Mont-Blanc-Regular.ttf);
+}
+@font-face {
+  font-family: "Montblanc", sans-serif;
+  font-weight: 700;
+  src: url(./Assets/fonts/Mont-Blanc-ExtraBold.ttf);
+}

@@ -1,22 +1,9 @@
 import React from "react";
 import style from "./QuoteEnquiry.module.css";
-import {
-  Facebook,
-  Instagram,
-  LinkedIn,
-  Twitter,
-  YouTube,
-} from "@material-ui/icons";
 import { Grid } from "@material-ui/core";
 import cat1 from "../../Assets/projects/cat1.webp";
 
 export const QuoteEnquiry = () => {
-  //   React.useEffect(() => {
-  //     document.getElementById("navbar").classList.remove(style.dark);
-  //     document.getElementById("navbar").classList.add(style.light);
-  //     document.getElementById("navbar").style.position = "relative";
-  //   });
-
   return (
     <div className={style.container}>
       <div
@@ -31,24 +18,6 @@ export const QuoteEnquiry = () => {
 };
 
 const QuoteEnquiryForm = () => {
-  const socialMedia = [
-    {
-      icon: <YouTube fontSize="small" />,
-      link: "#",
-    },
-    {
-      icon: <Instagram fontSize="small" />,
-      link: "#",
-    },
-    {
-      icon: <Twitter fontSize="small" />,
-      link: "#",
-    },
-    {
-      icon: <Facebook fontSize="small" />,
-      link: "#",
-    },
-  ];
   return (
     <div className={style.content}>
       <Grid container spacing={2}>
@@ -60,15 +29,6 @@ const QuoteEnquiryForm = () => {
               you may have... so don't be a stranger drop us a line by filling
               in this form... or upload your files to our dropbox folder.
             </p>
-            {/* <div>
-              <ul>
-                {socialMedia.map((data, index) => (
-                  <li key={index}>
-                    <a href={data.link}>{data.icon}</a>
-                  </li>
-                ))}
-              </ul>
-            </div> */}
           </div>
         </Grid>
         <Grid item md={6} sm={12}>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createRef } from "react";
+import React, { useState, createRef } from "react";
 import styles from "./HomeSlider.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

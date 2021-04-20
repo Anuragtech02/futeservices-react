@@ -7,17 +7,17 @@ const Counters = ({ start }) => {
     {
       from: 0,
       to: 1000,
-      title: "Title1",
+      title: "Clients",
     },
     {
       from: 0,
       to: 1200,
-      title: "Title2",
+      title: "Projects Completed",
     },
     {
       from: 0,
       to: 10000,
-      title: "Title3",
+      title: "Cities",
     },
   ];
 
@@ -42,7 +42,7 @@ const Counters = ({ start }) => {
 export default Counters;
 
 const Counter = ({ st, counter }) => {
-  const { countUp, start, pauseResume, reset, update } = useCountUp({
+  const { countUp, start } = useCountUp({
     start: counter.from,
     end: counter.to,
     delay: 1000,

@@ -1,69 +1,14 @@
 import React, { useEffect, useState } from "react";
-import {
-  Home,
-  Navbar,
-  Nav,
-  About,
-  Footer,
-  FAQ,
-  Team,
-  Portfolio,
-  Cursor,
-} from "./Components";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { Home, Footer, Team, Cursor } from "./Components";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import style from "./App.module.css";
-import classNames from "classnames";
 import Contact from "./Components/Contact/Contact";
 import PortfolioPage from "./Components/PortfolioPage/PortfolioPage";
 import NavWrapper from "./Components/Nav/NavWrapper";
 import QuoteEnquiry from "./Components/QuoteEnquiry/QuoteEnquiry";
 import Services from "./Components/Services/Services";
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
-
 const App = () => {
-  // const [navClass, setNavClass] = useState(style.dark);
-
-  // useEffect(() => {
-  //   function setBackground() {
-  //     if (
-  //       document.body.scrollTop > 200 ||
-  //       document.documentElement.scrollTop < 200 ||
-  //       window.location.pathname.includes("contact") ||
-  //       window.location.pathname.includes("portfolio")
-  //     ) {
-  //       // document.getElementById("navbar").classList.remove(style.light);
-  //       // document.getElementById("navbar").classList.add(style.dark);
-  //       setNavClass(style.dark);
-  //     } else {
-  //       // document.getElementById("navbar").classList.remove(style.dark);
-  //       // document.getElementById("navbar").classList.add(style.light);
-  //       setNavClass(style.light);
-  //     }
-  //   }
-  //   function watchScroll() {
-  //     window.addEventListener("scroll", setBackground);
-  //   }
-  //   watchScroll();
-
-  //   return () => {
-  //     window.removeEventListener("scroll", setBackground);
-  //   };
-  // }, []);
-
   useEffect(() => {
     const mouseCursor = document.getElementById("cursor");
     const inner = document.getElementById("inner-cursor");
@@ -93,6 +38,12 @@ const App = () => {
         });
       });
     }
+    return () => {
+      [...links].forEach((link) => {
+        link.removeEventListener("mouseover");
+        link.removeEventListener("mouseleave");
+      });
+    };
   }, []);
 
   const [isScrollingUp, setIsSCrollingUp] = useState(true);
@@ -121,9 +72,8 @@ const App = () => {
       <NavWrapper isScrollingUp={isScrollingUp} />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
+        {/* <Route path="/about" exact component={About} /> */}
         <Route path="/contact" exact component={Contact} />
-        <Route path="/faq" exact component={FAQ} />
         <Route path="/services" exact component={Services} />
         <Route path="/team" exact component={Team} />
         <Route path="/quote" exact component={QuoteEnquiry} />

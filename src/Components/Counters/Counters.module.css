@@ -259,5 +259,7 @@
 .container .counter span {
   font-size: 3rem;
   color: #fa3554;
+  font-weight: 700;
+  margin: 10px 0;
 }
 /*# sourceMappingURL=Counters.module.css.map */

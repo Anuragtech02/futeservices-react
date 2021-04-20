@@ -1,58 +1,33 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./PortfolioPage.css";
 import { PortfolioData } from "../../Static/PortfolioData";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import Isotope from "isotope-layout";
+import notFoundImg from "../../Assets/not-found.svg";
+import cat1 from "../../Assets/projects/cat1.webp";
 
 const PortfolioPage = () => {
   const { name } = useParams();
-
-  const [isotope, setIsotope] = useState(null);
-
   const [current, setCurrent] = useState({});
-
-  const isoRef = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     if (name && name.length) {
-      const portfolio = PortfolioData.find((item) => item.name === name);
+      const portfolio = PortfolioData.find((item) => item.name === name) ?? {};
       console.log({ portfolio });
       setCurrent(portfolio);
     }
   }, [name]);
 
-  // useEffect(() => {
-  //   if (current?.images) {
-  //     if (isotope) {
-  //       isotope.reloadItems();
-  //     } else {
-  //       setIsotope(
-  //         new Isotope(isoRef.current, {
-  //           itemSelector: ".grid-item",
-  //           // percentPosition: true,
-  //           layoutMode: "masonry",
-  //           masonry: {
-  //             columnWidth: ".grid-sizer",
-  //           },
-  //         })
-  //       );
-  //     }
-  //   }
-  // }, [isotope, current]);
-
   return (
     <div className="container">
       <section
-        style={{ backgroundImage: `url(${current?.image})` }}
+        style={{ backgroundImage: `url(${current?.image ?? cat1})` }}
         className={"imageBg"}
       >
-        <h1>{current.name}</h1>
+        <h1>{current.name ?? name}</h1>
       </section>
       <section className={"portfolioContainer"}>
         <div className="grid gallery">
-          {/* <div className="grid-sizer"></div> */}
           {current?.images?.map((image, i) => {
             return (
               <div key={i} className={`grid-item`}>
@@ -64,6 +39,12 @@ const PortfolioPage = () => {
             );
           })}
         </div>
+        {(!current || !current.images) && (
+          <div className="notFoundPortfolio">
+            <img src={notFoundImg} alt="not-found-fute" />
+            <p>Nothing found</p>
+          </div>
+        )}
       </section>
     </div>
   );

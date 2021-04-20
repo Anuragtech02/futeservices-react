@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Footer.module.css";
-import logo from "../../Assets/logo.png";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import { FooterData } from "../../Static";

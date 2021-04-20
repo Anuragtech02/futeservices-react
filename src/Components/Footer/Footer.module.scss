@@ -16,10 +16,10 @@
     flex: 1;
     h1 {
       color: #fff;
-      font-family: bebas neue, sans-serif;
-      font-weight: 400;
+      // font-family: bebas neue, sans-serif;
+      font-weight: 700;
       text-transform: uppercase;
-      font-size: 2em;
+      font-size: 1rem;
       letter-spacing: 0.1em;
       z-index: 10000;
     }
@@ -40,12 +40,10 @@
       margin: 0 2%;
       .navLink {
         color: #fff;
-        font-family: bebas neue, sans-serif;
+        // font-family: bebas neue, sans-serif;
         font-weight: 400;
         text-transform: uppercase;
-        font-size: 18px;
-        letter-spacing: 0.2em;
-        line-height: 1.857em;
+        font-size: 0.8rem;
         z-index: 10000;
         cursor: pointer !important;
       }
@@ -66,7 +64,8 @@ hr {
     padding: 5px 0;
     color: #989898;
     text-align: center;
-    font-family: "open sans", sans-serif;
+    // font-family: "open sans", sans-serif;
+    font-size: 0.8rem;
   }
 
   .socialLinks {

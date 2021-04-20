@@ -240,7 +240,7 @@
 }
 
 .container {
-  padding: 100px 0;
+  padding: 50px 0;
   padding-bottom: 50px;
   position: relative;
 }
@@ -340,6 +340,12 @@
 .container .sliderContainer .imgContainer .slideTitle:hover h4,
 .container .sliderContainer .imgContainer .slideTitle:hover img {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1350px) {
+  .container .sliderContainer .imgContainer {
+    height: 450px;
+  }
 }
 
 .container .sliderContainer .activeSlide .mainImage {

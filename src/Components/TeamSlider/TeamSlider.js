@@ -14,17 +14,12 @@ import {
   DialogTitle,
   DialogContent,
   DialogContentText,
-  makeStyles,
 } from "@material-ui/core";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
 const TeamSlider = () => {
   const [showAction, setShowAction] = useState(true);
-
-  //   React.useEffect(() => {
-  //     setTimeout(() => setShowAction(false), 4000);
-  //   }, [showAction]);
 
   const settings = {
     fade: true,
@@ -104,7 +99,8 @@ const Content = ({ item, showAction }) => {
         className={classNames(styles.otherName)}
       >
         <p>
-          {item?.desc?.slice(0, 100)}{" "}
+          {item?.desc?.slice(0, 100)}
+          {".... "}
           <span onClick={() => setMore(!more)}>
             Read {more ? "Less" : "More"}
           </span>{" "}

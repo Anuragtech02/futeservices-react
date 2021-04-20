@@ -242,6 +242,10 @@
           justify-content: center;
 }
 
+.noDecoration, a {
+  width: 100px !important;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,7 +270,7 @@
 }
 
 .container .brandName img {
-  max-width: 150px;
+  max-width: 180px;
   min-width: 100px;
   cursor: pointer !important;
 }

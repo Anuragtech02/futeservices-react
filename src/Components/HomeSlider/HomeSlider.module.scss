@@ -1,7 +1,7 @@
 @import "../common.module.scss";
 
 .container {
-  padding: 100px 0;
+  padding: 50px 0;
   padding-bottom: 50px;
   position: relative;
 
@@ -81,6 +81,10 @@
           }
         }
         //Logo on bottom left
+      }
+
+      @media screen and (max-width: 1350px) {
+        height: 450px;
       }
     }
     .activeSlide {

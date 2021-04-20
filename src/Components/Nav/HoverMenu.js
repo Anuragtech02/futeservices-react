@@ -3,16 +3,15 @@ import { Link } from "react-router-dom";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import classNames from "classnames";
 
+export const innerData = [
+  { name: "Drone Shoot", path: "/portfolio/drone-shoot" },
+  { name: "Curtain Raisers", path: "/portfolio/curtain-raisers" },
+  { name: "Walkthroughs (3D+Cinematic)", path: "/portfolio/walkthroughs" },
+  { name: "3D Views & Renders", path: "/portfolio/3d-views" },
+  { name: "Scale Model", path: "/portfolio/scale-model" },
+  { name: "Interactive AR & VR", path: "/portfolio/ar-vr" },
+];
 const HoverMenu = ({ styles }) => {
-  const innerData = [
-    { name: "Drone Shoot", path: "/portfolio/dron-shoot" },
-    { name: "Curtain Raisers", path: "/portfolio/curtain-raisers" },
-    { name: "Walkthroughs (3D+Cinematic)", path: "/portfolio/walkthroughs" },
-    { name: "3D Views & Renders", path: "/portfolio/3d-views" },
-    { name: "Scale Model", path: "/portfolio/scale-model" },
-    { name: "Interactive AR & VR", path: "/portfolio/ar-vr" },
-  ];
-
   return (
     <li
       className={classNames(styles.navLink, styles.portfolioMenu)}

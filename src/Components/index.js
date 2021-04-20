@@ -1,15 +1,9 @@
-export { default as Navbar } from "./Navbar/Navbar";
 export { default as Nav } from "./Nav/Nav";
 export { default as Footer } from "./Footer/Footer";
 export { default as Home } from "./Home/Home";
-export { default as About } from "./About/About";
 export { default as Contact, ContactForm } from "./Contact/Contact";
-export { default as Carousel } from "./Carousel/Carousel";
-export { default as HrSlider } from "./HrSlider/HrSlider";
-export { default as CustomStepper } from "./CustomStepper/CustomStepper";
 export { default as Testimonial } from "./Testimonial/Testimonial";
 export { default as MapContainer } from "./MapContainer/MapContainer";
-export { default as FAQ } from "./FAQ/FAQ";
 export { default as Team } from "./Team/Team";
 export { default as Portfolio } from "./Portfolio/Portfolio";
 export { default as MultipleSlider } from "./MultipleSlider/MultipleSlider";

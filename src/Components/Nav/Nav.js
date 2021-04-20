@@ -4,12 +4,21 @@ import { withRouter } from "react-router";
 import { HeaderData } from "../../Static";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/logo.png";
-import { SwipeableDrawer } from "@material-ui/core";
+import {
+  Collapse,
+  List,
+  ListItem,
+  ListItemText,
+  SwipeableDrawer,
+} from "@material-ui/core";
 import classNames from "classnames";
-import HoverMenu from "./HoverMenu";
+import HoverMenu, { innerData } from "./HoverMenu";
+import { ExpandLess, ExpandMore } from "@material-ui/icons";
 
 const Nav = ({ history }) => {
   const [open, setOpen] = useState(false);
+
+  const [portOpen, setPortOpen] = useState(false);
 
   return (
     <nav className={styles.container}>
@@ -115,8 +124,35 @@ const Nav = ({ history }) => {
                 >
                   {link.label}
                 </li>
+              ) : link.label === "Portfolio" ? (
+                <li className="nav-link-mobile pages-mobile">
+                  <List component="nav" aria-labelledby="nested-list-subheader">
+                    <ListItem
+                      button
+                      onClick={() => setPortOpen(!portOpen)}
+                      disableGutters
+                    >
+                      <ListItemText primary="Portfolio" />
+                      {portOpen ? <ExpandLess /> : <ExpandMore />}
+                    </ListItem>
+                    <Collapse in={portOpen} timeout="auto" unmountOnExit>
+                      <List component="div" disablePadding>
+                        {innerData?.map((item) => (
+                          <ListItem button>
+                            <Link
+                              className={styles.noDecoration}
+                              to={item.path}
+                            >
+                              <ListItemText primary={item.name} />
+                            </Link>
+                          </ListItem>
+                        ))}
+                      </List>
+                    </Collapse>
+                  </List>
+                </li>
               ) : (
-                <li onClick={() => setOpen(false)} className={styles.navLink}>
+                <li className={styles.navLink}>
                   <Link to={link.path}>{link.label}</Link>
                 </li>
               )

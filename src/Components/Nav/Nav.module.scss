@@ -1,5 +1,9 @@
 @import "../common.module.scss";
 
+.noDecoration {
+  // text-decoration: none !important;
+  width: 100px !important;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -14,7 +18,7 @@
     justify-content: center;
 
     img {
-      max-width: 150px;
+      max-width: 180px;
       min-width: 100px;
       cursor: pointer !important;
     }

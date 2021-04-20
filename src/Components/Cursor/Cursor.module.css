@@ -22,6 +22,8 @@
   height: 0.3rem;
   background: red;
   border-radius: 50%;
+  -webkit-transition: all 0.08s ease-out;
+  transition: all 0.08s ease-out;
   -webkit-transition-property: top left;
   transition-property: top left;
 }

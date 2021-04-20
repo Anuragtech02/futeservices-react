@@ -70,14 +70,14 @@ export const teamData = [
     name: "Ms. Soma",
     position: "MANAGING DIRECTOR",
     desc:
-      "Sma leads with brilliant creative direction and works towards a seamless execution of all our projects. Her executive responsibilities include business strategy, new business development, portfolio management, employee management, and quality control. In addition to branding, film, CGI, and print collateral, she has extensive expertise in the design, and execution of complex sales gallery environments. Prior to joining Fute services ,she has spent more than a decade in sales leadership roles in a multinational company with an exceptional understanding of customer experience. In addition, she is responsible for client service and improving customer relations.",
+      "Soma leads with brilliant creative direction and works towards a seamless execution of all our projects. Her executive responsibilities include business strategy, new business development, portfolio management, employee management, and quality control. In addition to branding, film, CGI, and print collateral, she has extensive expertise in the design, and execution of complex sales gallery environments. Prior to joining Fute services ,she has spent more than a decade in sales leadership roles in a multinational company with an exceptional understanding of customer experience. In addition, she is responsible for client service and improving customer relations.",
   },
   {
     image: member2,
     name: "Ms. Payel Saha",
     position: "CHIEF OPERATIONS OFFICER",
     desc:
-      "Payal is a true powerhouse and one of the most versatile members of the team with a flair for creating boundless opportunities for the company. With an impressive experience of over 10 years, she is the first to being new ideas to the table, with her proficiency in seamless business development strategies as well as her charisma and enthusiasm that ensure that the projects get the right exposure they deserve. She has been a strong pillar for Fute Services and is in charge of all the operations as well as the sales team. She has a post graduate degree as an Economist, with thorough skills acquired in Finance & HR. Her never-say-never attitude motivates and inspires the upcoming pioneers to take up their own endevours and never back down from a challenge.",
+      "Payel is a true powerhouse and one of the most versatile members of the team with a flair for creating boundless opportunities for the company. With an impressive experience of over 10 years, she is the first to being new ideas to the table, with her proficiency in seamless business development strategies as well as her charisma and enthusiasm that ensure that the projects get the right exposure they deserve. She has been a strong pillar for Fute Services and is in charge of all the operations as well as the sales team. She has a post graduate degree as an Economist, with thorough skills acquired in Finance & HR. Her never-say-never attitude motivates and inspires the upcoming pioneers to take up their own endevours and never back down from a challenge.",
   },
   {
     image: member3,
