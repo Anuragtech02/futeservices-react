@@ -83,11 +83,14 @@ const Services = () => {
         />
         <meta property="og:type" content="website" />
 
-        <meta property="og:url" content={window.location.href} />
-        <meta property="og:image" content={window.location.href + image1} />
+        <meta property="og:url" content={"https://tech.feedbox.co.in/"} />
+        <meta
+          property="og:image"
+          content={"https://tech.feedbox.co.in/" + image1}
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={window.location.href} />
+        <meta property="twitter:url" content={"https://tech.feedbox.co.in/"} />
         <meta property="twitter:title" content="Services | FuteServices" />
         <meta
           property="twitter:description"
@@ -95,7 +98,7 @@ const Services = () => {
         />
         <meta
           property="twitter:image"
-          content={window.location.href + image1}
+          content={"https://tech.feedbox.co.in/" + image1}
         ></meta>
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />

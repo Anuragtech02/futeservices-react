@@ -52,14 +52,14 @@ const PortfolioPage = () => {
             just enhance the viewing experience but engross audiences while they actually feel
             physically present at the location themselves."
         />
-        <meta property="og:url" content={window.location.href} />
+        <meta property="og:url" content={"https://tech.feedbox.co.in/"} />
         <meta
           property="og:image"
-          content={window.location.href + current?.image ?? cat1}
+          content={"https://tech.feedbox.co.in/" + current?.image ?? cat1}
         />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={window.location.href} />
+        <meta property="twitter:url" content={"https://tech.feedbox.co.in/"} />
         <meta property="twitter:title" content={capName + " | FuteServices"} />
         <meta
           property="twitter:description"
@@ -71,7 +71,7 @@ const PortfolioPage = () => {
         />
         <meta
           property="twitter:image"
-          content={window.location.href + current?.image ?? cat1}
+          content={"https://tech.feedbox.co.in/" + current?.image ?? cat1}
         ></meta>
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />

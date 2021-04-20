@@ -41,10 +41,13 @@ const QuoteEnquiryForm = () => {
             just enhance the viewing experience but engross audiences while they actually feel
             physically present at the location themselves."
         />
-        <meta property="og:image" content={window.location.href + "/" + cat1} />
+        <meta
+          property="og:image"
+          content={"https://tech.feedbox.co.in/" + cat1}
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={window.location.href} />
+        <meta property="twitter:url" content={"https://tech.feedbox.co.in/"} />
         <meta property="twitter:title" content="Contact | FuteServices" />
         <meta
           property="twitter:description"
@@ -56,7 +59,7 @@ const QuoteEnquiryForm = () => {
         />
         <meta
           property="twitter:image"
-          content={window.location.href + "/" + cat1}
+          content={"https://tech.feedbox.co.in/" + cat1}
         ></meta>
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />

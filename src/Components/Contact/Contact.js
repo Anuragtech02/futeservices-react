@@ -41,10 +41,13 @@ export const ContactForm = () => {
             added access to our Prague modeling studios time zones, allowing a fast and
             reliable 24/7 service for our local as well as international clients."
         />
-        <meta property="og:image" content={window.location.href + logo} />
+        <meta
+          property="og:image"
+          content={"https://tech.feedbox.co.in/" + logo}
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={window.location.href} />
+        <meta property="twitter:url" content={"https://tech.feedbox.co.in/"} />
         <meta property="twitter:title" content="Contact | FuteServices" />
         <meta
           property="twitter:description"
@@ -55,7 +58,7 @@ export const ContactForm = () => {
         />
         <meta
           property="twitter:image"
-          content={window.location.href + logo}
+          content={"https://tech.feedbox.co.in/" + logo}
         ></meta>
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />

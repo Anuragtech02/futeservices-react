@@ -45,7 +45,7 @@ export const Home = ({ history }) => {
         />
         <meta
           property="og:image"
-          content={window.location.href + "/logo.png"}
+          content={"https://tech.feedbox.co.in/logo.png"}
         />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
