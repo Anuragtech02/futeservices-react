@@ -3,8 +3,5 @@ export { default as Footer } from "./Footer/Footer";
 export { default as Home } from "./Home/Home";
 export { default as Contact, ContactForm } from "./Contact/Contact";
 export { default as Testimonial } from "./Testimonial/Testimonial";
-export { default as MapContainer } from "./MapContainer/MapContainer";
-export { default as Team } from "./Team/Team";
-export { default as Portfolio } from "./Portfolio/Portfolio";
 export { default as MultipleSlider } from "./MultipleSlider/MultipleSlider";
 export { default as Cursor } from "./Cursor/Cursor";

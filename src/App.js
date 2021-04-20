@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Home, Footer, Team, Cursor } from "./Components";
+import { Home, Footer, Cursor } from "./Components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import style from "./App.module.css";
 import Contact from "./Components/Contact/Contact";
@@ -75,7 +75,6 @@ const App = () => {
         {/* <Route path="/about" exact component={About} /> */}
         <Route path="/contact" exact component={Contact} />
         <Route path="/services" exact component={Services} />
-        <Route path="/team" exact component={Team} />
         <Route path="/quote" exact component={QuoteEnquiry} />
         {/* <Route path="/portfolio" exact component={Portfolio} /> */}
         <Route path="/portfolio/:name" exact component={PortfolioPage} />
