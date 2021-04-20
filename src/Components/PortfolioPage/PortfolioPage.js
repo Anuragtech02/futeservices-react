@@ -52,7 +52,27 @@ const PortfolioPage = () => {
             just enhance the viewing experience but engross audiences while they actually feel
             physically present at the location themselves."
         />
-        <meta property="og:image" content={current?.image ?? cat1} />
+        <meta property="og:url" content={window.location.href} />
+        <meta
+          property="og:image"
+          content={window.location.href + current?.image ?? cat1}
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={window.location.href} />
+        <meta property="twitter:title" content={capName + " | FuteServices"} />
+        <meta
+          property="twitter:description"
+          content="Ever since our inception, Fute Services has been proactive in delivering a
+            mesmerizingly cinematic experience to our audiences, creating breathtaking
+            architectural imagery perfected to the minutest of details. This philosophy helps us not
+            just enhance the viewing experience but engross audiences while they actually feel
+            physically present at the location themselves."
+        />
+        <meta
+          property="twitter:image"
+          content={window.location.href + current?.image ?? cat1}
+        ></meta>
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
       </Helmet>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import style from "./Home.module.css";
 import cat1 from "../../Assets/projects/cat1.webp";
 import cat2 from "../../Assets/projects/cat2.webp";
@@ -12,6 +12,7 @@ import TeamSlider from "../TeamSlider/TeamSlider";
 import Counters from "../Counters/Counters";
 import ScrollTrigger from "react-scroll-trigger";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 export const Home = ({ history }) => {
   const [enableCounter, setEnableCounter] = useState(false);
@@ -42,7 +43,10 @@ export const Home = ({ history }) => {
             just enhance the viewing experience but engross audiences while they actually feel
             physically present at the location themselves."
         />
-        <meta property="og:image" content="../../Assets/logo.png" />
+        <meta
+          property="og:image"
+          content={window.location.href + "/logo.png"}
+        />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
       </Helmet>
@@ -94,6 +98,8 @@ export const Home = ({ history }) => {
 export default withRouter(Home);
 
 const CategoriesGallery = ({ history }) => {
+  const aLink = useRef(null);
+
   const data = [
     {
       title: "Residential",
@@ -122,8 +128,9 @@ const CategoriesGallery = ({ history }) => {
         <div
           style={{ backgroundImage: `url(${item.image})` }}
           className={style.categoryCard}
-          onClick={() => history.push(`/portfolio/${item.title}`)}
+          onClick={() => aLink.current.click()}
         >
+          <Link ref={aLink} to={`/portfolio/${item.title}`} />
           <div className={style.categoryCardTitle}>
             <h2>{item.title}</h2>
           </div>

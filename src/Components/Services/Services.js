@@ -81,10 +81,26 @@ const Services = () => {
             solutions for your brand, catering to and designed to your specific requirements and
             mimicking your dream in the most fascinating way possible."
         />
-        <meta property="og:image" content={image1} />
+        <meta property="og:type" content="website" />
+
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:image" content={window.location.href + image1} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={window.location.href} />
+        <meta property="twitter:title" content="Services | FuteServices" />
+        <meta
+          property="twitter:description"
+          content="Our customized solutions approach ensures your project is the star of the show. We listen to your specific needs, your precise requirements, and your idea behind the conceptualization of your dream project. There onwards we masterfully use the technology and creative power in our hands to create and develop a show-stopping solutions for your brand, catering to and designed to your specific requirements and mimicking your dream in the most fascinating way possible."
+        />
+        <meta
+          property="twitter:image"
+          content={window.location.href + image1}
+        ></meta>
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
       </Helmet>
+
       <div
         style={{ backgroundImage: `url(${cat1})` }}
         className={styles.bgImage}
