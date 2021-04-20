@@ -7,7 +7,7 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import style from "./Contact.module.css";
-import cat1 from "../../Assets/projects/category1.webp";
+import cat1 from "../../Assets/projects/cat1.webp";
 import CallIcon from "@material-ui/icons/Call";
 import MailIcon from "@material-ui/icons/Mail";
 import vimeoIcon from "../../Assets/vimeo-brands.svg";

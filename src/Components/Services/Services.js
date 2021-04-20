@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Services.module.css";
 import { Grid } from "@material-ui/core";
-import cat1 from "../../Assets/projects/category1.webp";
+import cat1 from "../../Assets/projects/cat1.webp";
 import droneIcon from "../../Assets/services-icon/camera-drone.svg";
 import curtainIcon from "../../Assets/services-icon/curtains.svg";
 import arIcon from "../../Assets/services-icon/360.svg";

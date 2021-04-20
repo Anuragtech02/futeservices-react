@@ -8,7 +8,7 @@ import {
   YouTube,
 } from "@material-ui/icons";
 import { Grid } from "@material-ui/core";
-import cat1 from "../../Assets/projects/category1.webp";
+import cat1 from "../../Assets/projects/cat1.webp";
 
 export const QuoteEnquiry = () => {
   //   React.useEffect(() => {

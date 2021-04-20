@@ -23,24 +23,24 @@ const PortfolioPage = () => {
     }
   }, [name]);
 
-  useEffect(() => {
-    if (current?.images) {
-      if (isotope) {
-        isotope.reloadItems();
-      } else {
-        setIsotope(
-          new Isotope(isoRef.current, {
-            itemSelector: ".grid-item",
-            // percentPosition: true,
-            layoutMode: "masonry",
-            masonry: {
-              columnWidth: ".grid-sizer",
-            },
-          })
-        );
-      }
-    }
-  }, [isotope, current]);
+  // useEffect(() => {
+  //   if (current?.images) {
+  //     if (isotope) {
+  //       isotope.reloadItems();
+  //     } else {
+  //       setIsotope(
+  //         new Isotope(isoRef.current, {
+  //           itemSelector: ".grid-item",
+  //           // percentPosition: true,
+  //           layoutMode: "masonry",
+  //           masonry: {
+  //             columnWidth: ".grid-sizer",
+  //           },
+  //         })
+  //       );
+  //     }
+  //   }
+  // }, [isotope, current]);
 
   return (
     <div className="container">
@@ -51,8 +51,8 @@ const PortfolioPage = () => {
         <h1>{current.name}</h1>
       </section>
       <section className={"portfolioContainer"}>
-        <div ref={isoRef} className="grid gallery">
-          <div className="grid-sizer"></div>
+        <div className="grid gallery">
+          {/* <div className="grid-sizer"></div> */}
           {current?.images?.map((image, i) => {
             return (
               <div key={i} className={`grid-item`}>
