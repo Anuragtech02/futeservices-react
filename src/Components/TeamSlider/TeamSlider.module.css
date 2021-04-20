@@ -341,7 +341,6 @@
 }
 
 .container .distortion {
-  width: 40%;
   height: 700px;
   margin: 0 10px;
 }
@@ -378,36 +377,68 @@
   .container .distortion {
     height: 500px;
   }
+  .container .title {
+    left: 10%;
+  }
+  .container .title h1 {
+    font-size: 1.8rem;
+  }
+  .container .otherName {
+    width: 25%;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  .container {
-    position: relative;
+  .container .title {
+    top: 55%;
+    left: 12%;
   }
-  .container .distortion {
-    height: 450px;
-    width: auto;
-  }
-  .container .title,
-  .container .otherName {
-    position: absolute;
-    left: 20px;
-    bottom: 30%;
-  }
-  .container .title h1,
-  .container .otherName h1 {
-    font-size: 1.3rem;
+  .container .title h1 {
+    font-size: 1.4rem;
   }
   .container .otherName {
-    left: auto;
-    right: 20px;
-    bottom: 20px;
+    top: auto;
+    right: 8%;
+    bottom: 2%;
+    width: 35%;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
+  .container .title {
+    top: 60%;
+    left: 8%;
+  }
+  .container .title h1 {
+    font-size: 1.4rem;
+  }
+  .container .otherName {
+    top: auto;
+    right: 8%;
+    bottom: 0;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .container .about {
-    padding-top: 50px;
+    padding-top: 100px;
+  }
+  .container .title {
+    top: 10%;
+    left: 8%;
+  }
+  .container .title h1 {
+    font-size: 1.4rem;
+  }
+  .container .otherName {
+    top: auto;
+    right: 0;
+    padding: 10px;
+    bottom: -9%;
+    width: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.1)));
+    background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
   }
   .container .title p {
     margin-left: 0px !important;

@@ -283,7 +283,7 @@
 
 .container .portfolioContainer .grid-item img {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   min-height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
