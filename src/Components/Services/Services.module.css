@@ -246,7 +246,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montblanc", sans-serif;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -571,7 +570,7 @@ body {
 }
 
 .container .bgImage {
-  height: 350px;
+  height: 400px;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -600,7 +599,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 80px 10px;
+  padding: 120px 10px;
 }
 
 .content .details {
@@ -625,11 +624,11 @@ body {
 }
 
 .content .details span a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
   margin-left: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -651,7 +650,6 @@ body {
 }
 
 .content .heading {
-  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #ababab;
@@ -668,13 +666,11 @@ body {
 .content .para {
   color: black;
   z-index: 10;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
+  font-family: "Montblanc", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 65px;
-  line-height: 62px;
+  font-size: 2rem;
   vertical-align: middle;
-  letter-spacing: 0.05em;
   word-wrap: break-word;
   max-width: 45%;
 }
@@ -694,7 +690,7 @@ body {
 @media screen and (max-width: 500px) {
   .content .para {
     max-width: 80%;
-    font-size: 2.2rem;
+    font-size: 1.4rem;
     line-height: normal;
   }
   .content .details {

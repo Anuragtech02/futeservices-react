@@ -7,6 +7,10 @@ import { Helmet } from "react-helmet";
 import logo from "../../Assets/logo.png";
 
 export const Contact = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={style.container}>
       <div

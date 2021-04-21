@@ -143,11 +143,10 @@
   }
 
   .heading {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    font-family: "Montblanc", sans-serif;
     text-transform: uppercase;
     color: #ababab;
-    font-size: 18px;
+    font-size: 0.8rem;
     line-height: 26px;
     letter-spacing: 0.4em;
     margin: 25px 0;
@@ -161,13 +160,11 @@
     // float: right;
     color: black;
     z-index: 10;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    // font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
     // text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.4rem;
     line-height: normal;
-    // vertical-align: middle;
-    letter-spacing: 0.05em;
     word-wrap: break-word;
     // max-width: 45%;
     width: 60%;
@@ -175,7 +172,11 @@
     @media screen and(max-width: 960px) {
       text-align: center;
       width: 85%;
-      font-size: 1.8rem;
+      font-size: 1.3rem;
+    }
+    @media screen and(max-width: 400px) {
+      width: 90%;
+      font-size: 1.1rem !important;
     }
   }
   .companyInput {

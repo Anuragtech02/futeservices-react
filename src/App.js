@@ -13,6 +13,7 @@ const QuoteEnquiry = lazy(() =>
   import("./Components/QuoteEnquiry/QuoteEnquiry")
 );
 const Services = lazy(() => import("./Components/Services/Services"));
+const NotFound = lazy(() => import("./Components/404/NotFound"));
 
 const App = () => {
   useEffect(() => {
@@ -86,6 +87,7 @@ const App = () => {
           <Route path="/quote" exact component={QuoteEnquiry} />
           {/* <Route path="/portfolio" exact component={Portfolio} /> */}
           <Route path="/portfolio/:name" exact component={PortfolioPage} />
+          <Route component={NotFound} />
         </Switch>
         <div className={style.footer}>
           <Footer />

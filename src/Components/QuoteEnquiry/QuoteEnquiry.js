@@ -5,6 +5,9 @@ import cat1 from "../../Assets/projects/cat1.webp";
 import { Helmet } from "react-helmet";
 
 export const QuoteEnquiry = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={style.container}>
       <div
