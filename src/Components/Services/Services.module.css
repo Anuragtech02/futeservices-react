@@ -217,8 +217,9 @@
   margin: auto auto;
 }
 
-.flexRow, .container .bgImage, .content .details, .content .details span, .content .socialLinks ul,
-.flexColumn {
+.flexRow, .container .bgImage, .content .details span, .content .socialLinks ul,
+.flexColumn,
+.content .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +230,9 @@
           align-items: center;
 }
 
-.flexColumn {
+
+.flexColumn,
+.content .details {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -263,7 +266,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   z-index: 1000;
-  background-color: #111;
+  background-color: #a52024;
 }
 
 .navbar {
@@ -547,8 +550,9 @@ body {
   margin: auto auto;
 }
 
-.flexRow, .container .bgImage, .content .details, .content .details span, .content .socialLinks ul,
-.flexColumn {
+.flexRow, .container .bgImage, .content .details span, .content .socialLinks ul,
+.flexColumn,
+.content .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,7 +563,9 @@ body {
           align-items: center;
 }
 
-.flexColumn {
+
+.flexColumn,
+.content .details {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -602,21 +608,28 @@ body {
   padding: 120px 10px;
 }
 
+.content .contentPara {
+  margin: 20px 0;
+  max-width: 90%;
+  width: 60%;
+}
+
 .content .details {
   padding: 20px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content .details span {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 0 10px;
+  margin: 10px 0;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .content .details span svg {
@@ -629,7 +642,7 @@ body {
   width: fit-content !important;
   margin-left: 10px;
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: black;
 }
 
 .content .socialLinks ul {

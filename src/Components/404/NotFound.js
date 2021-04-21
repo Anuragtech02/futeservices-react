@@ -3,6 +3,7 @@ import styles from "./NotFound.module.css";
 import notFoundImg from "../../Assets/not-found.svg";
 import { withRouter } from "react-router-dom";
 import cat1 from "../../Assets/projects/cat1.webp";
+import { Helmet } from "react-helmet";
 
 const NotFound = ({ history }) => {
   const [timer, setTimer] = useState(5);
@@ -21,6 +22,9 @@ const NotFound = ({ history }) => {
 
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title>404 | FuteServices</title>
+      </Helmet>
       <div
         style={{ backgroundImage: `url(${cat1})` }}
         className={styles.bgImage}

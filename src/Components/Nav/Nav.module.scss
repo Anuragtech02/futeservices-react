@@ -8,12 +8,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 5%;
+  padding: 40px 5%;
 
   .brandName {
     width: fit-content;
     // max-width: 35%;
     // flex: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: auto;
     justify-content: center;
 
@@ -28,8 +32,14 @@
     @extend .flexRow;
     list-style: none;
     justify-content: space-between;
-    width: 30%;
+    width: 20%;
     position: relative;
+    &:nth-child(1) {
+      width: 15%;
+    }
+    &.includeHome {
+      width: 20%;
+    }
     .navLink,
     a {
       cursor: pointer !important;
@@ -41,6 +51,7 @@
         position: absolute;
         bottom: 100%;
         transform: translate(0, 100%);
+        min-width: 200px;
         pointer-events: none;
       }
       .innerMenu {
@@ -151,25 +162,56 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1550px) {
   .container {
     .navLinks {
-      width: 35%;
+      width: 25%;
+      &:nth-child(1) {
+        width: 19%;
+      }
+      &.includeHome {
+        width: 25%;
+      }
     }
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
   .container {
     .navLinks {
-      width: 40%;
+      width: 30%;
+      &:nth-child(1) {
+        width: 22%;
+      }
+      .includeHome {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    .navLinks {
+      width: 35%;
+      &:nth-child(1) {
+        width: 25%;
+      }
+      &.includeHome {
+        width: 35%;
+      }
     }
   }
 }
 
 @media screen and (max-width: 950px) {
   .container {
+    padding: 20px 5%;
     .brandName {
+      position: relative !important;
+      top: auto;
+      left: auto;
+      transform: translate(0, 0);
       justify-content: flex-start;
       margin-right: auto;
       margin-left: 0;

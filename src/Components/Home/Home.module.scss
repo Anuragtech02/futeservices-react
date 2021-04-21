@@ -152,13 +152,14 @@
         width: 40%;
         text-align: left;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 2.5rem;
         color: rgba(0, 0, 0, 0.85);
       }
       p:nth-child(2) {
+        font-size: 1rem;
         font-weight: 400;
-        color: #888888;
+        color: #797979;
       }
       @media screen and (max-width: 850px) {
         flex-direction: column;
@@ -214,6 +215,14 @@
           background: rgba(0, 0, 0, 0.4);
         }
       }
+    }
+  }
+  .clients {
+    padding-top: 50px;
+    text-align: center;
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 700 !important;
     }
   }
 }

@@ -4,12 +4,20 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import classNames from "classnames";
 
 export const innerData = [
+  { name: "3D architectural animation walkthrough", path: "/portfolio/arch" },
+  { name: "Interior Visualization", path: "/portfolio/interior-visuailsation" },
+  { name: "Exterior visualization", path: "/portfolio/exterior-visualisation" },
+  { name: "Immersive VR", path: "/portfolio/immersive-vr" },
+  { name: "Augmented Reality", path: "/portfolio/ar" },
+  { name: "Product Visualization", path: "/portfolio/product" },
+  { name: "Layer View", path: "/portfolio/layer-view" },
+  {
+    name: "Interactive Presentation",
+    path: "/portfolio/interactive-presentation",
+  },
+  { name: "Physical Model", path: "/portfolio/physical-model" },
   { name: "Drone Shoot", path: "/portfolio/drone-shoot" },
-  { name: "Curtain Raisers", path: "/portfolio/curtain-raisers" },
-  { name: "Walkthroughs (3D+Cinematic)", path: "/portfolio/walkthroughs" },
-  { name: "3D Views & Renders", path: "/portfolio/3d-views" },
-  { name: "Scale Model", path: "/portfolio/scale-model" },
-  { name: "Interactive AR & VR", path: "/portfolio/ar-vr" },
+  { name: "Croma Shoot", path: "/portfolio/croma-shoot" },
 ];
 const HoverMenu = ({ styles }) => {
   return (

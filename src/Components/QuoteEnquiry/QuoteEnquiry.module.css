@@ -11,6 +11,10 @@ body {
   cursor: none !important;
 }
 
+:root {
+  --clr-primary: #a52024;
+}
+
 body {
   overflow-x: hidden !important;
   max-width: 100vw;
@@ -22,7 +26,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   z-index: 1000;
-  background-color: #111;
+  background-color: var(--clr-primary);
 }
 
 .navbar {
@@ -329,6 +333,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container {
+  margin-top: 150px;
+  text-align: center;
 }
 
 .container .bgImage {

@@ -37,7 +37,6 @@ export const HeaderData = {
       label: "Portfolio",
       id: "portfolio",
       path: UrlStrings.PORT,
-      left: true,
       exact: true,
       subheader: null,
     },
@@ -46,6 +45,7 @@ export const HeaderData = {
       id: "services",
       path: UrlStrings.SERVICES,
       exact: true,
+      left: true,
       subheader: null,
     },
     {

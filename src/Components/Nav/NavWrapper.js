@@ -5,25 +5,25 @@ import Nav from "../Nav/Nav";
 import classNames from "classnames";
 
 const NavWrapper = ({ isScrollingUp }) => {
-  const [navClass, setNavClass] = useState(style.dark);
+  const [navClass, setNavClass] = useState(style.light);
 
   const { pathname } = useLocation();
 
-  useEffect(() => {
-    if (window.pageYOffset > 200) {
-      setNavClass(style.light);
-    } else {
-      setNavClass(style.dark);
-    }
-  }, [pathname]);
+  // useEffect(() => {
+  //   if (window.pageYOffset > 200) {
+  //     setNavClass(style.light);
+  //   } else {
+  //     setNavClass(style.dark);
+  //   }
+  // }, [pathname]);
 
   useLayoutEffect(() => {
     function setBackground() {
-      if (window.pageYOffset > 150) {
-        setNavClass(style.light);
-      } else {
-        setNavClass(style.dark);
-      }
+      // if (window.pageYOffset > 150) {
+      //   setNavClass(style.light);
+      // } else {
+      //   setNavClass(style.dark);
+      // }
       //   if (pathname === "/") {
       //     // setNavClass(style.dark);
       //     if (window.pageYOffset < 200) {

@@ -22,7 +22,12 @@ const Nav = ({ history }) => {
 
   return (
     <nav className={styles.container}>
-      <ul className={styles.navLinks}>
+      <ul
+        className={classNames(
+          styles.navLinks,
+          history.location.pathname !== "/" ? styles.includeHome : ""
+        )}
+      >
         {HeaderData.tabs.map((link) =>
           link.left && link.path.includes("#") ? (
             <li
@@ -45,14 +50,12 @@ const Nav = ({ history }) => {
             >
               {link.label}
             </li>
-          ) : link.left ? (
-            link.label === "Portfolio" ? (
-              <HoverMenu key={link.path} styles={styles} />
-            ) : (
-              <li key={link.path} className={styles.navLink}>
-                <Link to={link.path}>{link.label}</Link>
-              </li>
-            )
+          ) : link.left &&
+            link.label === "Home" &&
+            window.location.pathname === "/" ? null : link.left ? (
+            <li key={link.path} className={styles.navLink}>
+              <Link to={link.path}>{link.label}</Link>
+            </li>
           ) : null
         )}
       </ul>
@@ -60,13 +63,14 @@ const Nav = ({ history }) => {
         <img onClick={() => history.push("/")} src={logo} alt="logo-fute" />
       </div>
       <ul className={styles.navLinks}>
-        {HeaderData.tabs.map(
-          (link) =>
-            !link.left && (
-              <li key={link.path} className={styles.navLink}>
-                <Link to={link.path}>{link.label}</Link>
-              </li>
-            )
+        {HeaderData.tabs.map((link) =>
+          link.label === "Portfolio" ? (
+            <HoverMenu key={link.path} styles={styles} />
+          ) : !link.left ? (
+            <li key={link.path} className={styles.navLink}>
+              <Link to={link.path}>{link.label}</Link>
+            </li>
+          ) : null
         )}
       </ul>
       <div

@@ -89,7 +89,8 @@ export const Home = ({ history }) => {
         </div>
       </ScrollTrigger>
       <TeamSlider />
-      <div style={{ background: "white" }}>
+      <div className={style.clients} style={{ background: "white" }}>
+        <h3>Our Clients</h3>
         <MultipleSlider />
       </div>
     </div>
