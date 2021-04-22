@@ -5,18 +5,38 @@
   @extend .flexRow;
   justify-content: center;
   flex-wrap: wrap;
+  background: var(--clr-primary);
   .counter {
     @extend .flexColumn;
     // flex: 1;
-    margin: 0 50px;
+    // background: grey;
+    min-width: 250px;
+    margin: 0 60px;
     h1,
     span {
       font-size: 3rem;
-      color: #fa3554;
+      color: white;
       font-weight: 700;
       margin: 10px 0;
       //   font-family: "bebas neue", sans-serif;
       //   letter-spacing: 5px;
+    }
+    h3 {
+      font-size: 1rem;
+      color: white;
+      font-weight: 400;
+      margin: 10px 0;
+    }
+    .dots {
+      background-size: 1800px 160px;
+      height: 2.5rem;
+      width: 100%;
+      margin: 10px 0;
+    }
+    img {
+      width: 50px;
+      margin: 15px 0;
+      filter: invert(1);
     }
   }
 }

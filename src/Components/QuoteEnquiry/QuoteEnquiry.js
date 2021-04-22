@@ -19,13 +19,13 @@ export const QuoteEnquiry = () => {
       <div className={style.beginning}>
         <h4>This could be the beginning of a very visual relationship . . .</h4>
         <p>
-          with over 20 years industry experience, we know that all visualisation
-          projects and client budgets are not equal . . . as such atomic 3d now
-          offers 3 very unique services to suit any budget . . . each level we
-          offer varies greatly . . . and reflects the amount of design time and
-          design effort we put into 3d landscaping, 3d entourage and 3d styling
-          . . . in other words when it comes to the world of 3d . . . you really
-          do get what you really do pay for !
+          With over 12 years industry experience, we know that all visualisation
+          projects and client budgets are not equal . . . as such Fute Services
+          now offers 3 very unique services to suit any budget . . . each level
+          we offer varies greatly . . . and reflects the amount of design time
+          and design effort we put into 3d landscaping, 3d entourage and 3d
+          styling . . . in other words when it comes to the world of 3d . . .
+          you really do get what you really do pay for !
         </p>
       </div>
       <QuoteEnquiryForm />

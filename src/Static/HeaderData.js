@@ -41,7 +41,7 @@ export const HeaderData = {
       subheader: null,
     },
     {
-      label: "Our Services",
+      label: "About Us",
       id: "services",
       path: UrlStrings.SERVICES,
       exact: true,
@@ -49,7 +49,7 @@ export const HeaderData = {
       subheader: null,
     },
     {
-      label: "Contact",
+      label: "Contact Us",
       id: "contact",
       path: UrlStrings.CONTACTUS,
       exact: true,

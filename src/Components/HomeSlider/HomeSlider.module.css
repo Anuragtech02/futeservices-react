@@ -348,6 +348,11 @@
   }
 }
 
+.container .sliderContainer .imgContainer:hover .mainImage {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
 .container .sliderContainer .activeSlide .mainImage {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);

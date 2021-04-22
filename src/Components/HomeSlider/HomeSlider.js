@@ -109,8 +109,8 @@ function HomeSlider() {
             <div
               id={`vdo_slide_${index}`}
               className={classNames(
-                styles.imgContainer,
-                currentSlide === index ? styles.activeSlide : ""
+                styles.imgContainer
+                // currentSlide === index ? styles.activeSlide : ""
               )}
               key={index}
               //animate={current==index ? "focus" : "other"}

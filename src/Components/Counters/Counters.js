@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import styles from "./Counters.module.css";
 import { useCountUp } from "react-countup";
+import dotsImage from "../../Assets/dots.svg";
+import clientsImage from "../../Assets/customer.svg";
+import movieImage from "../../Assets/movie.svg";
+import citiesImage from "../../Assets/location.svg";
 
 const Counters = ({ start }) => {
   const data = [
@@ -8,16 +12,19 @@ const Counters = ({ start }) => {
       from: 0,
       to: 1000,
       title: "Clients",
+      icon: clientsImage,
     },
     {
       from: 0,
       to: 1200,
       title: "Projects Completed",
+      icon: movieImage,
     },
     {
       from: 0,
       to: 10000,
       title: "Cities",
+      icon: citiesImage,
     },
   ];
 
@@ -29,10 +36,15 @@ const Counters = ({ start }) => {
     <div className={styles.container}>
       {data.map((item) => (
         <div key={item.title} className={styles.counter}>
-          <h3>{item.title}</h3>
+          <img src={item.icon} alt={item.title + "-fute-services"} />
           <h1>
             <Counter counter={item} st={start} />
           </h1>
+          <h3>{item.title}</h3>
+          <div
+            style={{ backgroundImage: `url(${dotsImage})` }}
+            className={styles.dots}
+          ></div>
         </div>
       ))}
     </div>

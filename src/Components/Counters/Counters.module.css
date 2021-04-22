@@ -249,17 +249,40 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background: var(--clr-primary);
 }
 
 .container .counter {
-  margin: 0 50px;
+  min-width: 250px;
+  margin: 0 60px;
 }
 
 .container .counter h1,
 .container .counter span {
   font-size: 3rem;
-  color: #fa3554;
+  color: white;
   font-weight: 700;
   margin: 10px 0;
+}
+
+.container .counter h3 {
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.container .counter .dots {
+  background-size: 1800px 160px;
+  height: 2.5rem;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.container .counter img {
+  width: 50px;
+  margin: 15px 0;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 /*# sourceMappingURL=Counters.module.css.map */

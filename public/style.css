@@ -21,12 +21,22 @@ html {
   outline: none !important;
 }
 @font-face {
-  font-family: "Montblanc", sans-serif;
+  font-family: "Montblanc";
+  font-style: normal;
   font-weight: 400;
-  src: url(../fonts/Mont-Blanc-Regular.ttf);
+  src: local('Mont-Blanc-Regular'), url('./fonts/Mont-Blanc-Regular.woff') format('woff');
 }
 @font-face {
-  font-family: "Montblanc", sans-serif;
-  font-weight: 700;
-  src: url(../fonts/Mont-Blanc-ExtraBold.ttf);
+  font-family: "Montblanc";
+  font-style: normal;
+  font-weight: 800;
+  src: local('Mont-Blanc-ExtraBold'), url('./fonts/Mont-Blanc-ExtraBold.woff') format('woff');
+
+}
+
+@font-face {
+  font-family: "Century Schoolbook";
+  font-style: normal;
+  font-weight: 400;
+  src:  local('CenturySchoolbook-Regular') url('./fonts/CenturySchoolbook-Regular.ttf') format('ttf');
 }

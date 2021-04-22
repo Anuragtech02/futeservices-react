@@ -217,8 +217,9 @@
   margin: auto auto;
 }
 
-.flexRow, .container .homeSliderContainer .aboutContainer,
-.flexColumn {
+.flexRow, .container .clients .experience,
+.flexColumn,
+.container .categoriesContainer .categoryCard .categoryCardTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +230,9 @@
           align-items: center;
 }
 
-.flexColumn {
+
+.flexColumn,
+.container .categoriesContainer .categoryCard .categoryCardTitle {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -282,7 +285,7 @@
   line-height: normal;
   text-transform: none;
   letter-spacing: normal;
-  font-family: "Playfair Display", serif !important;
+  font-family: "Century Schoolbook", serif;
 }
 
 .container .customCursor {
@@ -412,39 +415,57 @@
 }
 
 .container .homeSliderContainer .aboutContainer {
-  padding-bottom: 50px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding: 30px 30px 50px 30px;
 }
 
-.container .homeSliderContainer .aboutContainer p {
-  width: 40%;
-  text-align: left;
-  font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-  color: rgba(0, 0, 0, 0.85);
+.container .homeSliderContainer .aboutContainer .aboutLeft {
+  padding: 0 50px;
 }
 
-.container .homeSliderContainer .aboutContainer p:nth-child(2) {
-  font-size: 1rem;
+.container .homeSliderContainer .aboutContainer .aboutLeft h1 {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
-  color: #797979;
+  text-transform: uppercase;
+}
+
+.container .homeSliderContainer .aboutContainer .aboutLeft h1 span {
+  font-weight: 600;
+  color: var(--clr-primary);
+}
+
+.container .homeSliderContainer .aboutContainer .aboutLeft p {
+  margin-top: 30px;
+  width: 90%;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 2.2rem;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 850px) {
-  .container .homeSliderContainer .aboutContainer {
+  .container .homeSliderContainer .aboutContainer .aboutLeft {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .homeSliderContainer .aboutContainer p {
+  .container .homeSliderContainer .aboutContainer .aboutLeft p {
     width: 90%;
     margin: 10px 0;
   }
+}
+
+.container .homeSliderContainer .aboutContainer .aboutRight {
+  width: 100%;
+  height: 100%;
+}
+
+.container .homeSliderContainer .aboutContainer .aboutRight img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container .countersContainer {
@@ -452,65 +473,232 @@
 }
 
 .container .categoriesContainer {
-  width: 90vw;
-  margin: 40px auto;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .categoriesContainer .arrowLeft,
+.container .categoriesContainer .arrowRight {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 1000;
+}
+
+.container .categoriesContainer .arrowLeft span,
+.container .categoriesContainer .arrowLeft svg,
+.container .categoriesContainer .arrowRight span,
+.container .categoriesContainer .arrowRight svg {
+  cursor: pointer;
+}
+
+.container .categoriesContainer .arrowLeft svg,
+.container .categoriesContainer .arrowRight svg {
+  fill: white;
+}
+
+.container .categoriesContainer .arrowRight {
+  left: auto;
+  right: 20px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.container .categoriesContainer .cardParent {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  width: 250px;
+  min-height: 400px;
+}
+
+.container .categoriesContainer .cardParent img {
+  -webkit-transition: all 4s ease-in;
+  transition: all 4s ease-in;
+}
+
+.container .categoriesContainer .cardParent:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.container .categoriesContainer .cardParent:hover .categoryCardTitle h2 {
+  margin-top: 30px;
+  opacity: 0;
+}
+
+.container .categoriesContainer .cardParent:hover .categoryCardTitle .categoryCardCat {
+  margin-left: 30px !important;
+  opacity: 0;
 }
 
 .container .categoriesContainer .categoryCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   width: 100%;
-  height: 80vh;
+  height: 100%;
   min-height: 300px;
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  margin: 60px 0;
   cursor: pointer !important;
 }
 
 .container .categoriesContainer .categoryCard .categoryCardTitle {
   height: 100%;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  padding: 50px 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor: pointer !important;
 }
 
-.container .categoriesContainer .categoryCard .categoryCardTitle h2 {
-  font-size: 2rem;
+.container .categoriesContainer .categoryCard .categoryCardTitle h2,
+.container .categoriesContainer .categoryCard .categoryCardTitle p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   color: white;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .categoriesContainer .categoryCard .categoryCardTitle .categoryCardCat {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  margin-left: 20px;
+  letter-spacing: 1rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.container .categoriesContainer .categoryCard .categoryCardTitle .categoryCardCat p {
+  font-size: 0.8rem;
 }
 
 .container .categoriesContainer .categoryCard:hover .categoryCardTitle {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .container .clients {
-  padding-top: 50px;
   text-align: center;
+  position: relative;
 }
 
-.container .clients h3 {
-  font-size: 1.4rem;
-  font-weight: 700 !important;
+.container .clients .experience {
+  width: 100%;
+  margin: 100px 0;
+  padding: 20px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .clients .experience .textParallax {
+  background-image: url(../../Assets/projects/cat1/cat1-fute-3.webp);
+  background-position: center;
+  background-attachment: fixed;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.container .clients .experience .textParallax .parallaxContent {
+  font-family: "Oswald", sans-serif;
+  font-size: 20rem;
+  font-weight: 600;
+  overflow: hidden;
+  background: white;
+  color: rgba(0, 0, 0, 0.8);
+  mix-blend-mode: lighten;
+  line-height: 1;
+}
+
+.container .clients .experience h3,
+.container .clients .experience span {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: normal;
+}
+
+.container .clients .experience h3 span {
+  color: var(--clr-primary);
+}
+
+@media screen and (max-width: 600px) {
+  .container .clients .experience {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+  }
+  .container .clients .experience .textParallax .parallaxContent {
+    font-size: 18rem;
+  }
+  .container .clients .experience h3 {
+    text-align: center;
+  }
+}
+
+.container .clients .clientsContainer {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.container .clients .clientsContainer h3,
+.container .clients .clientsContainer h3 span {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+.container .clients .clientsContainer h3 span,
+.container .clients .clientsContainer h3 span span {
+  color: var(--clr-primary);
+}
+
+.container .clients .fadeTitle {
+  position: absolute;
+  bottom: 32%;
+  left: 5%;
+  font-size: 10rem;
+  color: rgba(0, 0, 0, 0.05);
 }
 
 @media screen and (max-width: 800px) {
-  .container .categoriesContainer {
-    width: 90vw;
-  }
-  .container .categoriesContainer .categoryCard {
+  .container .categoriesContainer .cardParent {
     height: 80vh;
   }
   .container .largeVideoBg .heading {
@@ -518,19 +706,21 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .container .categoriesContainer {
     margin-top: 0;
   }
-  .container .categoriesContainer .categoryCard {
-    height: 40vh;
-    margin: 20px 0;
-  }
-  .container .categoriesContainer .categoryCard .categoryCardTitle h2 {
-    font-size: 1.5rem;
+  .container .categoriesContainer .cardParent {
+    height: 60vh;
   }
   .container .largeVideoBg .heading {
     font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .categoriesContainer .cardParent {
+    height: 50vh;
   }
 }
 
@@ -609,7 +799,7 @@
 .title h1,
 .otherName h1 {
   font-weight: 400;
-  font-family: "Playfair Display", serif !important;
+  font-family: "Century Schoolbook", serif;
   color: white;
 }
 
