@@ -8,6 +8,7 @@ export const UrlStrings = {
   PORTFOLIO: "#portfolio",
   PORT: "/portfolio",
   SERVICES: "/services",
+  NEWS_ROOM: "/news-room",
 };
 
 export const HeaderData = {
@@ -18,6 +19,14 @@ export const HeaderData = {
       path: UrlStrings.HOME,
       left: true,
       exact: true,
+      subheader: null,
+    },
+    {
+      label: "About Us",
+      id: "services",
+      path: UrlStrings.SERVICES,
+      exact: true,
+      left: true,
       subheader: null,
     },
     {
@@ -33,20 +42,25 @@ export const HeaderData = {
       //     {label: "FAQ", id: "pages", path: UrlStrings.FAQ},
       // ],
     },
+
     {
       label: "Portfolio",
       id: "portfolio",
+      left: true,
       path: UrlStrings.PORT,
       exact: true,
       subheader: null,
     },
     {
-      label: "About Us",
-      id: "services",
-      path: UrlStrings.SERVICES,
+      label: "News Room",
+      id: "news-room",
+      path: UrlStrings.NEWS_ROOM,
       exact: true,
-      left: true,
-      subheader: null,
+      // subheader: [
+      //     {label: "Portfolio 1", id: "potfolio", path: UrlStrings.PORTFOLIO},
+      //     {label: "Portfolio 2", id: "potfolio", path: UrlStrings.PORTFOLIO},
+      //     {label: "Portfolio 3", id: "potfolio", path: UrlStrings.PORTFOLIO},
+      // ],
     },
     {
       label: "Contact Us",

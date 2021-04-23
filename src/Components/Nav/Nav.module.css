@@ -217,7 +217,7 @@
   margin: auto auto;
 }
 
-.flexRow, .container .navLinks, .container .navLinks .portfolioMenu,
+.flexRow, .bgImage, .container .navLinks, .container .navLinks .portfolioMenu,
 .flexColumn,
 .sidebarContainer .navLinksMobile {
   display: -webkit-box;
@@ -240,6 +240,47 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.bgImage {
+  position: relative;
+  min-height: 400px;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bgImage::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.bgImage h1 {
+  z-index: 10;
+  color: white;
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .bgImage h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bgImage h1 {
+    font-size: 1.5rem;
+  }
 }
 
 .noDecoration, a {
@@ -290,7 +331,7 @@
 }
 
 .container .navLinks:nth-child(1) {
-  width: 15%;
+  width: 20%;
 }
 
 .container .navLinks.includeHome {
@@ -434,7 +475,7 @@
     width: 25%;
   }
   .container .navLinks:nth-child(1) {
-    width: 19%;
+    width: 25%;
   }
   .container .navLinks.includeHome {
     width: 25%;
@@ -446,7 +487,7 @@
     width: 30%;
   }
   .container .navLinks:nth-child(1) {
-    width: 22%;
+    width: 30%;
   }
   .container .navLinks .includeHome {
     width: 30%;
@@ -458,7 +499,7 @@
     width: 35%;
   }
   .container .navLinks:nth-child(1) {
-    width: 25%;
+    width: 35%;
   }
   .container .navLinks.includeHome {
     width: 35%;

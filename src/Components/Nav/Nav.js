@@ -51,9 +51,7 @@ const Nav = ({ history }) => {
             >
               {link.label}
             </li>
-          ) : link.left &&
-            link.label === "Home" &&
-            window.location.pathname === "/" ? null : link.left ? (
+          ) : link.left && link.label !== "Home" ? (
             <li key={link.path} className={styles.navLink}>
               <Link to={link.path}>{link.label}</Link>
             </li>

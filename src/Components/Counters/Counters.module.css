@@ -217,7 +217,7 @@
   margin: auto auto;
 }
 
-.flexRow, .container,
+.flexRow, .bgImage, .container,
 .flexColumn,
 .container .counter {
   display: -webkit-box;
@@ -242,19 +242,79 @@
           justify-content: center;
 }
 
+.bgImage {
+  position: relative;
+  min-height: 400px;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bgImage::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.bgImage h1 {
+  z-index: 10;
+  color: white;
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .bgImage h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bgImage h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .container {
-  padding: 100px 0;
+  padding: 120px 0;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: var(--clr-primary);
+  background-image: url(../../Assets/counters-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.container::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+  background: rgba(201, 0, 0, 0.7);
 }
 
 .container .counter {
+  z-index: 10;
   min-width: 250px;
-  margin: 0 60px;
+  margin: 0 50px;
 }
 
 .container .counter h1,
@@ -268,7 +328,7 @@
 .container .counter h3 {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: white;
   font-weight: 400;
   margin: 10px 0;

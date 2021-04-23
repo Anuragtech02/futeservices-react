@@ -48,14 +48,35 @@
     @extend .flexColumn;
     align-items: flex-start;
     .contact {
-      margi-top: 50px;
+      margin-top: 30px;
       @extend .flexRow;
       span {
         @extend .flexRow;
         justify-content: flex-start;
+
+        svg {
+          fill: rgba(0, 0, 0, 0.7);
+        }
+        h3 {
+          margin-left: 10px;
+          color: rgba(0, 0, 0, 0.7);
+        }
+      }
+      a {
+        color: var(--clr-primary) !important;
       }
       .email {
-        margin-left: 20px;
+        margin-left: 50px;
+      }
+
+      @media screen and(max-width: 500px) {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+        .email,
+        .phone {
+          margin: 10px 0;
+        }
       }
     }
   }
@@ -93,6 +114,10 @@
       padding: 10px 50px;
       font-size: 1rem;
       font-family: "Oswald", sans-serif;
+      border-color: var(--clr-primary);
+      &::after {
+        background: var(--clr-primary) !important;
+      }
       @media screen and(max-width: 500px) {
         width: 100%;
       }

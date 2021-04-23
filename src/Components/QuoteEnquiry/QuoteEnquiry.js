@@ -13,6 +13,7 @@ import { Helmet } from "react-helmet";
 import backImage from "../../Assets/back-img.jpg";
 import CallIcon from "@material-ui/icons/Call";
 import EmailIcon from "@material-ui/icons/Email";
+import bgImg from "../../Assets/fute-bg1.jpg";
 
 export const QuoteEnquiry = () => {
   React.useEffect(() => {
@@ -27,7 +28,7 @@ export const QuoteEnquiry = () => {
         <h2>Quote Enquiry</h2>
       </div> */}
       <div
-        style={{ backgroundImage: `url(${backImage})` }}
+        style={{ backgroundImage: `url(${bgImg})` }}
         className={style.bgImage}
       >
         <h1>Get Quote</h1>

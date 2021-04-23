@@ -1,103 +1,3 @@
-*,
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
-}
-
-body {
-  cursor: none !important;
-}
-
-body {
-  overflow-x: hidden !important;
-  max-width: 100vw;
-  font-size: 16px;
-}
-
-body ::-moz-selection {
-  background: var(--clr-primary);
-  color: white;
-}
-
-body ::selection {
-  background: var(--clr-primary);
-  color: white;
-}
-
-.footer {
-  width: 100vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  z-index: 1000;
-  background: linear-gradient(45deg, #9c0000, var(--clr-primary));
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  display: inline-block;
-  width: 100vw;
-  vertical-align: top;
-  margin: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.showNav {
-  top: 0;
-}
-
-.loading {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hideNav {
-  top: -120px;
-}
-
-.dark {
-  background-color: transparent;
-  color: white;
-}
-
-.dark a {
-  color: white;
-}
-
-.light {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.light a {
-  color: black;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  z-index: 99999;
-}
-
-.blendDifference {
-  mix-blend-mode: difference;
-}
-
 .noDecoration, a {
   text-decoration: none;
   list-style: none;
@@ -317,9 +217,10 @@ body ::selection {
   margin: auto auto;
 }
 
-.flexRow, .bgImage, .content .floatLeft .contact, .content .floatLeft .contact span, .content .formContainer .nameEmail,
+.flexRow, .bgImage,
 .flexColumn,
-.content .floatLeft {
+.card,
+.card .categoryCardTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,7 +233,8 @@ body ::selection {
 
 
 .flexColumn,
-.content .floatLeft {
+.card,
+.card .categoryCardTitle {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -345,7 +247,7 @@ body ::selection {
 .bgImage {
   position: relative;
   min-height: 400px;
-  height: 80vh;
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -369,9 +271,6 @@ body ::selection {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1rem;
-  text-align: right;
-  width: 100%;
-  margin-right: 10%;
 }
 
 @media screen and (max-width: 600px) {
@@ -386,225 +285,87 @@ body ::selection {
   }
 }
 
-.container {
-  text-align: center;
-}
-
-.container .content {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.container .content p {
-  width: 75%;
-}
-
-@media only screen and (max-width: 600px) {
-  .container .content {
-    width: 95%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .container .content p {
-    width: 90%;
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container .bgImage h2 {
-    font-size: 2rem;
-  }
-}
-
-.content {
-  color: black;
-  width: 100vw;
-  min-height: 75vh;
-  padding: 50px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: right;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.content .floatLeft {
+.card {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  min-height: 300px;
+  height: 80vh;
+  cursor: pointer !important;
 }
 
-.content .floatLeft .contact {
-  margin-top: 30px;
-}
-
-.content .floatLeft .contact span {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.content .floatLeft .contact span svg {
-  fill: rgba(0, 0, 0, 0.7);
-}
-
-.content .floatLeft .contact span h3 {
-  margin-left: 10px;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.content .floatLeft .contact a {
-  color: var(--clr-primary) !important;
-}
-
-.content .floatLeft .contact .email {
-  margin-left: 50px;
-}
-
-@media screen and (max-width: 500px) {
-  .content .floatLeft .contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    width: 80%;
-  }
-  .content .floatLeft .contact .email,
-  .content .floatLeft .contact .phone {
-    margin: 10px 0;
-  }
-}
-
-.content .formContainer input,
-.content .formContainer textarea,
-.content .formContainer select {
+.card img {
   width: 100%;
-  background: #f3f3f3;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  padding: 20px 15px;
-  margin: 10px 0;
-  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
 }
 
-.content .formContainer .nameEmail {
+.card .categoryCardTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  padding: 50px 40px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer !important;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.content .formContainer .nameEmail input {
-  width: 48%;
-}
-
-@media screen and (max-width: 500px) {
-  .content .formContainer .nameEmail {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .content .formContainer .nameEmail input {
-    width: 100%;
-  }
-}
-
-.content .formContainer .btnDrakFilled {
-  border-radius: 50px;
-  padding: 10px 50px;
-  font-size: 1rem;
+.card .categoryCardTitle h2,
+.card .categoryCardTitle p {
   font-family: "Oswald", sans-serif;
-  border-color: var(--clr-primary);
-}
-
-.content .formContainer .btnDrakFilled::after {
-  background: var(--clr-primary) !important;
-}
-
-@media screen and (max-width: 500px) {
-  .content .formContainer .btnDrakFilled {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .content .formContainer {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .content {
-    padding: 20px 0;
-  }
-  .content .floatLeft {
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.content .heading {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  color: #777777;
-  font-size: 1.6rem;
-  line-height: 26px;
-  letter-spacing: 0.32em;
-  margin: 25px 0;
-  z-index: 10;
-  vertical-align: middle;
-  -ms-word-wrap: break-word;
-  word-wrap: break-word;
-}
-
-.content .heading span {
-  color: var(--clr-primary);
-}
-
-.content .para {
-  color: rgba(0, 0, 0, 0.7);
-  z-index: 10;
-  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 2.2rem;
-  word-wrap: break-word;
-  text-align: left;
-  width: 70%;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 960px) {
-  .content .para {
-    width: 85%;
-    font-size: 1.3rem;
-  }
+.card .categoryCardTitle .categoryCardCat {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  margin-left: 20px;
+  letter-spacing: 1rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-@media screen and (max-width: 400px) {
-  .content .para {
-    width: 90%;
-    font-size: 1.1rem !important;
-  }
+.card .categoryCardTitle .categoryCardCat p {
+  font-size: 0.8rem;
 }
 
-.content .companyInput {
-  width: 100% !important;
+.card:hover .categoryCardTitle {
+  background: rgba(0, 0, 0, 0.2);
 }
-/*# sourceMappingURL=QuoteEnquiry.module.css.map */
+
+.card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card:hover .categoryCardTitle h2 {
+  margin-top: 30px;
+  opacity: 0;
+}
+
+.card:hover .categoryCardTitle .categoryCardCat {
+  margin-left: 30px !important;
+  opacity: 0;
+}
+/*# sourceMappingURL=VerticalCard.module.css.map */

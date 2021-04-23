@@ -341,13 +341,14 @@
       }
       h3,
       span {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-family: "Oswald", sans-serif !important;
-        font-weight: 400;
+        font-weight: 600;
         text-transform: uppercase;
         text-align: left;
         color: rgba(0, 0, 0, 0.7);
         letter-spacing: normal;
+        margin-bottom: 10px;
       }
       h3 span {
         color: var(--clr-primary);
@@ -392,6 +393,34 @@
       left: 5%;
       font-size: 10rem;
       color: rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .teamSlide {
+    .teamHeading {
+      position: relative;
+      padding: 150px 0;
+      @extend .flexRow;
+      h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 0.7rem;
+        text-transform: uppercase;
+        span {
+          color: var(--clr-primary);
+        }
+      }
+    }
+    .fadeTeamText {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(-10%, -50%);
+      font-size: 10rem !important;
+      color: rgba(0, 0, 0, 0.08);
+      font-family: "Montserrat", sans-serif;
+      text-transform: lowercase !important;
+      font-weight: 800 !important;
     }
   }
 }

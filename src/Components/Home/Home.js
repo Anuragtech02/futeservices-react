@@ -115,7 +115,15 @@ export const Home = ({ history }) => {
           <Counters start={enableCounter} />
         </div>
       </ScrollTrigger>
-      <TeamSlider />
+      <section className={style.teamSlide}>
+        <div className={style.teamHeading}>
+          <h1 className={style.fadeTeamText}>team</h1>
+          <h1>
+            Our <span> Team</span>
+          </h1>
+        </div>
+        <TeamSlider />
+      </section>
       <section className={style.clients} style={{ background: "white" }}>
         <div className={style.experience}>
           <div className={style.textParallax}>

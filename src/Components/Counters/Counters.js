@@ -10,7 +10,7 @@ const Counters = ({ start }) => {
   const data = [
     {
       from: 0,
-      to: 1000,
+      to: 240,
       title: "Clients",
       icon: clientsImage,
     },
@@ -22,9 +22,16 @@ const Counters = ({ start }) => {
     },
     {
       from: 0,
-      to: 10000,
-      title: "Cities",
+      to: 8,
+      title: "Countries",
       icon: citiesImage,
+    },
+    {
+      from: 0,
+      to: 300,
+      title: "Project Scale Handled",
+      icon: movieImage,
+      diff: true,
     },
   ];
 
@@ -41,10 +48,10 @@ const Counters = ({ start }) => {
             <Counter counter={item} st={start} />
           </h1>
           <h3>{item.title}</h3>
-          <div
+          {/* <div
             style={{ backgroundImage: `url(${dotsImage})` }}
             className={styles.dots}
-          ></div>
+          ></div> */}
         </div>
       ))}
     </div>
@@ -59,12 +66,12 @@ const Counter = ({ st, counter }) => {
     end: counter.to,
     delay: 1000,
     duration: 2,
-    suffix: "+",
+    suffix: counter.diff ? " acre" : "+",
   });
 
   useEffect(() => {
     const isComplete = parseInt(sessionStorage.getItem("fute-counters"));
-    if (st && start && isComplete !== 3) {
+    if (st && start && isComplete !== 4) {
       start();
       sessionStorage.setItem("fute-counters", parseInt(isComplete + 1) || 0);
     }

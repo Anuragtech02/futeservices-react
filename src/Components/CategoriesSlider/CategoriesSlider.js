@@ -13,8 +13,9 @@ import cat5 from "../../Assets/projects/cat5.webp";
 import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "swiper/swiper.scss";
+import VerticalCard from "../VerticalCard/VerticalCard";
 
 const CategoriesSlider = ({ history }) => {
   const data = [
@@ -43,7 +44,7 @@ const CategoriesSlider = ({ history }) => {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
 
-  SwiperCore.use([Navigation]);
+  SwiperCore.use([Navigation, Autoplay]);
 
   return (
     <div className={styles.container} id="portfolio">
@@ -61,7 +62,7 @@ const CategoriesSlider = ({ history }) => {
           swiper.params.navigation.prevEl = navigationPrevRef.current;
           swiper.params.navigation.nextEl = navigationNextRef.current;
         }}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ disableOnInteraction: true, delay: 2000 }}
         breakpoints={{
           1100: {
             slidesPerView: 4,
@@ -82,20 +83,7 @@ const CategoriesSlider = ({ history }) => {
       >
         {data.map((item, i) => (
           <SwiperSlide key={i}>
-            <div
-              onClick={() => history.push(`/portfolio/${item.title}`)}
-              className={styles.card}
-            >
-              <img src={item.image} alt={item.title} />
-
-              <Link to={`/portfolio/${item.title}`} />
-              <div className={styles.categoryCardTitle}>
-                <h2>Project - {item.title}</h2>
-                <div className={styles.categoryCardCat}>
-                  <p>{item.title}</p>
-                </div>
-              </div>
-            </div>
+            <VerticalCard item={item} />
           </SwiperSlide>
         ))}
 

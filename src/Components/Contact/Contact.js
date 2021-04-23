@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import { Button, Grid } from "@material-ui/core";
 import logo from "../../Assets/logo.png";
 import map from "../../Assets/map.webp";
+import map2 from "../../Assets/fute-map.png";
 import Dropzone from "react-dropzone";
 import backImg from "../../Assets/back-image.jpg";
 import EmailIcon from "@material-ui/icons/Email";
@@ -92,7 +93,7 @@ export const ContactForm = () => {
       <Grid container spacing={0}>
         <Grid item md={6} sm={12}>
           <div className={style.mapImage}>
-            <img src={map} alt="fute-location" />
+            <img src={map2} alt="fute-location" />
           </div>
         </Grid>
         <Grid item md={6} sm={12}>
@@ -146,7 +147,8 @@ export const ContactForm = () => {
           architectural visualization and 3D animation. He/She should have
           extensive knowledge of 3D Studio Max & Photoshop. If you are
           interested in working with us, send us your CV with some examples of
-          your work to hr@futeservices.com or upload your resume here.
+          your work to <span> hr@futeservices.com</span> or upload your resume
+          here.
         </p>
         {/* </Grid>
           <Grid item md={4} sm={12}> */}

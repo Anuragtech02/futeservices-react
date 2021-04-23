@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./Portfolio.css";
 import bgImage from "../../Assets/back-img.jpg";
+import bgImage2 from "../../Assets/fute-bg.jpg";
 import Isotope from "isotope-layout";
 import cat1Image1 from "../../Assets/projects/cat1/cat1-fute-1.webp";
 import cat1Image2 from "../../Assets/projects/cat1/cat1-fute-2.webp";
@@ -21,6 +22,8 @@ import cat3Image2 from "../../Assets/projects/cat1/cat1-fute-12.webp";
 import cat3Image3 from "../../Assets/projects/cat1/cat1-fute-13.webp";
 import cat3Image4 from "../../Assets/projects/cat1/cat1-fute-14.webp";
 import cat3Image5 from "../../Assets/projects/cat1/cat1-fute-15.webp";
+import { Grid } from "@material-ui/core";
+import VerticalCard from "../VerticalCard/VerticalCard";
 
 const Portfolio = () => {
   const isoRef = useRef(null);
@@ -80,41 +83,41 @@ const Portfolio = () => {
     },
   ];
 
-  useEffect(() => {
-    if (isotope) {
-      isotope.reloadItems();
-    } else {
-      setIsotope(
-        new Isotope(isoRef.current, {
-          itemSelector: ".grid-item",
-          // percentPosition: true,
-          layoutMode: "masonry",
-          masonry: {
-            columnWidth: ".grid-sizer",
-          },
-        })
-      );
-    }
-  }, [isotope]);
+  //   useEffect(() => {
+  //     if (isotope) {
+  //       isotope.reloadItems();
+  //     } else {
+  //       setIsotope(
+  //         new Isotope(isoRef.current, {
+  //           itemSelector: ".grid-item",
+  //           // percentPosition: true,
+  //           layoutMode: "masonry",
+  //           masonry: {
+  //             columnWidth: ".grid-sizer",
+  //           },
+  //         })
+  //       );
+  //     }
+  //   }, [isotope]);
 
-  useEffect(() => {
-    if (isotope) {
-      filterKey === "*"
-        ? isotope.arrange({ filter: "*" })
-        : isotope.arrange({ filter: `.${filterKey}` });
-    }
-  }, [isotope, filterKey]);
+  //   useEffect(() => {
+  //     if (isotope) {
+  //       filterKey === "*"
+  //         ? isotope.arrange({ filter: "*" })
+  //         : isotope.arrange({ filter: `.${filterKey}` });
+  //     }
+  //   }, [isotope, filterKey]);
 
   return (
     <div className="container">
-      <div className="bgImage" style={{ backgroundImage: `url(${bgImage})` }}>
+      <div className="bgImage" style={{ backgroundImage: `url(${bgImage2})` }}>
         <h1>Portfolio</h1>
       </div>
       <section className={"portfolio"}>
         {/* <div onClick={closeModal} className={`modal ${modalClass}`}>
         <Modal images={images} open={modalOpen} image={modalImage} />
       </div> */}
-        <div className="portfolio-menu">
+        {/* <div className="portfolio-menu">
           <ul>
             <li
               onClick={() => onClickMenu("*")}
@@ -152,41 +155,27 @@ const Portfolio = () => {
           {images.map((image, i) => {
             return (
               <div
-                //   onClick={() => {
-                //     image.category === "vr" ? openVr(image) : openModal(image);
-                //   }}
                 key={`${image.category + i}`}
                 className={`grid-item ${image.category.toLowerCase()}`}
               >
                 <img
                   src={image.src}
-                  // onLoad={() => {
-                  //   setCount((curr) => curr + 1);
-                  // }}
                   alt={image.title}
-                  //   style={{
-                  //     opacity:
-                  //       image.category === "animation" || image.category === "vr"
-                  //         ? "0.7"
-                  //         : "1",
-                  //   }}
                 />
                 <div className="title">
                   <h4>{image.title}</h4>
                 </div>
-                {/* {image.category === "animation" ? (
-                  <div className="type-icon play-icon">
-                    <i className="fas fa-play" />
-                  </div>
-                ) : image.category === "vr" ? (
-                  <div className="type-icon">
-                    <i className="fas fa-vr-cardboard" />
-                  </div>
-                ) : null} */}
               </div>
             );
           })}
-        </div>
+        </div> */}
+        <Grid container spacing={0}>
+          {images.map((image) => (
+            <Grid item xl={3} lg={3} md={4} sm={6} xs={12}>
+              <VerticalCard item={image} />
+            </Grid>
+          ))}
+        </Grid>
       </section>
     </div>
   );
