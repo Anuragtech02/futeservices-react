@@ -60,7 +60,7 @@ export const HeaderData = {
       // ],
     },
     {
-      label: "Quote Enquiry",
+      label: "Get Quote",
       id: "portfolio",
       path: UrlStrings.QUOTE,
       exact: true,

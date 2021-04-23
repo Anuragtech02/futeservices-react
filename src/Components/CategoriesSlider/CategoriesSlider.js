@@ -46,7 +46,7 @@ const CategoriesSlider = ({ history }) => {
   SwiperCore.use([Navigation]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="portfolio">
       <Swiper
         className={styles.swiper}
         slidesPerView={4}

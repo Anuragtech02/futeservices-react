@@ -4,6 +4,7 @@ import { withRouter } from "react-router";
 import { HeaderData } from "../../Static";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/logo.png";
+import logoLight from "../../Assets/logo-light.png";
 import {
   Collapse,
   List,
@@ -64,9 +65,7 @@ const Nav = ({ history }) => {
       </div>
       <ul className={styles.navLinks}>
         {HeaderData.tabs.map((link) =>
-          link.label === "Portfolio" ? (
-            <HoverMenu key={link.path} styles={styles} />
-          ) : !link.left ? (
+          !link.left ? (
             <li key={link.path} className={styles.navLink}>
               <Link to={link.path}>{link.label}</Link>
             </li>

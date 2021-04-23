@@ -13,6 +13,7 @@ const QuoteEnquiry = lazy(() =>
   import("./Components/QuoteEnquiry/QuoteEnquiry")
 );
 const Services = lazy(() => import("./Components/Services/Services"));
+const Portfolio = lazy(() => import("./Components/Portfolio/Portfolio"));
 const NotFound = lazy(() => import("./Components/404/NotFound"));
 
 const App = () => {
@@ -85,7 +86,7 @@ const App = () => {
           <Route path="/contact" exact component={Contact} />
           <Route path="/services" exact component={Services} />
           <Route path="/quote" exact component={QuoteEnquiry} />
-          {/* <Route path="/portfolio" exact component={Portfolio} /> */}
+          <Route path="/portfolio" exact component={Portfolio} />
           <Route path="/portfolio/:name" exact component={PortfolioPage} />
           <Route component={NotFound} />
         </Switch>

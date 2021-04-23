@@ -21,6 +21,16 @@ body {
   font-size: 16px;
 }
 
+body ::-moz-selection {
+  background: var(--clr-primary);
+  color: white;
+}
+
+body ::selection {
+  background: var(--clr-primary);
+  color: white;
+}
+
 .footer {
   width: 100vw;
   height: -webkit-fit-content;
@@ -311,9 +321,11 @@ body {
   margin: auto auto;
 }
 
-.flexRow, .container .bgImage, .content .details span, .content .socialLinks ul, .content form,
+.flexRow, .container .bgImage, .content .contactDetails .phone span,
+.content .contactDetails .email span,
+.content .contactDetails .addresses span, .content form, .content form .fileInput,
 .flexColumn,
-.content .details {
+.content .contactDetails {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,7 +338,7 @@ body {
 
 
 .flexColumn,
-.content .details {
+.content .contactDetails {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -337,20 +349,47 @@ body {
 }
 
 .container .bgImage {
-  height: 400px;
+  position: relative;
+  min-height: 400px;
+  height: 70vh;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container .bgImage h2 {
-  font-size: 4rem;
+.container .bgImage::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.container .bgImage h1 {
+  z-index: 10;
   color: white;
-  font-family: "Century Schoolbook", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container .bgImage h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .bgImage h1 {
+    font-size: 1.5rem;
+  }
 }
 
 .content {
-  color: black;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,134 +404,206 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  padding: 120px 10px;
 }
 
-.content .details {
-  padding: 20px 0;
+.content .mapImage {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.content .mapImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content .contactDetails {
+  padding: 50px 70px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url(../../Assets/back-img.jpg);
+}
+
+.content .contactDetails::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(165, 33, 35, 0.95);
+}
+
+.content .contactDetails p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  z-index: 10;
+}
+
+.content .contactDetails .phone,
+.content .contactDetails .email,
+.content .contactDetails .addresses {
+  z-index: 10;
+  margin: 15px 0;
+}
+
+.content .contactDetails .phone span,
+.content .contactDetails .phone a,
+.content .contactDetails .phone li,
+.content .contactDetails .email span,
+.content .contactDetails .email a,
+.content .contactDetails .email li,
+.content .contactDetails .addresses span,
+.content .contactDetails .addresses a,
+.content .contactDetails .addresses li {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.content .contactDetails .phone span,
+.content .contactDetails .email span,
+.content .contactDetails .addresses span {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.content .details span {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 10px 0;
-  color: rgba(0, 0, 0, 0.8);
+.content .contactDetails .phone span svg,
+.content .contactDetails .email span svg,
+.content .contactDetails .addresses span svg {
+  fill: white;
 }
 
-.content .details span svg {
-  fill: rgba(0, 0, 0, 0.6);
+.content .contactDetails .phone span h3,
+.content .contactDetails .email span h3,
+.content .contactDetails .addresses span h3 {
+  margin-left: 15px;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 
-.content .details span a {
-  width: -webkit-fit-content !important;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
-  margin-left: 10px;
-  font-size: 1rem;
-  color: black;
+.content .contactDetails .phone a,
+.content .contactDetails .email a,
+.content .contactDetails .addresses a {
+  margin-top: 10px !important;
 }
 
-@media screen and (max-width: 750px) {
-  .content .details span {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+.content .contactDetails .email span:nth-child(2) {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .content .contactDetails .email span:nth-child(2) {
+    margin-left: 0;
   }
 }
 
-.content .socialLinks ul {
+.content .contactDetails .phone {
+  margin-top: 30px;
+}
+
+.content .contactDetails .phone a {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .content .contactDetails .phone a {
+    margin-left: 0;
+  }
+}
+
+.content .contactDetails .phone h3 {
+  margin-top: -5px;
+}
+
+.content .contactDetails .phone span {
+  margin-bottom: 10px;
+}
+
+.content .contactDetails .addresses ul {
   list-style: none;
-  width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  margin-left: 40px;
 }
 
-.content .socialLinks ul li {
-  cursor: pointer !important;
-  margin-left: 20px;
+@media screen and (max-width: 600px) {
+  .content .contactDetails .addresses ul {
+    margin-left: 0;
+  }
 }
 
-.content .socialLinks ul li:first-of-type {
-  margin: 0;
+.content .contactDetails .addresses ul li {
+  margin: 10px 0;
 }
 
-.content .heading {
+@media screen and (max-width: 600px) {
+  .content .contactDetails {
+    padding: 50px 20px;
+  }
+}
+
+.content .career {
+  padding: 100px 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content .career h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
   font-weight: 400;
-  text-transform: uppercase;
-  color: #ababab;
-  font-size: 18px !important;
-  line-height: 26px;
-  letter-spacing: 0.4em;
-  margin: 25px 0;
-  z-index: 10;
-  vertical-align: middle;
-  -ms-word-wrap: break-word;
-  word-wrap: break-word;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
 }
 
-.content .para {
-  margin-top: 20px;
-  color: black;
-  z-index: 10;
-  font-family: "Montblanc", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  vertical-align: middle;
-  word-wrap: break-word;
-  max-width: 45%;
+.content .career p {
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin: 20px auto;
+  color: rgba(0, 0, 0, 0.7);
 }
 
-.content .mapImage {
-  width: 70%;
+@media screen and (max-width: 600px) {
+  .content .career {
+    padding: 50px 10px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .content .mapImage {
-    width: 100%;
-  }
-}
-
-.content .contentPara {
-  margin: 20px 0;
-  max-width: 90%;
-  width: 60%;
-}
-
-@media screen and (max-width: 1000px) {
-  .content .contentPara {
+  .content .career {
     width: 90%;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .content .contentPara {
-    width: 100%;
-    text-align: left;
-  }
-}
-
 .content form {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 70%;
-  margin: 20px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 350px;
+  width: 30%;
+  margin: 0 auto;
   margin-top: 0;
   padding: 15px;
-  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
-          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
-  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .content form section {
@@ -502,22 +613,58 @@ body {
   text-align: left;
 }
 
+.content form .fileInput {
+  border-radius: 50px;
+  background: #f3f3f3;
+  cursor: pointer;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 20px;
+}
+
 .content form .fileInput p {
   font-size: 0.9rem;
+  margin: 0;
 }
 
 .content form .submitBtn {
   background: var(--clr-primary);
-  padding: 8px 15px;
+  padding: 10px 30px;
   text-transform: capitalize !important;
   color: white;
   font-weight: 700;
   font-size: 0.8rem;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .content form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content form section {
+    width: 100%;
+  }
+  .content form .submitBtn {
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   .content form {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content form {
+    min-width: 200px;
+    width: 100%;
   }
 }
 
