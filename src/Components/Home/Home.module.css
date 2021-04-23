@@ -436,10 +436,11 @@
 
 .container .homeSliderContainer .aboutContainer .aboutLeft p {
   margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
   width: 90%;
   text-align: left;
   font-size: 1rem;
-  line-height: 2.2rem;
+  line-height: 2.1rem;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -690,6 +691,8 @@
 }
 
 .container .clients .fadeTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
   position: absolute;
   bottom: 32%;
   left: 5%;

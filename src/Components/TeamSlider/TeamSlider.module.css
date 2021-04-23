@@ -295,9 +295,11 @@
 
 .container .title h1,
 .container .otherName h1 {
-  font-weight: 400;
-  font-family: "Century Schoolbook", serif !important;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif !important;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 
 .container .title p,

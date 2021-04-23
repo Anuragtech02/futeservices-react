@@ -36,9 +36,11 @@
     left: 15%;
     transform: translateY(-50%) !important;
     h1 {
-      font-weight: 400;
-      font-family: "Century Schoolbook", serif !important;
+      font-weight: 600;
+      font-family: "Oswald", sans-serif !important;
       color: white;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
     }
     p {
       text-transform: uppercase;

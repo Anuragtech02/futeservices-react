@@ -10,6 +10,8 @@ import BgVideo from "../../Assets/video/fute-video-bg.webm";
 import { withRouter } from "react-router";
 import HomeSlider from "../HomeSlider/HomeSlider";
 import TeamSlider from "../TeamSlider/TeamSlider";
+import CategoriesSlider from "../CategoriesSlider/CategoriesSlider";
+import CompareSlider from "../CompareSlider/CompareSlider";
 import Counters from "../Counters/Counters";
 import ScrollTrigger from "react-scroll-trigger";
 import { Helmet } from "react-helmet";
@@ -100,13 +102,14 @@ export const Home = ({ history }) => {
             </Grid>
             <Grid item md={6} sm={12} xs={12}>
               <div className={style.aboutRight}>
-                <img src={cat2} alt="fute-services" />
+                {/* <img src={cat2} alt="fute-services" /> */}
+                <CompareSlider />
               </div>
             </Grid>
           </Grid>
         </div>
       </section>
-      <CategoriesGallery history={history} />
+      <CategoriesSlider history={history} />
       <ScrollTrigger onEnter={() => setEnableCounter(true)}>
         <div className={style.countersContainer}>
           <Counters start={enableCounter} />
@@ -165,13 +168,13 @@ const CategoriesGallery = ({ history }) => {
     className: "center",
     infinite: true,
     // centerPadding: "60px",
-    accessibility: true,
+    // accessibility: true,
     // lazyload: true,
-    slidesToShow: 4,
+    slidesToShow: 2,
     swipeToSlide: true,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    // autoplaySpeed: 5000,
     speed: 2000,
     ease: "ease-in",
   };
@@ -196,7 +199,7 @@ const CategoriesGallery = ({ history }) => {
         {data.map((item) => (
           <>
             <div
-              style={{ widh: "50px", height: "50px", background: "red" }}
+              style={{ width: "50px", height: "50px", background: "red" }}
             ></div>
             {/* <div className={style.cardParent}>
             <img src={item.image} alt={item.title} />

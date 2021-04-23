@@ -21,6 +21,16 @@ body {
   font-size: 16px;
 }
 
+body ::-moz-selection {
+  background: var(--clr-primary);
+  color: white;
+}
+
+body ::selection {
+  background: var(--clr-primary);
+  color: white;
+}
+
 .footer {
   width: 100vw;
   height: -webkit-fit-content;

@@ -148,6 +148,7 @@
       // flex-wrap: wrap;
       .aboutLeft {
         padding: 0 50px;
+
         h1 {
           font-size: 2rem;
           font-family: "Oswald", sans-serif;
@@ -161,10 +162,12 @@
         p {
           // flex: 1;
           margin-top: 30px;
+          font-family: "Montserrat", sans-serif;
+
           width: 90%;
           text-align: left;
           font-size: 1rem;
-          line-height: 2.2rem;
+          line-height: 2.1rem;
           color: rgba(0, 0, 0, 0.6);
         }
 
@@ -378,6 +381,8 @@
       }
     }
     .fadeTitle {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
       position: absolute;
       bottom: 32%;
       left: 5%;

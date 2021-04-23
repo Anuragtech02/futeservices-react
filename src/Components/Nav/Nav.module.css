@@ -285,7 +285,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 20%;
+  width: 22%;
   position: relative;
 }
 
@@ -300,7 +300,9 @@
 .container .navLinks .navLink,
 .container .navLinks a {
   cursor: pointer !important;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 .container .navLinks .portfolioMenu .innerMenuContainer {

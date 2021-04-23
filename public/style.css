@@ -20,7 +20,7 @@ html {
 .slick-slide div:first-of-type {
   outline: none !important;
 }
-@font-face {
+/* @font-face {
   font-family: "Montblanc";
   font-style: normal;
   font-weight: 400;
@@ -32,7 +32,7 @@ html {
   font-weight: 800;
   src: local('Mont-Blanc-ExtraBold'), url('./fonts/Mont-Blanc-ExtraBold.woff') format('woff');
 
-}
+} */
 
 @font-face {
   font-family: "Century Schoolbook";
