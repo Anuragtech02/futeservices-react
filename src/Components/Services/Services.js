@@ -13,6 +13,8 @@ import image1 from "../../Assets/services/image1-fute.webp";
 import image2 from "../../Assets/services/image2-fute.webp";
 import image3 from "../../Assets/services/image3-fute.webp";
 import image4 from "../../Assets/services/image4-fute.webp";
+
+import backImage from "../../Assets/back-img.jpg";
 import { Helmet } from "react-helmet";
 
 const Services = () => {
@@ -105,7 +107,7 @@ const Services = () => {
       </Helmet>
 
       <div
-        style={{ backgroundImage: `url(${cat1})` }}
+        style={{ backgroundImage: `url(${backImage})` }}
         className={styles.bgImage}
       >
         <h2>Our Services</h2>

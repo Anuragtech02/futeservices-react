@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import styles from "./CategoriesSlider.module.css";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import { IconButton } from "@material-ui/core";
 
 import cat1 from "../../Assets/projects/cat1.webp";
@@ -98,11 +100,11 @@ const CategoriesSlider = ({ history }) => {
         ))}
 
         <IconButton ref={navigationPrevRef} className={styles.arrowLeft}>
-          <ArrowBackIosIcon fontSize="large" />
+          <ArrowBackIcon fontSize="large" />
         </IconButton>
 
         <IconButton ref={navigationNextRef} className={styles.arrowRight}>
-          <ArrowForwardIosIcon fontSize="large" />
+          <ArrowForwardIcon fontSize="large" />
         </IconButton>
       </Swiper>
     </div>

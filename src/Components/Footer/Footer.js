@@ -40,7 +40,7 @@ export const Footer = () => {
       </nav>
       <hr></hr>
       <div className={style.bottomFoot}>
-        <p>©Fute-Services 2020</p>
+        <p>© Fute-Services 2020</p>
         <ul className={style.socialLinks}>
           <li className={style.socialLink}>
             <IconButton>

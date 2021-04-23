@@ -310,7 +310,7 @@
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1rem;
   z-index: 10000;
   cursor: pointer !important;
 }
@@ -331,7 +331,7 @@ hr {
   padding: 5px 0;
   color: #e0e0e0;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .bottomFoot .socialLinks {

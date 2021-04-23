@@ -265,6 +265,16 @@ body {
   font-size: 16px;
 }
 
+body ::-moz-selection {
+  background: var(--clr-primary);
+  color: white;
+}
+
+body ::selection {
+  background: var(--clr-primary);
+  color: white;
+}
+
 .footer {
   width: 100vw;
   height: -webkit-fit-content;
@@ -819,8 +829,9 @@ body {
 }
 
 .container .services .card p {
+  font-family: "Montserrat", sans-serif;
   margin-top: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.65);
   line-height: 2rem;
 }
