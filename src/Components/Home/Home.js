@@ -74,7 +74,7 @@ export const Home = ({ history }) => {
         <HomeSlider />
         <div className={style.aboutContainer}>
           <Grid container spacing={4}>
-            <Grid item xl={6} lg={6} md={12} sm={12} xs={12}>
+            <Grid item xl={5} lg={5} md={12} sm={12} xs={12}>
               <div className={style.aboutLeft}>
                 <h1>
                   We create your dream <br /> <span> visualisation</span>
@@ -100,10 +100,10 @@ export const Home = ({ history }) => {
                 </p>
               </div>
             </Grid>
-            <Grid item md={6} sm={12} xs={12}>
+            <Grid item lg={7} md={7} sm={12} xs={12}>
               <div className={style.aboutRight}>
-                {/* <img src={cat2} alt="fute-services" /> */}
-                <CompareSlider />
+                <img src={cat5} alt="fute-services" />
+                {/* <CompareSlider /> */}
               </div>
             </Grid>
           </Grid>

@@ -23,6 +23,7 @@
     "react-scripts": "3.4.3",
     "react-scroll-trigger": "^0.6.10",
     "react-slick": "^0.27.10",
+    "resize-observer-polyfill": "^1.5.1",
     "slick-carousel": "^1.8.1",
     "swiper": "^6.5.7"
   },

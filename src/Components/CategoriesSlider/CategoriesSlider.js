@@ -50,8 +50,8 @@ const CategoriesSlider = ({ history }) => {
       <Swiper
         className={styles.swiper}
         slidesPerView={4}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
         loop={true}
         navigation={{
           prevEl: navigationPrevRef.current,

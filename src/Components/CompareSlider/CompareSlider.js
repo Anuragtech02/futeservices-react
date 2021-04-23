@@ -1,8 +1,7 @@
 import React, { useCallback } from "react";
-import styles from "./CompareSlider.module.scss";
+import styles from "./CompareSlider.module.css";
 import {
   ReactCompareSlider,
-  ReactCompareSliderHandle,
   ReactCompareSliderImage,
 } from "react-compare-slider";
 
