@@ -24,6 +24,7 @@ import cat3Image4 from "../../Assets/projects/cat1/cat1-fute-14.webp";
 import cat3Image5 from "../../Assets/projects/cat1/cat1-fute-15.webp";
 import { Grid } from "@material-ui/core";
 import VerticalCard from "../VerticalCard/VerticalCard";
+import Banner from "../Banner/Banner";
 
 const Portfolio = () => {
   const isoRef = useRef(null);
@@ -110,9 +111,7 @@ const Portfolio = () => {
 
   return (
     <div className="container">
-      <div className="bgImage" style={{ backgroundImage: `url(${bgImage2})` }}>
-        <h1>Portfolio</h1>
-      </div>
+      <Banner image={bgImage2} title="Portfolio" />
       <section className={"portfolio"}>
         {/* <div onClick={closeModal} className={`modal ${modalClass}`}>
         <Modal images={images} open={modalOpen} image={modalImage} />

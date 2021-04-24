@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "./About.module.css";
 import backImg from "../../Assets/about-bg.jpg";
+import Banner from "../Banner/Banner";
 
 const About = () => {
   return (
     <div className={styles.container}>
-      <div
+      {/* <div
         style={{ backgroundImage: `url(${backImg})` }}
         className={styles.bgImage}
       >
         <h1>About Us</h1>
-      </div>
+      </div> */}
+      <Banner image={backImg} title="About Us" />
       <section className={styles.about}>
         <h2>
           we turn ideas into works of art <span>.</span>

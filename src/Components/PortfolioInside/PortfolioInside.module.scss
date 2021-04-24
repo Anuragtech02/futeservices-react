@@ -1,0 +1,94 @@
+@import "../common.module.scss";
+
+.container {
+  .row {
+    @extend .flexRow;
+    width: 70%;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative;
+    .content {
+      padding: 50px 40px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      background-image: url(../../Assets/back-img.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #a40000, $alpha: 0.9);
+        z-index: -1;
+      }
+      width: 40%;
+      h2 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.4rem;
+        font-weight: 400;
+        z-index: 20;
+        color: white;
+      }
+      p {
+        margin-top: 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 2rem;
+        z-index: 20;
+        color: white;
+      }
+      //   @media screen and (max-width: 1300px) {
+      //     left: 0;
+      //   }
+    }
+    img {
+      min-width: 300px;
+      //   width: 70%;
+      height: 600px;
+      object-fit: cover;
+      margin-left: 30%;
+      @media screen and (max-width: 1300px) {
+        margin-left: 0;
+      }
+    }
+    @media screen and (max-width: 1500px) {
+      width: 90%;
+    }
+    .nextBtn {
+      @extend .flexRow;
+      margin-top: 20px;
+      color: white;
+      width: fit-content;
+      text-transform: uppercase;
+      a {
+        color: white;
+        width: fit-content !important;
+      }
+      justify-content: flex-start;
+      svg {
+        margin-left: 10px;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        svg {
+          margin-left: 20px;
+        }
+      }
+    }
+    // @media screen and (max-width: 1300px) {
+    //   flex-direction: column;
+    //   .content {
+    //     position: relative;
+    //     top: auto;
+    //     left: auto;
+    //   }
+    // }
+  }
+}

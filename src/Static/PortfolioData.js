@@ -22,6 +22,7 @@ import cat3Image5 from "../Assets/projects/cat1/cat1-fute-15.webp";
 export const PortfolioData = [
   {
     name: "Residential",
+    category: "Residential",
     image: cat1,
     images: [
       {
@@ -48,6 +49,7 @@ export const PortfolioData = [
   },
   {
     name: "Product",
+    category: "Product",
     image: cat2,
     images: [
       {
@@ -74,6 +76,7 @@ export const PortfolioData = [
   },
   {
     name: "VR",
+    category: "VR",
     image: cat4,
     images: [
       {

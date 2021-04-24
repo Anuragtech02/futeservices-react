@@ -313,6 +313,25 @@
   margin: 2rem auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .container .about {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .about {
+    width: 90%;
+  }
+  .container .about h2 {
+    font-size: 2.8rem;
+  }
+  .container .about p {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+  }
+}
+
 .container .vision,
 .container .mission {
   position: relative;
@@ -357,5 +376,24 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 1200px) {
+  .container .vision,
+  .container .mission {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .vision,
+  .container .mission {
+    width: 90%;
+  }
+  .container .vision p,
+  .container .mission p {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+  }
 }
 /*# sourceMappingURL=About.module.css.map */

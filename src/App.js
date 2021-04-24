@@ -9,6 +9,9 @@ const Contact = lazy(() => import("./Components/Contact/Contact"));
 const PortfolioPage = lazy(() =>
   import("./Components/PortfolioPage/PortfolioPage")
 );
+const PortfolioInside = lazy(() =>
+  import("./Components/PortfolioInside/PortfolioInside")
+);
 const QuoteEnquiry = lazy(() =>
   import("./Components/QuoteEnquiry/QuoteEnquiry")
 );
@@ -89,7 +92,16 @@ const App = () => {
           <Route path="/about" exact component={About} />
           <Route path="/quote" exact component={QuoteEnquiry} />
           <Route path="/portfolio" exact component={Portfolio} />
-          <Route path="/portfolio/:name" exact component={PortfolioPage} />
+          <Route
+            path="/portfolio/:category"
+            exact
+            component={PortfolioInside}
+          />
+          <Route
+            path="/portfolio/:category/:name"
+            exact
+            component={PortfolioPage}
+          />
           <Route component={NotFound} />
         </Switch>
         <div className={style.footer}>

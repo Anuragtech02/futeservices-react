@@ -90,10 +90,10 @@ export const FooterData = {
   tabs: [
     { label: "Home", id: "home", path: UrlStrings.HOME },
     // { label: "About Us", id: "pages", path: UrlStrings.ABOUT },
-    { label: "Our Services", id: "services", path: UrlStrings.SERVICES },
+    { label: "What we do", id: "services", path: UrlStrings.SERVICES },
     // { label: "Our Team", id: "pages", path: UrlStrings.OURTEAM },
     { label: "Contact", id: "pages", path: UrlStrings.CONTACTUS },
-    { label: "Quote Enquiry", id: "pages", path: UrlStrings.QUOTE },
+    { label: "Get Quote", id: "pages", path: UrlStrings.QUOTE },
 
     // { label: "FAQ", id: "pages", path: UrlStrings.FAQ },
   ],

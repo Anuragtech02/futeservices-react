@@ -1,18 +1,6 @@
 @import "../common.module.scss";
 
 .container {
-  .bgImage {
-    width: 100vw;
-    height: 350px;
-    @extend .flexColumn;
-    color: white;
-
-    h2 {
-      font-size: 4rem;
-      font-family: "Century Schoolbook", serif;
-    }
-  }
-
   .details {
     min-height: 400px;
 

@@ -14,6 +14,7 @@ import backImage from "../../Assets/back-img.jpg";
 import CallIcon from "@material-ui/icons/Call";
 import EmailIcon from "@material-ui/icons/Email";
 import bgImg from "../../Assets/fute-bg1.jpg";
+import Banner from "../Banner/Banner";
 
 export const QuoteEnquiry = () => {
   React.useEffect(() => {
@@ -21,18 +22,7 @@ export const QuoteEnquiry = () => {
   }, []);
   return (
     <div className={style.container}>
-      {/* <div
-        style={{ backgroundImage: `url(${cat1})` }}
-        className={style.bgImage}
-      >
-        <h2>Quote Enquiry</h2>
-      </div> */}
-      <div
-        style={{ backgroundImage: `url(${bgImg})` }}
-        className={style.bgImage}
-      >
-        <h1>Get Quote</h1>
-      </div>
+      <Banner image={bgImg} title="Get Quote" />
       {/* <div className={style.beginning}>
         <h4>This could be the beginning of a very visual relationship . . .</h4>
         <p>
@@ -61,6 +51,9 @@ const useStyles = makeStyles((theme) => ({
   inputField: {
     textAlign: "left",
     "&::before": {
+      display: "none",
+    },
+    "&::after": {
       display: "none",
     },
   },

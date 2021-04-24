@@ -4,9 +4,10 @@ import notFoundImg from "../../Assets/not-found.svg";
 import { withRouter } from "react-router-dom";
 import cat1 from "../../Assets/projects/cat1.webp";
 import { Helmet } from "react-helmet";
+import Banner from "../Banner/Banner";
 
 const NotFound = ({ history }) => {
-  const [timer, setTimer] = useState(5);
+  const [timer, setTimer] = useState(10);
 
   useEffect(() => {
     setInterval(() => {
@@ -25,12 +26,7 @@ const NotFound = ({ history }) => {
       <Helmet>
         <title>404 | FuteServices</title>
       </Helmet>
-      <div
-        style={{ backgroundImage: `url(${cat1})` }}
-        className={styles.bgImage}
-      >
-        <h2>404</h2>
-      </div>
+      <Banner image={cat1} title="404" />
       <div className={styles.details}>
         <p>Oops! Seems like you're lost.</p>
         <img src={notFoundImg} alt="fute-services-not-found" />

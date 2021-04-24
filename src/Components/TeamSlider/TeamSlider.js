@@ -56,8 +56,8 @@ const TeamSlider = () => {
       </IconButton>
 
       <Slider ref={slider} {...settings} className={styles.slider}>
-        {teamData.map((item) => (
-          <Content item={item} showAction={showAction} />
+        {teamData.map((item, i) => (
+          <Content key={i} item={item} showAction={showAction} />
         ))}
       </Slider>
       <IconButton onClick={() => gotoNext()} className={styles.arrowRight}>

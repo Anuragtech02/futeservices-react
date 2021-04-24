@@ -12,6 +12,10 @@
   transition-property: width, height, opacity, background;
   // background-color: red;
   transform-origin: 100% 100%;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
 // .inner {
 //   width: 0.3rem;

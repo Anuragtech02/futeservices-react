@@ -13,6 +13,7 @@ import backImg from "../../Assets/back-image.jpg";
 import EmailIcon from "@material-ui/icons/Email";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import DescriptionIcon from "@material-ui/icons/Description";
+import Banner from "../Banner/Banner";
 
 export const Contact = () => {
   React.useEffect(() => {
@@ -61,12 +62,7 @@ export const Contact = () => {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
       </Helmet>
-      <div
-        style={{ backgroundImage: `url(${backImg})` }}
-        className={style.bgImage}
-      >
-        <h1>Contact Us</h1>
-      </div>
+      <Banner image={backImg} title="Contact Us" />
       <ContactForm />
     </div>
   );

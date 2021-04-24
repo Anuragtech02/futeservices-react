@@ -24,19 +24,43 @@ const CategoriesSlider = ({ history }) => {
       image: cat1,
     },
     {
-      title: "Product",
+      title: "Commercial",
       image: cat2,
     },
-    // {
-    //   title: "Animation",
-    //   image: cat3,
-    // },
     {
-      title: "VR",
+      title: "3D Rendering",
+      image: cat5,
+    },
+    {
+      title: "3D Walkthrough",
       image: cat4,
     },
     {
-      title: "Photomontage",
+      title: "360 Panaroma",
+      image: cat5,
+    },
+    {
+      title: "Augmented Reality",
+      image: cat5,
+    },
+    {
+      title: "Product Visualisation",
+      image: cat5,
+    },
+    {
+      title: "Physical Scale Model",
+      image: cat5,
+    },
+    {
+      title: "Layer View",
+      image: cat5,
+    },
+    {
+      title: "Drone Shoot",
+      image: cat5,
+    },
+    {
+      title: "Chroma Shoot",
       image: cat5,
     },
   ];
