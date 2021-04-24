@@ -151,11 +151,13 @@
 
         h1 {
           font-size: 3rem;
-          font-family: "Oswald", sans-serif;
-          font-weight: 400;
-          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 800;
+          text-transform: lowercase;
+          color: rgba(0, 0, 0, 0.7);
           span {
-            font-weight: 600;
+            font-weight: 800;
+            font-family: "Montserrat", sans-serif;
             color: var(--clr-primary);
           }
         }
@@ -190,6 +192,20 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+        // @media screen and (max-width: 850px) {
+        //   img{
+        //     width: 100%;
+        //   }
+        // }
+      }
+      @media screen and (max-width: 600px) {
+        padding: 20px 10px;
+        .aboutLeft {
+          padding: 0 20px;
+          p {
+            width: 100%;
+          }
         }
       }
     }

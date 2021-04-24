@@ -1,0 +1,64 @@
+@import "../common.module.scss";
+
+.container {
+  min-height: 100vh;
+
+  .about {
+    padding: 50px 0;
+    width: 45%;
+    margin: 0 auto;
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.7);
+      span {
+        color: var(--clr-primary);
+      }
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.4rem;
+      line-height: 3rem;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 2rem auto;
+    }
+  }
+  .vision,
+  .mission {
+    position: relative;
+    padding: 50px 0;
+    width: 45%;
+    margin: 0 auto;
+    h3 {
+      font-size: 1.6rem;
+      color: rgba(0, 0, 0, 0.8);
+      letter-spacing: 0.5rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      text-align: center;
+      span {
+        color: var(--clr-primary);
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      margin: 2rem auto;
+      line-height: 3rem;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    h1 {
+      position: absolute;
+      top: 0;
+      left: 10%;
+      transform: translate(-10%, 0);
+      font-size: 8rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      color: rgba(0, 0, 0, 0.05);
+    }
+  }
+}

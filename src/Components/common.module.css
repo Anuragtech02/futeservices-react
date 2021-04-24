@@ -273,13 +273,13 @@
 
 @media screen and (max-width: 600px) {
   .bgImage h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 }
 
 @media screen and (max-width: 400px) {
   .bgImage h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 }
 /*# sourceMappingURL=common.module.css.map */

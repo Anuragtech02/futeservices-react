@@ -26,7 +26,8 @@
     "react-slick": "^0.27.10",
     "resize-observer-polyfill": "^1.5.1",
     "slick-carousel": "^1.8.1",
-    "swiper": "^6.5.7"
+    "swiper": "^6.5.7",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",

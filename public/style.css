@@ -40,7 +40,3 @@ html {
   font-weight: 400;
   src:  local('CenturySchoolbook-Regular') url('./fonts/CenturySchoolbook-Regular.ttf') format('ttf');
 }
-
-:root {
-  --clr-primary: #c90000;
-}

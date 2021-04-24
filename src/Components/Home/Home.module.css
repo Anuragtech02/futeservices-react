@@ -245,7 +245,7 @@
 .bgImage {
   position: relative;
   min-height: 400px;
-  height: 70vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -269,17 +269,20 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1rem;
+  text-align: right;
+  width: 100%;
+  margin-right: 10%;
 }
 
 @media screen and (max-width: 600px) {
   .bgImage h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 }
 
 @media screen and (max-width: 400px) {
   .bgImage h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 }
 
@@ -465,13 +468,15 @@
 
 .container .homeSliderContainer .aboutContainer .aboutLeft h1 {
   font-size: 3rem;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: lowercase;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .container .homeSliderContainer .aboutContainer .aboutLeft h1 span {
-  font-weight: 600;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
   color: var(--clr-primary);
 }
 
@@ -513,6 +518,18 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .container .homeSliderContainer .aboutContainer {
+    padding: 20px 10px;
+  }
+  .container .homeSliderContainer .aboutContainer .aboutLeft {
+    padding: 0 20px;
+  }
+  .container .homeSliderContainer .aboutContainer .aboutLeft p {
+    width: 100%;
+  }
 }
 
 .container .countersContainer {

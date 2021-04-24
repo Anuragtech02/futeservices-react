@@ -28,7 +28,7 @@ const Counters = ({ start }) => {
     },
     {
       from: 0,
-      to: 300,
+      to: 500,
       title: "Project Scale Handled",
       icon: movieImage,
       diff: true,

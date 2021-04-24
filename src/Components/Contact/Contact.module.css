@@ -1,103 +1,3 @@
-*,
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
-}
-
-body {
-  cursor: none !important;
-}
-
-body {
-  overflow-x: hidden !important;
-  max-width: 100vw;
-  font-size: 16px;
-}
-
-body ::-moz-selection {
-  background: var(--clr-primary);
-  color: white;
-}
-
-body ::selection {
-  background: var(--clr-primary);
-  color: white;
-}
-
-.footer {
-  width: 100vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  z-index: 1000;
-  background: linear-gradient(45deg, #9c0000, var(--clr-primary));
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  display: inline-block;
-  width: 100vw;
-  vertical-align: top;
-  margin: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.showNav {
-  top: 0;
-}
-
-.loading {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hideNav {
-  top: -120px;
-}
-
-.dark {
-  background-color: transparent;
-  color: white;
-}
-
-.dark a {
-  color: white;
-}
-
-.light {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.light a {
-  color: black;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  z-index: 99999;
-}
-
-.blendDifference {
-  mix-blend-mode: difference;
-}
-
 .noDecoration, a {
   text-decoration: none;
   list-style: none;
@@ -378,13 +278,13 @@ body ::selection {
 
 @media screen and (max-width: 600px) {
   .bgImage h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 }
 
 @media screen and (max-width: 400px) {
   .bgImage h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 }
 

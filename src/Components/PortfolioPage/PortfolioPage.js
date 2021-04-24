@@ -5,6 +5,9 @@ import { PortfolioData } from "../../Static/PortfolioData";
 import notFoundImg from "../../Assets/not-found.svg";
 import cat1 from "../../Assets/projects/cat1.webp";
 import { Helmet } from "react-helmet";
+import "video-react/dist/video-react.css";
+import { Player } from "video-react";
+import homeVideo from "../../Assets/video/fute-video-bg.webm";
 
 const PortfolioPage = () => {
   const { name } = useParams();
@@ -79,11 +82,22 @@ const PortfolioPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
       </Helmet>
-      <section
+      <div
+        style={{ backgroundImage: `url(${current?.image ?? cat1})` }}
+        className={"bgImage"}
+      >
+        <h1>{current.name ?? name}</h1>
+      </div>
+      {/* <section
         style={{ backgroundImage: `url(${current?.image ?? cat1})` }}
         className={"imageBg"}
       >
         <h1>{current.name ?? name}</h1>
+      </section> */}
+      <section className="react-youtube">
+        <Player>
+          <source src={homeVideo} />
+        </Player>
       </section>
       <section className={"portfolioContainer"}>
         <div className="grid gallery">

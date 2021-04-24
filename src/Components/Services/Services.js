@@ -110,7 +110,7 @@ const Services = () => {
         style={{ backgroundImage: `url(${backImage})` }}
         className={styles.bgImage}
       >
-        <h1>Our Services</h1>
+        <h1>What we do</h1>
       </div>
       <section className={styles.gallery}>
         <Grid container spacing={2}>

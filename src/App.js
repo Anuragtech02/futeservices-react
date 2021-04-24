@@ -14,6 +14,7 @@ const QuoteEnquiry = lazy(() =>
 );
 const Services = lazy(() => import("./Components/Services/Services"));
 const Portfolio = lazy(() => import("./Components/Portfolio/Portfolio"));
+const About = lazy(() => import("./Components/About/About"));
 const NotFound = lazy(() => import("./Components/404/NotFound"));
 
 const App = () => {
@@ -84,7 +85,8 @@ const App = () => {
           <Route path="/" exact component={Home} />
           {/* <Route path="/about" exact component={About} /> */}
           <Route path="/contact" exact component={Contact} />
-          <Route path="/services" exact component={Services} />
+          <Route path="/what-we-do" exact component={Services} />
+          <Route path="/about" exact component={About} />
           <Route path="/quote" exact component={QuoteEnquiry} />
           <Route path="/portfolio" exact component={Portfolio} />
           <Route path="/portfolio/:name" exact component={PortfolioPage} />

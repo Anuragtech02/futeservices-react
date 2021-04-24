@@ -11,6 +11,10 @@ body {
   cursor: none !important;
 }
 
+:root {
+  --clr-primary: #c90000;
+}
+
 body {
   overflow-x: hidden !important;
   max-width: 100vw;
