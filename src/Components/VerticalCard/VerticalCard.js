@@ -17,11 +17,14 @@ const VerticalCard = ({ item, history }) => {
       }
       className={styles.card}
     >
-      <img src={item.image || item.src} alt={item.title} />
-      {/* <video muted autoPlay src={homeVideo}></video> */}
+      {item?.type === "video" ? (
+        <video muted autoPlay loop src={item?.video}></video>
+      ) : (
+        <img src={item.image || item.src} alt={item.title} />
+      )}
       <Link to={`/portfolio/${item.title}`} />
       <div className={styles.categoryCardTitle}>
-        <h2>Project - {item.title}</h2>
+        <h2>{item.title || " - " + item.title}</h2>
         <div className={styles.categoryCardCat}>
           <p>{item.title}</p>
         </div>

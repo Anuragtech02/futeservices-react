@@ -10,7 +10,18 @@ import cat1 from "../../Assets/projects/cat1.webp";
 import cat2 from "../../Assets/projects/cat2.webp";
 import cat4 from "../../Assets/projects/cat4.webp";
 import cat5 from "../../Assets/projects/cat5.webp";
-import { Link } from "react-router-dom";
+
+import fPlan from "../../Assets/categories/floorplan-1.webp";
+import residential from "../../Assets/categories/residential-1.webp";
+import rendering from "../../Assets/categories/3d-rendering-1.webp";
+import vr from "../../Assets/categories/vr-1.webp";
+import panaroma from "../../Assets/categories/360-panaroma-1.webp";
+import scaleModel from "../../Assets/categories/scale-model-1.webp";
+import commercial from "../../Assets/categories/commercial-1.webp";
+import product from "../../Assets/categories/product-1.webm";
+import walkthrough from "../../Assets/categories/3d-walkthrough-1.webm";
+
+import vid from "../../Assets/video/fute-video-bg.webm";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
@@ -21,23 +32,35 @@ const CategoriesSlider = ({ history }) => {
   const data = [
     {
       title: "Residential",
-      image: cat1,
+      image: residential,
     },
     {
       title: "Commercial",
-      image: cat2,
+      image: commercial,
     },
     {
       title: "3D Rendering",
-      image: cat5,
+      image: rendering,
     },
     {
       title: "3D Walkthrough",
+      type: "video",
       image: cat4,
+      video: walkthrough,
+    },
+    {
+      title: "3D Floorplan",
+      image: fPlan,
     },
     {
       title: "360 Panaroma",
-      image: cat5,
+      type: "360",
+      image: panaroma,
+    },
+    {
+      title: "Virtual Reality",
+      type: "360",
+      image: vr,
     },
     {
       title: "Augmented Reality",
@@ -45,24 +68,26 @@ const CategoriesSlider = ({ history }) => {
     },
     {
       title: "Product Visualisation",
+      type: "video",
       image: cat5,
+      video: product,
     },
     {
       title: "Physical Scale Model",
-      image: cat5,
+      image: scaleModel,
     },
-    {
-      title: "Layer View",
-      image: cat5,
-    },
-    {
-      title: "Drone Shoot",
-      image: cat5,
-    },
-    {
-      title: "Chroma Shoot",
-      image: cat5,
-    },
+    // {
+    //   title: "Layer View",
+    //   image: cat5,
+    // },
+    // {
+    //   title: "Drone Shoot",
+    //   image: cat5,
+    // },
+    // {
+    //   title: "Chroma Shoot",
+    //   image: cat5,
+    // },
   ];
 
   const navigationPrevRef = useRef(null);
@@ -86,7 +111,7 @@ const CategoriesSlider = ({ history }) => {
           swiper.params.navigation.prevEl = navigationPrevRef.current;
           swiper.params.navigation.nextEl = navigationNextRef.current;
         }}
-        autoplay={{ disableOnInteraction: true, delay: 2000 }}
+        autoplay={{ disableOnInteraction: true, delay: 5000 }}
         breakpoints={{
           1100: {
             slidesPerView: 4,

@@ -7,6 +7,8 @@ import cat5 from "../../Assets/projects/cat5.webp";
 import MultipleSlider from "../MultipleSlider/MultipleSlider";
 
 import BgVideo from "../../Assets/video/fute-video-bg.webm";
+import bgVideo from "../../Assets/video/fute-video.mp4";
+import bgHome from "../../Assets/video/fute-home.mp4";
 import { withRouter } from "react-router";
 import HomeSlider from "../HomeSlider/HomeSlider";
 import TeamSlider from "../TeamSlider/TeamSlider";
@@ -63,7 +65,7 @@ export const Home = ({ history }) => {
       </Helmet>
       <section className={style.largeVideoBg}>
         <video muted autoPlay loop={true}>
-          <source src={BgVideo} type="video/mp4" />
+          <source src={bgHome} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className={style.heading}>

@@ -5,6 +5,7 @@ import dotsImage from "../../Assets/dots.svg";
 import clientsImage from "../../Assets/customer.svg";
 import movieImage from "../../Assets/movie.svg";
 import citiesImage from "../../Assets/location.svg";
+import scaleImage from "../../Assets/scale.png";
 
 const Counters = ({ start }) => {
   const data = [
@@ -30,7 +31,7 @@ const Counters = ({ start }) => {
       from: 0,
       to: 500,
       title: "Project Scale Handled",
-      icon: movieImage,
+      icon: scaleImage,
       diff: true,
     },
   ];
@@ -43,7 +44,11 @@ const Counters = ({ start }) => {
     <div className={styles.container}>
       {data.map((item) => (
         <div key={item.title} className={styles.counter}>
-          <img src={item.icon} alt={item.title + "-fute-services"} />
+          <img
+            src={item.icon}
+            // style={{ height: item.diff ? "60px" : "auto" }}
+            alt={item.title + "-fute-services"}
+          />
           <h1>
             <Counter counter={item} st={start} />
           </h1>
