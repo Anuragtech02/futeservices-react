@@ -10,23 +10,39 @@ import TeamSlider from "../TeamSlider/TeamSlider";
 import CategoriesSlider from "../CategoriesSlider/CategoriesSlider";
 import Counters from "../Counters/Counters";
 import ScrollTrigger from "react-scroll-trigger";
-import { Helmet } from "react-helmet";
-import { CircularProgress, Grid } from "@material-ui/core";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
+import { Grid } from "@material-ui/core";
 import MetaTags from "../MetaTags/MetaTags";
+import Loading from "../Loading/Loading";
+import videoPoster from "../../Assets/video-poster.jpg";
 
 export const Home = ({ history }) => {
   const [enableCounter, setEnableCounter] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    if (loading) {
+      document.getElementById("root").style.overflowY = "hidden";
+    } else {
+      document.getElementById("root").style.overflowY = "auto";
+    }
+  }, [loading]);
+
   return (
     <div id="container" className={style.container}>
+      {loading && <Loading />}
       <MetaTags title="Home" type="other" />
       <section className={style.largeVideoBg}>
-        <video muted autoPlay loop={true}>
+        <video
+          onLoadedData={() => setLoading(false)}
+          muted
+          autoPlay
+          loop={true}
+          poster={videoPoster}
+        >
           <source src={bgHome} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -73,9 +89,9 @@ export const Home = ({ history }) => {
           </Grid>
         </div>
       </section>
-      <LazyLoadComponent>
-        <CategoriesSlider history={history} autoPlay={true} />
-      </LazyLoadComponent>
+      {/* <LazyLoadComponent> */}
+      <CategoriesSlider history={history} autoPlay={true} />
+      {/* </LazyLoadComponent> */}
       <ScrollTrigger onEnter={() => setEnableCounter(true)}>
         <div className={style.countersContainer}>
           <Counters start={enableCounter} />

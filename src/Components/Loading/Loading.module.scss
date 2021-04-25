@@ -1,0 +1,13 @@
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000;
+  background: white;
+  svg {
+    color: var(--clr-primary) !important;
+  }
+}
