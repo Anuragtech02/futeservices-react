@@ -42,6 +42,7 @@ export const Home = ({ history }) => {
           autoPlay
           loop={true}
           poster={videoPoster}
+          playsInline
         >
           <source src={bgHome} type="video/mp4" />
           Your browser does not support the video tag.

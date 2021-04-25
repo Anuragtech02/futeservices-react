@@ -26,6 +26,8 @@ import { Grid } from "@material-ui/core";
 import VerticalCard from "../VerticalCard/VerticalCard";
 import Banner from "../Banner/Banner";
 import MetaTags from "../MetaTags/MetaTags";
+import { useParams } from "react-router-dom";
+import { portfolio as pData } from "../../Static/portfolio";
 
 const Portfolio = () => {
   // const isoRef = useRef(null);
@@ -36,6 +38,32 @@ const Portfolio = () => {
 
   // const [isotope, setIsotope] = useState(null);
   // const [filterKey, setFilterKey] = useState("*");
+
+  const { category } = useParams();
+  const [current, setCurrent] = useState({});
+
+  const [capName, setCapName] = useState("");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (category && category.length) {
+      const portfolio =
+        pData.find(
+          (item) => item?.name?.toLowerCase() === category.toLowerCase()
+        ) ?? {};
+      // console.log({ portfolio });
+      setCurrent(portfolio);
+      setCapName(capitalize(portfolio.name ?? category));
+    }
+  }, [category]);
+
+  const capitalize = (str = "portfolio") => {
+    return str
+      .toString()
+      .split(" ")
+      .map((item) => item.charAt(0).toUpperCase() + item.slice(1, item.length))
+      .join(" ");
+  };
 
   const images = [
     {
@@ -85,95 +113,18 @@ const Portfolio = () => {
     },
   ];
 
-  //   useEffect(() => {
-  //     if (isotope) {
-  //       isotope.reloadItems();
-  //     } else {
-  //       setIsotope(
-  //         new Isotope(isoRef.current, {
-  //           itemSelector: ".grid-item",
-  //           // percentPosition: true,
-  //           layoutMode: "masonry",
-  //           masonry: {
-  //             columnWidth: ".grid-sizer",
-  //           },
-  //         })
-  //       );
-  //     }
-  //   }, [isotope]);
-
-  //   useEffect(() => {
-  //     if (isotope) {
-  //       filterKey === "*"
-  //         ? isotope.arrange({ filter: "*" })
-  //         : isotope.arrange({ filter: `.${filterKey}` });
-  //     }
-  //   }, [isotope, filterKey]);
-
   return (
     <div className="container">
       <MetaTags title="Portfolio" type="other" />
-      <Banner image={bgImage2} title="Portfolio" />
+      <Banner
+        image={bgImage2}
+        title={current?.title || category || "Portfolio"}
+      />
       <section className={"portfolio"}>
-        {/* <div onClick={closeModal} className={`modal ${modalClass}`}>
-        <Modal images={images} open={modalOpen} image={modalImage} />
-      </div> */}
-        {/* <div className="portfolio-menu">
-          <ul>
-            <li
-              onClick={() => onClickMenu("*")}
-              className={filterKey === "*" ? "is-selected" : ""}
-              data-filter="*"
-            >
-              All
-            </li>
-            <li
-              onClick={() => onClickMenu("exterior")}
-              className={filterKey === "exterior" ? "is-selected" : ""}
-              data-filter=".exterior"
-            >
-              Exterior
-            </li>
-            <li
-              onClick={() => onClickMenu("interior")}
-              className={filterKey === "interior" ? "is-selected" : ""}
-              data-filter=".interior"
-            >
-              Interior
-            </li>
-
-            <li
-              onClick={() => onClickMenu("immersive-vr")}
-              className={filterKey === "immersive-vr" ? "is-selected" : ""}
-              data-filter=".immersive-vr"
-            >
-              Immersive VR
-            </li>
-          </ul>
-        </div>
-        <div ref={isoRef} className="grid gallery">
-          <div className="grid-sizer"></div>
-          {images.map((image, i) => {
-            return (
-              <div
-                key={`${image.category + i}`}
-                className={`grid-item ${image.category.toLowerCase()}`}
-              >
-                <img
-                  src={image.src}
-                  alt={image.title}
-                />
-                <div className="title">
-                  <h4>{image.title}</h4>
-                </div>
-              </div>
-            );
-          })}
-        </div> */}
         <Grid container spacing={0}>
-          {images.map((image, i) => (
-            <Grid item key={i} xl={3} lg={3} md={4} sm={6} xs={12}>
-              <VerticalCard item={image} />
+          {current?.projects?.map((project, i) => (
+            <Grid item key={i} xl={6} lg={6} md={6} sm={12} xs={12}>
+              <VerticalCard type="inner" item={project} />
             </Grid>
           ))}
         </Grid>

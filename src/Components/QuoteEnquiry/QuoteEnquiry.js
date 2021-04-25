@@ -51,7 +51,8 @@ const useStyles = makeStyles((theme) => ({
   inputField: {
     background: "#f3f3f3",
     fontFamily: "'Montserrat', sans-serif",
-    fontSize: "1rem",
+    fontWeight: 300,
+    fontSize: "0.9rem",
     textAlign: "left",
     "&::before": {
       display: "none",
@@ -126,7 +127,7 @@ const QuoteEnquiryForm = () => {
             <p className={style.para}>
               Fute Services would love to hear from you and any project enquiry
               you may have... so don't be a stranger drop us a line by filling
-              in this form... or upload your files to our dropbox folder.
+              in this form.
             </p>
             <div className={style.contact}>
               <div className={style.phone}>
@@ -170,9 +171,9 @@ const QuoteEnquiryForm = () => {
               placeholder="Your Company"
             />
             <FormControl variant="filled" className={classes.formControl}>
-              <InputLabel id="category-input">Select Service</InputLabel>
+              <InputLabel id="category-input">Service</InputLabel>
               <Select
-                placeholder="Select Service"
+                placeholder="Service"
                 className={classes.inputField}
                 // labelId="category-input"
                 value={category}
@@ -208,14 +209,6 @@ const QuoteEnquiryForm = () => {
 export default QuoteEnquiry;
 
 const menuItems = [
-  {
-    label: "Residential",
-    value: "residential",
-  },
-  {
-    label: "Commercial",
-    value: "commercial",
-  },
   {
     label: "3D Rendering",
     value: "rendering",

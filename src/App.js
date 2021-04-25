@@ -76,7 +76,7 @@ const App = () => {
 
   return (
     <Router>
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading loading={true} />}>
         <Cursor />
         <NavWrapper isScrollingUp={isScrollingUp} />
         <Switch>
@@ -86,12 +86,8 @@ const App = () => {
           <Route path="/what-we-do" exact component={Services} />
           <Route path="/about" exact component={About} />
           <Route path="/quote" exact component={QuoteEnquiry} />
-          <Route path="/portfolio" exact component={Portfolio} />
-          <Route
-            path="/portfolio/:category"
-            exact
-            component={PortfolioInside}
-          />
+          <Route path="/portfolio" exact component={PortfolioInside} />
+          <Route path="/portfolio/:category" exact component={Portfolio} />
           <Route
             path="/portfolio/:category/:name"
             exact

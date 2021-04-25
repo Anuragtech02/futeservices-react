@@ -262,7 +262,7 @@
 
 .container .about p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 3rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
@@ -313,7 +313,7 @@
 
 .container .vision p,
 .container .mission p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 2rem auto;
@@ -324,7 +324,7 @@
 .container .vision h1,
 .container .mission h1 {
   position: absolute;
-  top: 0;
+  top: -5%;
   left: 10%;
   -webkit-transform: translate(-10%, 0);
           transform: translate(-10%, 0);

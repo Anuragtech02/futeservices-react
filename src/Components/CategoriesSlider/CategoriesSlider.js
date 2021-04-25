@@ -47,9 +47,11 @@ const CategoriesSlider = ({ history, autoPlay }) => {
       type: "video",
       image: cat4,
       video: walkthrough,
+      link: "portfolio/walkthrough",
     },
     {
       title: "3D Floorplan",
+      link: "portfolio/3d-2d-floorplan",
       image: fPlan,
     },
     {

@@ -64,7 +64,8 @@
   }
 
   &:hover {
-    img {
+    img,
+    video {
       transform: scale(1.2);
     }
     .categoryCardTitle {

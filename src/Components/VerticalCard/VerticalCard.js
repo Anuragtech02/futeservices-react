@@ -5,20 +5,41 @@ import homeVideo from "../../Assets/video/fute-video-bg.webm";
 // import Img from "react-optimized-image";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const VerticalCard = ({ item, history }) => {
-  return (
-    <div
-      onClick={() =>
-        history.push(
+const VerticalCard = ({ item, history, type }) => {
+  const onClickLink = (link) => {
+    const a = document.createElement("a");
+    a.href = link;
+    a.target = "_blank";
+    a.click();
+  };
+
+  const handleClick = () => {
+    // item.link && item.category.includes("ar") ? onClickLink(item.link)
+    // : type === "innner"
+    //     ? {}
+    //     : history.push(
+    //         `/portfolio/${
+    //           item.category
+    //             ? item.category.toLowerCase()
+    //             : item.title.toLowerCase()
+    //         }`
+    //       );
+    if (item?.category?.includes("ar")) {
+      onClickLink(item.link);
+    } else if (type !== "inner") {
+      history.push(
+        item.link ||
           `/portfolio/${
             item.category
               ? item.category.toLowerCase()
               : item.title.toLowerCase()
           }`
-        )
-      }
-      className={styles.card}
-    >
+      );
+    }
+  };
+
+  return (
+    <div onClick={handleClick} className={styles.card}>
       {item?.type === "video" ? (
         <video muted autoPlay loop playsInline src={item?.video}></video>
       ) : (
@@ -32,7 +53,7 @@ const VerticalCard = ({ item, history }) => {
       <div className={styles.categoryCardTitle}>
         <h2>{item.title || " - " + item.title}</h2>
         <div className={styles.categoryCardCat}>
-          <p>{item.title}</p>
+          <p>{item.category || item.title}</p>
         </div>
       </div>
     </div>

@@ -175,6 +175,9 @@
 
         @media screen and (max-width: 850px) {
           flex-direction: column;
+          h1 {
+            font-size: 2rem;
+          }
           p {
             width: 90%;
             margin: 10px 0;

@@ -320,7 +320,8 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
-.card:hover img {
+.card:hover img,
+.card:hover video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }

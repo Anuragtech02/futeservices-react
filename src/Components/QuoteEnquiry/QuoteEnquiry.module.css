@@ -319,6 +319,7 @@
 
 .content .floatLeft .contact a {
   color: var(--clr-primary) !important;
+  font-family: "Montserrat", sans-serif;
 }
 
 .content .floatLeft .contact .email {

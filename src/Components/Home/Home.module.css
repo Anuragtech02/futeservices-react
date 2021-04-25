@@ -453,6 +453,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .container .homeSliderContainer .aboutContainer .aboutLeft h1 {
+    font-size: 2rem;
+  }
   .container .homeSliderContainer .aboutContainer .aboutLeft p {
     width: 90%;
     margin: 10px 0;
