@@ -251,7 +251,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: var(--clr-primary);
-  background-image: url(../../Assets/counters-bg.jpg);
+  background-image: url(../../Assets/counters-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -272,8 +272,7 @@
 
 .container .counter {
   z-index: 10;
-  min-width: 230px;
-  margin: 0 30px;
+  margin: 0 50px;
 }
 
 .container .counter h1,

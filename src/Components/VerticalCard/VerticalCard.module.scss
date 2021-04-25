@@ -9,6 +9,9 @@
   cursor: pointer !important;
 
   @extend .flexColumn;
+  span {
+    height: 100%;
+  }
   img,
   video {
     width: 100%;

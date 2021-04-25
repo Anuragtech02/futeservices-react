@@ -29,6 +29,7 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
 export const Home = ({ history }) => {
   const [enableCounter, setEnableCounter] = useState(false);
+  const [enableAutoPlay, setEnableAutoPlay] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -111,7 +112,10 @@ export const Home = ({ history }) => {
           </Grid>
         </div>
       </section>
-      <CategoriesSlider history={history} />
+
+      <ScrollTrigger onEnter={() => setEnableAutoPlay(true)}>
+        <CategoriesSlider history={history} autoPlay={enableAutoPlay} />
+      </ScrollTrigger>
       <ScrollTrigger onEnter={() => setEnableCounter(true)}>
         <div className={style.countersContainer}>
           <Counters start={enableCounter} />

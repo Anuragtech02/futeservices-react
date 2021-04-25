@@ -217,7 +217,7 @@
   margin: auto auto;
 }
 
-.flexRow, .bgImage,
+.flexRow,
 .flexColumn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,49 +237,5 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.bgImage {
-  position: relative;
-  min-height: 400px;
-  height: 80vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.bgImage::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.bgImage h1 {
-  z-index: 10;
-  color: white;
-  font-size: 4rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  text-align: right;
-  width: 100%;
-  margin-right: 10%;
-}
-
-@media screen and (max-width: 600px) {
-  .bgImage h1 {
-    font-size: 2rem !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .bgImage h1 {
-    font-size: 1.5rem !important;
-  }
 }
 /*# sourceMappingURL=CompareSlider.module.css.map */

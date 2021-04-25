@@ -8,7 +8,7 @@
   justify-content: center;
   flex-wrap: wrap;
   background: var(--clr-primary);
-  background-image: url(../../Assets/counters-bg.jpg);
+  background-image: url(../../Assets/counters-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -28,18 +28,13 @@
   .counter {
     @extend .flexColumn;
     z-index: 10;
-    // flex: 1;
-    // background: grey;
-    min-width: 230px;
-    margin: 0 30px;
+    margin: 0 50px;
     h1,
     span {
       font-size: 3rem;
       color: white;
       font-weight: 700;
       margin: 10px 0;
-      //   font-family: "bebas neue", sans-serif;
-      //   letter-spacing: 5px;
     }
     h3 {
       letter-spacing: 0.2rem;
@@ -56,7 +51,6 @@
       margin: 10px 0;
     }
     img {
-      // min-width: 50px;
       height: 60px;
       margin: 15px 0;
       filter: invert(1);

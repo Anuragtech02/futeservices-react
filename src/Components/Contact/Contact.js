@@ -1,18 +1,15 @@
 import React from "react";
 import style from "./Contact.module.css";
-import cat1 from "../../Assets/projects/cat1.webp";
 import CallIcon from "@material-ui/icons/Call";
-import MailIcon from "@material-ui/icons/Mail";
 import { Helmet } from "react-helmet";
 import { Button, Grid } from "@material-ui/core";
 import logo from "../../Assets/logo.png";
-import map from "../../Assets/map.webp";
-import map2 from "../../Assets/fute-map.png";
+import map from "../../Assets/fute-map.png";
+import map2 from "../../Assets/fute-map.webp";
 import Dropzone from "react-dropzone";
 import backImg from "../../Assets/back-image.jpg";
 import EmailIcon from "@material-ui/icons/Email";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
-import DescriptionIcon from "@material-ui/icons/Description";
 import Banner from "../Banner/Banner";
 
 export const Contact = () => {
@@ -89,7 +86,7 @@ export const ContactForm = () => {
       <Grid container spacing={0}>
         <Grid item md={6} sm={12}>
           <div className={style.mapImage}>
-            <img src={map2} alt="fute-location" />
+            <img src={map2} srcSet={map} alt="fute-location" />
           </div>
         </Grid>
         <Grid item md={6} sm={12}>

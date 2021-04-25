@@ -28,7 +28,7 @@ import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "swiper/swiper.scss";
 import VerticalCard from "../VerticalCard/VerticalCard";
 
-const CategoriesSlider = ({ history }) => {
+const CategoriesSlider = ({ history, autoPlay }) => {
   const data = [
     {
       title: "Residential",
@@ -111,7 +111,11 @@ const CategoriesSlider = ({ history }) => {
           swiper.params.navigation.prevEl = navigationPrevRef.current;
           swiper.params.navigation.nextEl = navigationNextRef.current;
         }}
-        autoplay={{ disableOnInteraction: true, delay: 5000 }}
+        autoplay={
+          autoPlay === true
+            ? { disableOnInteraction: true, delay: 5000 }
+            : false
+        }
         breakpoints={{
           1100: {
             slidesPerView: 4,
