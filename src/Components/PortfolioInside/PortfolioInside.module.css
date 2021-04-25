@@ -329,12 +329,48 @@
 }
 
 .container .row .nextBtn svg {
-  margin-left: 10px;
+  margin-left: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .container .row .nextBtn:hover svg {
-  margin-left: 20px;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .row .content {
+    position: relative;
+    top: auto;
+    left: auto;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    width: 100%;
+  }
+  .container .row img {
+    width: 100%;
+  }
+}
+
+.container .rowRight .content {
+  left: auto;
+  right: 0;
+}
+
+.container .rowRight img {
+  margin-left: 0;
+  margin-right: 30%;
+}
+
+@media screen and (max-width: 1300px) {
+  .container .rowRight img {
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=PortfolioInside.module.css.map */

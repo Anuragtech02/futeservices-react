@@ -58,6 +58,7 @@
         margin-left: 0;
       }
     }
+
     @media screen and (max-width: 1500px) {
       width: 90%;
     }
@@ -73,22 +74,40 @@
       }
       justify-content: flex-start;
       svg {
-        margin-left: 10px;
+        margin-left: 5px;
         transition: all 0.3s ease-in-out;
       }
       &:hover {
         svg {
-          margin-left: 20px;
+          margin-left: 15px;
         }
       }
     }
-    // @media screen and (max-width: 1300px) {
-    //   flex-direction: column;
-    //   .content {
-    //     position: relative;
-    //     top: auto;
-    //     left: auto;
-    //   }
-    // }
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      .content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .rowRight {
+    .content {
+      left: auto;
+      right: 0;
+    }
+    img {
+      margin-left: 0;
+      margin-right: 30%;
+      @media screen and (max-width: 1300px) {
+        margin-right: 0;
+      }
+    }
   }
 }

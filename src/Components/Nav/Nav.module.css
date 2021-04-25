@@ -416,7 +416,7 @@
 }
 
 .sidebarContainer .navLinksMobile .brandName {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .sidebarContainer .navLinksMobile .brandName img {
@@ -427,6 +427,20 @@
 
 .sidebarContainer .navLinksMobile .navLink {
   margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.sidebarContainer .navLinksMobile .navLink:nth-child(2) {
+  margin-top: 50px;
+}
+
+.sidebarContainer .navLinksMobile .navLink a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.selectedLink a {
+  color: var(--clr-primary) !important;
 }
 
 @media screen and (max-width: 1550px) {

@@ -274,6 +274,8 @@
 @media screen and (max-width: 600px) {
   .bgImage h1 {
     font-size: 2rem !important;
+    margin-right: 0;
+    text-align: center;
   }
 }
 

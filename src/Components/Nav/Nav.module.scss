@@ -151,7 +151,7 @@
     @extend .flexColumn;
     list-style: none;
     .brandName {
-      margin-top: 100px;
+      margin-top: 80px;
       img {
         max-width: 150px;
         min-width: 100px;
@@ -160,7 +160,20 @@
     }
     .navLink {
       margin: 20px 0;
+      &:nth-child(2) {
+        margin-top: 50px;
+      }
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      a {
+        color: rgba(0, 0, 0, 0.8);
+      }
     }
+  }
+}
+.selectedLink {
+  a {
+    color: var(--clr-primary) !important;
   }
 }
 

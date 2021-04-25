@@ -2,24 +2,18 @@ import React, { useState } from "react";
 import styles from "./Nav.module.css";
 import { withRouter } from "react-router";
 import { HeaderData } from "../../Static";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../Assets/logo.png";
-import logoLight from "../../Assets/logo-light.png";
-import {
-  Collapse,
-  List,
-  ListItem,
-  ListItemText,
-  SwipeableDrawer,
-} from "@material-ui/core";
+// import logoLight from "../../Assets/logo-light.png";
+import { SwipeableDrawer } from "@material-ui/core";
 import classNames from "classnames";
-import HoverMenu, { innerData } from "./HoverMenu";
-import { ExpandLess, ExpandMore } from "@material-ui/icons";
 
 const Nav = ({ history }) => {
   const [open, setOpen] = useState(false);
 
   const [portOpen, setPortOpen] = useState(false);
+
+  const { pathname } = useLocation();
 
   return (
     <nav className={styles.container}>
@@ -47,12 +41,21 @@ const Nav = ({ history }) => {
                   }, 500);
                 }
               }}
-              className={styles.navLink}
+              className={classNames(
+                styles.navLink,
+                pathname === link.path ? styles.selectedLink : ""
+              )}
             >
               {link.label}
             </li>
           ) : link.left && link.label !== "Home" ? (
-            <li key={link.path} className={styles.navLink}>
+            <li
+              key={link.path}
+              className={classNames(
+                styles.navLink,
+                pathname === link.path ? styles.selectedLink : ""
+              )}
+            >
               <Link to={link.path}>{link.label}</Link>
             </li>
           ) : null
@@ -64,7 +67,13 @@ const Nav = ({ history }) => {
       <ul className={styles.navLinks}>
         {HeaderData.tabs.map((link) =>
           !link.left ? (
-            <li key={link.path} className={styles.navLink}>
+            <li
+              key={link.path}
+              className={classNames(
+                styles.navLink,
+                pathname === link.path ? styles.selectedLink : ""
+              )}
+            >
               <Link to={link.path}>{link.label}</Link>
             </li>
           ) : null
@@ -123,39 +132,22 @@ const Nav = ({ history }) => {
                     }
                     setOpen(false);
                   }}
-                  className={styles.navLink}
+                  className={classNames(
+                    styles.navLink,
+                    pathname === link.path ? styles.selectedLink : ""
+                  )}
                 >
                   {link.label}
                 </li>
-              ) : link.label === "Portfolio" ? (
-                <li key={link.path} className="nav-link-mobile pages-mobile">
-                  <List component="nav" aria-labelledby="nested-list-subheader">
-                    <ListItem
-                      button
-                      onClick={() => setPortOpen(!portOpen)}
-                      disableGutters
-                    >
-                      <ListItemText primary="Portfolio" />
-                      {portOpen ? <ExpandLess /> : <ExpandMore />}
-                    </ListItem>
-                    <Collapse in={portOpen} timeout="auto" unmountOnExit>
-                      <List component="div" disablePadding>
-                        {innerData?.map((item) => (
-                          <ListItem key={item.name} button>
-                            <Link
-                              className={styles.noDecoration}
-                              to={item.path}
-                            >
-                              <ListItemText primary={item.name} />
-                            </Link>
-                          </ListItem>
-                        ))}
-                      </List>
-                    </Collapse>
-                  </List>
-                </li>
               ) : (
-                <li key={link.path} className={styles.navLink}>
+                <li
+                  onClick={() => setOpen(false)}
+                  key={link.path}
+                  className={classNames(
+                    styles.navLink,
+                    pathname === link.path ? styles.selectedLink : ""
+                  )}
+                >
                   <Link to={link.path}>{link.label}</Link>
                 </li>
               )

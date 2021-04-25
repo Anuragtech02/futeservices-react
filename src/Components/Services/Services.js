@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Services.module.css";
 import { Grid } from "@material-ui/core";
-import cat1 from "../../Assets/projects/cat1.webp";
+import Banner from "../Banner/Banner";
 import droneIcon from "../../Assets/services-icon/camera-drone.svg";
 import curtainIcon from "../../Assets/services-icon/curtains.svg";
 import arIcon from "../../Assets/services-icon/360.svg";
@@ -105,13 +105,7 @@ const Services = () => {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
       </Helmet>
-
-      <div
-        style={{ backgroundImage: `url(${backImage})` }}
-        className={styles.bgImage}
-      >
-        <h1>What we do</h1>
-      </div>
+      <Banner image={backImage} title="What we do" />
       <section className={styles.gallery}>
         <Grid container spacing={2}>
           {gallery.map((item, i) => (
