@@ -11,6 +11,7 @@ import backImg from "../../Assets/back-image.jpg";
 import EmailIcon from "@material-ui/icons/Email";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import Banner from "../Banner/Banner";
+import MetaTags from "../MetaTags/MetaTags";
 
 export const Contact = () => {
   React.useEffect(() => {
@@ -19,46 +20,7 @@ export const Contact = () => {
 
   return (
     <div className={style.container}>
-      <Helmet>
-        <title>Contact | FuteServices</title>
-        <meta
-          name="description"
-          content="Our home base is situated in Bengaluru, with branches in Mumbai, Hyderabad,
-            & Dubai. We are immensely proud to provide all our services in-house with the
-            added access to our Prague modeling studios time zones, allowing a fast and
-            reliable 24/7 service for our local as well as international clients."
-        />
-        <meta name="name" content="Contact | FuteServices" />
-        <meta property="og:title" content="Contact | FuteServices" />
-        <meta
-          property="og:description"
-          content="Our home base is situated in Bengaluru, with branches in Mumbai, Hyderabad,
-            & Dubai. We are immensely proud to provide all our services in-house with the
-            added access to our Prague modeling studios time zones, allowing a fast and
-            reliable 24/7 service for our local as well as international clients."
-        />
-        <meta
-          property="og:image"
-          content={"https://tech.feedbox.co.in/" + logo}
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={"https://tech.feedbox.co.in/"} />
-        <meta property="twitter:title" content="Contact | FuteServices" />
-        <meta
-          property="twitter:description"
-          content="Our home base is situated in Bengaluru, with branches in Mumbai, Hyderabad,
-            & Dubai. We are immensely proud to provide all our services in-house with the
-            added access to our Prague modeling studios time zones, allowing a fast and
-            reliable 24/7 service for our local as well as international clients."
-        />
-        <meta
-          property="twitter:image"
-          content={"https://tech.feedbox.co.in/" + logo}
-        ></meta>
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="en_US" />
-      </Helmet>
+      <MetaTags title="Contact Us" type="contact" />
       <Banner image={backImg} title="Contact Us" />
       <ContactForm />
     </div>

@@ -43,12 +43,15 @@ export const QuoteEnquiry = () => {
 const useStyles = makeStyles((theme) => ({
   formControl: {
     width: "100%",
-    background: "#f3f3f3",
     borderRadius: "10px",
     overflow: "hidden",
     margin: "10px 0",
+    fontFamily: "'Montserrat', sans-serif",
   },
   inputField: {
+    background: "#f3f3f3",
+    fontFamily: "'Montserrat', sans-serif",
+    fontSize: "1rem",
     textAlign: "left",
     "&::before": {
       display: "none",
@@ -167,16 +170,17 @@ const QuoteEnquiryForm = () => {
               placeholder="Your Company"
             />
             <FormControl variant="filled" className={classes.formControl}>
-              <InputLabel id="category-input">Category</InputLabel>
+              <InputLabel id="category-input">Select Service</InputLabel>
               <Select
+                placeholder="Select Service"
                 className={classes.inputField}
-                labelId="category-input"
+                // labelId="category-input"
                 value={category}
                 onChange={handleChange}
               >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
+                {menuItems.map((item) => (
+                  <MenuItem value={item.value}>{item.label}</MenuItem>
+                ))}
               </Select>
             </FormControl>
             {/* </div> */}
@@ -202,3 +206,59 @@ const QuoteEnquiryForm = () => {
 };
 
 export default QuoteEnquiry;
+
+const menuItems = [
+  {
+    label: "Residential",
+    value: "residential",
+  },
+  {
+    label: "Commercial",
+    value: "commercial",
+  },
+  {
+    label: "3D Rendering",
+    value: "rendering",
+  },
+  {
+    label: "3D Walkthrough",
+    value: "walkthrough",
+  },
+  {
+    label: "3D Floorplan",
+    value: "floorplan",
+  },
+  {
+    label: "360 Panaroma",
+    type: "360",
+    value: "panaroma",
+  },
+  {
+    label: "Virtual Reality",
+    value: "vr",
+  },
+  {
+    label: "Augmented Reality",
+    value: "augmented-reality",
+  },
+  {
+    label: "Product Visualisation",
+    value: "product visualisation",
+  },
+  {
+    label: "Physical Scale Model",
+    value: "scale-model",
+  },
+  {
+    label: "Layer View",
+    value: "layer-view",
+  },
+  {
+    label: "Drone Shoot",
+    value: "drone-shoot",
+  },
+  {
+    label: "Chroma Shoot",
+    value: "chroma-shoot",
+  },
+];

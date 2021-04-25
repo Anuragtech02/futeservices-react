@@ -9,6 +9,7 @@ import "video-react/dist/video-react.css";
 import { Player, BigPlayButton } from "video-react";
 import homeVideo from "../../Assets/video/fute-video-bg.webm";
 import Banner from "../Banner/Banner";
+import MetaTags from "../MetaTags/MetaTags";
 
 const PortfolioPage = () => {
   const { name } = useParams();
@@ -39,50 +40,7 @@ const PortfolioPage = () => {
 
   return (
     <div className="container">
-      <Helmet>
-        <title>{capName} | Portfolio FuteServices</title>
-        <meta
-          name="description"
-          content="Ever since our inception, Fute Services has been proactive in delivering a
-            mesmerizingly cinematic experience to our audiences, creating breathtaking
-            architectural imagery perfected to the minutest of details. This philosophy helps us not
-            just enhance the viewing experience but engross audiences while they actually feel
-            physically present at the location themselves."
-        />
-        <meta name="name" content={capName + " | FuteServices"} />
-        <meta property="og:title" content={capName + "| FuteServices"} />
-        <meta
-          property="og:description"
-          content="Ever since our inception, Fute Services has been proactive in delivering a
-            mesmerizingly cinematic experience to our audiences, creating breathtaking
-            architectural imagery perfected to the minutest of details. This philosophy helps us not
-            just enhance the viewing experience but engross audiences while they actually feel
-            physically present at the location themselves."
-        />
-        <meta property="og:url" content={"https://tech.feedbox.co.in/"} />
-        <meta
-          property="og:image"
-          content={"https://tech.feedbox.co.in/" + current?.image ?? cat1}
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={"https://tech.feedbox.co.in/"} />
-        <meta property="twitter:title" content={capName + " | FuteServices"} />
-        <meta
-          property="twitter:description"
-          content="Ever since our inception, Fute Services has been proactive in delivering a
-            mesmerizingly cinematic experience to our audiences, creating breathtaking
-            architectural imagery perfected to the minutest of details. This philosophy helps us not
-            just enhance the viewing experience but engross audiences while they actually feel
-            physically present at the location themselves."
-        />
-        <meta
-          property="twitter:image"
-          content={"https://tech.feedbox.co.in/" + current?.image ?? cat1}
-        ></meta>
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="en_US" />
-      </Helmet>
+      <MetaTags title={capName} type="other" image={current?.image ?? cat1} />
       <Banner image={current?.image ?? cat1} title={current.name ?? name} />
       <section className="react-youtube">
         <Player>

@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import "./Portfolio.css";
 import bgImage from "../../Assets/back-img.jpg";
 import bgImage2 from "../../Assets/fute-bg.jpg";
-import Isotope from "isotope-layout";
+// import Isotope from "isotope-layout";
 import cat1Image1 from "../../Assets/projects/cat1/cat1-fute-1.webp";
 import cat1Image2 from "../../Assets/projects/cat1/cat1-fute-2.webp";
 import cat1Image3 from "../../Assets/projects/cat1/cat1-fute-3.webp";
@@ -25,16 +25,17 @@ import cat3Image5 from "../../Assets/projects/cat1/cat1-fute-15.webp";
 import { Grid } from "@material-ui/core";
 import VerticalCard from "../VerticalCard/VerticalCard";
 import Banner from "../Banner/Banner";
+import MetaTags from "../MetaTags/MetaTags";
 
 const Portfolio = () => {
-  const isoRef = useRef(null);
+  // const isoRef = useRef(null);
 
-  const onClickMenu = (item) => {
-    setFilterKey(item);
-  };
+  // const onClickMenu = (item) => {
+  //   setFilterKey(item);
+  // };
 
-  const [isotope, setIsotope] = useState(null);
-  const [filterKey, setFilterKey] = useState("*");
+  // const [isotope, setIsotope] = useState(null);
+  // const [filterKey, setFilterKey] = useState("*");
 
   const images = [
     {
@@ -111,6 +112,7 @@ const Portfolio = () => {
 
   return (
     <div className="container">
+      <MetaTags title="Portfolio" type="other" />
       <Banner image={bgImage2} title="Portfolio" />
       <section className={"portfolio"}>
         {/* <div onClick={closeModal} className={`modal ${modalClass}`}>
@@ -169,8 +171,8 @@ const Portfolio = () => {
           })}
         </div> */}
         <Grid container spacing={0}>
-          {images.map((image) => (
-            <Grid item xl={3} lg={3} md={4} sm={6} xs={12}>
+          {images.map((image, i) => (
+            <Grid item key={i} xl={3} lg={3} md={4} sm={6} xs={12}>
               <VerticalCard item={image} />
             </Grid>
           ))}

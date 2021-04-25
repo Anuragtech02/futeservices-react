@@ -111,11 +111,7 @@ const CategoriesSlider = ({ history, autoPlay }) => {
           swiper.params.navigation.prevEl = navigationPrevRef.current;
           swiper.params.navigation.nextEl = navigationNextRef.current;
         }}
-        autoplay={
-          autoPlay === true
-            ? { disableOnInteraction: true, delay: 5000 }
-            : false
-        }
+        autoplay={{ disableOnInteraction: true, delay: 5000 }}
         breakpoints={{
           1100: {
             slidesPerView: 4,

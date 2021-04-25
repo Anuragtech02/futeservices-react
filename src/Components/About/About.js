@@ -2,16 +2,12 @@ import React from "react";
 import styles from "./About.module.css";
 import backImg from "../../Assets/about-bg.jpg";
 import Banner from "../Banner/Banner";
+import MetaTags from "../MetaTags/MetaTags";
 
 const About = () => {
   return (
     <div className={styles.container}>
-      {/* <div
-        style={{ backgroundImage: `url(${backImg})` }}
-        className={styles.bgImage}
-      >
-        <h1>About Us</h1>
-      </div> */}
+      <MetaTags title="About Us" type="other" />
       <Banner image={backImg} title="About Us" />
       <section className={styles.about}>
         <h2>

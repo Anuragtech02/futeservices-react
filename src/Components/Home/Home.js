@@ -1,35 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
 import style from "./Home.module.css";
-import cat1 from "../../Assets/projects/cat1.webp";
-import cat2 from "../../Assets/projects/cat2.webp";
-import cat4 from "../../Assets/projects/cat4.webp";
 import cat5 from "../../Assets/projects/cat5.webp";
 import MultipleSlider from "../MultipleSlider/MultipleSlider";
 
-import BgVideo from "../../Assets/video/fute-video-bg.webm";
-import bgVideo from "../../Assets/video/fute-video.mp4";
 import bgHome from "../../Assets/video/fute-home.mp4";
 import { withRouter } from "react-router";
 import HomeSlider from "../HomeSlider/HomeSlider";
 import TeamSlider from "../TeamSlider/TeamSlider";
 import CategoriesSlider from "../CategoriesSlider/CategoriesSlider";
-import CompareSlider from "../CompareSlider/CompareSlider";
 import Counters from "../Counters/Counters";
 import ScrollTrigger from "react-scroll-trigger";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-import { Grid, IconButton } from "@material-ui/core";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import { CircularProgress, Grid } from "@material-ui/core";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
+import MetaTags from "../MetaTags/MetaTags";
 
 export const Home = ({ history }) => {
   const [enableCounter, setEnableCounter] = useState(false);
-  const [enableAutoPlay, setEnableAutoPlay] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,33 +24,7 @@ export const Home = ({ history }) => {
 
   return (
     <div id="container" className={style.container}>
-      <Helmet>
-        <title>Home | FuteServices</title>
-        <meta
-          name="description"
-          content="Ever since our inception, Fute Services has been proactive in delivering a
-            mesmerizingly cinematic experience to our audiences, creating breathtaking
-            architectural imagery perfected to the minutest of details. This philosophy helps us not
-            just enhance the viewing experience but engross audiences while they actually feel
-            physically present at the location themselves."
-        />
-        <meta name="name" content="FuteServices" />
-        <meta property="og:title" content="Home | FuteServices" />
-        <meta
-          property="og:description"
-          content="Ever since our inception, Fute Services has been proactive in delivering a
-            mesmerizingly cinematic experience to our audiences, creating breathtaking
-            architectural imagery perfected to the minutest of details. This philosophy helps us not
-            just enhance the viewing experience but engross audiences while they actually feel
-            physically present at the location themselves."
-        />
-        <meta
-          property="og:image"
-          content={"https://tech.feedbox.co.in/logo.png"}
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="en_US" />
-      </Helmet>
+      <MetaTags title="Home" type="other" />
       <section className={style.largeVideoBg}>
         <video muted autoPlay loop={true}>
           <source src={bgHome} type="video/mp4" />
@@ -112,10 +73,9 @@ export const Home = ({ history }) => {
           </Grid>
         </div>
       </section>
-
-      <ScrollTrigger onEnter={() => setEnableAutoPlay(true)}>
-        <CategoriesSlider history={history} autoPlay={enableAutoPlay} />
-      </ScrollTrigger>
+      <LazyLoadComponent>
+        <CategoriesSlider history={history} autoPlay={true} />
+      </LazyLoadComponent>
       <ScrollTrigger onEnter={() => setEnableCounter(true)}>
         <div className={style.countersContainer}>
           <Counters start={enableCounter} />
@@ -152,113 +112,3 @@ export const Home = ({ history }) => {
   );
 };
 export default withRouter(Home);
-
-const CategoriesGallery = ({ history }) => {
-  const data = [
-    {
-      title: "Residential",
-      image: cat1,
-    },
-    {
-      title: "Product",
-      image: cat2,
-    },
-    // {
-    //   title: "Animation",
-    //   image: cat3,
-    // },
-    {
-      title: "VR",
-      image: cat4,
-    },
-    {
-      title: "Photomontage",
-      image: cat5,
-    },
-  ];
-
-  const settings = {
-    fade: true,
-    className: "center",
-    infinite: true,
-    // centerPadding: "60px",
-    // accessibility: true,
-    // lazyload: true,
-    slidesToShow: 2,
-    swipeToSlide: true,
-    dots: false,
-    autoplay: true,
-    // autoplaySpeed: 5000,
-    speed: 2000,
-    ease: "ease-in",
-  };
-
-  const slider = useRef(null);
-
-  const gotoPrev = () => {
-    slider.current.slickPrev();
-  };
-
-  const gotoNext = () => {
-    slider.current.slickNext();
-  };
-
-  return (
-    <div id="portfolio" className={style.categoriesContainer}>
-      <IconButton onClick={() => gotoPrev()} className={style.arrowLeft}>
-        <ArrowBackIosIcon fontSize="large" />
-      </IconButton>
-
-      <Slider ref={slider} {...settings} className={style.slider}>
-        {data.map((item) => (
-          <>
-            <div
-              style={{ width: "50px", height: "50px", background: "red" }}
-            ></div>
-            {/* <div className={style.cardParent}>
-            <img src={item.image} alt={item.title} />
-            <div
-              // style={{ backgroundImage: `url(${item.image})` }}
-              className={style.categoryCard}
-              onClick={() => history.push(`/portfolio/${item.title}`)}
-            >
-              <Link to={`/portfolio/${item.title}`} />
-              <div className={style.categoryCardTitle}>
-                <h2>Project - {item.title}</h2>
-                <div className={style.categoryCardCat}>
-                  <p>{item.title}</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          </>
-        ))}
-      </Slider>
-      <IconButton onClick={() => gotoNext()} className={style.arrowRight}>
-        <ArrowForwardIosIcon fontSize="large" />
-      </IconButton>
-      {/* <Grid container spacing={0}>
-        {data.map((item) => (
-          <Grid item xl={3} lg={3} md={4} sm={6} xs={12}>
-            <div className={style.cardParent}>
-              <img src={item.image} alt={item.title} />
-              <div
-                // style={{ backgroundImage: `url(${item.image})` }}
-                className={style.categoryCard}
-                onClick={() => history.push(`/portfolio/${item.title}`)}
-              >
-                <Link to={`/portfolio/${item.title}`} />
-                <div className={style.categoryCardTitle}>
-                  <h2>Project - {item.title}</h2>
-                  <div className={style.categoryCardCat}>
-                    <p>{item.title}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Grid>
-        ))}
-      </Grid> */}
-    </div>
-  );
-};

@@ -31,6 +31,7 @@ export const MultipleSlider = () => {
         dots={false}
         slidesToShow={4}
         slidesToScroll={1}
+        lazyLoad={true}
         autoplay={true}
         autoplaySpeed={2000}
         responsive={[
