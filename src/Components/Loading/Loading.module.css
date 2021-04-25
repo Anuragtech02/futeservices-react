@@ -13,9 +13,17 @@
           align-items: center;
   z-index: 1000000;
   background: white;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.loading svg {
-  color: var(--clr-primary) !important;
+.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none !important;
 }
 /*# sourceMappingURL=Loading.module.css.map */

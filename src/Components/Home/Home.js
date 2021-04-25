@@ -33,7 +33,7 @@ export const Home = ({ history }) => {
 
   return (
     <div id="container" className={style.container}>
-      {loading && <Loading />}
+      <Loading loading={loading} />
       <MetaTags title="Home" type="other" />
       <section className={style.largeVideoBg}>
         <video

@@ -3,6 +3,7 @@ import { Footer, Cursor, NavWrapper } from "./Components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import style from "./App.module.css";
 import { CircularProgress } from "@material-ui/core";
+import Loading from "./Components/Loading/Loading";
 
 const Home = lazy(() => import("./Components/Home/Home"));
 const Contact = lazy(() => import("./Components/Contact/Contact"));
@@ -75,13 +76,7 @@ const App = () => {
 
   return (
     <Router>
-      <Suspense
-        fallback={
-          <div className={style.loading}>
-            <CircularProgress />
-          </div>
-        }
-      >
+      <Suspense fallback={<Loading />}>
         <Cursor />
         <NavWrapper isScrollingUp={isScrollingUp} />
         <Switch>
