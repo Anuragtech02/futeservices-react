@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -7,8 +7,11 @@ import { Logos } from "../../Static";
 import { IconButton } from "@material-ui/core";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import { WebpContextProvider } from "../../App";
 
 export const MultipleSlider = () => {
+  const { isWebpSupported } = useContext(WebpContextProvider);
+
   const slider = useRef(null);
 
   const gotoPrev = () => {
@@ -38,13 +41,13 @@ export const MultipleSlider = () => {
           {
             breakpoint: 1700,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 5,
             },
           },
           {
             breakpoint: 1200,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 4,
             },
           },
           {
@@ -63,7 +66,10 @@ export const MultipleSlider = () => {
       >
         {Logos.map((logo) => (
           <div key={logo.key} className={styles.imgContainer}>
-            <img src={logo.img} alt="logo" />
+            <img
+              src={isWebpSupported ? logo.img : logo.fallbackImg}
+              alt="logo"
+            />
           </div>
         ))}
       </Slider>

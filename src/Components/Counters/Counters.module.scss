@@ -8,7 +8,8 @@
   justify-content: center;
   flex-wrap: wrap;
   background: var(--clr-primary);
-  background-image: url(../../Assets/counters-bg.webp);
+  background-image: url(../../Assets/counters-bg.webp),
+    url(../../Assets/counters-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
