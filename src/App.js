@@ -1,4 +1,10 @@
-import React, { Suspense, lazy, useEffect, useState } from "react";
+import React, {
+  Suspense,
+  lazy,
+  useEffect,
+  useState,
+  createContext,
+} from "react";
 import { Footer, Cursor, NavWrapper } from "./Components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import style from "./App.module.css";
@@ -21,7 +27,35 @@ const Portfolio = lazy(() => import("./Components/Portfolio/Portfolio"));
 const About = lazy(() => import("./Components/About/About"));
 const NotFound = lazy(() => import("./Components/404/NotFound"));
 
+export const WebpContextProvider = createContext({});
+
 const App = () => {
+  const [isWebpSupported, setIsWebpSupported] = useState(null);
+  const [isWebmSupported, setIsWebmSupported] = useState(null);
+
+  useEffect(() => {
+    function testWebP(callback) {
+      var webP = new Image();
+      webP.onload = webP.onerror = function () {
+        callback(webP.height == 2);
+      };
+      webP.src =
+        "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+    }
+
+    testWebP(function (support) {
+      setIsWebpSupported(Boolean(support));
+    });
+
+    var testEl = document.createElement("video"),
+      webm;
+    if (testEl.canPlayType) {
+      // Check for Webm support
+      webm = "" !== testEl.canPlayType('video/webm; codecs="vp8, vorbis"');
+    }
+    setIsWebmSupported(Boolean(webm));
+  }, []);
+
   useEffect(() => {
     const mouseCursor = document.getElementById("cursor");
     const inner = document.getElementById("inner-cursor");
@@ -75,31 +109,33 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <Suspense fallback={<Loading loading={true} />}>
-        <Cursor />
-        <NavWrapper isScrollingUp={isScrollingUp} />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          {/* <Route path="/about" exact component={About} /> */}
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/what-we-do" exact component={Services} />
-          <Route path="/about" exact component={About} />
-          <Route path="/quote" exact component={QuoteEnquiry} />
-          <Route path="/portfolio" exact component={PortfolioInside} />
-          <Route path="/portfolio/:category" exact component={Portfolio} />
-          <Route
-            path="/portfolio/:category/:name"
-            exact
-            component={PortfolioPage}
-          />
-          <Route component={NotFound} />
-        </Switch>
-        <div className={style.footer}>
-          <Footer />
-        </div>
-      </Suspense>
-    </Router>
+    <WebpContextProvider.Provider value={{ isWebpSupported, isWebmSupported }}>
+      <Router>
+        <Suspense fallback={<Loading loading={true} />}>
+          <Cursor />
+          <NavWrapper isScrollingUp={isScrollingUp} />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            {/* <Route path="/about" exact component={About} /> */}
+            <Route path="/contact" exact component={Contact} />
+            <Route path="/what-we-do" exact component={Services} />
+            <Route path="/about" exact component={About} />
+            <Route path="/quote" exact component={QuoteEnquiry} />
+            <Route path="/portfolio" exact component={PortfolioInside} />
+            <Route path="/portfolio/:category" exact component={Portfolio} />
+            <Route
+              path="/portfolio/:category/:name"
+              exact
+              component={PortfolioPage}
+            />
+            <Route component={NotFound} />
+          </Switch>
+          <div className={style.footer}>
+            <Footer />
+          </div>
+        </Suspense>
+      </Router>
+    </WebpContextProvider.Provider>
   );
 };
 

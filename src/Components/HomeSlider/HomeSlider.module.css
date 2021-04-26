@@ -285,8 +285,6 @@
   width: 95%;
   margin: auto;
   height: 100%;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   -o-object-fit: cover;
@@ -309,9 +307,9 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 20px;
 }
 
@@ -346,11 +344,6 @@
   .container .sliderContainer .imgContainer {
     height: 450px;
   }
-}
-
-.container .sliderContainer .imgContainer:hover .mainImage {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
 }
 
 .container .sliderContainer .activeSlide .mainImage {

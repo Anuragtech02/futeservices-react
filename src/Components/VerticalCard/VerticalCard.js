@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./VerticalCard.module.css";
 import { Link, withRouter } from "react-router-dom";
 import homeVideo from "../../Assets/video/fute-video-bg.webm";
 // import Img from "react-optimized-image";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { WebpContextProvider } from "../../App";
 
 const VerticalCard = ({ item, history, type, onClick }) => {
+  const { isWebpSupported, isWebmSupported } = useContext(WebpContextProvider);
+
   const onClickLink = (link) => {
     const a = document.createElement("a");
     a.href = link;
@@ -42,11 +45,17 @@ const VerticalCard = ({ item, history, type, onClick }) => {
   return (
     <div onClick={handleClick} className={styles.card}>
       {item?.type === "video" ? (
-        <video muted autoPlay loop playsInline src={item?.video}></video>
+        <video
+          muted
+          autoPlay
+          loop
+          playsInline
+          src={isWebmSupported ? item?.video : item?.fallbackVideo}
+        ></video>
       ) : (
         <LazyLoadImage
           effect="blur"
-          src={item.image || item.src}
+          src={isWebpSupported ? item.image || item.src : item.fallbackImg}
           alt={item.title}
         />
       )}

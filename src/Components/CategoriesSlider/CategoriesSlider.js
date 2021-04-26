@@ -12,14 +12,24 @@ import cat4 from "../../Assets/projects/cat4.webp";
 import cat5 from "../../Assets/projects/cat5.webp";
 
 import fPlan from "../../Assets/categories/floorplan-1.webp";
+import fPlanfallback from "../../Assets/categories/floorplan-1.jpg";
 import residential from "../../Assets/categories/residential-1.webp";
+import residentialfallback from "../../Assets/categories/residential-1.jpg";
 import rendering from "../../Assets/categories/3d-rendering-1.webp";
+import renderingfallback from "../../Assets/categories/3d-rendering-1.jpg";
 import vr from "../../Assets/categories/vr-1.webp";
+import vrfallback from "../../Assets/categories/vr-1.jpg";
 import panaroma from "../../Assets/categories/360-panaroma-1.webp";
+import panaromafallback from "../../Assets/categories/360-panaroma-1.jpg";
 import scaleModel from "../../Assets/categories/scale-model-1.webp";
+import scaleModelfallback from "../../Assets/categories/scale-model-1.jpg";
 import commercial from "../../Assets/categories/commercial-1.webp";
+import commercialfallback from "../../Assets/categories/commercial-1.jpg";
+
 import product from "../../Assets/categories/product-1.webm";
+import productfallback from "../../Assets/categories/product-1.mp4";
 import walkthrough from "../../Assets/categories/3d-walkthrough-1.webm";
+import walkthroughfallback from "../../Assets/categories/3d-walkthrough-1.mp4";
 
 import vid from "../../Assets/video/fute-video-bg.webm";
 
@@ -33,36 +43,43 @@ const CategoriesSlider = ({ history, autoPlay }) => {
     {
       title: "Residential",
       image: residential,
+      fallbackImg: residentialfallback,
     },
     {
       title: "Commercial",
       image: commercial,
+      fallbackImg: commercialfallback,
     },
     {
       title: "3D Rendering",
       image: rendering,
+      fallbackImg: renderingfallback,
     },
     {
       title: "3D Walkthrough",
       type: "video",
       image: cat4,
       video: walkthrough,
+      fallbackVideo: walkthroughfallback,
       link: "portfolio/walkthrough",
     },
     {
       title: "3D Floorplan",
       link: "portfolio/3d-2d-floorplan",
       image: fPlan,
+      fallbackImg: fPlanfallback,
     },
     {
       title: "360 Panaroma",
       type: "360",
       image: panaroma,
+      fallbackImg: panaromafallback,
     },
     {
       title: "Virtual Reality",
       type: "360",
       image: vr,
+      fallbackImg: vrfallback,
     },
     {
       title: "Augmented Reality",
@@ -73,10 +90,12 @@ const CategoriesSlider = ({ history, autoPlay }) => {
       type: "video",
       image: cat5,
       video: product,
+      fallbackVideo: productfallback,
     },
     {
       title: "Physical Scale Model",
       image: scaleModel,
+      fallbackImg: scaleModelfallback,
     },
     // {
     //   title: "Layer View",

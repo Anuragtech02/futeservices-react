@@ -1,7 +1,10 @@
 // import workImg from "../Assets/pexels-slondotpics-408518.jpg";
 import member1 from "../Assets/team/member1.webp";
+import member1fallback from "../Assets/team/member1.png";
 import member2 from "../Assets/team/member2.webp";
+import member2fallback from "../Assets/team/member2.png";
 import member3 from "../Assets/team/member3.webp";
+import member3fallback from "../Assets/team/member3.png";
 
 export const ExperienceData = {
   subheading: "OUR EXPERIENCE",
@@ -67,6 +70,7 @@ export const mainTeamData = {
 export const teamData = [
   {
     image: member1,
+    fallbackImg: member1fallback,
     name: "Ms. Soma",
     position: "MANAGING DIRECTOR",
     desc:
@@ -74,6 +78,7 @@ export const teamData = [
   },
   {
     image: member2,
+    fallbackImg: member2fallback,
     name: "Ms. Payel Saha",
     position: "CHIEF OPERATIONS OFFICER",
     desc:
@@ -81,6 +86,7 @@ export const teamData = [
   },
   {
     image: member3,
+    fallbackImg: member3fallback,
     name: "Mr. Ratish Kovvammal",
     position: "CHIEF EXECUTIVE OFFICER",
     desc:

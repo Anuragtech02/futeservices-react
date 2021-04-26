@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
 import Slider from "react-slick";
 import styles from "./TeamSlider.module.css";
 import "slick-carousel/slick/slick.css";
@@ -17,6 +17,7 @@ import {
 } from "@material-ui/core";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import { WebpContextProvider } from "../../App";
 
 const TeamSlider = () => {
   const [showAction, setShowAction] = useState(true);
@@ -72,6 +73,8 @@ export default TeamSlider;
 const Content = ({ item, showAction }) => {
   const [more, setMore] = useState(false);
 
+  const { isWebpSupported } = useContext(WebpContextProvider);
+
   return (
     <div className={classNames(styles.flexRow, styles.about)}>
       <motion.div
@@ -87,7 +90,7 @@ const Content = ({ item, showAction }) => {
         <p>{item.position}</p>
       </motion.div>
       <motion.div className={styles.distortion}>
-        <img src={item.image} alt="fute" />
+        <img src={isWebpSupported ? item.image : item.fallbackImg} alt="fute" />
       </motion.div>
       <motion.div
         initial={{ x: 30, opacity: 0 }}
