@@ -5,7 +5,7 @@ import homeVideo from "../../Assets/video/fute-video-bg.webm";
 // import Img from "react-optimized-image";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const VerticalCard = ({ item, history, type }) => {
+const VerticalCard = ({ item, history, type, onClick }) => {
   const onClickLink = (link) => {
     const a = document.createElement("a");
     a.href = link;
@@ -24,6 +24,7 @@ const VerticalCard = ({ item, history, type }) => {
     //             : item.title.toLowerCase()
     //         }`
     //       );
+    if (onClick) onClick();
     if (item?.category?.includes("ar")) {
       onClickLink(item.link);
     } else if (type !== "inner") {
@@ -49,7 +50,16 @@ const VerticalCard = ({ item, history, type }) => {
           alt={item.title}
         />
       )}
-      <Link to={`/portfolio/${item.title}`} />
+      <Link
+        to={
+          item.link ||
+          `/portfolio/${
+            item.category
+              ? item.category.toLowerCase()
+              : item.title.toLowerCase()
+          }`
+        }
+      />
       <div className={styles.categoryCardTitle}>
         <h2>{item.title || " - " + item.title}</h2>
         <div className={styles.categoryCardCat}>

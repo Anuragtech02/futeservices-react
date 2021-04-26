@@ -9707,6 +9707,11 @@
     "regenerator-runtime" "^0.13.3"
     "whatwg-fetch" "^3.0.0"
 
+"react-awesome-lightbox@^1.8.0":
+  "integrity" "sha512-V0a2wrAa4xuMLMLmQIuXfLbHjd08cgB130aqZhlhQRq9vhsBdVskhbUv9YY0J7nK42MrURJlhsmWlZ3fI6MHZA=="
+  "resolved" "https://registry.npmjs.org/react-awesome-lightbox/-/react-awesome-lightbox-1.8.0.tgz"
+  "version" "1.8.0"
+
 "react-compare-slider@^2.0.2":
   "integrity" "sha512-hL4mZ6asoez23Upoce9T2hbPKRg607lt8A8rYOXDuvL6QtO7ujkmsGS0+6EZe1EIDlmGibXH9jVuXNca6JrUow=="
   "resolved" "https://registry.npmjs.org/react-compare-slider/-/react-compare-slider-2.0.2.tgz"
@@ -9953,7 +9958,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@^0.14.7 || ^15.0.0 || ^16.0.0", "react@^15.0.0 || ^16.0.0", "react@^15.x.x || ^16.x.x || ^17.x.x", "react@^16.13.1", "react@^16.3.0 || ^17.0.0", "react@>= 16.3.0", "react@>= 16.8", "react@>=15", "react@>=16.3.0", "react@>=16.8":
+"react@^0.14.7 || ^15.0.0 || ^16.0.0", "react@^15.0.0 || ^16.0.0", "react@^15.x.x || ^16.x.x || ^17.x.x", "react@^16.13.1", "react@^16.3.0 || ^17.0.0", "react@^16||^17", "react@>= 16.3.0", "react@>= 16.8", "react@>=15", "react@>=16.3.0", "react@>=16.8":
   "integrity" "sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.13.1.tgz"
   "version" "16.13.1"

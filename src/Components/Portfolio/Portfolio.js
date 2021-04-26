@@ -28,6 +28,8 @@ import Banner from "../Banner/Banner";
 import MetaTags from "../MetaTags/MetaTags";
 import { useParams } from "react-router-dom";
 import { portfolio as pData } from "../../Static/portfolio";
+import Lightbox from "react-awesome-lightbox";
+import "react-awesome-lightbox/build/style.css";
 
 const Portfolio = () => {
   // const isoRef = useRef(null);
@@ -41,8 +43,28 @@ const Portfolio = () => {
 
   const { category } = useParams();
   const [current, setCurrent] = useState({});
+  const [startIndexModal, setStartIndexModal] = useState(null);
+  const [currImage, setCurrImage] = useState(cat1Image1);
+  const [currImages, setCurrImages] = useState([]);
 
   const [capName, setCapName] = useState("");
+
+  useEffect(() => {
+    if (current?.projects) {
+      setCurrImages(
+        current?.projects?.map((project) => project.image || project.src)
+      );
+    }
+  }, [current]);
+
+  useEffect(() => {
+    let el = document.getElementsByTagName("body");
+    if (startIndexModal == null) {
+      el[0].style.overflowY = "auto";
+    } else {
+      el[0].style.overflowY = "hidden";
+    }
+  }, [startIndexModal]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -64,6 +86,10 @@ const Portfolio = () => {
       .map((item) => item.charAt(0).toUpperCase() + item.slice(1, item.length))
       .join(" ");
   };
+
+  // useEffect(() => {
+  //   console.log({ currImage });
+  // }, [currImage]);
 
   const images = [
     {
@@ -124,11 +150,28 @@ const Portfolio = () => {
         <Grid container spacing={0}>
           {current?.projects?.map((project, i) => (
             <Grid item key={i} xl={6} lg={6} md={6} sm={12} xs={12}>
-              <VerticalCard type="inner" item={project} />
+              <VerticalCard
+                onClick={() => {
+                  setStartIndexModal(i);
+                  setCurrImage(project.image || project.src);
+                  console.log("Clicked");
+                }}
+                type="inner"
+                item={project}
+              />
             </Grid>
           ))}
         </Grid>
       </section>
+      {startIndexModal !== null && (
+        <div className="image-modal">
+          <Lightbox
+            images={currImages}
+            startIndex={startIndexModal}
+            onClose={() => setStartIndexModal(null)}
+          />
+        </div>
+      )}
     </div>
   );
 };

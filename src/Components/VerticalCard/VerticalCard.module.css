@@ -308,8 +308,8 @@
           transform-origin: 0 100%;
   margin-left: 20px;
   letter-spacing: 1rem;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .card .categoryCardTitle .categoryCardCat p {
@@ -332,7 +332,7 @@
 }
 
 .card:hover .categoryCardTitle .categoryCardCat {
-  margin-left: 30px !important;
+  letter-spacing: 2rem;
   opacity: 0;
 }
 /*# sourceMappingURL=VerticalCard.module.css.map */
