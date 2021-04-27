@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useContext } from "react";
 import "./Portfolio.css";
 import bgImage from "../../Assets/back-img.jpg";
 import bgImage2 from "../../Assets/fute-bg.jpg";
@@ -30,9 +30,11 @@ import { useParams } from "react-router-dom";
 import { portfolio as pData } from "../../Static/portfolio";
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
+import { WebpContextProvider } from "../../App";
 
 const Portfolio = () => {
   // const isoRef = useRef(null);
+  const { isWebpSupported } = useContext(WebpContextProvider);
 
   // const onClickMenu = (item) => {
   //   setFilterKey(item);
@@ -52,10 +54,12 @@ const Portfolio = () => {
   useEffect(() => {
     if (current?.projects) {
       setCurrImages(
-        current?.projects?.map((project) => project.image || project.src)
+        current?.projects?.map((project) =>
+          isWebpSupported ? project.image || project.src : project.fallbackImg
+        )
       );
     }
-  }, [current]);
+  }, [current, isWebpSupported]);
 
   useEffect(() => {
     let el = document.getElementsByTagName("body");

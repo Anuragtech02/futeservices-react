@@ -8,6 +8,7 @@ import { IconButton } from "@material-ui/core";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { WebpContextProvider } from "../../App";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const MultipleSlider = () => {
   const { isWebpSupported } = useContext(WebpContextProvider);
@@ -45,9 +46,15 @@ export const MultipleSlider = () => {
             },
           },
           {
-            breakpoint: 1200,
+            breakpoint: 1350,
             settings: {
               slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
             },
           },
           {
@@ -66,7 +73,7 @@ export const MultipleSlider = () => {
       >
         {Logos.map((logo) => (
           <div key={logo.key} className={styles.imgContainer}>
-            <img
+            <LazyLoadImage
               src={isWebpSupported ? logo.img : logo.fallbackImg}
               alt="logo"
             />

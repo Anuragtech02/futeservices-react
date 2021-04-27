@@ -6,7 +6,8 @@
 
 .slider .imgContainer {
   height: 100px;
-  width: 100px;
+  max-width: 150px;
+  margin: 0 auto;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -21,6 +22,12 @@
 .slider .imgContainer img {
   max-width: 200px !important;
   max-height: 80px !important;
+}
+
+@media screen and (max-width: 400px) {
+  .slider .imgContainer img {
+    max-width: 150px !important;
+  }
 }
 
 .container {

@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import style from "./Home.module.css";
 import cat5 from "../../Assets/projects/cat5.webp";
+import cat5fallback from "../../Assets/projects/cat5.jpg";
 import MultipleSlider from "../MultipleSlider/MultipleSlider";
 
 import bgHome from "../../Assets/video/fute-home.mp4";
@@ -14,10 +15,16 @@ import { Grid } from "@material-ui/core";
 import MetaTags from "../MetaTags/MetaTags";
 import Loading from "../Loading/Loading";
 import videoPoster from "../../Assets/video-poster.jpg";
+import { WebpContextProvider } from "../../App";
 
 export const Home = ({ history }) => {
   const [enableCounter, setEnableCounter] = useState(false);
+  const [enableAutoPlayCatVideo, setEnableAutoPlayCatVideo] = useState(false);
   const [loading, setLoading] = useState(true);
+
+  const { isWebpSupported, isWebmSupported } = useContext(WebpContextProvider);
+
+  const vidRef = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,18 +38,45 @@ export const Home = ({ history }) => {
     }
   }, [loading]);
 
+  useEffect(() => {
+    if (vidRef.current && !loading) {
+      vidRef.current.play();
+    }
+  }, [vidRef, loading]);
+
+  const isVideoPlaying = (video) =>
+    !!(
+      video.currentTime > 0 &&
+      !video.paused &&
+      !video.ended &&
+      video.readyState > 2
+    );
+
+  const handleClickVideo = () => {
+    if (vidRef.current) {
+      if (isVideoPlaying(vidRef.current)) {
+        vidRef.current.pause();
+      } else {
+        vidRef.current.play();
+      }
+    }
+  };
+
   return (
     <div id="container" className={style.container}>
       <Loading loading={loading} />
       <MetaTags title="Home" type="other" />
       <section className={style.largeVideoBg}>
         <video
+          ref={vidRef}
           onLoadedData={() => setLoading(false)}
           muted
-          autoPlay
-          loop={true}
+          onClick={handleClickVideo}
+          // autoPlay
+          loop
           poster={videoPoster}
-          playsInline
+          // playsInline
+          // controls
         >
           <source src={bgHome} type="video/mp4" />
           Your browser does not support the video tag.
@@ -83,16 +117,22 @@ export const Home = ({ history }) => {
             </Grid>
             <Grid item lg={6} md={12} sm={12} xs={12}>
               <div className={style.aboutRight}>
-                <img src={cat5} alt="fute-services" />
+                <img
+                  src={isWebpSupported ? cat5 : cat5fallback}
+                  alt="fute-services"
+                />
                 {/* <CompareSlider /> */}
               </div>
             </Grid>
           </Grid>
         </div>
       </section>
-      {/* <LazyLoadComponent> */}
-      <CategoriesSlider history={history} autoPlay={true} />
-      {/* </LazyLoadComponent> */}
+      <ScrollTrigger onEnter={() => setEnableAutoPlayCatVideo(true)}>
+        <CategoriesSlider
+          history={history}
+          autoPlayVid={enableAutoPlayCatVideo}
+        />
+      </ScrollTrigger>
       <ScrollTrigger onEnter={() => setEnableCounter(true)}>
         <div className={style.countersContainer}>
           <Counters start={enableCounter} />

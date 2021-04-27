@@ -10,7 +10,7 @@ import classNames from "classnames";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import MetaTags from "../MetaTags/MetaTags";
 
-import walkthrough from "../../Assets/projects/walkthrough/banner.png";
+import walkthrough from "../../Assets/projects/walkthrough/banner.jpg";
 import exterior from "../../Assets/projects/exterior/banner.jpg";
 import panaroma from "../../Assets/projects/ar-vr-360/banner.jpg";
 

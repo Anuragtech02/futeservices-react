@@ -38,7 +38,7 @@ import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "swiper/swiper.scss";
 import VerticalCard from "../VerticalCard/VerticalCard";
 
-const CategoriesSlider = ({ history, autoPlay }) => {
+const CategoriesSlider = ({ history, autoPlayVid }) => {
   const data = [
     {
       title: "Residential",
@@ -110,7 +110,6 @@ const CategoriesSlider = ({ history, autoPlay }) => {
     //   image: cat5,
     // },
   ];
-
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
 
@@ -153,7 +152,7 @@ const CategoriesSlider = ({ history, autoPlay }) => {
       >
         {data.map((item, i) => (
           <SwiperSlide key={i}>
-            <VerticalCard item={item} />
+            <VerticalCard item={item} autoplay={autoPlayVid} />
           </SwiperSlide>
         ))}
 

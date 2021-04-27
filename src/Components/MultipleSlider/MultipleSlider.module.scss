@@ -5,13 +5,18 @@
 
   .imgContainer {
     height: 100px;
-    width: 100px;
+    max-width: 150px;
+    margin: 0 auto;
     display: flex !important;
     justify-content: center;
     align-items: center;
     img {
       max-width: 200px !important;
       max-height: 80px !important;
+
+      @media screen and (max-width: 400px) {
+        max-width: 150px !important;
+      }
     }
   }
 }

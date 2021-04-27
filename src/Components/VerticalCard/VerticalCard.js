@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useEffect } from "react";
 import styles from "./VerticalCard.module.css";
 import { Link, withRouter } from "react-router-dom";
 import homeVideo from "../../Assets/video/fute-video-bg.webm";
@@ -6,8 +6,10 @@ import homeVideo from "../../Assets/video/fute-video-bg.webm";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { WebpContextProvider } from "../../App";
 
-const VerticalCard = ({ item, history, type, onClick }) => {
+const VerticalCard = ({ item, history, type, onClick, autoplay }) => {
   const { isWebpSupported, isWebmSupported } = useContext(WebpContextProvider);
+
+  const vidRef = useRef(null);
 
   const onClickLink = (link) => {
     const a = document.createElement("a");
@@ -17,16 +19,6 @@ const VerticalCard = ({ item, history, type, onClick }) => {
   };
 
   const handleClick = () => {
-    // item.link && item.category.includes("ar") ? onClickLink(item.link)
-    // : type === "innner"
-    //     ? {}
-    //     : history.push(
-    //         `/portfolio/${
-    //           item.category
-    //             ? item.category.toLowerCase()
-    //             : item.title.toLowerCase()
-    //         }`
-    //       );
     if (onClick) onClick();
     if (item?.category?.includes("ar")) {
       onClickLink(item.link);
@@ -42,14 +34,21 @@ const VerticalCard = ({ item, history, type, onClick }) => {
     }
   };
 
+  useEffect(() => {
+    if (autoplay === true && vidRef.current) {
+      vidRef.current.play();
+    }
+  }, [autoplay, vidRef]);
+
   return (
     <div onClick={handleClick} className={styles.card}>
       {item?.type === "video" ? (
         <video
+          ref={vidRef}
           muted
-          autoPlay
+          // autoPlay
           loop
-          playsInline
+          // playsInline
           src={isWebmSupported ? item?.video : item?.fallbackVideo}
         ></video>
       ) : (
