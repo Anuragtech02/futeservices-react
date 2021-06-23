@@ -134,19 +134,30 @@ const QuoteEnquiryForm = () => {
                 <span>
                   <CallIcon /> <h3>Phone</h3>
                 </span>
-                <a href="tel:+916362396806">+91 63623 96806</a>
+                <div className={style.numbers}>
+                  <a href="tel:+916362396806">+91 63623 96806</a>
+                  <a href="tel:+919742223928">+91 97422 23928</a>
+                </div>
               </div>
               <div className={style.email}>
                 <span>
                   <EmailIcon /> <h3>Email</h3>
                 </span>
                 <span>
-                  <a
-                    style={{ cursor: "pointer" }}
-                    href="mailto:marketing@futeservices.com"
-                  >
-                    marketing@futeservices.com
-                  </a>
+                  <div className={style.numbers}>
+                    <a
+                      style={{ cursor: "pointer" }}
+                      href="mailto:marketing@futeservices.com"
+                    >
+                      marketing@futeservices.com
+                    </a>
+                    <a
+                      style={{ cursor: "pointer" }}
+                      href="mailto:payel@futeservices.com"
+                    >
+                      payel@futeservices.com
+                    </a>
+                  </div>
                 </span>
               </div>
             </div>

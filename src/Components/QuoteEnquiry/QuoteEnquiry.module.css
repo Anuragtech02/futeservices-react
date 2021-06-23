@@ -219,7 +219,8 @@
 
 .flexRow, .content .floatLeft .contact, .content .floatLeft .contact span, .content .formContainer .nameEmail,
 .flexColumn,
-.content .floatLeft {
+.content .floatLeft,
+.content .floatLeft .contact .numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,7 +233,8 @@
 
 
 .flexColumn,
-.content .floatLeft {
+.content .floatLeft,
+.content .floatLeft .contact .numbers {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -300,6 +302,9 @@
 
 .content .floatLeft .contact {
   margin-top: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .content .floatLeft .contact span {
@@ -315,6 +320,19 @@
 .content .floatLeft .contact span h3 {
   margin-left: 10px;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.content .floatLeft .contact .numbers {
+  min-width: 10rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+.content .floatLeft .contact .numbers a {
+  width: 100% !important;
+  margin: 5px 0;
 }
 
 .content .floatLeft .contact a {

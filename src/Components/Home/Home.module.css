@@ -637,7 +637,6 @@
 }
 
 .container .clients .experience .textParallax {
-  background-image: url(../../Assets/projects/cat1/cat1-fute-3.webp), url(../../Assets/home-assets/cat1-fute-3.jpg);
   background-position: center;
   background-attachment: fixed;
   display: inline-block;

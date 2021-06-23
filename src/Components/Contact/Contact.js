@@ -66,6 +66,7 @@ export const ContactForm = () => {
                 <CallIcon /> <h3>Phone</h3>
               </span>
               <a href="tel:+916362396806">+91 63623 96806</a>
+              <a href="tel:+919742223928">+91 97422 23928</a>
             </div>
             <div className={style.email}>
               <span>
@@ -85,7 +86,7 @@ export const ContactForm = () => {
                 <LocationOnIcon /> <h3>Addresses</h3>
               </span>
               <ul>
-                <li>Bengaluru</li>
+                <li>Bengaluru (Head Office)</li>
                 <li>Mumbai</li>
                 <li>Hyderabad</li>
                 <li>Dubai</li>

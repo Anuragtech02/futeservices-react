@@ -16,6 +16,8 @@ import MetaTags from "../MetaTags/MetaTags";
 import Loading from "../Loading/Loading";
 import videoPoster from "../../Assets/video-poster.jpg";
 import { WebpContextProvider } from "../../App";
+import expBg from "../../Assets/projects/cat1/cat1-fute-3.webp";
+import expBgfallback from "../../Assets/home-assets/cat1-fute-3.jpg";
 
 export const Home = ({ history }) => {
   const [enableCounter, setEnableCounter] = useState(false);
@@ -149,7 +151,14 @@ export const Home = ({ history }) => {
       </section>
       <section className={style.clients} style={{ background: "white" }}>
         <div className={style.experience}>
-          <div className={style.textParallax}>
+          <div
+            style={{
+              backgroundImage: `url(${
+                isWebpSupported ? expBg : expBgfallback
+              })`,
+            }}
+            className={style.textParallax}
+          >
             <div className={style.parallaxContent}>12</div>
           </div>
           <h3>
