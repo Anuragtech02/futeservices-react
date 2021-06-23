@@ -13,6 +13,8 @@ import MetaTags from "../MetaTags/MetaTags";
 import walkthrough from "../../Assets/projects/walkthrough/banner.jpg";
 import exterior from "../../Assets/projects/exterior/banner.jpg";
 import panaroma from "../../Assets/projects/ar-vr-360/banner.jpg";
+import runwalOriginal from "../../Assets/runwal-image-original.jpg";
+import droneShoot from "../../Assets/drone-shoot.jpg";
 
 const PortfolioInside = () => {
   // const { category } = useParams();
@@ -99,25 +101,40 @@ const data = [
     link: "walkthrough",
     image: walkthrough,
     video: "",
-    desc:
-      "Add a touch of glamor to your marketing needs with our 3D and cinematic walkthroughs. An experience that is so real, your prospects will feel like they are actually present at the project site, aided by seamless camera movements, intricate design and detailing, and the perfect lighting and scene setting. Our methodology ensures that your audiences experience the best in architectural visualization with engaging and immersive tours of the entire property seen through a creative eye.",
+    desc: "Add a touch of glamor to your marketing needs with our 3D and cinematic walkthroughs. An experience that is so real, your prospects will feel like they are actually present at the project site, aided by seamless camera movements, intricate design and detailing, and the perfect lighting and scene setting. Our methodology ensures that your audiences experience the best in architectural visualization with engaging and immersive tours of the entire property seen through a creative eye.",
   },
   {
-    title: "3D Rendering",
+    title: "3D Views & Renders",
     link: {
       interior: "3d-rendering-interior",
       exterior: "3d-rendering-exterior",
     },
-    image: exterior,
-    desc:
-      "Your brochures, banners, advertisements, and other marketing collaterals will jazz up with our ultra realistic 3D renders that hit the mark right. Precision crafted views, with the minutest of details taken care of and accentuated with super realistic props and vegetation alongwith the perfect mood setting with lighting effects that take photorealism to the next level. What’s more, all our views are aligned to the specific needs and requirements of the agencies we work with, ensuring we deliver out of the world visualizations that are set to take your audience’s breath away.",
+    image: runwalOriginal,
+    desc: "Your brochures, banners, advertisements, and other marketing collaterals will jazz up with our ultra realistic 3D renders that hit the mark right. Precision crafted views, with the minutest of details taken care of and accentuated with super realistic props and vegetation alongwith the perfect mood setting with lighting effects that take photorealism to the next level. What’s more, all our views are aligned to the specific needs and requirements of the agencies we work with, ensuring we deliver out of the world visualizations that are set to take your audience’s breath away.",
   },
   {
     title: "VR/AR/360° Panaroma",
     link: "ar-vr-panaroma",
     image: panaroma,
-    desc:
-      "This is the future of marketing and we take the lead when it comes to providing your audiences with engagements such as these that elevate your brand name and solidify your presence in the real estate space. With our interactive AR, VR and 360° Panaroma, let us help you transport your audiences right to the heart and soul of the property with realistic imagery, animation, sounds and sound effects, and the breathtaking feeling of aactually being at a place that is yet to be built. ",
+    desc: "This is the future of marketing and we take the lead when it comes to providing your audiences with engagements such as these that elevate your brand name and solidify your presence in the real estate space. With our interactive AR, VR and 360° Panaroma, let us help you transport your audiences right to the heart and soul of the property with realistic imagery, animation, sounds and sound effects, and the breathtaking feeling of aactually being at a place that is yet to be built. ",
+  },
+  {
+    title: "3d Floorplan",
+    link: "3d-2d-floorplan",
+    image: panaroma,
+    desc: "3D Floor plans provides the ability to visualize the interior of a residential house, apartment with furtnitire layout, floor coverings, wall textures, color schemes to be utilized for a better look to the interior of the architectural construction. With the technology advancements, the use of 3-dimensional perspectives has increased to a great extent. 3D floor plans allow some one who has no experience in reading plans to understand a layout instantly. It is such a powerful tool that it takes much of the guesswork out of sales process and leasing of property.",
+  },
+  {
+    title: "3d Scale Model",
+    link: "scale-model",
+    image: panaroma,
+    desc: "Scale up your brand presence with our state of the art scale models that push the limits towards excellence. Leave your audiences impressed with our accurately designed scale models that mimic every aspect of the project in its truest form, scaled down to a miniature version that makes you explore the project in its entirety but without the hassle of travelling floors to do the same at the actual site.",
+  },
+  {
+    title: "Drone Shoot",
+    link: "drone-shoot",
+    image: droneShoot,
+    desc: "Every great projects needs an even greater location story. That’s where we pitch in to devise and direct seamless drone shoots that make viewers acquainted with all the iconic routes to reach the project via live view of the approach roads and the fascinating infrastructure around it. We take immense pride to create drone shoot movies that not only show the way to the project but package it in a way that it is nothing less than extraordinary. ",
   },
   // {
   //   title: "Curtain Raisers",

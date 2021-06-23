@@ -70,21 +70,21 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
       fallbackImg: fPlanfallback,
     },
     {
-      title: "360 Panaroma",
+      title: "360 Panaroma/AR/VR",
       type: "360",
       image: panaroma,
       fallbackImg: panaromafallback,
     },
-    {
-      title: "Virtual Reality",
-      type: "360",
-      image: vr,
-      fallbackImg: vrfallback,
-    },
-    {
-      title: "Augmented Reality",
-      image: cat5,
-    },
+    // {
+    //   title: "Virtual Reality",
+    //   type: "360",
+    //   image: vr,
+    //   fallbackImg: vrfallback,
+    // },
+    // {
+    //   title: "Augmented Reality",
+    //   image: cat5,
+    // },
     {
       title: "Product Visualisation",
       type: "video",

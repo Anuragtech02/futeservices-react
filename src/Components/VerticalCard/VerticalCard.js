@@ -71,7 +71,7 @@ const VerticalCard = ({ item, history, type, onClick, autoplay }) => {
       <div className={styles.categoryCardTitle}>
         <h2>{item.title || " - " + item.title}</h2>
         <div className={styles.categoryCardCat}>
-          <p>{item.category || item.title}</p>
+          <p>{"Fute Services" || item.category || item.title}</p>
         </div>
       </div>
     </div>
