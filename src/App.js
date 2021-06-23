@@ -8,7 +8,6 @@ import React, {
 import { Footer, Cursor, NavWrapper } from "./Components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import style from "./App.module.css";
-import { CircularProgress } from "@material-ui/core";
 import Loading from "./Components/Loading/Loading";
 
 const Home = lazy(() => import("./Components/Home/Home"));
