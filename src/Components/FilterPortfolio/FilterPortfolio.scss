@@ -1,0 +1,150 @@
+@import "../common.module.scss";
+
+.portfolio-menu {
+  @extend .flexRow;
+  padding: 50px 0;
+  ul {
+    @extend .flexRow;
+    justify-content: space-between;
+    list-style: none;
+    // width: 15%;
+    li {
+      cursor: pointer;
+      position: relative;
+      text-align: center;
+      margin: 0 1.5rem;
+      transition: all 0.3s ease-in-out;
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: -2px;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        background: var(--clr-primary);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      &:hover {
+        color: var(--clr-primary);
+        &:after {
+          width: 120%;
+          left: -10%;
+        }
+      }
+    }
+  }
+}
+.grid {
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+.grid-item {
+  position: relative;
+  width: 49%;
+  margin: 5px 0;
+  min-height: 10px;
+  cursor: pointer;
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  &:hover {
+    .title {
+      opacity: 1;
+    }
+  }
+  .title {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2),
+      transparent
+    );
+    transition: all 0.3s ease-in-out;
+    h4 {
+      font-size: 1.1rem;
+      text-transform: capitalize;
+    }
+  }
+}
+.grid-sizer {
+  width: 1%;
+}
+.is-selected {
+  color: var(--clr-primary);
+  &:after {
+    width: 120% !important;
+    left: -10% !important;
+  }
+}
+.modal {
+  opacity: 0;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  z-index: 100000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+.modalClosed {
+  opacity: 0;
+  pointer-events: none;
+}
+.modalOpen {
+  opacity: 1;
+}
+
+.type-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  i {
+    font-size: 2.5rem;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .grid-item {
+    width: 30%;
+    padding: 2px;
+  }
+  .grid-sizer {
+    width: 3.333%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid-item {
+    width: 48%;
+  }
+  .grid-sizer {
+    width: 1%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-item {
+    width: 95%;
+  }
+  .grid-sizer {
+    width: 1%;
+  }
+}

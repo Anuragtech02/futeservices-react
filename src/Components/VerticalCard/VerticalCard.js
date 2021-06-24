@@ -6,7 +6,7 @@ import homeVideo from "../../Assets/video/fute-video-bg.webm";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { WebpContextProvider } from "../../App";
 
-const VerticalCard = ({ item, history, type, onClick, autoplay }) => {
+const VerticalCard = ({ item, history, type, onClick, autoplay, onLoad }) => {
   const { isWebpSupported, isWebmSupported } = useContext(WebpContextProvider);
 
   const vidRef = useRef(null);

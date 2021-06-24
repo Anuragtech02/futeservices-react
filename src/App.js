@@ -18,6 +18,9 @@ const PortfolioPage = lazy(() =>
 const PortfolioInside = lazy(() =>
   import("./Components/PortfolioInside/PortfolioInside")
 );
+const FilterPortfolio = lazy(() =>
+  import("./Components/FilterPortfolio/FilterPortfolio")
+);
 const QuoteEnquiry = lazy(() =>
   import("./Components/QuoteEnquiry/QuoteEnquiry")
 );
@@ -117,10 +120,10 @@ const App = () => {
             <Route path="/" exact component={Home} />
             {/* <Route path="/about" exact component={About} /> */}
             <Route path="/contact" exact component={Contact} />
-            <Route path="/what-we-do" exact component={Services} />
+            <Route path="/what-we-do" exact component={PortfolioInside} />
             <Route path="/about" exact component={About} />
             <Route path="/quote" exact component={QuoteEnquiry} />
-            <Route path="/portfolio" exact component={PortfolioInside} />
+            <Route path="/portfolio" exact component={FilterPortfolio} />
             <Route path="/portfolio/:category" exact component={Portfolio} />
             <Route
               path="/portfolio/:category/:name"
