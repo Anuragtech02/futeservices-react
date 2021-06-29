@@ -23,13 +23,13 @@ body {
 }
 
 body ::-moz-selection {
-  background: var(--clr-primary);
-  color: white;
+  background: #c9000048;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 body ::selection {
-  background: var(--clr-primary);
-  color: white;
+  background: #c9000048;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .footer {

@@ -15,6 +15,8 @@ import exterior from "../../Assets/projects/exterior/banner.jpg";
 import panaroma from "../../Assets/projects/ar-vr-360/banner.jpg";
 import runwalOriginal from "../../Assets/runwal-image-original.jpg";
 import droneShoot from "../../Assets/drone-shoot.jpg";
+import floorplan from "../../Assets/categories/3d-floorplan.jpg";
+import scaleModel from "../../Assets/categories/scale-model.jpg";
 
 const PortfolioInside = () => {
   // const { category } = useParams();
@@ -121,13 +123,13 @@ const data = [
   {
     title: "3d Floorplan",
     link: "3d-2d-floorplan",
-    image: panaroma,
+    image: floorplan,
     desc: "3D Floor plans provides the ability to visualize the interior of a residential house, apartment with furtnitire layout, floor coverings, wall textures, color schemes to be utilized for a better look to the interior of the architectural construction. With the technology advancements, the use of 3-dimensional perspectives has increased to a great extent. 3D floor plans allow some one who has no experience in reading plans to understand a layout instantly. It is such a powerful tool that it takes much of the guesswork out of sales process and leasing of property.",
   },
   {
     title: "3d Scale Model",
     link: "scale-model",
-    image: panaroma,
+    image: scaleModel,
     desc: "Scale up your brand presence with our state of the art scale models that push the limits towards excellence. Leave your audiences impressed with our accurately designed scale models that mimic every aspect of the project in its truest form, scaled down to a miniature version that makes you explore the project in its entirety but without the hassle of travelling floors to do the same at the actual site.",
   },
   {
