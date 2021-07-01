@@ -27,6 +27,7 @@ import commercial from "../../Assets/categories/commercial-1.webp";
 import commercialfallback from "../../Assets/categories/commercial-1.jpg";
 
 import product from "../../Assets/categories/product-1.webm";
+import productImg from "../../Assets/categories/product.jpg";
 import productfallback from "../../Assets/categories/product-1.mp4";
 import walkthrough from "../../Assets/categories/3d-walkthrough-1.webm";
 import walkthroughfallback from "../../Assets/categories/3d-walkthrough-1.mp4";
@@ -87,9 +88,9 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
     // },
     {
       title: "Product Visualisation",
-      type: "video",
-      image: cat5,
-      video: product,
+      // type: "video",
+      image: productImg,
+      // video: product,
       fallbackVideo: productfallback,
     },
     {
