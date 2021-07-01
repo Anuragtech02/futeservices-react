@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Isotope from "isotope-layout";
 import "./FilterPortfolio.css";
 import Banner from "../Banner/Banner";
@@ -206,18 +207,20 @@ const FilterPortfolio = () => {
               key={`${image.category + i}`}
               className={`grid-item ${image.category?.toLowerCase()}`}
             >
-              <VerticalCard
-                onClick={() => {
-                  setStartIndexModal(i);
-                  //   setCurrImage(project.image || project.src);
-                  console.log("Clicked");
-                }}
-                onLoad={() => {
-                  setCount((curr) => curr + 1);
-                }}
-                type="inner"
-                item={image}
-              />
+              <Link to={`/portfolio/${image.link}`}>
+                <VerticalCard
+                  // onClick={() => {
+                  //   setStartIndexModal(i);
+                  //   //   setCurrImage(project.image || project.src);
+                  //   console.log("Clicked");
+                  // }}
+                  onLoad={() => {
+                    setCount((curr) => curr + 1);
+                  }}
+                  type="inner"
+                  item={image}
+                />
+              </Link>
             </div>
           );
         })}

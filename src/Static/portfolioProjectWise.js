@@ -14,5 +14,6 @@ export const portfolioData = [
     category: "Commercial",
     image: phoenix,
     fallbackImg: fallbackPhoenix,
+    link: "phoenix",
   },
 ];

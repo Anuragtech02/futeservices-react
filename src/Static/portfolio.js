@@ -88,6 +88,32 @@ import floorplan7fallback from "../Assets/projects/floorplan/floorplan-7.jpg";
 import floorplan8 from "../Assets/projects/floorplan/floorplan-8.webp";
 import floorplan8fallback from "../Assets/projects/floorplan/floorplan-8.jpg";
 
+import phoenix0 from "../Assets/projects/commercial/phoenix/0.webp";
+import phoenix1 from "../Assets/projects/commercial/phoenix/1.webp";
+import phoenix2 from "../Assets/projects/commercial/phoenix/2.webp";
+import phoenix3 from "../Assets/projects/commercial/phoenix/3.webp";
+import phoenix4 from "../Assets/projects/commercial/phoenix/4.webp";
+import phoenix5 from "../Assets/projects/commercial/phoenix/5.webp";
+import phoenix6 from "../Assets/projects/commercial/phoenix/6.webp";
+import phoenix7 from "../Assets/projects/commercial/phoenix/7.webp";
+import phoenix8 from "../Assets/projects/commercial/phoenix/8.webp";
+import phoenix9 from "../Assets/projects/commercial/phoenix/9.webp";
+import phoenix10 from "../Assets/projects/commercial/phoenix/10.webp";
+import phoenix11 from "../Assets/projects/commercial/phoenix/11.webp";
+
+import phoenixFallback0 from "../Assets/projects/commercial/phoenix/0.jpg";
+import phoenixFallback1 from "../Assets/projects/commercial/phoenix/1.jpg";
+import phoenixFallback2 from "../Assets/projects/commercial/phoenix/2.jpg";
+import phoenixFallback3 from "../Assets/projects/commercial/phoenix/3.jpg";
+import phoenixFallback4 from "../Assets/projects/commercial/phoenix/4.jpg";
+import phoenixFallback5 from "../Assets/projects/commercial/phoenix/5.jpg";
+import phoenixFallback6 from "../Assets/projects/commercial/phoenix/6.jpg";
+import phoenixFallback7 from "../Assets/projects/commercial/phoenix/7.jpg";
+import phoenixFallback8 from "../Assets/projects/commercial/phoenix/8.jpg";
+import phoenixFallback9 from "../Assets/projects/commercial/phoenix/9.jpg";
+import phoenixFallback10 from "../Assets/projects/commercial/phoenix/10.jpg";
+import phoenixFallback11 from "../Assets/projects/commercial/phoenix/11.jpg";
+
 export const portfolio = [
   {
     name: "walkthrough",
@@ -374,6 +400,96 @@ export const portfolio = [
         category: "Floorplan",
         image: floorplan8,
         fallbackImg: floorplan8fallback,
+      },
+    ],
+  },
+  {
+    name: "phoenix",
+    title: "Phoenix",
+    projects: [
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix0,
+        fallBackImg: phoenixFallback0,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix1,
+        fallBackImg: phoenixFallback1,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix2,
+        fallBackImg: phoenixFallback2,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix3,
+        fallBackImg: phoenixFallback3,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix4,
+        fallBackImg: phoenixFallback4,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix5,
+        fallBackImg: phoenixFallback5,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix6,
+        fallBackImg: phoenixFallback6,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix7,
+        fallBackImg: phoenixFallback7,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix8,
+        fallBackImg: phoenixFallback8,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix9,
+        fallBackImg: phoenixFallback9,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix10,
+        fallBackImg: phoenixFallback10,
+        category: "commercial",
+      },
+      {
+        name: "phoenix",
+        title: "Phoenix",
+        image: phoenix11,
+        fallBackImg: phoenixFallback11,
+        category: "commercial",
       },
     ],
   },

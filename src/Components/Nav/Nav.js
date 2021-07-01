@@ -43,7 +43,7 @@ const Nav = ({ history }) => {
               }}
               className={classNames(
                 styles.navLink,
-                pathname === link.path ? styles.selectedLink : ""
+                pathname.includes(link.path) ? styles.selectedLink : ""
               )}
             >
               {link.label}
@@ -53,7 +53,7 @@ const Nav = ({ history }) => {
               key={link.path}
               className={classNames(
                 styles.navLink,
-                pathname === link.path ? styles.selectedLink : ""
+                pathname.includes(link.path) ? styles.selectedLink : ""
               )}
             >
               <Link to={link.path}>{link.label}</Link>
