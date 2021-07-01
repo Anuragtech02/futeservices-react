@@ -152,7 +152,7 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
       >
         {data.map((item, i) => (
           <SwiperSlide key={i}>
-            <VerticalCard item={item} autoplay={autoPlayVid} />
+            <VerticalCard item={item} autoplay={autoPlayVid} animation />
           </SwiperSlide>
         ))}
 

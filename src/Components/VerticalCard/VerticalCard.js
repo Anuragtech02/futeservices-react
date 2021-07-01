@@ -5,8 +5,17 @@ import homeVideo from "../../Assets/video/fute-video-bg.webm";
 // import Img from "react-optimized-image";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { WebpContextProvider } from "../../App";
+import classNames from "classnames";
 
-const VerticalCard = ({ item, history, type, onClick, autoplay, onLoad }) => {
+const VerticalCard = ({
+  item,
+  history,
+  type,
+  onClick,
+  autoplay,
+  onLoad,
+  animation,
+}) => {
   const { isWebpSupported, isWebmSupported } = useContext(WebpContextProvider);
 
   const vidRef = useRef(null);
@@ -41,7 +50,13 @@ const VerticalCard = ({ item, history, type, onClick, autoplay, onLoad }) => {
   }, [autoplay, vidRef]);
 
   return (
-    <div onClick={handleClick} className={styles.card}>
+    <div
+      onClick={handleClick}
+      className={classNames(
+        styles.card,
+        !animation ? styles.noAnimation : styles.animation
+      )}
+    >
       {item?.type === "video" ? (
         <video
           ref={vidRef}
@@ -71,7 +86,7 @@ const VerticalCard = ({ item, history, type, onClick, autoplay, onLoad }) => {
       <div className={styles.categoryCardTitle}>
         <h2>{item.title || " - " + item.title}</h2>
         <div className={styles.categoryCardCat}>
-          <p>{"Fute Services" || item.category || item.title}</p>
+          <p>{item.category || "Fute Services" || item.title}</p>
         </div>
       </div>
     </div>

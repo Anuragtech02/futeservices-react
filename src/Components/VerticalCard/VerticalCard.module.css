@@ -320,19 +320,27 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
-.card:hover img,
-.card:hover video {
+.animation:hover img,
+.animation:hover video {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.card:hover .categoryCardTitle h2 {
+.animation:hover .categoryCardTitle h2 {
   margin-top: 30px;
   opacity: 0;
 }
 
-.card:hover .categoryCardTitle .categoryCardCat {
+.animation:hover .categoryCardTitle .categoryCardCat {
   letter-spacing: 2rem;
+  opacity: 0;
+}
+
+.noAnimation:hover .categoryCardTitle h2 {
+  opacity: 0;
+}
+
+.noAnimation:hover .categoryCardTitle .categoryCardCat {
   opacity: 0;
 }
 /*# sourceMappingURL=VerticalCard.module.css.map */

@@ -6,82 +6,102 @@ import MetaTags from "../MetaTags/MetaTags";
 import bgImage2 from "../../Assets/fute-bg.jpg";
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
-
-import cat1Image1 from "../../Assets/projects/cat1/cat1-fute-1.webp";
-import cat1Image2 from "../../Assets/projects/cat1/cat1-fute-2.webp";
-import cat1Image3 from "../../Assets/projects/cat1/cat1-fute-3.webp";
-import cat1Image4 from "../../Assets/projects/cat1/cat1-fute-4.webp";
-import cat1Image5 from "../../Assets/projects/cat1/cat1-fute-5.webp";
-
-import cat2 from "../../Assets/projects/cat2.webp";
-import cat2Image1 from "../../Assets/projects/cat1/cat1-fute-6.webp";
-import cat2Image2 from "../../Assets/projects/cat1/cat1-fute-7.webp";
-import cat2Image3 from "../../Assets/projects/cat1/cat1-fute-8.webp";
-import cat2Image4 from "../../Assets/projects/cat1/cat1-fute-9.webp";
-import cat2Image5 from "../../Assets/projects/cat1/cat1-fute-10.webp";
-
-import cat4 from "../../Assets/projects/cat4.webp";
-import cat3Image1 from "../../Assets/projects/cat1/cat1-fute-11.webp";
-import cat3Image2 from "../../Assets/projects/cat1/cat1-fute-12.webp";
-import cat3Image3 from "../../Assets/projects/cat1/cat1-fute-13.webp";
-import cat3Image4 from "../../Assets/projects/cat1/cat1-fute-14.webp";
-import cat3Image5 from "../../Assets/projects/cat1/cat1-fute-15.webp";
+import { portfolioData } from "../../Static/portfolioProjectWise";
 import VerticalCard from "../VerticalCard/VerticalCard";
 
-const images = [
+// import cat1Image1 from "../../Assets/projects/cat1/cat1-fute-1.webp";
+// import cat1Image2 from "../../Assets/projects/cat1/cat1-fute-2.webp";
+// import cat1Image3 from "../../Assets/projects/cat1/cat1-fute-3.webp";
+// import cat1Image4 from "../../Assets/projects/cat1/cat1-fute-4.webp";
+// import cat1Image5 from "../../Assets/projects/cat1/cat1-fute-5.webp";
+
+// import cat2 from "../../Assets/projects/cat2.webp";
+// import cat2Image1 from "../../Assets/projects/cat1/cat1-fute-6.webp";
+// import cat2Image2 from "../../Assets/projects/cat1/cat1-fute-7.webp";
+// import cat2Image3 from "../../Assets/projects/cat1/cat1-fute-8.webp";
+// import cat2Image4 from "../../Assets/projects/cat1/cat1-fute-9.webp";
+// import cat2Image5 from "../../Assets/projects/cat1/cat1-fute-10.webp";
+
+// import cat4 from "../../Assets/projects/cat4.webp";
+// import cat3Image1 from "../../Assets/projects/cat1/cat1-fute-11.webp";
+// import cat3Image2 from "../../Assets/projects/cat1/cat1-fute-12.webp";
+// import cat3Image3 from "../../Assets/projects/cat1/cat1-fute-13.webp";
+// import cat3Image4 from "../../Assets/projects/cat1/cat1-fute-14.webp";
+// import cat3Image5 from "../../Assets/projects/cat1/cat1-fute-15.webp";
+// import VerticalCard from "../VerticalCard/VerticalCard";
+
+// const images = [
+//   {
+//     title: "Project 1",
+//     category: "interior",
+//     src: cat1Image1,
+//     image: cat1Image1,
+//   },
+//   {
+//     title: "Project 2",
+//     category: "interior",
+//     src: cat1Image2,
+//     image: cat1Image2,
+//   },
+//   {
+//     title: "Project 3",
+//     category: "interior",
+//     src: cat1Image3,
+//     image: cat1Image3,
+//   },
+//   {
+//     title: "Project 1",
+//     category: "exterior",
+//     src: cat2Image2,
+//     image: cat2Image2,
+//   },
+//   {
+//     title: "Project 2",
+//     category: "exterior",
+//     src: cat2Image1,
+//     image: cat2Image1,
+//   },
+//   {
+//     title: "Project 3",
+//     category: "exterior",
+//     src: cat2Image3,
+//     image: cat2Image3,
+//   },
+//   {
+//     title: "Project 1",
+//     category: "vr",
+//     src: cat3Image1,
+//     image: cat3Image1,
+//   },
+//   {
+//     title: "Project 2",
+//     category: "vr",
+//     src: cat3Image2,
+//     image: cat3Image2,
+//   },
+//   {
+//     title: "Project 3",
+//     category: "vr",
+//     src: cat3Image3,
+//     image: cat3Image3,
+//   },
+// ];
+
+const filterMenu = [
   {
-    title: "Project 1",
-    category: "interior",
-    src: cat1Image1,
-    image: cat1Image1,
+    name: "All",
+    link: "*",
+    dataFilter: "*",
   },
   {
-    title: "Project 2",
-    category: "interior",
-    src: cat1Image2,
-    image: cat1Image2,
+    name: "Residential",
+    link: "residential",
+    dataFilter: "residential",
   },
   {
-    title: "Project 3",
-    category: "interior",
-    src: cat1Image3,
-    image: cat1Image3,
-  },
-  {
-    title: "Project 1",
-    category: "exterior",
-    src: cat2Image2,
-    image: cat2Image2,
-  },
-  {
-    title: "Project 2",
-    category: "exterior",
-    src: cat2Image1,
-    image: cat2Image1,
-  },
-  {
-    title: "Project 3",
-    category: "exterior",
-    src: cat2Image3,
-    image: cat2Image3,
-  },
-  {
-    title: "Project 1",
-    category: "vr",
-    src: cat3Image1,
-    image: cat3Image1,
-  },
-  {
-    title: "Project 2",
-    category: "vr",
-    src: cat3Image2,
-    image: cat3Image2,
-  },
-  {
-    title: "Project 3",
-    category: "vr",
-    src: cat3Image3,
-    image: cat3Image3,
+    name: "Commercial",
+    link: "commercial",
+    dataFilter: "commercial",
   },
 ];
 
@@ -90,7 +110,7 @@ const FilterPortfolio = () => {
 
   const [isotope, setIsotope] = useState(null);
   const [filterKey, setFilterKey] = useState("*");
-  const totalImages = images.length;
+  const totalImages = portfolioData.length;
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalImages, setModalImages] = useState([]);
@@ -121,7 +141,7 @@ const FilterPortfolio = () => {
   }, [isotope, count, totalImages]);
 
   useEffect(() => {
-    setModalImages(images.map((image) => image.src));
+    setModalImages(portfolioData.map((image) => image.image));
   }, []);
 
   useEffect(() => {
@@ -138,7 +158,16 @@ const FilterPortfolio = () => {
       <Banner image={bgImage2} title="Portfolio" />
       <div className="portfolio-menu">
         <ul>
-          <li
+          {filterMenu.map((item) => (
+            <li
+              onClick={() => onClickMenu(item.link)}
+              className={filterKey === item.dataFilter ? "is-selected" : ""}
+              data-filter={`.${item.dataFilter}`}
+            >
+              {item.name}
+            </li>
+          ))}
+          {/* <li
             onClick={() => onClickMenu("*")}
             className={filterKey === "*" ? "is-selected" : ""}
             data-filter="*"
@@ -166,16 +195,16 @@ const FilterPortfolio = () => {
             data-filter=".vr"
           >
             Immersive VR/360
-          </li>
+          </li> */}
         </ul>
       </div>
       <div ref={isoRef} className="grid gallery">
         <div className="grid-sizer"></div>
-        {images.map((image, i) => {
+        {portfolioData.map((image, i) => {
           return (
             <div
               key={`${image.category + i}`}
-              className={`grid-item ${image.category}`}
+              className={`grid-item ${image.category?.toLowerCase()}`}
             >
               <VerticalCard
                 onClick={() => {

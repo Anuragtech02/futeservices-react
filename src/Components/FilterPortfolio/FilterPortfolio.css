@@ -248,15 +248,19 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .portfolio-menu ul li {
   cursor: pointer;
   position: relative;
   text-align: center;
-  margin: 0 1.5rem;
+  margin: 2rem 1.5rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 .portfolio-menu ul li:after {
@@ -280,6 +284,12 @@
 .portfolio-menu ul li:hover:after {
   width: 120%;
   left: -10%;
+}
+
+@media screen and (max-width: 400px) {
+  .portfolio-menu ul li {
+    margin: 1rem 0.5rem;
+  }
 }
 
 .grid {

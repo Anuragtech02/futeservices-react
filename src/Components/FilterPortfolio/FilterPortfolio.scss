@@ -8,12 +8,18 @@
     justify-content: space-between;
     list-style: none;
     // width: 15%;
+    flex-wrap: wrap;
+    // @media screen and (max-width: 400px) {
+    //   flex-direction: column;
+    // }
     li {
       cursor: pointer;
       position: relative;
       text-align: center;
-      margin: 0 1.5rem;
+      margin: 2rem 1.5rem;
       transition: all 0.3s ease-in-out;
+      font-size: 1rem;
+      text-transform: uppercase;
       &:after {
         background: none repeat scroll 0 0 transparent;
         bottom: -2px;
@@ -32,6 +38,9 @@
           width: 120%;
           left: -10%;
         }
+      }
+      @media screen and (max-width: 400px) {
+        margin: 1rem 0.5rem;
       }
     }
   }
