@@ -112,7 +112,7 @@ const data = [
       exterior: "3d-rendering-exterior",
     },
     image: runwalOriginal,
-    desc: "Your brochures, banners, advertisements, and other marketing collaterals will jazz up with our ultra realistic 3D renders that hit the mark right. Precision crafted views, with the minutest of details taken care of and accentuated with super realistic props and vegetation alongwith the perfect mood setting with lighting effects that take photorealism to the next level. What’s more, all our views are aligned to the specific needs and requirements of the agencies we work with, ensuring we deliver out of the world visualizations that are set to take your audience’s breath away.",
+    desc: "Your brochures, banners, advertisements, and other marketing collaterals will jazz up with our ultra realistic 3D renders that hit the mark right. Precision crafted views, with the minutest of details taken care of and accentuated with super realistic props and vegetation alongwith the perfect mood setting with lighting effects that take photorealism to the next level.",
   },
   {
     title: "VR/AR/360° Panaroma",

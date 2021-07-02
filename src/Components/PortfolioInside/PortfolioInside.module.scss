@@ -3,7 +3,7 @@
 .container {
   .row {
     @extend .flexRow;
-    width: 60%;
+    width: 70%;
     padding: 50px 0;
     margin: 100px auto;
     position: relative;
@@ -27,7 +27,7 @@
         background: rgba($color: #a40000, $alpha: 0.9);
         z-index: -1;
       }
-      width: 55%;
+      width: 50%;
       h2 {
         font-size: 1.8rem;
         text-transform: uppercase;
@@ -55,7 +55,7 @@
       //   width: 70%;
       height: 600px;
       object-fit: cover;
-      margin-left: 30%;
+      margin-left: 40%;
       @media screen and (max-width: 1300px) {
         margin-left: 0;
       }

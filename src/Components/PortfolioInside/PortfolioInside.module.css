@@ -240,7 +240,7 @@
 }
 
 .container .row {
-  width: 60%;
+  width: 70%;
   padding: 50px 0;
   margin: 100px auto;
   position: relative;
@@ -256,7 +256,7 @@
   background-image: url(../../Assets/back-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 55%;
+  width: 50%;
 }
 
 .container .row .content::before {
@@ -294,7 +294,7 @@
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 30%;
+  margin-left: 40%;
 }
 
 @media screen and (max-width: 1300px) {
