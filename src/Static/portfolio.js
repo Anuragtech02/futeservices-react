@@ -114,6 +114,78 @@ import phoenixFallback9 from "../Assets/projects/commercial/phoenix/9.jpg";
 import phoenixFallback10 from "../Assets/projects/commercial/phoenix/10.jpg";
 import phoenixFallback11 from "../Assets/projects/commercial/phoenix/11.jpg";
 
+import lntitpark0 from "../Assets/projects/commercial/lntitpark/00.webp";
+import lntitpark1 from "../Assets/projects/commercial/lntitpark/01.webp";
+import lntitpark2 from "../Assets/projects/commercial/lntitpark/02.webp";
+import lntitpark3 from "../Assets/projects/commercial/lntitpark/03.webp";
+import lntitpark4 from "../Assets/projects/commercial/lntitpark/04.webp";
+import lntitpark5 from "../Assets/projects/commercial/lntitpark/05.webp";
+import lntitpark6 from "../Assets/projects/commercial/lntitpark/06.webp";
+import lntitpark7 from "../Assets/projects/commercial/lntitpark/07.webp";
+import lntitpark8 from "../Assets/projects/commercial/lntitpark/08.webp";
+import lntitpark9 from "../Assets/projects/commercial/lntitpark/09.webp";
+import lntitpark10 from "../Assets/projects/commercial/lntitpark/10.webp";
+import lntitpark11 from "../Assets/projects/commercial/lntitpark/11.webp";
+import lntitpark12 from "../Assets/projects/commercial/lntitpark/12.webp";
+
+import lntitparkFallback0 from "../Assets/projects/commercial/lntitpark/00.jpg";
+import lntitparkFallback1 from "../Assets/projects/commercial/lntitpark/01.jpg";
+import lntitparkFallback2 from "../Assets/projects/commercial/lntitpark/02.jpg";
+import lntitparkFallback3 from "../Assets/projects/commercial/lntitpark/03.jpg";
+import lntitparkFallback4 from "../Assets/projects/commercial/lntitpark/04.jpg";
+import lntitparkFallback5 from "../Assets/projects/commercial/lntitpark/05.jpg";
+import lntitparkFallback6 from "../Assets/projects/commercial/lntitpark/06.jpg";
+import lntitparkFallback7 from "../Assets/projects/commercial/lntitpark/07.jpg";
+import lntitparkFallback8 from "../Assets/projects/commercial/lntitpark/08.jpg";
+import lntitparkFallback9 from "../Assets/projects/commercial/lntitpark/09.jpg";
+import lntitparkFallback10 from "../Assets/projects/commercial/lntitpark/10.jpg";
+import lntitparkFallback11 from "../Assets/projects/commercial/lntitpark/11.jpg";
+import lntitparkFallback12 from "../Assets/projects/commercial/lntitpark/12.jpg";
+
+import ETV0 from "../Assets/projects/commercial/ETV/0.webp";
+import ETV1 from "../Assets/projects/commercial/ETV/1.webp";
+import ETV2 from "../Assets/projects/commercial/ETV/2.webp";
+import ETV3 from "../Assets/projects/commercial/ETV/3.webp";
+import ETV4 from "../Assets/projects/commercial/ETV/4.webp";
+import ETV5 from "../Assets/projects/commercial/ETV/5.webp";
+
+import ETVFallback0 from "../Assets/projects/commercial/ETV/0.jpg";
+import ETVFallback1 from "../Assets/projects/commercial/ETV/1.jpg";
+import ETVFallback2 from "../Assets/projects/commercial/ETV/2.jpg";
+import ETVFallback3 from "../Assets/projects/commercial/ETV/3.jpg";
+import ETVFallback4 from "../Assets/projects/commercial/ETV/4.jpg";
+import ETVFallback5 from "../Assets/projects/commercial/ETV/5.jpg";
+
+import laxmiInfobahn0 from "../Assets/projects/commercial/laxmiInfobahn/0.webp";
+import laxmiInfobahn1 from "../Assets/projects/commercial/laxmiInfobahn/1.webp";
+import laxmiInfobahn2 from "../Assets/projects/commercial/laxmiInfobahn/2.webp";
+import laxmiInfobahn3 from "../Assets/projects/commercial/laxmiInfobahn/3.webp";
+import laxmiInfobahn4 from "../Assets/projects/commercial/laxmiInfobahn/4.webp";
+import laxmiInfobahn5 from "../Assets/projects/commercial/laxmiInfobahn/5.webp";
+import laxmiInfobahn6 from "../Assets/projects/commercial/laxmiInfobahn/6.webp";
+import laxmiInfobahn7 from "../Assets/projects/commercial/laxmiInfobahn/7.webp";
+import laxmiInfobahn8 from "../Assets/projects/commercial/laxmiInfobahn/8.webp";
+import laxmiInfobahn9 from "../Assets/projects/commercial/laxmiInfobahn/9.webp";
+import laxmiInfobahn10 from "../Assets/projects/commercial/laxmiInfobahn/10.webp";
+import laxmiInfobahn11 from "../Assets/projects/commercial/laxmiInfobahn/11.webp";
+import laxmiInfobahn12 from "../Assets/projects/commercial/laxmiInfobahn/12.webp";
+import laxmiInfobahn13 from "../Assets/projects/commercial/laxmiInfobahn/13.webp";
+
+import laxmiInfobahnFallback0 from "../Assets/projects/commercial/laxmiInfobahn/0.jpg";
+import laxmiInfobahnFallback1 from "../Assets/projects/commercial/laxmiInfobahn/1.jpg";
+import laxmiInfobahnFallback2 from "../Assets/projects/commercial/laxmiInfobahn/2.jpg";
+import laxmiInfobahnFallback3 from "../Assets/projects/commercial/laxmiInfobahn/3.jpg";
+import laxmiInfobahnFallback4 from "../Assets/projects/commercial/laxmiInfobahn/4.jpg";
+import laxmiInfobahnFallback5 from "../Assets/projects/commercial/laxmiInfobahn/5.jpg";
+import laxmiInfobahnFallback6 from "../Assets/projects/commercial/laxmiInfobahn/6.jpg";
+import laxmiInfobahnFallback7 from "../Assets/projects/commercial/laxmiInfobahn/7.jpg";
+import laxmiInfobahnFallback8 from "../Assets/projects/commercial/laxmiInfobahn/8.jpg";
+import laxmiInfobahnFallback9 from "../Assets/projects/commercial/laxmiInfobahn/9.jpg";
+import laxmiInfobahnFallback10 from "../Assets/projects/commercial/laxmiInfobahn/10.jpg";
+import laxmiInfobahnFallback11 from "../Assets/projects/commercial/laxmiInfobahn/11.jpg";
+import laxmiInfobahnFallback12 from "../Assets/projects/commercial/laxmiInfobahn/12.jpg";
+import laxmiInfobahnFallback13 from "../Assets/projects/commercial/laxmiInfobahn/13.jpg";
+
 export const portfolio = [
   {
     name: "walkthrough",
@@ -490,6 +562,264 @@ export const portfolio = [
         image: phoenix11,
         fallBackImg: phoenixFallback11,
         category: "commercial",
+      },
+    ],
+  },
+  {
+    name: "lnt-it-park",
+    title: "L&T IT Park (Bangalore)",
+    projects: [
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark0,
+        fallBackImg: lntitparkFallback0,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark1,
+        fallBackImg: lntitparkFallback1,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark2,
+        fallBackImg: lntitparkFallback2,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark3,
+        fallBackImg: lntitparkFallback3,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark4,
+        fallBackImg: lntitparkFallback4,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark5,
+        fallBackImg: lntitparkFallback5,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark6,
+        fallBackImg: lntitparkFallback6,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark7,
+        fallBackImg: lntitparkFallback7,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark8,
+        fallBackImg: lntitparkFallback8,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark9,
+        fallBackImg: lntitparkFallback9,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark10,
+        fallBackImg: lntitparkFallback10,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark11,
+        fallBackImg: lntitparkFallback11,
+        category: "commercial",
+      },
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark12,
+        fallBackImg: lntitparkFallback12,
+        category: "commercial",
+      },
+    ],
+  },
+  {
+    name: "etv",
+    title: "ETV",
+    projects: [
+      {
+        name: "etv",
+        title: "ETV",
+        image: ETV0,
+        fallBackImg: ETVFallback0,
+        category: "commercial",
+      },
+      {
+        name: "etv",
+        title: "ETV",
+        image: ETV1,
+        fallBackImg: ETVFallback1,
+        category: "commercial",
+      },
+      {
+        name: "etv",
+        title: "ETV",
+        image: ETV2,
+        fallBackImg: ETVFallback2,
+        category: "commercial",
+      },
+      {
+        name: "etv",
+        title: "ETV",
+        image: ETV3,
+        fallBackImg: ETVFallback3,
+        category: "commercial",
+      },
+      {
+        name: "etv",
+        title: "ETV",
+        image: ETV4,
+        fallBackImg: ETVFallback4,
+        category: "commercial",
+      },
+      {
+        name: "etv",
+        title: "ETV",
+        image: ETV5,
+        fallBackImg: ETVFallback5,
+        category: "commercial",
+      },
+    ],
+  },
+  {
+    name: "laxmi-infobahn",
+    title: "Laxmi Infobahn (Hyderabad)",
+    projects: [
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn0,
+        fallBackImg: laxmiInfobahnFallback0,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn1,
+        fallBackImg: laxmiInfobahnFallback1,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn2,
+        fallBackImg: laxmiInfobahnFallback2,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn3,
+        fallBackImg: laxmiInfobahnFallback3,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn4,
+        fallBackImg: laxmiInfobahnFallback4,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn5,
+        fallBackImg: laxmiInfobahnFallback5,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn6,
+        fallBackImg: laxmiInfobahnFallback6,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn7,
+        fallBackImg: laxmiInfobahnFallback7,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn8,
+        fallBackImg: laxmiInfobahnFallback8,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn9,
+        fallBackImg: laxmiInfobahnFallback9,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn10,
+        fallBackImg: laxmiInfobahnFallback10,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn11,
+        fallBackImg: laxmiInfobahnFallback11,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn12,
+        fallBackImg: laxmiInfobahnFallback12,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn13,
+        fallBackImg: laxmiInfobahnFallback13,
+        category: "commercial",
+      },
+      {
+        name: "laxmi-infobahn",
+        title: "Laxmi Infobahn (Hyderabad)",
+        image: laxmiInfobahn13,
+        fallBackImg: laxmiInfobahnFallback13,
+        category: "commercial",
+        type: "yt",
+        youtube: "NMf20FTWv-k",
       },
     ],
   },

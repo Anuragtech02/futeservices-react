@@ -1,4 +1,6 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
+import ModalVideo from "react-modal-video";
+
 import "./Portfolio.css";
 import bgImage from "../../Assets/back-img.jpg";
 import bgImage2 from "../../Assets/fute-bg.jpg";
@@ -50,6 +52,9 @@ const Portfolio = () => {
   const [currImages, setCurrImages] = useState([]);
 
   const [capName, setCapName] = useState("");
+
+  const [ytOpen, setYtOpen] = useState(false);
+  const [currentYt, setCurrentYt] = useState("");
 
   useEffect(() => {
     if (current?.projects) {
@@ -156,6 +161,11 @@ const Portfolio = () => {
             <Grid item key={i} xl={6} lg={6} md={6} sm={12} xs={12}>
               <VerticalCard
                 onClick={() => {
+                  if (project.type === "yt") {
+                    setCurrentYt(project.youtube);
+                    setYtOpen(true);
+                    return;
+                  }
                   setStartIndexModal(i);
                   setCurrImage(project.image || project.src);
                   console.log("Clicked");
@@ -176,6 +186,19 @@ const Portfolio = () => {
           />
         </div>
       )}
+
+      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={ytOpen}
+        // playsinline
+        videoId={currentYt}
+        // theme="dark"
+        onClose={() => {
+          setYtOpen(false);
+          setCurrentYt(null);
+        }}
+      />
     </div>
   );
 };
