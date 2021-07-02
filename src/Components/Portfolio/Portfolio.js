@@ -162,7 +162,7 @@ const Portfolio = () => {
               <VerticalCard
                 onClick={() => {
                   if (project.type === "yt") {
-                    setCurrentYt(project.youtube);
+                    setCurrentYt(extractYtID(project.youtube));
                     setYtOpen(true);
                     return;
                   }
@@ -203,3 +203,9 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+const extractYtID = (url) => {
+  return url.match(
+    /(?:youtu\.be\/|youtube\.com(?:\/embed\/|\/v\/|\/watch\?v=|\/user\/\S+|\/ytscreeningroom\?v=|\/sandalsResorts#\w\/\w\/.*\/))([^\/&]{10,12})/
+  )[1];
+};

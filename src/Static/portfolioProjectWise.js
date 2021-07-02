@@ -5,6 +5,7 @@ import phoenix from "../Assets/projects/commercial/phoenix/2.webp";
 import lntitpark from "../Assets/projects/commercial/lntitpark/00.webp";
 import etv from "../Assets/projects/commercial/ETV/0.webp";
 import laxmiInfobahn from "../Assets/projects/commercial/laxmiInfobahn/3.webp";
+import dosti from "../Assets/projects/residential/dosti/4.webp";
 
 // JPG
 /* Commercial */
@@ -13,6 +14,7 @@ import fallbackPhoenix from "../Assets/projects/commercial/phoenix/2.jpg";
 import fallbackLntitpark from "../Assets/projects/commercial/lntitpark/00.jpg";
 import fallbackEtv from "../Assets/projects/commercial/ETV/0.jpg";
 import fallbackLaxmiInfobahn from "../Assets/projects/commercial/laxmiInfobahn/3.jpg";
+import fallbackdosti from "../Assets/projects/residential/dosti/4.jpg";
 
 export const portfolioData = [
   {
@@ -42,5 +44,12 @@ export const portfolioData = [
     image: laxmiInfobahn,
     fallbackImg: fallbackLaxmiInfobahn,
     link: "laxmi-infobahn",
+  },
+  {
+    title: "Dosti - Kandivali",
+    category: "Residential",
+    image: dosti,
+    fallbackImg: fallbackdosti,
+    link: "dosti",
   },
 ];

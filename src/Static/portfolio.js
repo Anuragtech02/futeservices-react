@@ -186,6 +186,26 @@ import laxmiInfobahnFallback11 from "../Assets/projects/commercial/laxmiInfobahn
 import laxmiInfobahnFallback12 from "../Assets/projects/commercial/laxmiInfobahn/12.jpg";
 import laxmiInfobahnFallback13 from "../Assets/projects/commercial/laxmiInfobahn/13.jpg";
 
+import dosti0 from "../Assets/projects/residential/dosti/0.webp";
+import dosti1 from "../Assets/projects/residential/dosti/1.webp";
+import dosti2 from "../Assets/projects/residential/dosti/2.webp";
+import dosti3 from "../Assets/projects/residential/dosti/3.webp";
+import dosti4 from "../Assets/projects/residential/dosti/4.webp";
+import dosti5 from "../Assets/projects/residential/dosti/5.webp";
+import dosti6 from "../Assets/projects/residential/dosti/6.webp";
+import dosti7 from "../Assets/projects/residential/dosti/7.webp";
+import dosti8 from "../Assets/projects/residential/dosti/8.webp";
+
+import dostiFallback0 from "../Assets/projects/residential/dosti/0.jpg";
+import dostiFallback1 from "../Assets/projects/residential/dosti/1.jpg";
+import dostiFallback2 from "../Assets/projects/residential/dosti/2.jpg";
+import dostiFallback3 from "../Assets/projects/residential/dosti/3.jpg";
+import dostiFallback4 from "../Assets/projects/residential/dosti/4.jpg";
+import dostiFallback5 from "../Assets/projects/residential/dosti/5.jpg";
+import dostiFallback6 from "../Assets/projects/residential/dosti/6.jpg";
+import dostiFallback7 from "../Assets/projects/residential/dosti/7.jpg";
+import dostiFallback8 from "../Assets/projects/residential/dosti/8.jpg";
+
 export const portfolio = [
   {
     name: "walkthrough",
@@ -812,14 +832,74 @@ export const portfolio = [
         fallBackImg: laxmiInfobahnFallback13,
         category: "commercial",
       },
+    ],
+  },
+  {
+    name: "dosti",
+    title: "Dosti (Kandivali)",
+    projects: [
       {
-        name: "laxmi-infobahn",
-        title: "Laxmi Infobahn (Hyderabad)",
-        image: laxmiInfobahn13,
-        fallBackImg: laxmiInfobahnFallback13,
-        category: "commercial",
-        type: "yt",
-        youtube: "NMf20FTWv-k",
+        name: "dosti",
+        title: "Dosti (Kandivali)",
+        image: dosti0,
+        fallBackImg: dostiFallback0,
+        category: "residential",
+      },
+      {
+        name: "dosti",
+        title: "Dosti (Kandivali)",
+        image: dosti1,
+        fallBackImg: dostiFallback1,
+        category: "residential",
+      },
+      {
+        name: "dosti",
+        title: "Dosti (Kandivali)",
+        image: dosti2,
+        fallBackImg: dostiFallback2,
+        category: "residential",
+      },
+      {
+        name: "dosti",
+        title: "Dosti (Kandivali)",
+        image: dosti3,
+        fallBackImg: dostiFallback3,
+        category: "residential",
+      },
+      {
+        name: "dosti",
+        title: "Dosti (Kandivali)",
+        image: dosti4,
+        fallBackImg: dostiFallback4,
+        category: "residential",
+      },
+      {
+        name: "dosti",
+        title: "Dosti (Kandivali)",
+        image: dosti5,
+        fallBackImg: dostiFallback5,
+        category: "residential",
+      },
+      {
+        name: "dosti",
+        title: "Dosti (Kandivali)",
+        image: dosti6,
+        fallBackImg: dostiFallback6,
+        category: "residential",
+      },
+      {
+        name: "dosti",
+        title: "Dosti (Kandivali)",
+        image: dosti7,
+        fallBackImg: dostiFallback7,
+        category: "residential",
+      },
+      {
+        name: "dosti",
+        title: "Dosti (Kandivali)",
+        image: dosti8,
+        fallBackImg: dostiFallback8,
+        category: "residential",
       },
     ],
   },
