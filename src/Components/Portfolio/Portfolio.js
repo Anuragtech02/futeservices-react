@@ -191,9 +191,8 @@ const Portfolio = () => {
         channel="youtube"
         autoplay
         isOpen={ytOpen}
-        // playsinline
+        playsinline
         videoId={currentYt}
-        // theme="dark"
         onClose={() => {
           setYtOpen(false);
           setCurrentYt(null);

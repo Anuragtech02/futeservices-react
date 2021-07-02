@@ -6,6 +6,7 @@ import homeVideo from "../../Assets/video/fute-video-bg.webm";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { WebpContextProvider } from "../../App";
 import classNames from "classnames";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 
 const VerticalCard = ({
   item,
@@ -83,6 +84,12 @@ const VerticalCard = ({
           }`
         }
       />
+      {item.type === "yt" && (
+        <div className={styles.playBtn}>
+          <YouTubeIcon fontSize="large" />
+        </div>
+      )}
+
       <div className={styles.categoryCardTitle}>
         <h2>{item.title || " - " + item.title}</h2>
         <div className={styles.categoryCardCat}>
