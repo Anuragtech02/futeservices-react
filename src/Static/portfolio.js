@@ -409,6 +409,10 @@ import misc12 from "../Assets/projects/scale-model/misc/12.jpg";
 import misc13 from "../Assets/projects/scale-model/misc/13.jpg";
 import misc14 from "../Assets/projects/scale-model/misc/14.jpg";
 
+import droneShoot1 from "../Assets/projects/droneShoot/1.jpg";
+import droneShoot2 from "../Assets/projects/droneShoot/2.jpg";
+import droneShoot3 from "../Assets/projects/droneShoot/3.jpg";
+
 const lntraintree = {
   name: "lnt-raintree",
   title: "L&T Raintree Boullevard",
@@ -1478,8 +1482,8 @@ const droneShoot = {
       name: "drone-shoot",
       title: "Rapsons Nature County",
       category: "drone-shoot",
-      image: "",
-      fallbackImg: "",
+      image: droneShoot1,
+      fallbackImg: droneShoot1,
       type: "yt",
       youtube: "https://youtu.be/FqZm4llbC8E",
     },
@@ -1488,8 +1492,8 @@ const droneShoot = {
       name: "drone-shoot",
       title: "Signature Avenues",
       category: "drone-shoot",
-      image: "",
-      fallbackImg: "",
+      image: droneShoot2,
+      fallbackImg: droneShoot2,
       type: "yt",
       youtube: "https://youtu.be/iVTyJR7wUmY",
     },
@@ -1497,8 +1501,8 @@ const droneShoot = {
       name: "drone-shoot",
       title: "GHR Titania",
       category: "drone-shoot",
-      image: "",
-      fallbackImg: "",
+      image: droneShoot3,
+      fallbackImg: droneShoot3,
       type: "yt",
       youtube: "https://youtu.be/ZyfLZ1SzhIw",
     },
@@ -2066,4 +2070,5 @@ export const portfolio = [
   { ...model1 },
   { ...model2 },
   { ...miscScaleModel },
+  { ...droneShoot },
 ];
