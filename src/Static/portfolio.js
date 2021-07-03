@@ -240,6 +240,14 @@ import runwalcentralFallback14 from "../Assets/projects/residential/runwalcentra
 import runwalcentralFallback15 from "../Assets/projects/residential/runwalcentral/15.jpg";
 import runwalcentralFallback16 from "../Assets/projects/residential/runwalcentral/16.jpg";
 
+import lntraintree1 from "../Assets/projects/residential/lntraintree/1.webp";
+import lntraintree2 from "../Assets/projects/residential/lntraintree/2.webp";
+import lntraintree3 from "../Assets/projects/residential/lntraintree/3.webp";
+
+import lntraintreeFallback1 from "../Assets/projects/residential/lntraintree/1.jpg";
+import lntraintreeFallback2 from "../Assets/projects/residential/lntraintree/2.jpg";
+import lntraintreeFallback3 from "../Assets/projects/residential/lntraintree/3.jpg";
+
 import oberoiReality1 from "../Assets/projects/residential/oberoiReality/1.webp";
 import oberoiReality2 from "../Assets/projects/residential/oberoiReality/2.webp";
 import oberoiReality3 from "../Assets/projects/residential/oberoiReality/3.webp";
@@ -314,10 +322,137 @@ import gmInfiniteFallback10 from "../Assets/projects/residential/gmInfinite/10.j
 import gmInfiniteFallback11 from "../Assets/projects/residential/gmInfinite/11.jpg";
 import gmInfiniteFallback12 from "../Assets/projects/residential/gmInfinite/12.jpg";
 
+import theGreenTerrace1 from "../Assets/projects/residential/theGreenTerrace/1.webp";
+import theGreenTerrace3 from "../Assets/projects/residential/theGreenTerrace/3.webp";
+import theGreenTerrace4 from "../Assets/projects/residential/theGreenTerrace/4.webp";
+import theGreenTerrace5 from "../Assets/projects/residential/theGreenTerrace/5.webp";
+import theGreenTerrace7 from "../Assets/projects/residential/theGreenTerrace/7.webp";
+import theGreenTerrace8 from "../Assets/projects/residential/theGreenTerrace/8.webp";
+import theGreenTerrace9 from "../Assets/projects/residential/theGreenTerrace/9.webp";
+
+import theGreenTerraceFallback1 from "../Assets/projects/residential/theGreenTerrace/1.jpg";
+import theGreenTerraceFallback3 from "../Assets/projects/residential/theGreenTerrace/3.jpg";
+import theGreenTerraceFallback4 from "../Assets/projects/residential/theGreenTerrace/4.jpg";
+import theGreenTerraceFallback5 from "../Assets/projects/residential/theGreenTerrace/5.jpg";
+import theGreenTerraceFallback7 from "../Assets/projects/residential/theGreenTerrace/7.jpg";
+import theGreenTerraceFallback8 from "../Assets/projects/residential/theGreenTerrace/8.jpg";
+import theGreenTerraceFallback9 from "../Assets/projects/residential/theGreenTerrace/9.jpg";
+
+const lntraintree = {
+  name: "lnt-raintree",
+  title: "L&T Raintree Boullevard",
+  projects: [
+    {
+      name: "lnt-raintree",
+      title: "L&T Raintree Boullevard",
+      image: lntraintree1,
+      fallBackImg: lntraintreeFallback1,
+      category: "residential",
+      type: "yt",
+      youtube: "https://youtu.be/4GV2jpWk8X0",
+    },
+    {
+      name: "lnt-raintree",
+      title: "L&T Raintree Boullevard",
+      image: lntraintree1,
+      fallBackImg: lntraintreeFallback1,
+      category: "residential",
+    },
+    {
+      name: "lnt-raintree",
+      title: "L&T Raintree Boullevard",
+      image: lntraintree2,
+      fallBackImg: lntraintreeFallback2,
+      category: "residential",
+    },
+    {
+      name: "lnt-raintree",
+      title: "L&T Raintree Boullevard",
+      image: lntraintree3,
+      fallBackImg: lntraintreeFallback3,
+      category: "residential",
+    },
+  ],
+};
+
+const theGreenTerrace = {
+  name: "the-green-terrace",
+  title: "The Green Terrace",
+  projects: [
+    {
+      name: "the-green-terrace",
+      title: "The Green Terrace",
+      image: theGreenTerrace1,
+      fallBackImg: theGreenTerraceFallback1,
+      category: "residential",
+      type: "yt",
+      yotube: "https://youtu.be/ep1wq7caDfw",
+    },
+    {
+      name: "the-green-terrace",
+      title: "The Green Terrace",
+      image: theGreenTerrace1,
+      fallBackImg: theGreenTerraceFallback1,
+      category: "residential",
+    },
+    {
+      name: "the-green-terrace",
+      title: "The Green Terrace",
+      image: theGreenTerrace3,
+      fallBackImg: theGreenTerraceFallback3,
+      category: "residential",
+    },
+    {
+      name: "the-green-terrace",
+      title: "The Green Terrace",
+      image: theGreenTerrace4,
+      fallBackImg: theGreenTerraceFallback4,
+      category: "residential",
+    },
+    {
+      name: "the-green-terrace",
+      title: "The Green Terrace",
+      image: theGreenTerrace5,
+      fallBackImg: theGreenTerraceFallback5,
+      category: "residential",
+    },
+    {
+      name: "the-green-terrace",
+      title: "The Green Terrace",
+      image: theGreenTerrace7,
+      fallBackImg: theGreenTerraceFallback7,
+      category: "residential",
+    },
+    {
+      name: "the-green-terrace",
+      title: "The Green Terrace",
+      image: theGreenTerrace8,
+      fallBackImg: theGreenTerraceFallback8,
+      category: "residential",
+    },
+    {
+      name: "the-green-terrace",
+      title: "The Green Terrace",
+      image: theGreenTerrace9,
+      fallBackImg: theGreenTerraceFallback9,
+      category: "residential",
+    },
+  ],
+};
+
 const runwalCentral = {
   name: "runwal-central",
   title: "Runwal Central Park (Pune)",
   projects: [
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral1,
+      fallBackImg: runwalcentralFallback1,
+      category: "residential",
+      type: "yt",
+      youtube: "https://youtu.be/-Dxui_Pf9yI",
+    },
     {
       name: "runwal-central",
       title: "Runwal Central Park (Pune)",
@@ -499,6 +634,15 @@ const runwalNirvana = {
       image: runwalnirvana1,
       fallBackImg: runwalnirvanaFallback1,
       category: "residential",
+      type: "yt",
+      youtube: "https://youtu.be/MP7ciyyUBaQ",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana1,
+      fallBackImg: runwalnirvanaFallback1,
+      category: "residential",
     },
     {
       name: "runwal-nirvana",
@@ -611,6 +755,15 @@ const gmInfinite = {
       image: gmInfinite0,
       fallBackImg: gmInfiniteFallback0,
       category: "residential",
+      type: "yt",
+      youtube: "https://youtu.be/pcQm_2GQxu4",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite0,
+      fallBackImg: gmInfiniteFallback0,
+      category: "residential",
     },
     {
       name: "gm-infinite",
@@ -687,6 +840,85 @@ const gmInfinite = {
       title: "GM Infinite",
       image: gmInfinite12,
       fallBackImg: gmInfiniteFallback12,
+      category: "residential",
+    },
+  ],
+};
+
+const dosti = {
+  name: "dosti",
+  title: "Dosti (Kandivali)",
+  projects: [
+    {
+      name: "dosti",
+      title: "Dosti (Kandivali)",
+      image: dosti0,
+      fallBackImg: dostiFallback0,
+      category: "residential",
+      type: "yt",
+      youtube: "https://youtu.be/eyS2zEq5zMs",
+    },
+    {
+      name: "dosti",
+      title: "Dosti (Kandivali)",
+      image: dosti0,
+      fallBackImg: dostiFallback0,
+      category: "residential",
+    },
+    {
+      name: "dosti",
+      title: "Dosti (Kandivali)",
+      image: dosti1,
+      fallBackImg: dostiFallback1,
+      category: "residential",
+    },
+    {
+      name: "dosti",
+      title: "Dosti (Kandivali)",
+      image: dosti2,
+      fallBackImg: dostiFallback2,
+      category: "residential",
+    },
+    {
+      name: "dosti",
+      title: "Dosti (Kandivali)",
+      image: dosti3,
+      fallBackImg: dostiFallback3,
+      category: "residential",
+    },
+    {
+      name: "dosti",
+      title: "Dosti (Kandivali)",
+      image: dosti4,
+      fallBackImg: dostiFallback4,
+      category: "residential",
+    },
+    {
+      name: "dosti",
+      title: "Dosti (Kandivali)",
+      image: dosti5,
+      fallBackImg: dostiFallback5,
+      category: "residential",
+    },
+    {
+      name: "dosti",
+      title: "Dosti (Kandivali)",
+      image: dosti6,
+      fallBackImg: dostiFallback6,
+      category: "residential",
+    },
+    {
+      name: "dosti",
+      title: "Dosti (Kandivali)",
+      image: dosti7,
+      fallBackImg: dostiFallback7,
+      category: "residential",
+    },
+    {
+      name: "dosti",
+      title: "Dosti (Kandivali)",
+      image: dosti8,
+      fallBackImg: dostiFallback8,
       category: "residential",
     },
   ],
@@ -1321,76 +1553,10 @@ export const portfolio = [
     ],
   },
   { ...runwalCentral },
+  { ...lntraintree },
   { ...oberoiReality },
   { ...runwalNirvana },
   { ...gmInfinite },
-  {
-    name: "dosti",
-    title: "Dosti (Kandivali)",
-    projects: [
-      {
-        name: "dosti",
-        title: "Dosti (Kandivali)",
-        image: dosti0,
-        fallBackImg: dostiFallback0,
-        category: "residential",
-      },
-      {
-        name: "dosti",
-        title: "Dosti (Kandivali)",
-        image: dosti1,
-        fallBackImg: dostiFallback1,
-        category: "residential",
-      },
-      {
-        name: "dosti",
-        title: "Dosti (Kandivali)",
-        image: dosti2,
-        fallBackImg: dostiFallback2,
-        category: "residential",
-      },
-      {
-        name: "dosti",
-        title: "Dosti (Kandivali)",
-        image: dosti3,
-        fallBackImg: dostiFallback3,
-        category: "residential",
-      },
-      {
-        name: "dosti",
-        title: "Dosti (Kandivali)",
-        image: dosti4,
-        fallBackImg: dostiFallback4,
-        category: "residential",
-      },
-      {
-        name: "dosti",
-        title: "Dosti (Kandivali)",
-        image: dosti5,
-        fallBackImg: dostiFallback5,
-        category: "residential",
-      },
-      {
-        name: "dosti",
-        title: "Dosti (Kandivali)",
-        image: dosti6,
-        fallBackImg: dostiFallback6,
-        category: "residential",
-      },
-      {
-        name: "dosti",
-        title: "Dosti (Kandivali)",
-        image: dosti7,
-        fallBackImg: dostiFallback7,
-        category: "residential",
-      },
-      {
-        name: "dosti",
-        title: "Dosti (Kandivali)",
-        image: dosti8,
-        fallBackImg: dostiFallback8,
-        category: "residential",
-      },
-    ],
-  },
+  { ...theGreenTerrace },
+  { ...dosti },
 ];

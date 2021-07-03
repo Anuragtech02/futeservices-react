@@ -7,10 +7,12 @@ import laxmiInfobahn from "../Assets/projects/commercial/laxmiInfobahn/3.webp";
 
 /* Residential */
 import dosti from "../Assets/projects/residential/dosti/4.webp";
+import lntraintree from "../Assets/projects/residential/lntraintree/1.webp";
 import runwalcentral from "../Assets/projects/residential/runwalcentral/1.webp";
 import oberoiReality from "../Assets/projects/residential/oberoiReality/1.webp";
 import runwalnirvana from "../Assets/projects/residential/runwalnirvana/1.webp";
 import gmInfinite from "../Assets/projects/residential/gmInfinite/1.webp";
+import theGreenTerrace from "../Assets/projects/residential/theGreenTerrace/1.webp";
 
 // JPG
 /* Commercial */
@@ -21,10 +23,12 @@ import fallbackLaxmiInfobahn from "../Assets/projects/commercial/laxmiInfobahn/3
 
 /* Residential */
 import fallbackdosti from "../Assets/projects/residential/dosti/4.jpg";
+import fallbacklntraintree from "../Assets/projects/residential/lntraintree/1.jpg";
 import fallbackrunwalcentral from "../Assets/projects/residential/runwalcentral/1.jpg";
 import fallbackoberoiReality from "../Assets/projects/residential/oberoiReality/1.jpg";
 import fallbackrunwalnirvana from "../Assets/projects/residential/runwalnirvana/1.jpg";
 import fallbackgmInfinite from "../Assets/projects/residential/gmInfinite/1.jpg";
+import fallbacktheGreenTerrace from "../Assets/projects/residential/theGreenTerrace/1.jpg";
 
 export const portfolioData = [
   {
@@ -63,6 +67,13 @@ export const portfolioData = [
     link: "runwal-central",
   },
   {
+    title: "L&T Raintree Boulevard",
+    category: "Residential",
+    image: lntraintree,
+    fallbackImg: fallbacklntraintree,
+    link: "lnt-raintree",
+  },
+  {
     title: "Oberoi Reality",
     category: "Residential",
     image: oberoiReality,
@@ -82,6 +93,13 @@ export const portfolioData = [
     image: gmInfinite,
     fallbackImg: fallbackgmInfinite,
     link: "gm-infinite",
+  },
+  {
+    title: "The Green Terrace",
+    category: "Residential",
+    image: theGreenTerrace,
+    fallbackImg: fallbacktheGreenTerrace,
+    link: "the-green-terrace",
   },
   {
     title: "Dosti - Kandivali",
