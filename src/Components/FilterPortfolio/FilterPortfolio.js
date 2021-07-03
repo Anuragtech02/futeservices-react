@@ -30,6 +30,7 @@ const filterMenu = [
     name: "Walkthrough",
     link: "walkthrough",
     dataFilter: "walkthrough",
+    external: true,
   },
   {
     name: "360 & VR",
@@ -59,7 +60,7 @@ const FilterPortfolio = ({ history }) => {
   const isoRef = useRef(null);
 
   const [isotope, setIsotope] = useState(null);
-  const [filterKey, setFilterKey] = useState("walkthrough");
+  const [filterKey, setFilterKey] = useState("residential");
   const totalImages = portfolioData.length;
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);

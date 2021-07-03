@@ -5,6 +5,7 @@ import lntitpark from "../Assets/projects/commercial/lntitpark/00.webp";
 import etv from "../Assets/projects/commercial/ETV/0.webp";
 import laxmiInfobahn from "../Assets/projects/commercial/laxmiInfobahn/3.webp";
 import infosysCampus from "../Assets/projects/commercial/infosysCampus/1.webp";
+import hilton from "../Assets/projects/commercial/hilton/1.webp";
 
 /* Residential */
 import dosti from "../Assets/projects/residential/dosti/4.webp";
@@ -31,6 +32,7 @@ import fallbackLntitpark from "../Assets/projects/commercial/lntitpark/00.jpg";
 import fallbackEtv from "../Assets/projects/commercial/ETV/0.jpg";
 import fallbackLaxmiInfobahn from "../Assets/projects/commercial/laxmiInfobahn/3.jpg";
 import fallbackinfosysCampus from "../Assets/projects/commercial/infosysCampus/1.jpg";
+import fallbackhilton from "../Assets/projects/commercial/hilton/1.jpg";
 
 /* Residential */
 import fallbackdosti from "../Assets/projects/residential/dosti/4.jpg";
@@ -91,6 +93,13 @@ export const portfolioData = [
     image: laxmiInfobahn,
     fallbackImg: fallbackLaxmiInfobahn,
     link: "laxmi-infobahn",
+  },
+  {
+    title: "Hilton Hotel",
+    category: "Commercial",
+    image: hilton,
+    fallbackImg: fallbackhilton,
+    link: "hilton-hotel",
   },
   {
     title: "Runwal Central Park (Pune)",

@@ -1,7 +1,7 @@
-import walkthrough1 from "../Assets/projects/walkthrough/walkthrough-1.webp";
-import walkthrough1fallback from "../Assets/projects/walkthrough/walkthrough-1.jpg";
-import walkthrough2 from "../Assets/projects/walkthrough/walkthrough-2.webp";
-import walkthrough2fallback from "../Assets/projects/walkthrough/walkthrough-2.jpg";
+// import walkthrough1 from "../Assets/projects/walkthrough/walkthrough-1.webp";
+// import walkthrough1fallback from "../Assets/projects/walkthrough/walkthrough-1.jpg";
+// import walkthrough2 from "../Assets/projects/walkthrough/walkthrough-2.webp";
+// import walkthrough2fallback from "../Assets/projects/walkthrough/walkthrough-2.jpg";
 // import  walkthrough1 from '../Assets/projects/walkthrough/walkthrugh-1.webp';
 
 import interior1 from "../Assets/projects/interior/interior-1.webp";
@@ -412,6 +412,29 @@ import misc14 from "../Assets/projects/scale-model/misc/14.jpg";
 import droneShoot1 from "../Assets/projects/droneShoot/1.jpg";
 import droneShoot2 from "../Assets/projects/droneShoot/2.jpg";
 import droneShoot3 from "../Assets/projects/droneShoot/3.jpg";
+
+import walkthrough1 from "../Assets/projects/walkthroughNew/1.jpg";
+import walkthrough2 from "../Assets/projects/walkthroughNew/2.jpg";
+
+import hilton1 from "../Assets/projects/commercial/hilton/1.webp";
+import hilton2 from "../Assets/projects/commercial/hilton/2.webp";
+import hilton3 from "../Assets/projects/commercial/hilton/3.webp";
+import hilton4 from "../Assets/projects/commercial/hilton/4.webp";
+import hilton5 from "../Assets/projects/commercial/hilton/5.webp";
+import hilton6 from "../Assets/projects/commercial/hilton/6.webp";
+import hilton7 from "../Assets/projects/commercial/hilton/7.webp";
+import hilton8 from "../Assets/projects/commercial/hilton/8.webp";
+import hilton9 from "../Assets/projects/commercial/hilton/9.webp";
+
+import hiltonFallback1 from "../Assets/projects/commercial/hilton/1.jpg";
+import hiltonFallback2 from "../Assets/projects/commercial/hilton/2.jpg";
+import hiltonFallback3 from "../Assets/projects/commercial/hilton/3.jpg";
+import hiltonFallback4 from "../Assets/projects/commercial/hilton/4.jpg";
+import hiltonFallback5 from "../Assets/projects/commercial/hilton/5.jpg";
+import hiltonFallback6 from "../Assets/projects/commercial/hilton/6.jpg";
+import hiltonFallback7 from "../Assets/projects/commercial/hilton/7.jpg";
+import hiltonFallback8 from "../Assets/projects/commercial/hilton/8.jpg";
+import hiltonFallback9 from "../Assets/projects/commercial/hilton/9.jpg";
 
 const lntraintree = {
   name: "lnt-raintree",
@@ -1509,24 +1532,137 @@ const droneShoot = {
   ],
 };
 
+const walkthrough = {
+  name: "walkthrough",
+  title: "Walkthrough",
+  projects: [
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral1,
+      fallBackImg: runwalcentralFallback1,
+      category: "walkthrough",
+      type: "yt",
+      youtube: "https://youtu.be/-Dxui_Pf9yI",
+    },
+    {
+      name: "embassy-tech-village",
+      title: "Embassy Tech Village",
+      image: walkthrough1,
+      fallBackImg: walkthrough1,
+      category: "walkthrough",
+      type: "yt",
+      youtube: "https://youtu.be/80q6pCMBJ1s",
+    },
+    {
+      name: "ALUK",
+      title: "ALUK",
+      image: walkthrough2,
+      fallBackImg: walkthrough2,
+      category: "walkthrough",
+      type: "yt",
+      youtube: "https://youtu.be/0oKodE49jDM",
+    },
+  ],
+};
+
+const hilton = {
+  name: "hilton-hotel",
+  title: "Hilton Hotel",
+  projects: [
+    // {
+    //   name: "hilton-hotel",
+    //   title: "Hilton Hotel",
+    //   image: hilton1,
+    //   fallBackImg: hiltonFallback1,
+    //   category: "commercial",
+    //   type: "yt",
+    //   youtube: "https://youtu.be/XK-IAxJILIY",
+    // },
+    {
+      name: "hilton-hotel",
+      title: "Hilton Hotel",
+      image: hilton1,
+      fallBackImg: hiltonFallback1,
+      category: "commercial",
+    },
+    {
+      name: "hilton-hotel",
+      title: "Hilton Hotel",
+      image: hilton2,
+      fallBackImg: hiltonFallback2,
+      category: "commercial",
+    },
+    {
+      name: "hilton-hotel",
+      title: "Hilton Hotel",
+      image: hilton3,
+      fallBackImg: hiltonFallback3,
+      category: "commercial",
+    },
+    {
+      name: "hilton-hotel",
+      title: "Hilton Hotel",
+      image: hilton4,
+      fallBackImg: hiltonFallback4,
+      category: "commercial",
+    },
+    {
+      name: "hilton-hotel",
+      title: "Hilton Hotel",
+      image: hilton5,
+      fallBackImg: hiltonFallback5,
+      category: "commercial",
+    },
+    {
+      name: "hilton-hotel",
+      title: "Hilton Hotel",
+      image: hilton6,
+      fallBackImg: hiltonFallback6,
+      category: "commercial",
+    },
+    {
+      name: "hilton-hotel",
+      title: "Hilton Hotel",
+      image: hilton7,
+      fallBackImg: hiltonFallback7,
+      category: "commercial",
+    },
+    {
+      name: "hilton-hotel",
+      title: "Hilton Hotel",
+      image: hilton8,
+      fallBackImg: hiltonFallback8,
+      category: "commercial",
+    },
+    {
+      name: "hilton-hotel",
+      title: "Hilton Hotel",
+      image: hilton9,
+      fallBackImg: hiltonFallback9,
+      category: "commercial",
+    },
+  ],
+};
+
 export const portfolio = [
-  {
-    name: "walkthrough",
-    projects: [
-      {
-        title: "Prestige, Jindal City",
-        image: walkthrough1,
-        fallbackImg: walkthrough1fallback,
-        category: "Walkthrough",
-      },
-      {
-        title: "Runwal Group",
-        image: walkthrough2,
-        fallbackImg: walkthrough2fallback,
-        category: "Walkthrough",
-      },
-    ],
-  },
+  // {
+  //   name: "walkthrough",
+  //   projects: [
+  //     {
+  //       title: "Prestige, Jindal City",
+  //       image: walkthrough1,
+  //       fallbackImg: walkthrough1fallback,
+  //       category: "Walkthrough",
+  //     },
+  //     {
+  //       title: "Runwal Group",
+  //       image: walkthrough2,
+  //       fallbackImg: walkthrough2fallback,
+  //       category: "Walkthrough",
+  //     },
+  //   ],
+  // },
   {
     name: "3d-rendering-interior",
     title: "Interior Visualization",
@@ -2071,4 +2207,6 @@ export const portfolio = [
   { ...model2 },
   { ...miscScaleModel },
   { ...droneShoot },
+  { ...walkthrough },
+  { ...hilton },
 ];
