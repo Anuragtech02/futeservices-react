@@ -22,8 +22,7 @@ import arvr2 from "../Assets/projects/ar-vr-360/arvr-2.webp";
 import arvr3 from "../Assets/projects/ar-vr-360/arvr-3.webp";
 import arvr4 from "../Assets/projects/ar-vr-360/arvr-4.webp";
 import arvr5 from "../Assets/projects/ar-vr-360/arvr-5.webp";
-import arvr6 from "../Assets/projects/ar-vr-360/arvr-6.webp";
-import arvr7 from "../Assets/projects/ar-vr-360/arvr-7.webp";
+import arvr8 from "../Assets/projects/ar-vr-360/arvr-8.webp";
 
 // JPG
 /* Commercial */
@@ -49,8 +48,13 @@ import arvr2fallback from "../Assets/projects/ar-vr-360/arvr-2.jpg";
 import arvr3fallback from "../Assets/projects/ar-vr-360/arvr-3.jpg";
 import arvr4fallback from "../Assets/projects/ar-vr-360/arvr-4.jpg";
 import arvr5fallback from "../Assets/projects/ar-vr-360/arvr-5.jpg";
-import arvr6fallback from "../Assets/projects/ar-vr-360/arvr-6.jpg";
-import arvr7fallback from "../Assets/projects/ar-vr-360/arvr-7.jpg";
+import arvr8fallback from "../Assets/projects/ar-vr-360/arvr-8.jpg";
+
+/* Scale Model */
+import dostiScaleModel from "../Assets/projects/scale-model/dosti/4.jpeg";
+import scmodel1 from "../Assets/projects/scale-model/model1/Picture17.png";
+import scmodel2 from "../Assets/projects/scale-model/model2/Picture5.jpg";
+import miscScaleModel from "../Assets/projects/scale-model/misc/4.jpg";
 
 export const portfolioData = [
   {
@@ -145,6 +149,22 @@ export const portfolioData = [
     link: "dosti",
   },
   {
+    title: "Phoenix India",
+    category: "vr360",
+    image: arvr4,
+    fallbackImg: arvr4fallback,
+    external: true,
+    link: "http://futeservices.com/Phoenix%20India.html",
+  },
+  {
+    title: "Phoenix",
+    category: "vr360",
+    image: arvr8,
+    fallbackImg: arvr8fallback,
+    external: true,
+    link: "http://futeservices.com/phoenixindiapanotour/Phoenix%20India%20Pano.html",
+  },
+  {
     title: "Enchanta",
     category: "vr360",
     image: arvr1,
@@ -177,19 +197,31 @@ export const portfolioData = [
     link: "http://www.futeservices.com/flut/",
   },
   {
-    title: "Phoenix India",
-    category: "vr360",
-    image: arvr4,
-    fallbackImg: arvr4fallback,
-    external: true,
-    link: "http://futeservices.com/Phoenix%20India.html",
+    title: "Dosti",
+    category: "scale-model",
+    image: dostiScaleModel,
+    fallbackImg: dostiScaleModel,
+    link: "dosti-scale-model",
   },
   {
-    title: "Phoenix",
-    category: "vr360",
-    image: arvr4,
-    fallbackImg: arvr4fallback,
-    external: true,
-    link: "http://futeservices.com/phoenixindiapanotour/Phoenix%20India%20Pano.html",
+    title: "Scale Model",
+    category: "scale-model",
+    image: scmodel1,
+    fallbackImg: scmodel1,
+    link: "scale-model-1",
+  },
+  {
+    title: "Scale Model",
+    category: "scale-model",
+    image: scmodel2,
+    fallbackImg: scmodel2,
+    link: "scale-model-2",
+  },
+  {
+    title: "Scale Model",
+    category: "scale-model",
+    image: miscScaleModel,
+    fallbackImg: miscScaleModel,
+    link: "scale-model-misc",
   },
 ];

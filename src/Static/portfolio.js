@@ -378,6 +378,37 @@ import columbiaFallback7 from "../Assets/projects/residential/columbia/7.jpg";
 import columbiaFallback8 from "../Assets/projects/residential/columbia/8.jpg";
 import columbiaFallback9 from "../Assets/projects/residential/columbia/9.jpg";
 
+import dostiModel1 from "../Assets/projects/scale-model/dosti/1.jpeg";
+import dostiModel2 from "../Assets/projects/scale-model/dosti/2.jpeg";
+import dostiModel3 from "../Assets/projects/scale-model/dosti/3.jpeg";
+import dostiModel4 from "../Assets/projects/scale-model/dosti/4.jpeg";
+import dostiModel5 from "../Assets/projects/scale-model/dosti/5.jpeg";
+import dostiModel6 from "../Assets/projects/scale-model/dosti/6.jpeg";
+import dostiModel7 from "../Assets/projects/scale-model/dosti/7.jpeg";
+import dostiModel8 from "../Assets/projects/scale-model/dosti/8.jpeg";
+import dostiModel9 from "../Assets/projects/scale-model/dosti/9.jpeg";
+
+import scmodel1 from "../Assets/projects/scale-model/model1/Picture17.png";
+import scmodel2 from "../Assets/projects/scale-model/model1/Picture18.png";
+
+import scmodel21 from "../Assets/projects/scale-model/model2/Picture5.jpg";
+import scmodel22 from "../Assets/projects/scale-model/model2/Picture6.jpg";
+
+import misc1 from "../Assets/projects/scale-model/misc/1.jpg";
+import misc2 from "../Assets/projects/scale-model/misc/2.jpg";
+import misc3 from "../Assets/projects/scale-model/misc/3.jpg";
+import misc4 from "../Assets/projects/scale-model/misc/4.jpg";
+import misc5 from "../Assets/projects/scale-model/misc/5.jpg";
+import misc6 from "../Assets/projects/scale-model/misc/6.jpg";
+import misc7 from "../Assets/projects/scale-model/misc/7.jpg";
+import misc8 from "../Assets/projects/scale-model/misc/8.jpg";
+import misc9 from "../Assets/projects/scale-model/misc/9.jpg";
+import misc10 from "../Assets/projects/scale-model/misc/10.jpg";
+import misc11 from "../Assets/projects/scale-model/misc/11.jpg";
+import misc12 from "../Assets/projects/scale-model/misc/12.jpg";
+import misc13 from "../Assets/projects/scale-model/misc/13.jpg";
+import misc14 from "../Assets/projects/scale-model/misc/14.jpg";
+
 const lntraintree = {
   name: "lnt-raintree",
   title: "L&T Raintree Boullevard",
@@ -1222,6 +1253,223 @@ const columbia = {
   ],
 };
 
+const dostiScaleModel = {
+  name: "dosti-scale-model",
+  title: "Dosti",
+  projects: [
+    {
+      name: "dosti-scale-model",
+      title: "Dosti",
+      image: dostiModel1,
+      fallBackImg: dostiModel1,
+      category: "residential",
+    },
+    {
+      name: "dosti-scale-model",
+      title: "Dosti",
+      image: dostiModel2,
+      fallBackImg: dostiModel2,
+      category: "residential",
+    },
+    {
+      name: "dosti-scale-model",
+      title: "Dosti",
+      image: dostiModel3,
+      fallBackImg: dostiModel3,
+      category: "residential",
+    },
+    {
+      name: "dosti-scale-model",
+      title: "Dosti",
+      image: dostiModel4,
+      fallBackImg: dostiModel4,
+      category: "residential",
+    },
+    {
+      name: "dosti-scale-model",
+      title: "Dosti",
+      image: dostiModel5,
+      fallBackImg: dostiModel5,
+      category: "residential",
+    },
+    {
+      name: "dosti-scale-model",
+      title: "Dosti",
+      image: dostiModel6,
+      fallBackImg: dostiModel6,
+      category: "residential",
+    },
+    {
+      name: "dosti-scale-model",
+      title: "Dosti",
+      image: dostiModel7,
+      fallBackImg: dostiModel7,
+      category: "residential",
+    },
+    {
+      name: "dosti-scale-model",
+      title: "Dosti",
+      image: dostiModel8,
+      fallBackImg: dostiModel8,
+      category: "residential",
+    },
+    {
+      name: "dosti-scale-model",
+      title: "Dosti",
+      image: dostiModel9,
+      fallBackImg: dostiModel9,
+      category: "residential",
+    },
+  ],
+};
+
+const model1 = {
+  name: "scale-model-1",
+  title: "Scale Model",
+  projects: [
+    {
+      name: "scale-model-1",
+      title: "Scale Model",
+      image: scmodel1,
+      fallBackImg: scmodel1,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-1",
+      title: "Scale Model",
+      image: scmodel2,
+      fallBackImg: scmodel2,
+      category: "scale-model",
+    },
+  ],
+};
+
+const model2 = {
+  name: "scale-model-2",
+  title: "Scale Model",
+  projects: [
+    {
+      name: "scale-model",
+      title: "Scale Model",
+      image: scmodel21,
+      fallBackImg: scmodel21,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-2",
+      title: "Scale Model",
+      image: scmodel22,
+      fallBackImg: scmodel22,
+      category: "scale-model",
+    },
+  ],
+};
+
+const miscScaleModel = {
+  name: "scale-model-misc",
+  title: "Scale Model",
+  projects: [
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc1,
+      fallbackImg: misc1,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc2,
+      fallbackImg: misc2,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc3,
+      fallbackImg: misc3,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc4,
+      fallbackImg: misc4,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc5,
+      fallbackImg: misc5,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc6,
+      fallbackImg: misc6,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc7,
+      fallbackImg: misc7,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc8,
+      fallbackImg: misc8,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc9,
+      fallbackImg: misc9,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc10,
+      fallbackImg: misc10,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc11,
+      fallbackImg: misc11,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc12,
+      fallbackImg: misc12,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc13,
+      fallbackImg: misc13,
+      category: "scale-model",
+    },
+    {
+      name: "scale-model-misc",
+      title: "Scale Model",
+      image: misc14,
+      fallbackImg: misc14,
+      category: "scale-model",
+    },
+  ],
+};
+
 export const portfolio = [
   {
     name: "walkthrough",
@@ -1779,4 +2027,8 @@ export const portfolio = [
   { ...dosti },
   { ...columbia },
   { ...infosysCampus },
+  { ...dostiScaleModel },
+  { ...model1 },
+  { ...model2 },
+  { ...miscScaleModel },
 ];
