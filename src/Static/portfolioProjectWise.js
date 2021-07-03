@@ -218,7 +218,7 @@ export const portfolioData = [
     link: "scale-model-2",
   },
   {
-    title: "Scale Model",
+    title: "Other Scale Models",
     category: "scale-model",
     image: miscScaleModel,
     fallbackImg: miscScaleModel,

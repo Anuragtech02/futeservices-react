@@ -1367,7 +1367,7 @@ const model2 = {
 
 const miscScaleModel = {
   name: "scale-model-misc",
-  title: "Scale Model",
+  title: "Other Scale Models",
   projects: [
     {
       name: "scale-model-misc",
@@ -1466,6 +1466,41 @@ const miscScaleModel = {
       image: misc14,
       fallbackImg: misc14,
       category: "scale-model",
+    },
+  ],
+};
+
+const droneShoot = {
+  name: "drone-shoot",
+  title: "Drone Shoot",
+  projects: [
+    {
+      name: "drone-shoot",
+      title: "Rapsons Nature County",
+      category: "drone-shoot",
+      image: "",
+      fallbackImg: "",
+      type: "yt",
+      youtube: "https://youtu.be/FqZm4llbC8E",
+    },
+
+    {
+      name: "drone-shoot",
+      title: "Signature Avenues",
+      category: "drone-shoot",
+      image: "",
+      fallbackImg: "",
+      type: "yt",
+      youtube: "https://youtu.be/iVTyJR7wUmY",
+    },
+    {
+      name: "drone-shoot",
+      title: "GHR Titania",
+      category: "drone-shoot",
+      image: "",
+      fallbackImg: "",
+      type: "yt",
+      youtube: "https://youtu.be/ZyfLZ1SzhIw",
     },
   ],
 };
@@ -1710,37 +1745,37 @@ export const portfolio = [
     title: "3D/2D Floorplan",
     projects: [
       {
-        title: "Floorplan",
+        title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan1,
         fallbackImg: floorplan1fallback,
       },
       {
-        title: "Floorplan",
+        title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan2,
         fallbackImg: floorplan2fallback,
       },
       {
-        title: "Floorplan",
+        title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan3,
         fallbackImg: floorplan3fallback,
       },
       {
-        title: "Floorplan",
+        title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan4,
         fallbackImg: floorplan4fallback,
       },
       {
-        title: "Floorplan",
+        title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan5,
         fallbackImg: floorplan5fallback,
       },
       {
-        title: "Floorplan",
+        title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan6,
         fallbackImg: floorplan6fallback,

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import Isotope from "isotope-layout";
 import "./FilterPortfolio.css";
 import Banner from "../Banner/Banner";
@@ -42,18 +42,20 @@ const filterMenu = [
     dataFilter: "scale-model",
   },
   {
-    name: "3D Floor Plan",
-    link: "floor-plan",
+    name: "3D/2D Floor Plan",
+    link: "3d-2d-floorplan",
+    external: true,
     dataFilter: "floor-plan",
   },
   {
     name: "Drone & Chroma Shoot",
-    link: "drone",
+    link: "drone-shoot",
     dataFilter: "drone",
+    external: true,
   },
 ];
 
-const FilterPortfolio = () => {
+const FilterPortfolio = ({ history }) => {
   const isoRef = useRef(null);
 
   const [isotope, setIsotope] = useState(null);
@@ -108,7 +110,13 @@ const FilterPortfolio = () => {
         <ul>
           {filterMenu.map((item) => (
             <li
-              onClick={() => onClickMenu(item.link)}
+              onClick={() => {
+                if (item?.external) {
+                  history.push("/portfolio/" + item.link);
+                  return;
+                }
+                onClickMenu(item.link);
+              }}
               className={filterKey === item.dataFilter ? "is-selected" : ""}
               data-filter={`.${item.dataFilter}`}
             >
@@ -161,4 +169,4 @@ const FilterPortfolio = () => {
   );
 };
 
-export default FilterPortfolio;
+export default withRouter(FilterPortfolio);
