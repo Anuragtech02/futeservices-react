@@ -358,6 +358,26 @@ import infosysCampusFallback7 from "../Assets/projects/commercial/infosysCampus/
 import infosysCampusFallback8 from "../Assets/projects/commercial/infosysCampus/8.jpg";
 import infosysCampusFallback9 from "../Assets/projects/commercial/infosysCampus/9.jpg";
 
+import columbia1 from "../Assets/projects/residential/columbia/1.webp";
+import columbia2 from "../Assets/projects/residential/columbia/2.webp";
+import columbia3 from "../Assets/projects/residential/columbia/3.webp";
+import columbia4 from "../Assets/projects/residential/columbia/4.webp";
+import columbia5 from "../Assets/projects/residential/columbia/5.webp";
+import columbia6 from "../Assets/projects/residential/columbia/6.webp";
+import columbia7 from "../Assets/projects/residential/columbia/7.webp";
+import columbia8 from "../Assets/projects/residential/columbia/8.webp";
+import columbia9 from "../Assets/projects/residential/columbia/9.webp";
+
+import columbiaFallback1 from "../Assets/projects/residential/columbia/1.jpg";
+import columbiaFallback2 from "../Assets/projects/residential/columbia/2.jpg";
+import columbiaFallback3 from "../Assets/projects/residential/columbia/3.jpg";
+import columbiaFallback4 from "../Assets/projects/residential/columbia/4.jpg";
+import columbiaFallback5 from "../Assets/projects/residential/columbia/5.jpg";
+import columbiaFallback6 from "../Assets/projects/residential/columbia/6.jpg";
+import columbiaFallback7 from "../Assets/projects/residential/columbia/7.jpg";
+import columbiaFallback8 from "../Assets/projects/residential/columbia/8.jpg";
+import columbiaFallback9 from "../Assets/projects/residential/columbia/9.jpg";
+
 const lntraintree = {
   name: "lnt-raintree",
   title: "L&T Raintree Boullevard",
@@ -406,7 +426,7 @@ const theGreenTerrace = {
       fallBackImg: theGreenTerraceFallback1,
       category: "residential",
       type: "yt",
-      yotube: "https://youtu.be/ep1wq7caDfw",
+      youtube: "https://youtu.be/ep1wq7caDfw",
     },
     {
       name: "the-green-terrace",
@@ -1123,6 +1143,85 @@ const infosysCampus = {
   ],
 };
 
+const columbia = {
+  name: "columbia-aaltius",
+  title: "Columbia Aaltius",
+  projects: [
+    {
+      name: "columbia-aaltius",
+      title: "Columbia Aaltius",
+      image: columbia1,
+      fallBackImg: columbiaFallback1,
+      category: "residential",
+      type: "yt",
+      youtube: "https://youtu.be/XK-IAxJILIY",
+    },
+    {
+      name: "columbia-aaltius",
+      title: "Columbia Aaltius",
+      image: columbia1,
+      fallBackImg: columbiaFallback1,
+      category: "residential",
+    },
+    {
+      name: "columbia-aaltius",
+      title: "Columbia Aaltius",
+      image: columbia2,
+      fallBackImg: columbiaFallback2,
+      category: "residential",
+    },
+    {
+      name: "columbia-aaltius",
+      title: "Columbia Aaltius",
+      image: columbia3,
+      fallBackImg: columbiaFallback3,
+      category: "residential",
+    },
+    {
+      name: "columbia-aaltius",
+      title: "Columbia Aaltius",
+      image: columbia4,
+      fallBackImg: columbiaFallback4,
+      category: "residential",
+    },
+    {
+      name: "columbia-aaltius",
+      title: "Columbia Aaltius",
+      image: columbia5,
+      fallBackImg: columbiaFallback5,
+      category: "residential",
+    },
+    {
+      name: "columbia-aaltius",
+      title: "Columbia Aaltius",
+      image: columbia6,
+      fallBackImg: columbiaFallback6,
+      category: "residential",
+    },
+    {
+      name: "columbia-aaltius",
+      title: "Columbia Aaltius",
+      image: columbia7,
+      fallBackImg: columbiaFallback7,
+      category: "residential",
+    },
+    {
+      name: "columbia-aaltius",
+      title: "Columbia Aaltius",
+      image: columbia8,
+      fallBackImg: columbiaFallback8,
+      category: "residential",
+    },
+    {
+      name: "columbia-aaltius",
+      title: "Columbia Aaltius",
+      image: columbia9,
+      fallBackImg: columbiaFallback9,
+      category: "residential",
+    },
+  ],
+};
+
 export const portfolio = [
   {
     name: "walkthrough",
@@ -1678,5 +1777,6 @@ export const portfolio = [
   { ...gmInfinite },
   { ...theGreenTerrace },
   { ...dosti },
+  { ...columbia },
   { ...infosysCampus },
 ];

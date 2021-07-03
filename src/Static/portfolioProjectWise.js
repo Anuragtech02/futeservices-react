@@ -14,6 +14,7 @@ import oberoiReality from "../Assets/projects/residential/oberoiReality/1.webp";
 import runwalnirvana from "../Assets/projects/residential/runwalnirvana/1.webp";
 import gmInfinite from "../Assets/projects/residential/gmInfinite/1.webp";
 import theGreenTerrace from "../Assets/projects/residential/theGreenTerrace/1.webp";
+import columbia from "../Assets/projects/residential/columbia/1.webp";
 
 /* 360 */
 import arvr1 from "../Assets/projects/ar-vr-360/arvr-1.webp";
@@ -40,6 +41,7 @@ import fallbackoberoiReality from "../Assets/projects/residential/oberoiReality/
 import fallbackrunwalnirvana from "../Assets/projects/residential/runwalnirvana/1.jpg";
 import fallbackgmInfinite from "../Assets/projects/residential/gmInfinite/1.jpg";
 import fallbacktheGreenTerrace from "../Assets/projects/residential/theGreenTerrace/1.jpg";
+import fallbackcolumbia from "../Assets/projects/residential/columbia/1.jpg";
 
 /* 360 */
 import arvr1fallback from "../Assets/projects/ar-vr-360/arvr-1.jpg";
@@ -127,6 +129,13 @@ export const portfolioData = [
     image: theGreenTerrace,
     fallbackImg: fallbacktheGreenTerrace,
     link: "the-green-terrace",
+  },
+  {
+    title: "Columbia Aaltius",
+    category: "Residential",
+    image: columbia,
+    fallbackImg: fallbackcolumbia,
+    link: "columbia-aaltius",
   },
   {
     title: "Dosti - Kandivali",

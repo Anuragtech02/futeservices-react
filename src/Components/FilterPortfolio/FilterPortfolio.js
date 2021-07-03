@@ -10,84 +10,6 @@ import "react-awesome-lightbox/build/style.css";
 import { portfolioData } from "../../Static/portfolioProjectWise";
 import VerticalCard from "../VerticalCard/VerticalCard";
 
-// import cat1Image1 from "../../Assets/projects/cat1/cat1-fute-1.webp";
-// import cat1Image2 from "../../Assets/projects/cat1/cat1-fute-2.webp";
-// import cat1Image3 from "../../Assets/projects/cat1/cat1-fute-3.webp";
-// import cat1Image4 from "../../Assets/projects/cat1/cat1-fute-4.webp";
-// import cat1Image5 from "../../Assets/projects/cat1/cat1-fute-5.webp";
-
-// import cat2 from "../../Assets/projects/cat2.webp";
-// import cat2Image1 from "../../Assets/projects/cat1/cat1-fute-6.webp";
-// import cat2Image2 from "../../Assets/projects/cat1/cat1-fute-7.webp";
-// import cat2Image3 from "../../Assets/projects/cat1/cat1-fute-8.webp";
-// import cat2Image4 from "../../Assets/projects/cat1/cat1-fute-9.webp";
-// import cat2Image5 from "../../Assets/projects/cat1/cat1-fute-10.webp";
-
-// import cat4 from "../../Assets/projects/cat4.webp";
-// import cat3Image1 from "../../Assets/projects/cat1/cat1-fute-11.webp";
-// import cat3Image2 from "../../Assets/projects/cat1/cat1-fute-12.webp";
-// import cat3Image3 from "../../Assets/projects/cat1/cat1-fute-13.webp";
-// import cat3Image4 from "../../Assets/projects/cat1/cat1-fute-14.webp";
-// import cat3Image5 from "../../Assets/projects/cat1/cat1-fute-15.webp";
-// import VerticalCard from "../VerticalCard/VerticalCard";
-
-// const images = [
-//   {
-//     title: "Project 1",
-//     category: "interior",
-//     src: cat1Image1,
-//     image: cat1Image1,
-//   },
-//   {
-//     title: "Project 2",
-//     category: "interior",
-//     src: cat1Image2,
-//     image: cat1Image2,
-//   },
-//   {
-//     title: "Project 3",
-//     category: "interior",
-//     src: cat1Image3,
-//     image: cat1Image3,
-//   },
-//   {
-//     title: "Project 1",
-//     category: "exterior",
-//     src: cat2Image2,
-//     image: cat2Image2,
-//   },
-//   {
-//     title: "Project 2",
-//     category: "exterior",
-//     src: cat2Image1,
-//     image: cat2Image1,
-//   },
-//   {
-//     title: "Project 3",
-//     category: "exterior",
-//     src: cat2Image3,
-//     image: cat2Image3,
-//   },
-//   {
-//     title: "Project 1",
-//     category: "vr",
-//     src: cat3Image1,
-//     image: cat3Image1,
-//   },
-//   {
-//     title: "Project 2",
-//     category: "vr",
-//     src: cat3Image2,
-//     image: cat3Image2,
-//   },
-//   {
-//     title: "Project 3",
-//     category: "vr",
-//     src: cat3Image3,
-//     image: cat3Image3,
-//   },
-// ];
-
 const filterMenu = [
   // {
   //   name: "All",
@@ -193,35 +115,6 @@ const FilterPortfolio = () => {
               {item.name}
             </li>
           ))}
-          {/* <li
-            onClick={() => onClickMenu("*")}
-            className={filterKey === "*" ? "is-selected" : ""}
-            data-filter="*"
-          >
-            All
-          </li>
-          <li
-            onClick={() => onClickMenu("interior")}
-            className={filterKey === "interior" ? "is-selected" : ""}
-            data-filter=".interior"
-          >
-            Interior
-          </li>
-          <li
-            onClick={() => onClickMenu("exterior")}
-            className={filterKey === "exterior" ? "is-selected" : ""}
-            data-filter=".exterior"
-          >
-            Exterior
-          </li>
-
-          <li
-            onClick={() => onClickMenu("vr")}
-            className={filterKey === "vr" ? "is-selected" : ""}
-            data-filter=".vr"
-          >
-            Immersive VR/360
-          </li> */}
         </ul>
       </div>
       <div ref={isoRef} className="grid gallery">
@@ -234,11 +127,6 @@ const FilterPortfolio = () => {
             >
               {image?.external ? (
                 <VerticalCard
-                  // onClick={() => {
-                  //   setStartIndexModal(i);
-                  //   //   setCurrImage(project.image || project.src);
-                  //   console.log("Clicked");
-                  // }}
                   onLoad={() => {
                     setCount((curr) => curr + 1);
                   }}
@@ -248,11 +136,6 @@ const FilterPortfolio = () => {
               ) : (
                 <Link to={`/portfolio/${image.link}`}>
                   <VerticalCard
-                    // onClick={() => {
-                    //   setStartIndexModal(i);
-                    //   //   setCurrImage(project.image || project.src);
-                    //   console.log("Clicked");
-                    // }}
                     onLoad={() => {
                       setCount((curr) => curr + 1);
                     }}
