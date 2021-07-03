@@ -232,7 +232,7 @@ const FilterPortfolio = () => {
               key={`${image.category + i}`}
               className={`grid-item ${image.category?.toLowerCase()}`}
             >
-              <Link to={`/portfolio/${image.link}`}>
+              {image?.external ? (
                 <VerticalCard
                   // onClick={() => {
                   //   setStartIndexModal(i);
@@ -245,7 +245,22 @@ const FilterPortfolio = () => {
                   type="inner"
                   item={image}
                 />
-              </Link>
+              ) : (
+                <Link to={`/portfolio/${image.link}`}>
+                  <VerticalCard
+                    // onClick={() => {
+                    //   setStartIndexModal(i);
+                    //   //   setCurrImage(project.image || project.src);
+                    //   console.log("Clicked");
+                    // }}
+                    onLoad={() => {
+                      setCount((curr) => curr + 1);
+                    }}
+                    type="inner"
+                    item={image}
+                  />
+                </Link>
+              )}
             </div>
           );
         })}

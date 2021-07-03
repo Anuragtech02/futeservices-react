@@ -30,6 +30,10 @@ const VerticalCard = ({
 
   const handleClick = () => {
     if (onClick) onClick();
+    if (item?.external) {
+      onClickLink(item?.link);
+      return;
+    }
     if (item?.category?.includes("ar")) {
       onClickLink(item.link);
     } else if (type !== "inner") {

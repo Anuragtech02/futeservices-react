@@ -338,6 +338,26 @@ import theGreenTerraceFallback7 from "../Assets/projects/residential/theGreenTer
 import theGreenTerraceFallback8 from "../Assets/projects/residential/theGreenTerrace/8.jpg";
 import theGreenTerraceFallback9 from "../Assets/projects/residential/theGreenTerrace/9.jpg";
 
+import infosysCampus1 from "../Assets/projects/commercial/infosysCampus/1.webp";
+import infosysCampus2 from "../Assets/projects/commercial/infosysCampus/2.webp";
+import infosysCampus3 from "../Assets/projects/commercial/infosysCampus/3.webp";
+import infosysCampus4 from "../Assets/projects/commercial/infosysCampus/4.webp";
+import infosysCampus5 from "../Assets/projects/commercial/infosysCampus/5.webp";
+import infosysCampus6 from "../Assets/projects/commercial/infosysCampus/6.webp";
+import infosysCampus7 from "../Assets/projects/commercial/infosysCampus/7.webp";
+import infosysCampus8 from "../Assets/projects/commercial/infosysCampus/8.webp";
+import infosysCampus9 from "../Assets/projects/commercial/infosysCampus/9.webp";
+
+import infosysCampusFallback1 from "../Assets/projects/commercial/infosysCampus/1.jpg";
+import infosysCampusFallback2 from "../Assets/projects/commercial/infosysCampus/2.jpg";
+import infosysCampusFallback3 from "../Assets/projects/commercial/infosysCampus/3.jpg";
+import infosysCampusFallback4 from "../Assets/projects/commercial/infosysCampus/4.jpg";
+import infosysCampusFallback5 from "../Assets/projects/commercial/infosysCampus/5.jpg";
+import infosysCampusFallback6 from "../Assets/projects/commercial/infosysCampus/6.jpg";
+import infosysCampusFallback7 from "../Assets/projects/commercial/infosysCampus/7.jpg";
+import infosysCampusFallback8 from "../Assets/projects/commercial/infosysCampus/8.jpg";
+import infosysCampusFallback9 from "../Assets/projects/commercial/infosysCampus/9.jpg";
+
 const lntraintree = {
   name: "lnt-raintree",
   title: "L&T Raintree Boullevard",
@@ -924,6 +944,185 @@ const dosti = {
   ],
 };
 
+const phoenix = {
+  name: "phoenix",
+  title: "Phoenix",
+  projects: [
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix0,
+      fallBackImg: phoenixFallback0,
+      category: "commercial",
+      type: "yt",
+      youtube: "https://youtu.be/AXG7K4wcNHU",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix0,
+      fallBackImg: phoenixFallback0,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix1,
+      fallBackImg: phoenixFallback1,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix2,
+      fallBackImg: phoenixFallback2,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix3,
+      fallBackImg: phoenixFallback3,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix4,
+      fallBackImg: phoenixFallback4,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix5,
+      fallBackImg: phoenixFallback5,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix6,
+      fallBackImg: phoenixFallback6,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix7,
+      fallBackImg: phoenixFallback7,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix8,
+      fallBackImg: phoenixFallback8,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix9,
+      fallBackImg: phoenixFallback9,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix10,
+      fallBackImg: phoenixFallback10,
+      category: "commercial",
+    },
+    {
+      name: "phoenix",
+      title: "Phoenix",
+      image: phoenix11,
+      fallBackImg: phoenixFallback11,
+      category: "commercial",
+    },
+  ],
+};
+
+const infosysCampus = {
+  name: "infosys-campus",
+  title: "Infosys Campus",
+  projects: [
+    {
+      name: "infosys-campus",
+      title: "Infosys Campus",
+      image: infosysCampus1,
+      fallBackImg: infosysCampusFallback1,
+      category: "commercial",
+      type: "yt",
+      youtube: "https://youtu.be/94koRkjHvNY",
+    },
+    {
+      name: "infosys-campus",
+      title: "Infosys Campus",
+      image: infosysCampus1,
+      fallBackImg: infosysCampusFallback1,
+      category: "commercial",
+    },
+    {
+      name: "infosys-campus",
+      title: "Infosys Campus",
+      image: infosysCampus2,
+      fallBackImg: infosysCampusFallback2,
+      category: "commercial",
+    },
+    {
+      name: "infosys-campus",
+      title: "Infosys Campus",
+      image: infosysCampus3,
+      fallBackImg: infosysCampusFallback3,
+      category: "commercial",
+    },
+    {
+      name: "infosys-campus",
+      title: "Infosys Campus",
+      image: infosysCampus4,
+      fallBackImg: infosysCampusFallback4,
+      category: "commercial",
+    },
+    {
+      name: "infosys-campus",
+      title: "Infosys Campus",
+      image: infosysCampus5,
+      fallBackImg: infosysCampusFallback5,
+      category: "commercial",
+    },
+    {
+      name: "infosys-campus",
+      title: "Infosys Campus",
+      image: infosysCampus6,
+      fallBackImg: infosysCampusFallback6,
+      category: "commercial",
+    },
+    {
+      name: "infosys-campus",
+      title: "Infosys Campus",
+      image: infosysCampus7,
+      fallBackImg: infosysCampusFallback7,
+      category: "commercial",
+    },
+    {
+      name: "infosys-campus",
+      title: "Infosys Campus",
+      image: infosysCampus8,
+      fallBackImg: infosysCampusFallback8,
+      category: "commercial",
+    },
+    {
+      name: "infosys-campus",
+      title: "Infosys Campus",
+      image: infosysCampus9,
+      fallBackImg: infosysCampusFallback9,
+      category: "commercial",
+    },
+  ],
+};
+
 export const portfolio = [
   {
     name: "walkthrough",
@@ -1213,100 +1412,20 @@ export const portfolio = [
       },
     ],
   },
-  {
-    name: "phoenix",
-    title: "Phoenix",
-    projects: [
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix0,
-        fallBackImg: phoenixFallback0,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix1,
-        fallBackImg: phoenixFallback1,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix2,
-        fallBackImg: phoenixFallback2,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix3,
-        fallBackImg: phoenixFallback3,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix4,
-        fallBackImg: phoenixFallback4,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix5,
-        fallBackImg: phoenixFallback5,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix6,
-        fallBackImg: phoenixFallback6,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix7,
-        fallBackImg: phoenixFallback7,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix8,
-        fallBackImg: phoenixFallback8,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix9,
-        fallBackImg: phoenixFallback9,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix10,
-        fallBackImg: phoenixFallback10,
-        category: "commercial",
-      },
-      {
-        name: "phoenix",
-        title: "Phoenix",
-        image: phoenix11,
-        fallBackImg: phoenixFallback11,
-        category: "commercial",
-      },
-    ],
-  },
+  { ...phoenix },
   {
     name: "lnt-it-park",
     title: "L&T IT Park (Bangalore)",
     projects: [
+      {
+        name: "lnt-it-park",
+        title: "L&T IT Park (Bangalore)",
+        image: lntitpark0,
+        fallBackImg: lntitparkFallback0,
+        category: "commercial",
+        type: "yt",
+        youtube: "https://youtu.be/55mmvJmJye4",
+      },
       {
         name: "lnt-it-park",
         title: "L&T IT Park (Bangalore)",
@@ -1559,4 +1678,5 @@ export const portfolio = [
   { ...gmInfinite },
   { ...theGreenTerrace },
   { ...dosti },
+  { ...infosysCampus },
 ];
