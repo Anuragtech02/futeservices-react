@@ -206,6 +206,492 @@ import dostiFallback6 from "../Assets/projects/residential/dosti/6.jpg";
 import dostiFallback7 from "../Assets/projects/residential/dosti/7.jpg";
 import dostiFallback8 from "../Assets/projects/residential/dosti/8.jpg";
 
+import runwalcentral1 from "../Assets/projects/residential/runwalcentral/1.webp";
+import runwalcentral2 from "../Assets/projects/residential/runwalcentral/2.webp";
+import runwalcentral3 from "../Assets/projects/residential/runwalcentral/3.webp";
+import runwalcentral4 from "../Assets/projects/residential/runwalcentral/4.webp";
+import runwalcentral5 from "../Assets/projects/residential/runwalcentral/5.webp";
+import runwalcentral6 from "../Assets/projects/residential/runwalcentral/6.webp";
+import runwalcentral7 from "../Assets/projects/residential/runwalcentral/7.webp";
+import runwalcentral8 from "../Assets/projects/residential/runwalcentral/8.webp";
+import runwalcentral9 from "../Assets/projects/residential/runwalcentral/9.webp";
+import runwalcentral10 from "../Assets/projects/residential/runwalcentral/10.webp";
+import runwalcentral11 from "../Assets/projects/residential/runwalcentral/11.webp";
+import runwalcentral12 from "../Assets/projects/residential/runwalcentral/12.webp";
+import runwalcentral13 from "../Assets/projects/residential/runwalcentral/13.webp";
+import runwalcentral14 from "../Assets/projects/residential/runwalcentral/14.webp";
+import runwalcentral15 from "../Assets/projects/residential/runwalcentral/15.webp";
+import runwalcentral16 from "../Assets/projects/residential/runwalcentral/16.webp";
+
+import runwalcentralFallback1 from "../Assets/projects/residential/runwalcentral/1.jpg";
+import runwalcentralFallback2 from "../Assets/projects/residential/runwalcentral/2.jpg";
+import runwalcentralFallback3 from "../Assets/projects/residential/runwalcentral/3.jpg";
+import runwalcentralFallback4 from "../Assets/projects/residential/runwalcentral/4.jpg";
+import runwalcentralFallback5 from "../Assets/projects/residential/runwalcentral/5.jpg";
+import runwalcentralFallback6 from "../Assets/projects/residential/runwalcentral/6.jpg";
+import runwalcentralFallback7 from "../Assets/projects/residential/runwalcentral/7.jpg";
+import runwalcentralFallback8 from "../Assets/projects/residential/runwalcentral/8.jpg";
+import runwalcentralFallback9 from "../Assets/projects/residential/runwalcentral/9.jpg";
+import runwalcentralFallback10 from "../Assets/projects/residential/runwalcentral/10.jpg";
+import runwalcentralFallback11 from "../Assets/projects/residential/runwalcentral/11.jpg";
+import runwalcentralFallback12 from "../Assets/projects/residential/runwalcentral/12.jpg";
+import runwalcentralFallback13 from "../Assets/projects/residential/runwalcentral/13.jpg";
+import runwalcentralFallback14 from "../Assets/projects/residential/runwalcentral/14.jpg";
+import runwalcentralFallback15 from "../Assets/projects/residential/runwalcentral/15.jpg";
+import runwalcentralFallback16 from "../Assets/projects/residential/runwalcentral/16.jpg";
+
+import oberoiReality1 from "../Assets/projects/residential/oberoiReality/1.webp";
+import oberoiReality2 from "../Assets/projects/residential/oberoiReality/2.webp";
+import oberoiReality3 from "../Assets/projects/residential/oberoiReality/3.webp";
+import oberoiReality4 from "../Assets/projects/residential/oberoiReality/4.webp";
+import oberoiReality5 from "../Assets/projects/residential/oberoiReality/5.webp";
+import oberoiReality6 from "../Assets/projects/residential/oberoiReality/6.webp";
+import oberoiReality7 from "../Assets/projects/residential/oberoiReality/7.webp";
+
+import oberoiRealityFallback1 from "../Assets/projects/residential/oberoiReality/1.jpg";
+import oberoiRealityFallback2 from "../Assets/projects/residential/oberoiReality/2.jpg";
+import oberoiRealityFallback3 from "../Assets/projects/residential/oberoiReality/3.jpg";
+import oberoiRealityFallback4 from "../Assets/projects/residential/oberoiReality/4.jpg";
+import oberoiRealityFallback5 from "../Assets/projects/residential/oberoiReality/5.jpg";
+import oberoiRealityFallback6 from "../Assets/projects/residential/oberoiReality/6.jpg";
+import oberoiRealityFallback7 from "../Assets/projects/residential/oberoiReality/7.jpg";
+
+import runwalnirvana1 from "../Assets/projects/residential/runwalnirvana/1.webp";
+import runwalnirvana2 from "../Assets/projects/residential/runwalnirvana/2.webp";
+import runwalnirvana3 from "../Assets/projects/residential/runwalnirvana/3.webp";
+import runwalnirvana5 from "../Assets/projects/residential/runwalnirvana/5.webp";
+import runwalnirvana6 from "../Assets/projects/residential/runwalnirvana/6.webp";
+import runwalnirvana7 from "../Assets/projects/residential/runwalnirvana/7.webp";
+import runwalnirvana8 from "../Assets/projects/residential/runwalnirvana/8.webp";
+import runwalnirvana9 from "../Assets/projects/residential/runwalnirvana/9.webp";
+import runwalnirvana12 from "../Assets/projects/residential/runwalnirvana/12.webp";
+import runwalnirvana13 from "../Assets/projects/residential/runwalnirvana/13.webp";
+import runwalnirvana14 from "../Assets/projects/residential/runwalnirvana/14.webp";
+import runwalnirvana15 from "../Assets/projects/residential/runwalnirvana/15.webp";
+import runwalnirvana17 from "../Assets/projects/residential/runwalnirvana/17.webp";
+import runwalnirvana18 from "../Assets/projects/residential/runwalnirvana/18.webp";
+import runwalnirvana19 from "../Assets/projects/residential/runwalnirvana/19.webp";
+
+import runwalnirvanaFallback1 from "../Assets/projects/residential/runwalnirvana/1.jpg";
+import runwalnirvanaFallback2 from "../Assets/projects/residential/runwalnirvana/2.jpg";
+import runwalnirvanaFallback3 from "../Assets/projects/residential/runwalnirvana/3.jpg";
+import runwalnirvanaFallback5 from "../Assets/projects/residential/runwalnirvana/5.jpg";
+import runwalnirvanaFallback6 from "../Assets/projects/residential/runwalnirvana/6.jpg";
+import runwalnirvanaFallback7 from "../Assets/projects/residential/runwalnirvana/7.jpg";
+import runwalnirvanaFallback8 from "../Assets/projects/residential/runwalnirvana/8.jpg";
+import runwalnirvanaFallback9 from "../Assets/projects/residential/runwalnirvana/9.jpg";
+import runwalnirvanaFallback12 from "../Assets/projects/residential/runwalnirvana/12.jpg";
+import runwalnirvanaFallback13 from "../Assets/projects/residential/runwalnirvana/13.jpg";
+import runwalnirvanaFallback14 from "../Assets/projects/residential/runwalnirvana/14.jpg";
+import runwalnirvanaFallback15 from "../Assets/projects/residential/runwalnirvana/15.jpg";
+import runwalnirvanaFallback17 from "../Assets/projects/residential/runwalnirvana/17.jpg";
+import runwalnirvanaFallback18 from "../Assets/projects/residential/runwalnirvana/18.jpg";
+import runwalnirvanaFallback19 from "../Assets/projects/residential/runwalnirvana/19.jpg";
+
+import gmInfinite0 from "../Assets/projects/residential/gmInfinite/0.webp";
+import gmInfinite1 from "../Assets/projects/residential/gmInfinite/1.webp";
+import gmInfinite3 from "../Assets/projects/residential/gmInfinite/3.webp";
+import gmInfinite4 from "../Assets/projects/residential/gmInfinite/4.webp";
+import gmInfinite5 from "../Assets/projects/residential/gmInfinite/5.webp";
+import gmInfinite6 from "../Assets/projects/residential/gmInfinite/6.webp";
+import gmInfinite7 from "../Assets/projects/residential/gmInfinite/7.webp";
+import gmInfinite8 from "../Assets/projects/residential/gmInfinite/8.webp";
+import gmInfinite9 from "../Assets/projects/residential/gmInfinite/9.webp";
+import gmInfinite10 from "../Assets/projects/residential/gmInfinite/10.webp";
+import gmInfinite11 from "../Assets/projects/residential/gmInfinite/11.webp";
+import gmInfinite12 from "../Assets/projects/residential/gmInfinite/12.webp";
+
+import gmInfiniteFallback0 from "../Assets/projects/residential/gmInfinite/0.jpg";
+import gmInfiniteFallback1 from "../Assets/projects/residential/gmInfinite/1.jpg";
+import gmInfiniteFallback3 from "../Assets/projects/residential/gmInfinite/3.jpg";
+import gmInfiniteFallback4 from "../Assets/projects/residential/gmInfinite/4.jpg";
+import gmInfiniteFallback5 from "../Assets/projects/residential/gmInfinite/5.jpg";
+import gmInfiniteFallback6 from "../Assets/projects/residential/gmInfinite/6.jpg";
+import gmInfiniteFallback7 from "../Assets/projects/residential/gmInfinite/7.jpg";
+import gmInfiniteFallback8 from "../Assets/projects/residential/gmInfinite/8.jpg";
+import gmInfiniteFallback9 from "../Assets/projects/residential/gmInfinite/9.jpg";
+import gmInfiniteFallback10 from "../Assets/projects/residential/gmInfinite/10.jpg";
+import gmInfiniteFallback11 from "../Assets/projects/residential/gmInfinite/11.jpg";
+import gmInfiniteFallback12 from "../Assets/projects/residential/gmInfinite/12.jpg";
+
+const runwalCentral = {
+  name: "runwal-central",
+  title: "Runwal Central Park (Pune)",
+  projects: [
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral1,
+      fallBackImg: runwalcentralFallback1,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral2,
+      fallBackImg: runwalcentralFallback2,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral3,
+      fallBackImg: runwalcentralFallback3,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral4,
+      fallBackImg: runwalcentralFallback4,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral5,
+      fallBackImg: runwalcentralFallback5,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral6,
+      fallBackImg: runwalcentralFallback6,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral7,
+      fallBackImg: runwalcentralFallback7,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral8,
+      fallBackImg: runwalcentralFallback8,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral9,
+      fallBackImg: runwalcentralFallback9,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral10,
+      fallBackImg: runwalcentralFallback10,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral11,
+      fallBackImg: runwalcentralFallback11,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral12,
+      fallBackImg: runwalcentralFallback12,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral13,
+      fallBackImg: runwalcentralFallback13,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral14,
+      fallBackImg: runwalcentralFallback14,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral15,
+      fallBackImg: runwalcentralFallback15,
+      category: "residential",
+    },
+    {
+      name: "runwal-central",
+      title: "Runwal Central Park (Pune)",
+      image: runwalcentral16,
+      fallBackImg: runwalcentralFallback16,
+      category: "residential",
+    },
+  ],
+};
+
+const oberoiReality = {
+  name: "oberoi-reality",
+  title: "Oberoi Reality",
+  projects: [
+    {
+      name: "oberoi-reality",
+      title: "Oberoi Reality",
+      image: oberoiReality1,
+      fallBackImg: oberoiRealityFallback1,
+      category: "residential",
+    },
+    {
+      name: "oberoi-reality",
+      title: "Oberoi Reality",
+      image: oberoiReality2,
+      fallBackImg: oberoiRealityFallback2,
+      category: "residential",
+    },
+    {
+      name: "oberoi-reality",
+      title: "Oberoi Reality",
+      image: oberoiReality3,
+      fallBackImg: oberoiRealityFallback3,
+      category: "residential",
+    },
+    {
+      name: "oberoi-reality",
+      title: "Oberoi Reality",
+      image: oberoiReality4,
+      fallBackImg: oberoiRealityFallback4,
+      category: "residential",
+    },
+    {
+      name: "oberoi-reality",
+      title: "Oberoi Reality",
+      image: oberoiReality5,
+      fallBackImg: oberoiRealityFallback5,
+      category: "residential",
+    },
+    {
+      name: "oberoi-reality",
+      title: "Oberoi Reality",
+      image: oberoiReality6,
+      fallBackImg: oberoiRealityFallback6,
+      category: "residential",
+    },
+    {
+      name: "oberoi-reality",
+      title: "Oberoi Reality",
+      image: oberoiReality7,
+      fallBackImg: oberoiRealityFallback7,
+      category: "residential",
+    },
+  ],
+};
+
+const runwalNirvana = {
+  name: "runwal-nirvana",
+  title: "Runwal Nirvana (Mumbai)",
+  projects: [
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana1,
+      fallBackImg: runwalnirvanaFallback1,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana2,
+      fallBackImg: runwalnirvanaFallback2,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana3,
+      fallBackImg: runwalnirvanaFallback3,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana5,
+      fallBackImg: runwalnirvanaFallback5,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana6,
+      fallBackImg: runwalnirvanaFallback6,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana7,
+      fallBackImg: runwalnirvanaFallback7,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana8,
+      fallBackImg: runwalnirvanaFallback8,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana9,
+      fallBackImg: runwalnirvanaFallback9,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana12,
+      fallBackImg: runwalnirvanaFallback12,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana13,
+      fallBackImg: runwalnirvanaFallback13,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana14,
+      fallBackImg: runwalnirvanaFallback14,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana15,
+      fallBackImg: runwalnirvanaFallback15,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana17,
+      fallBackImg: runwalnirvanaFallback17,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana18,
+      fallBackImg: runwalnirvanaFallback18,
+      category: "residential",
+    },
+    {
+      name: "runwal-nirvana",
+      title: "Runwal Nirvana (Mumbai)",
+      image: runwalnirvana19,
+      fallBackImg: runwalnirvanaFallback19,
+      category: "residential",
+    },
+  ],
+};
+
+const gmInfinite = {
+  name: "gm-infinite",
+  title: "GM Infinite",
+  projects: [
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite0,
+      fallBackImg: gmInfiniteFallback0,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite1,
+      fallBackImg: gmInfiniteFallback1,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite3,
+      fallBackImg: gmInfiniteFallback3,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite4,
+      fallBackImg: gmInfiniteFallback4,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite5,
+      fallBackImg: gmInfiniteFallback5,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite6,
+      fallBackImg: gmInfiniteFallback6,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite7,
+      fallBackImg: gmInfiniteFallback7,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite8,
+      fallBackImg: gmInfiniteFallback8,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite9,
+      fallBackImg: gmInfiniteFallback9,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite10,
+      fallBackImg: gmInfiniteFallback10,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite11,
+      fallBackImg: gmInfiniteFallback11,
+      category: "residential",
+    },
+    {
+      name: "gm-infinite",
+      title: "GM Infinite",
+      image: gmInfinite12,
+      fallBackImg: gmInfiniteFallback12,
+      category: "residential",
+    },
+  ],
+};
+
 export const portfolio = [
   {
     name: "walkthrough",
@@ -834,6 +1320,10 @@ export const portfolio = [
       },
     ],
   },
+  { ...runwalCentral },
+  { ...oberoiReality },
+  { ...runwalNirvana },
+  { ...gmInfinite },
   {
     name: "dosti",
     title: "Dosti (Kandivali)",

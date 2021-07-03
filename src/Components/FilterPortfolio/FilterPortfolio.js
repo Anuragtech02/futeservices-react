@@ -89,11 +89,11 @@ import VerticalCard from "../VerticalCard/VerticalCard";
 // ];
 
 const filterMenu = [
-  {
-    name: "All",
-    link: "*",
-    dataFilter: "*",
-  },
+  // {
+  //   name: "All",
+  //   link: "*",
+  //   dataFilter: "*",
+  // },
   {
     name: "Residential",
     link: "residential",
@@ -104,13 +104,38 @@ const filterMenu = [
     link: "commercial",
     dataFilter: "commercial",
   },
+  {
+    name: "Walkthrough",
+    link: "walkthrough",
+    dataFilter: "walkthrough",
+  },
+  {
+    name: "360 & VR",
+    link: "vr360",
+    dataFilter: "vr360",
+  },
+  {
+    name: "Scale Model",
+    link: "scale-model",
+    dataFilter: "scale-model",
+  },
+  {
+    name: "3D Floor Plan",
+    link: "floor-plan",
+    dataFilter: "floor-plan",
+  },
+  {
+    name: "Drone & Chroma Shoot",
+    link: "drone",
+    dataFilter: "drone",
+  },
 ];
 
 const FilterPortfolio = () => {
   const isoRef = useRef(null);
 
   const [isotope, setIsotope] = useState(null);
-  const [filterKey, setFilterKey] = useState("*");
+  const [filterKey, setFilterKey] = useState("walkthrough");
   const totalImages = portfolioData.length;
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
