@@ -45,11 +45,13 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
       title: "Residential",
       image: residential,
       fallbackImg: residentialfallback,
+      link: "/portfolio/category/residential",
     },
     {
       title: "Commercial",
       image: commercial,
       fallbackImg: commercialfallback,
+      link: "/portfolio/category/commercial",
     },
     {
       title: "3D Rendering",
@@ -62,11 +64,11 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
       image: cat4,
       video: walkthrough,
       fallbackVideo: walkthroughfallback,
-      link: "portfolio/walkthrough",
+      link: "/portfolio/walkthrough",
     },
     {
       title: "3D Floorplan",
-      link: "portfolio/3d-2d-floorplan",
+      link: "/portfolio/3d-2d-floorplan",
       image: fPlan,
       fallbackImg: fPlanfallback,
     },
@@ -75,6 +77,7 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
       type: "360",
       image: panaroma,
       fallbackImg: panaromafallback,
+      link: "/portfolio/category/vr360",
     },
     // {
     //   title: "Virtual Reality",
@@ -97,6 +100,7 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
       title: "Physical Scale Model",
       image: scaleModel,
       fallbackImg: scaleModelfallback,
+      link: "/portfolio/category/scale-model",
     },
     // {
     //   title: "Layer View",

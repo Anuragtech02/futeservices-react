@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link, withRouter, useParams } from "react-router-dom";
 import Isotope from "isotope-layout";
 import "./FilterPortfolio.css";
 import Banner from "../Banner/Banner";
@@ -67,9 +67,15 @@ const FilterPortfolio = ({ history }) => {
   const [modalImages, setModalImages] = useState([]);
   const [startIndexModal, setStartIndexModal] = useState(null);
 
+  const { category } = useParams();
+
   const onClickMenu = (item) => {
     setFilterKey(item);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     // if (count === totalImages) {
@@ -94,6 +100,12 @@ const FilterPortfolio = ({ history }) => {
   useEffect(() => {
     setModalImages(portfolioData.map((image) => image.image));
   }, []);
+
+  useEffect(() => {
+    if (category?.length) {
+      setFilterKey(category.toLowerCase());
+    }
+  }, [category]);
 
   useEffect(() => {
     if (isotope) {

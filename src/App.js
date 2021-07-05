@@ -126,10 +126,15 @@ const App = () => {
             <Route path="/portfolio" exact component={FilterPortfolio} />
             <Route path="/portfolio/:category" exact component={Portfolio} />
             <Route
+              path="/portfolio/category/:category"
+              exact
+              component={FilterPortfolio}
+            />
+            {/* <Route
               path="/portfolio/:category/:name"
               exact
               component={PortfolioPage}
-            />
+            /> */}
             <Route component={NotFound} />
           </Switch>
           <div className={style.footer}>
