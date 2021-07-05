@@ -88,7 +88,6 @@ export const Home = ({ history }) => {
         </div>
       </section>
       <section className={style.homeSliderContainer}>
-        <HomeSlider />
         <div className={style.aboutContainer}>
           <Grid container spacing={4}>
             <Grid item xl={6} lg={6} md={12} sm={12} xs={12}>
@@ -118,13 +117,14 @@ export const Home = ({ history }) => {
               </div>
             </Grid>
             <Grid item lg={6} md={12} sm={12} xs={12}>
-              <div className={style.aboutRight}>
+              {/* <div className={style.aboutRight}>
                 <img
                   src={isWebpSupported ? cat5 : cat5fallback}
                   alt="fute-services"
-                />
-                {/* <CompareSlider /> */}
-              </div>
+                /> */}
+              {/* <CompareSlider /> */}
+              {/* </div> */}
+              <HomeSlider />
             </Grid>
           </Grid>
         </div>
