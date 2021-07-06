@@ -110,16 +110,17 @@ const data = [
   },
   {
     title: "3D Views & Renders",
-    link: {
-      interior: "3d-rendering-interior",
-      exterior: "3d-rendering-exterior",
-    },
+    // link: {
+    //   interior: "3d-rendering-interior",
+    //   exterior: "3d-rendering-exterior",
+    // },
+    link: "category/residential",
     image: runwalOriginal,
     desc: "Your brochures, banners, advertisements, and other marketing collaterals will jazz up with our ultra realistic 3D renders that hit the mark right. Precision crafted views, with the minutest of details taken care of and accentuated with super realistic props and vegetation alongwith the perfect mood setting with lighting effects that take photorealism to the next level.",
   },
   {
     title: "VR/AR/360° Panaroma",
-    link: "ar-vr-panaroma",
+    link: "category/vr360",
     image: panaroma,
     desc: "This is the future of marketing and we take the lead when it comes to providing your audiences with engagements such as these that elevate your brand name and solidify your presence in the real estate space. With our interactive AR, VR and 360° Panaroma, let us help you transport your audiences right to the heart and soul of the property with realistic imagery, animation, sounds and sound effects, and the breathtaking feeling of aactually being at a place that is yet to be built. ",
   },
@@ -131,7 +132,7 @@ const data = [
   },
   {
     title: "3d Scale Model",
-    link: "scale-model",
+    link: "category/scale-model",
     image: scModel,
     desc: "Scale up your brand presence with our state of the art scale models that push the limits towards excellence. Leave your audiences impressed with our accurately designed scale models that mimic every aspect of the project in its truest form, scaled down to a miniature version that makes you explore the project in its entirety but without the hassle of travelling floors to do the same at the actual site.",
   },

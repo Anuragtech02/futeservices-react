@@ -57,6 +57,7 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
       title: "3D Rendering",
       image: rendering,
       fallbackImg: renderingfallback,
+      link: "/portfolio/category/residential",
     },
     {
       title: "3D Walkthrough",
