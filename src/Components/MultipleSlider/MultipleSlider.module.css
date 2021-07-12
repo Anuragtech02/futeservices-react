@@ -3,27 +3,18 @@
   background-color: white;
   padding: 100px 30px;
 }
-
 .slider .imgContainer {
   height: 100px;
   max-width: 150px;
   margin: 0 auto;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .slider .imgContainer img {
   max-width: 200px !important;
   max-height: 80px !important;
 }
-
 @media screen and (max-width: 400px) {
   .slider .imgContainer img {
     max-width: 150px !important;
@@ -33,33 +24,26 @@
 .container {
   position: relative;
 }
-
 .container .arrowLeft,
 .container .arrowRight {
   position: absolute;
   top: 50%;
   left: 20px;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
   z-index: 1000;
 }
-
 .container .arrowLeft span,
 .container .arrowLeft svg,
 .container .arrowRight span,
 .container .arrowRight svg {
   cursor: pointer;
 }
-
 .container .arrowLeft svg,
 .container .arrowRight svg {
   fill: #313131;
 }
-
 .container .arrowRight {
   left: auto;
   right: 20px;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-}
-/*# sourceMappingURL=MultipleSlider.module.css.map */
+  transform: translate(0, -50%);
+}/*# sourceMappingURL=MultipleSlider.module.css.map */

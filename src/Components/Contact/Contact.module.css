@@ -4,7 +4,7 @@
   outline: none;
 }
 
-.btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
+.btn, .btnDark, .btnLight, .btnLightFilled, .btnDrakFilled {
   width: auto;
   opacity: 0;
   position: relative;
@@ -19,9 +19,7 @@
   letter-spacing: 0.2em;
   border-radius: 0;
   outline: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   padding: 8px 50px;
   cursor: pointer !important;
@@ -35,7 +33,6 @@
   color: white;
   border: 1px solid black;
 }
-
 .btnDrakFilled::after {
   content: "";
   position: absolute;
@@ -52,18 +49,14 @@
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
 }
-
 .btnDrakFilled:hover {
   color: black;
   background-color: none;
   border-color: black;
 }
-
 .btnDrakFilled:hover::after {
-  -webkit-transform: translateY(100%) !important;
-          transform: translateY(100%) !important;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
+  transform: translateY(100%) !important;
+  transform-origin: bottom left;
 }
 
 .btnLightFilled {
@@ -72,7 +65,6 @@
   color: black;
   border: 1px solid white;
 }
-
 .btnLightFilled::after {
   content: "";
   position: absolute;
@@ -89,18 +81,14 @@
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
 }
-
 .btnLightFilled:hover {
   color: white;
   background-color: none;
   border-color: white;
 }
-
 .btnLightFilled:hover::after {
-  -webkit-transform: translateY(100%) !important;
-          transform: translateY(100%) !important;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
+  transform: translateY(100%) !important;
+  transform-origin: bottom left;
 }
 
 .btnLight {
@@ -109,7 +97,6 @@
   overflow: hidden;
   border: 1px solid white;
 }
-
 .btnLight::after {
   content: "";
   position: absolute;
@@ -120,23 +107,17 @@
   height: 100%;
   background-color: transparent;
   border: 1px solid white;
-  -webkit-transform: rotate(20deg) translateY(100%);
-          transform: rotate(20deg) translateY(100%);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: 0.3s ease-in-out;
+  transform: rotate(20deg) translateY(100%);
+  transform-origin: bottom left;
   transition: 0.3s ease-in-out;
 }
-
 .btnLight:hover {
   color: black;
   background-color: none;
 }
-
 .btnLight:hover::after {
   background-color: white;
-  -webkit-transform: translateY(0) !important;
-          transform: translateY(0) !important;
+  transform: translateY(0) !important;
 }
 
 .btnDark {
@@ -145,7 +126,6 @@
   overflow: hidden;
   border: 1px solid black;
 }
-
 .btnDark::after {
   content: "";
   position: absolute;
@@ -156,23 +136,17 @@
   height: 100%;
   background-color: transparent;
   border: 1px solid black;
-  -webkit-transform: rotate(20deg) translateY(100%);
-          transform: rotate(20deg) translateY(100%);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: 0.3s ease-in-out;
+  transform: rotate(20deg) translateY(100%);
+  transform-origin: bottom left;
   transition: 0.3s ease-in-out;
 }
-
 .btnDark:hover {
   color: white;
   background-color: none;
 }
-
 .btnDark:hover::after {
   background-color: black;
-  -webkit-transform: translateY(0) !important;
-          transform: translateY(0) !important;
+  transform: translateY(0) !important;
 }
 
 .alignLeft {
@@ -194,73 +168,40 @@
 
 .alignBottom {
   float: bottom;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   bottom: 0;
 }
 
 .align, .alignLeft, .alignRight, .alignTop, .alignBottom {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
   margin: auto auto;
 }
 
-.flexRow, .content .contactDetails .phone span,
+.flexRow, .content form .fileInput, .content form, .content .contactDetails .phone span,
 .content .contactDetails .email span,
-.content .contactDetails .addresses span, .content form, .content form .fileInput,
+.content .contactDetails .addresses span,
 .flexColumn,
 .content .contactDetails {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-
-.flexColumn,
-.content .contactDetails {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.flexColumn, .content .contactDetails {
+  flex-direction: column;
+  justify-content: center;
 }
 
 .content {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .content .mapImage {
   width: 100%;
   height: 100%;
@@ -268,27 +209,20 @@
   background: #2c2c2c;
   overflow: hidden;
 }
-
 .content .mapImage img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .content .contactDetails {
   padding: 30px 80px;
   height: 100%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-image: url(../../Assets/back-img.jpg);
 }
-
 .content .contactDetails::before {
   position: absolute;
   content: "";
@@ -298,7 +232,6 @@
   height: 100%;
   background: rgba(165, 33, 35, 0.95);
 }
-
 .content .contactDetails p {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -307,14 +240,12 @@
   color: rgba(255, 255, 255, 0.7);
   z-index: 10;
 }
-
 .content .contactDetails .phone,
 .content .contactDetails .email,
 .content .contactDetails .addresses {
   z-index: 10;
   margin: 15px 0;
 }
-
 .content .contactDetails .phone span,
 .content .contactDetails .phone a,
 .content .contactDetails .phone li,
@@ -329,24 +260,17 @@
   font-weight: 300;
   font-size: 1.1rem;
 }
-
 .content .contactDetails .phone span,
 .content .contactDetails .email span,
 .content .contactDetails .addresses span {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
-
 .content .contactDetails .phone span svg,
 .content .contactDetails .email span svg,
 .content .contactDetails .addresses span svg {
   fill: white;
 }
-
 .content .contactDetails .phone span h3,
 .content .contactDetails .email span h3,
 .content .contactDetails .addresses span h3 {
@@ -356,72 +280,58 @@
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
-
 .content .contactDetails .phone a,
 .content .contactDetails .email a,
 .content .contactDetails .addresses a {
   margin-top: 10px !important;
 }
-
 .content .contactDetails .email span:nth-child(2) {
   margin-left: 40px;
 }
-
 @media screen and (max-width: 600px) {
   .content .contactDetails .email span:nth-child(2) {
     margin-left: 0;
   }
 }
-
 .content .contactDetails .phone {
   margin-top: 30px;
 }
-
 .content .contactDetails .phone a {
   margin-left: 40px;
 }
-
 @media screen and (max-width: 600px) {
   .content .contactDetails .phone a {
     margin-left: 0;
   }
 }
-
 .content .contactDetails .phone h3 {
   margin-top: -5px;
 }
-
 .content .contactDetails .phone span {
   margin-bottom: 10px;
 }
-
 .content .contactDetails .addresses ul {
   list-style: none;
   margin-left: 40px;
 }
-
 @media screen and (max-width: 600px) {
   .content .contactDetails .addresses ul {
     margin-left: 0;
   }
 }
-
 .content .contactDetails .addresses ul li {
   margin: 10px 0;
 }
-
 @media screen and (max-width: 600px) {
   .content .contactDetails {
     padding: 50px 20px;
   }
 }
-
 .content .career {
   padding: 100px 50px;
   width: 80%;
   margin: 0 auto;
 }
-
 .content .career h2 {
   text-align: center;
   text-transform: uppercase;
@@ -431,7 +341,6 @@
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 20px;
 }
-
 .content .career p {
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
@@ -440,58 +349,44 @@
   margin: 20px auto;
   color: rgba(0, 0, 0, 0.7);
 }
-
 .content .career p span {
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
 }
-
 @media screen and (max-width: 600px) {
   .content .career {
     padding: 50px 10px;
   }
 }
-
 @media screen and (max-width: 400px) {
   .content .career {
     width: 90%;
   }
 }
-
 .content form {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   min-width: 350px;
   width: 30%;
   margin: 0 auto;
   margin-top: 0;
   padding: 15px;
 }
-
 .content form section {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   text-align: left;
 }
-
 .content form .fileInput {
   border-radius: 50px;
   background: #f3f3f3;
   cursor: pointer;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   padding: 10px 20px;
 }
-
 .content form .fileInput p {
   font-size: 0.9rem;
   margin: 0;
 }
-
 .content form .submitBtn {
   background: var(--clr-primary);
   padding: 10px 30px;
@@ -502,13 +397,9 @@
   margin-left: 10px;
   border-radius: 50px;
 }
-
 @media screen and (max-width: 600px) {
   .content form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .content form section {
     width: 100%;
@@ -518,13 +409,11 @@
     width: 100%;
   }
 }
-
 @media screen and (max-width: 1000px) {
   .content form {
     width: 90%;
   }
 }
-
 @media screen and (max-width: 400px) {
   .content form {
     min-width: 200px;
@@ -537,13 +426,11 @@
     max-width: 80%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .container .bgImage h2 {
     font-size: 2rem;
   }
 }
-
 @media screen and (max-width: 500px) {
   .content .para {
     max-width: 80%;
@@ -551,13 +438,7 @@
     line-height: normal;
   }
   .content .details {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
-}
-/*# sourceMappingURL=Contact.module.css.map */
+}/*# sourceMappingURL=Contact.module.css.map */

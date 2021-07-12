@@ -4,7 +4,7 @@
   outline: none;
 }
 
-.btn, .btnDrakFilled, .btnLightFilled, .btnLight, .btnDark {
+.btn, .btnDark, .btnLight, .btnLightFilled, .btnDrakFilled {
   width: auto;
   opacity: 0;
   position: relative;
@@ -19,9 +19,7 @@
   letter-spacing: 0.2em;
   border-radius: 0;
   outline: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   padding: 8px 50px;
   cursor: pointer !important;
@@ -35,7 +33,6 @@
   color: white;
   border: 1px solid black;
 }
-
 .btnDrakFilled::after {
   content: "";
   position: absolute;
@@ -52,18 +49,14 @@
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
 }
-
 .btnDrakFilled:hover {
   color: black;
   background-color: none;
   border-color: black;
 }
-
 .btnDrakFilled:hover::after {
-  -webkit-transform: translateY(100%) !important;
-          transform: translateY(100%) !important;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
+  transform: translateY(100%) !important;
+  transform-origin: bottom left;
 }
 
 .btnLightFilled {
@@ -72,7 +65,6 @@
   color: black;
   border: 1px solid white;
 }
-
 .btnLightFilled::after {
   content: "";
   position: absolute;
@@ -89,18 +81,14 @@
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
 }
-
 .btnLightFilled:hover {
   color: white;
   background-color: none;
   border-color: white;
 }
-
 .btnLightFilled:hover::after {
-  -webkit-transform: translateY(100%) !important;
-          transform: translateY(100%) !important;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
+  transform: translateY(100%) !important;
+  transform-origin: bottom left;
 }
 
 .btnLight {
@@ -109,7 +97,6 @@
   overflow: hidden;
   border: 1px solid white;
 }
-
 .btnLight::after {
   content: "";
   position: absolute;
@@ -120,23 +107,17 @@
   height: 100%;
   background-color: transparent;
   border: 1px solid white;
-  -webkit-transform: rotate(20deg) translateY(100%);
-          transform: rotate(20deg) translateY(100%);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: 0.3s ease-in-out;
+  transform: rotate(20deg) translateY(100%);
+  transform-origin: bottom left;
   transition: 0.3s ease-in-out;
 }
-
 .btnLight:hover {
   color: black;
   background-color: none;
 }
-
 .btnLight:hover::after {
   background-color: white;
-  -webkit-transform: translateY(0) !important;
-          transform: translateY(0) !important;
+  transform: translateY(0) !important;
 }
 
 .btnDark {
@@ -145,7 +126,6 @@
   overflow: hidden;
   border: 1px solid black;
 }
-
 .btnDark::after {
   content: "";
   position: absolute;
@@ -156,23 +136,17 @@
   height: 100%;
   background-color: transparent;
   border: 1px solid black;
-  -webkit-transform: rotate(20deg) translateY(100%);
-          transform: rotate(20deg) translateY(100%);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: 0.3s ease-in-out;
+  transform: rotate(20deg) translateY(100%);
+  transform-origin: bottom left;
   transition: 0.3s ease-in-out;
 }
-
 .btnDark:hover {
   color: white;
   background-color: none;
 }
-
 .btnDark:hover::after {
   background-color: black;
-  -webkit-transform: translateY(0) !important;
-          transform: translateY(0) !important;
+  transform: translateY(0) !important;
 }
 
 .alignLeft {
@@ -194,49 +168,28 @@
 
 .alignBottom {
   float: bottom;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   bottom: 0;
 }
 
 .align, .alignLeft, .alignRight, .alignTop, .alignBottom {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
   margin: auto auto;
 }
 
 .flexRow, .bgImage,
 .flexColumn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .flexColumn {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .bgImage {
@@ -246,11 +199,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .bgImage::before {
   position: absolute;
   content: "";
@@ -258,7 +208,6 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
-
 .bgImage h1 {
   z-index: 10;
   color: white;
@@ -270,7 +219,6 @@
   width: 100%;
   margin-right: 10%;
 }
-
 @media screen and (max-width: 600px) {
   .bgImage h1 {
     font-size: 2rem !important;
@@ -278,10 +226,8 @@
     text-align: center;
   }
 }
-
 @media screen and (max-width: 400px) {
   .bgImage h1 {
     font-size: 1.5rem !important;
   }
-}
-/*# sourceMappingURL=Banner.module.css.map */
+}/*# sourceMappingURL=Banner.module.css.map */
