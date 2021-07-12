@@ -200,7 +200,7 @@
   margin: auto;
   justify-content: space-between;
   padding: 4% 5%;
-  background-color: transparent;
+  background-color: #1d1d1d;
 }
 .container .brandName {
   width: -webkit-fit-content;

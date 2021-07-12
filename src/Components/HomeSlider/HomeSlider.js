@@ -17,6 +17,16 @@ import img5 from "../../Assets/homeSlider/img5.webp";
 import img5fallback from "../../Assets/homeSlider/img5.jpg";
 import img6 from "../../Assets/homeSlider/img6.webp";
 import img6fallback from "../../Assets/homeSlider/img6.jpg";
+
+import runwalcentral from "../../Assets/projects/residential/runwalcentral/1.webp";
+import fallbackrunwalcentral from "../../Assets/projects/residential/runwalcentral/1.jpg";
+
+import embassyTechVillage from "../../Assets/projects/walkthroughNew/1.jpg";
+
+import hilton1 from "../../Assets/projects/commercial/hilton/1.webp";
+
+import hiltonFallback1 from "../../Assets/projects/commercial/hilton/1.jpg";
+
 import logo from "../../Assets/logo.png";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
@@ -41,21 +51,21 @@ function HomeSlider() {
   const slideData = [
     {
       slide: 1,
-      url: img1,
-      title: "Embassy Group @Chennai",
-      fallbackImg: img1fallback,
+      url: runwalcentral,
+      title: "Runwal Central Park @Pune",
+      fallbackImg: fallbackrunwalcentral,
     },
     {
       slide: 2,
-      url: img2,
-      title: "Godrej City, Godrej Properties @Mumbai",
-      fallbackImg: img2fallback,
+      url: embassyTechVillage,
+      title: "Embassy Tech Village @Bangalore",
+      fallbackImg: embassyTechVillage,
     },
     {
       slide: 3,
-      url: img3,
+      url: hilton1,
       title: "Hilton Hotel, Embassy Group @Chennai",
-      fallbackImg: img3fallback,
+      fallbackImg: hiltonFallback1,
     },
     {
       slide: 4,

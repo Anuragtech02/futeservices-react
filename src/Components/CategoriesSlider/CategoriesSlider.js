@@ -29,7 +29,7 @@ import commercialfallback from "../../Assets/categories/commercial-1.jpg";
 import product from "../../Assets/categories/product-1.webm";
 import productImg from "../../Assets/categories/product.jpg";
 import productfallback from "../../Assets/categories/product-1.mp4";
-import walkthrough from "../../Assets/categories/3d-walkthrough-1.webm";
+import walkthrough from "../../Assets/categories/3d-walkthrough-1.mp4";
 import walkthroughfallback from "../../Assets/categories/3d-walkthrough-1.mp4";
 
 import vid from "../../Assets/video/fute-video-bg.webm";
@@ -90,13 +90,13 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
     //   title: "Augmented Reality",
     //   image: cat5,
     // },
-    {
-      title: "Product Visualisation",
-      // type: "video",
-      image: productImg,
-      // video: product,
-      fallbackVideo: productfallback,
-    },
+    // {
+    //   title: "Product Visualisation",
+    //   // type: "video",
+    //   image: productImg,
+    //   // video: product,
+    //   fallbackVideo: productfallback,
+    // },
     {
       title: "Physical Scale Model",
       image: scaleModel,
