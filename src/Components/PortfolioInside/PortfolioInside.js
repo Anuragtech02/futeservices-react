@@ -94,7 +94,7 @@ const CategoryComponent = ({ item, dir }) => {
       {item.type === "video" ? (
         <video src={item?.video}></video>
       ) : (
-        <LazyLoadImage src={item?.image ?? bg} alt={item?.title ?? "fute"} />
+        <img src={item?.image ?? bg} alt={item?.title ?? "fute"} />
       )}
     </div>
   );
