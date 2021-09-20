@@ -112,7 +112,7 @@ const App = () => {
 
   return (
     <WebpContextProvider.Provider value={{ isWebpSupported, isWebmSupported }}>
-      <Router>
+      <Router basename="/demo-new">
         <Suspense fallback={<Loading loading={true} />}>
           <Cursor />
           <NavWrapper isScrollingUp={isScrollingUp} />

@@ -1,1 +1,3 @@
-### FuteServices React Webapp 
+### FuteServices React Webapp
+
+    "postbuild": "react-snap"

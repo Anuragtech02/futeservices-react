@@ -40,7 +40,7 @@ export const Footer = () => {
       </nav>
       <hr></hr>
       <div className={style.bottomFoot}>
-        <p>© Unified Solutions 2021</p>
+        <p>© Unified Consulting 2021</p>
         <ul className={style.socialLinks}>
           <li className={style.socialLink}>
             <IconButton>
