@@ -36,17 +36,17 @@
       @extend .flexRow;
       overflow: hidden;
       .mainImage {
-        width: 95%;
+        // max-width: 95%;
         margin: auto;
         height: 100%;
         // margin: 0 20px;
         // filter: grayscale(1);
         transition: all 0.1s ease-in-out;
-        object-fit: cover;
+        object-fit: contain;
       }
       .slideTitle {
         position: absolute;
-        width: 95%;
+        width: 100%;
         top: 0;
         left: 50%;
         transform: translate(-50%, 0);
@@ -85,6 +85,16 @@
 
       @media screen and (max-width: 1350px) {
         height: 450px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        .mainImage {
+          margin: 0 5px !important;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        height: 350px;
       }
 
       // &:hover {

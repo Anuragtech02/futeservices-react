@@ -18,8 +18,8 @@ import img5fallback from "../../Assets/homeSlider/img5.jpg";
 import img6 from "../../Assets/homeSlider/img6.webp";
 import img6fallback from "../../Assets/homeSlider/img6.jpg";
 
-import runwalcentral from "../../Assets/projects/residential/runwalcentral/1.webp";
-import fallbackrunwalcentral from "../../Assets/projects/residential/runwalcentral/1.jpg";
+import runwalcentral from "../../Assets/homeSlider/img7.webp";
+import fallbackrunwalcentral from "../../Assets/homeSlider/img7.jpg";
 
 import embassyTechVillage from "../../Assets/projects/walkthroughNew/1.jpg";
 
@@ -52,37 +52,37 @@ function HomeSlider() {
     {
       slide: 1,
       url: runwalcentral,
-      title: "Runwal Central Park @Pune",
+      title: "Runwal Group | Central Park @Pune",
       fallbackImg: fallbackrunwalcentral,
     },
     {
       slide: 2,
       url: embassyTechVillage,
-      title: "Embassy Tech Village @Bangalore",
+      title: "Embassy Group | Embassy Tech Village @Bangalore",
       fallbackImg: embassyTechVillage,
     },
     {
       slide: 3,
       url: hilton1,
-      title: "Hilton Hotel, Embassy Group @Chennai",
+      title: "Embassy Group | Hilton Hotel @Bangalore",
       fallbackImg: hiltonFallback1,
     },
     {
       slide: 4,
       url: img4,
-      title: "Raintree Boulevard, L&T Realty @Bengaluru",
+      title: " L&T Realty | Raintree Boulevard @Bengaluru",
       fallbackImg: img4fallback,
     },
     {
       slide: 5,
       url: img5,
-      title: "LULU GROUP",
+      title: "LULU GROUP | Y Tower @Dubai",
       fallbackImg: img5fallback,
     },
     {
       slide: 6,
       url: img6,
-      title: "Runwal Group Eirene @Mumbai",
+      title: "Runwal Group | Runwal Eirene @Mumbai",
       fallbackImg: img6fallback,
     },
   ];
@@ -141,7 +141,7 @@ function HomeSlider() {
               key={index}
               //animate={current==index ? "focus" : "other"}
             >
-              <LazyLoadImage
+              <img
                 className={styles.mainImage}
                 src={isWebpSupported ? slide.url : slide.fallbackImg}
                 // srcSet={slide.fallbackImg}
