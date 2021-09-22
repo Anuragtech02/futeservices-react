@@ -24,7 +24,7 @@ const PortfolioPage = () => {
         PortfolioData.find(
           (item) => item.name.toLowerCase() === name.toLowerCase()
         ) ?? {};
-      // console.log({ portfolio });
+      console.log({ portfolio });
       setCurrent(portfolio);
       setCapName(capitalize(portfolio.name ?? name));
     }

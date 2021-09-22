@@ -95,7 +95,7 @@ const VerticalCard = ({
       )}
 
       <div className={styles.categoryCardTitle}>
-        <h2>{item.category || " - " + item.category}</h2>
+        <h2>{item.category || item.title}</h2>
         <div className={styles.categoryCardCat}>
           <p>{item.category || "Fute Services" || item.title}</p>
         </div>

@@ -41,6 +41,7 @@ const filterMenu = [
     name: "Scale Model",
     link: "scale-model",
     dataFilter: "scale-model",
+    // external: true,
   },
   {
     name: "3D/2D Floor Plan",

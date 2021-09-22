@@ -157,26 +157,24 @@ const Portfolio = () => {
       />
       <section className={"portfolio"}>
         <Grid container spacing={0}>
-          {current?.projects
-            ?.filter((it) => it.type !== "yt")
-            .map((project, i) => (
-              <Grid item key={i} xl={6} lg={6} md={6} sm={12} xs={12}>
-                <VerticalCard
-                  onClick={() => {
-                    if (project.type === "yt") {
-                      setCurrentYt(extractYtID(project.youtube));
-                      setYtOpen(true);
-                      return;
-                    }
-                    setStartIndexModal(i);
-                    setCurrImage(project.image || project.src);
-                    console.log("Clicked");
-                  }}
-                  type="inner"
-                  item={project}
-                />
-              </Grid>
-            ))}
+          {current?.projects?.map((project, i) => (
+            <Grid item key={i} xl={6} lg={6} md={6} sm={12} xs={12}>
+              <VerticalCard
+                onClick={() => {
+                  if (project.type === "yt") {
+                    setCurrentYt(extractYtID(project.youtube));
+                    setYtOpen(true);
+                    return;
+                  }
+                  setStartIndexModal(i);
+                  setCurrImage(project.image || project.src);
+                  console.log("Clicked");
+                }}
+                type="inner"
+                item={project}
+              />
+            </Grid>
+          ))}
         </Grid>
       </section>
       {startIndexModal !== null && (
