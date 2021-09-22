@@ -88,6 +88,7 @@ export const ContactForm = () => {
               <ul>
                 <li>Bengaluru (Head Office)</li>
                 <li>Mumbai</li>
+                <li>Delhi</li>
                 <li>Hyderabad</li>
                 <li>Dubai</li>
               </ul>

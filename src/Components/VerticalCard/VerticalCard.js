@@ -95,9 +95,12 @@ const VerticalCard = ({
       )}
 
       <div className={styles.categoryCardTitle}>
-        <h2>{item.title || " - " + item.title}</h2>
+        <h2>{item.category || " - " + item.category}</h2>
         <div className={styles.categoryCardCat}>
           <p>{item.category || "Fute Services" || item.title}</p>
+        </div>
+        <div className={styles.clickToOpen}>
+          <p>Open</p>
         </div>
       </div>
     </div>

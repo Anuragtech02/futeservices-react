@@ -17,6 +17,7 @@ import img5 from "../../Assets/homeSlider/img5.webp";
 import img5fallback from "../../Assets/homeSlider/img5.jpg";
 import img6 from "../../Assets/homeSlider/img6.webp";
 import img6fallback from "../../Assets/homeSlider/img6.jpg";
+import img8 from "../../Assets/homeSlider/img8.jpg";
 
 import runwalcentral from "../../Assets/homeSlider/img7.webp";
 import fallbackrunwalcentral from "../../Assets/homeSlider/img7.jpg";
@@ -51,9 +52,9 @@ function HomeSlider() {
   const slideData = [
     {
       slide: 1,
-      url: runwalcentral,
-      title: "Runwal Group | Central Park @Pune",
-      fallbackImg: fallbackrunwalcentral,
+      url: img8,
+      title: "Godrej Properties | Godrej City @Mumbai",
+      fallbackImg: img8,
     },
     {
       slide: 2,

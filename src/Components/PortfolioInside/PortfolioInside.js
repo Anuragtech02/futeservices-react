@@ -103,7 +103,7 @@ const CategoryComponent = ({ item, dir }) => {
 const data = [
   {
     title: "walkthrough",
-    link: "walkthrough",
+    link: "runwal-nirvana",
     image: walkthrough,
     video: "",
     desc: "Add a touch of glamor to your marketing needs with our 3D and cinematic walkthroughs. An experience that is so real, your prospects will feel like they are actually present at the project site, aided by seamless camera movements, intricate design and detailing, and the perfect lighting and scene setting. Our methodology ensures that your audiences experience the best in architectural visualization with engaging and immersive tours of the entire property seen through a creative eye.",

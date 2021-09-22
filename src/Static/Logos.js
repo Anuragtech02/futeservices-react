@@ -26,6 +26,10 @@ import brand13 from "../Assets/brands/brand13.webp";
 import brand13fallback from "../Assets/brands/brand13.png";
 import brand14 from "../Assets/brands/brand14.webp";
 import brand14fallback from "../Assets/brands/brand14.png";
+import brand15 from "../Assets/brands/brand15.webp";
+import brand15fallback from "../Assets/brands/brand15.jpg";
+import brand16 from "../Assets/brands/brand16.jpg";
+import brand17 from "../Assets/brands/brand17.jpg";
 
 export const Logos = [
   {
@@ -97,5 +101,20 @@ export const Logos = [
     img: brand14,
     key: 14,
     fallbackImg: brand14fallback,
+  },
+  {
+    img: brand15,
+    key: 15,
+    fallbackImg: brand15fallback,
+  },
+  {
+    img: brand16,
+    key: 16,
+    fallbackImg: brand16,
+  },
+  {
+    img: brand17,
+    key: 17,
+    fallbackImg: brand17,
   },
 ];

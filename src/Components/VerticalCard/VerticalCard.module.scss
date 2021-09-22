@@ -44,7 +44,7 @@
     align-items: flex-start;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
     cursor: pointer !important;
     transition: all 0.4s ease-in-out;
 
@@ -68,11 +68,26 @@
         font-size: 0.8rem;
       }
     }
-    display: none;
+
+    opacity: 0;
+
+    .clickToOpen {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid white;
+      border-radius: 50%;
+      font-size: 0.9rem;
+      width: 100px;
+      height: 100px;
+      @extend .flexRow;
+    }
   }
   &:hover {
     .categoryCardTitle {
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(0, 0, 0, 0.3);
+      opacity: 1;
     }
   }
 }
@@ -85,12 +100,12 @@
     .categoryCardTitle {
       h2 {
         margin-top: 30px;
-        opacity: 0;
+        // opacity: 0;
       }
       .categoryCardCat {
         // margin-left: 30px !important;
         letter-spacing: 2rem;
-        opacity: 0;
+        // opacity: 0;
       }
     }
   }
@@ -100,12 +115,12 @@
     .categoryCardTitle {
       h2 {
         // margin-top: 30px;
-        opacity: 0;
+        opacity: 1;
       }
       .categoryCardCat {
         // margin-left: 30px !important;
         // letter-spacing: 2rem;
-        opacity: 0;
+        opacity: 1;
       }
     }
   }

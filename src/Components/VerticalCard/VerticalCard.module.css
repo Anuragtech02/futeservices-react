@@ -180,7 +180,7 @@
   margin: auto auto;
 }
 
-.flexRow,
+.flexRow, .card .categoryCardTitle .clickToOpen,
 .flexColumn,
 .card .categoryCardTitle,
 .card {
@@ -235,10 +235,10 @@
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
   cursor: pointer !important;
   transition: all 0.4s ease-in-out;
-  display: none;
+  opacity: 0;
 }
 .card .categoryCardTitle h2,
 .card .categoryCardTitle p {
@@ -259,8 +259,20 @@
 .card .categoryCardTitle .categoryCardCat p {
   font-size: 0.8rem;
 }
+.card .categoryCardTitle .clickToOpen {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  width: 100px;
+  height: 100px;
+}
 .card:hover .categoryCardTitle {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
 }
 
 .animation:hover img,
@@ -269,16 +281,14 @@
 }
 .animation:hover .categoryCardTitle h2 {
   margin-top: 30px;
-  opacity: 0;
 }
 .animation:hover .categoryCardTitle .categoryCardCat {
   letter-spacing: 2rem;
-  opacity: 0;
 }
 
 .noAnimation:hover .categoryCardTitle h2 {
-  opacity: 0;
+  opacity: 1;
 }
 .noAnimation:hover .categoryCardTitle .categoryCardCat {
-  opacity: 0;
+  opacity: 1;
 }/*# sourceMappingURL=VerticalCard.module.css.map */
