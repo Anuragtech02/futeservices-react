@@ -12,6 +12,24 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import vimeoIcon from "../../Assets/vimeo-brands.svg";
 
 export const Footer = () => {
+  const links = {
+    linkedin: "https://www.linkedin.com/in/fute-services-hr-team-89a0b850",
+    instagram: "https://instagram.com/futeservices?utm_medium=copy_link",
+    youtube: "https://youtube.com/user/Futeservices",
+    vimeo: "https://vimeo.com/user48533872",
+    facebook: "https://www.facebook.com/futeservices",
+    twitter: "https://twitter.com/futeservices",
+  };
+
+  const onClickSocial = (type) => {
+    if (type) {
+      const a = document.createElement("a");
+      a.href = links[type];
+      a.target = "_blank";
+      a.click();
+    }
+  };
+
   return (
     <div>
       <nav className={style.container}>
@@ -43,32 +61,32 @@ export const Footer = () => {
         <p>© Unified Consulting 2021</p>
         <ul className={style.socialLinks}>
           <li className={style.socialLink}>
-            <IconButton>
+            <IconButton onClick={() => onClickSocial("twitter")}>
               <TwitterIcon fontSize="small" />
             </IconButton>
           </li>
           <li className={style.socialLink}>
-            <IconButton>
+            <IconButton onClick={() => onClickSocial("facebook")}>
               <FacebookIcon fontSize="small" />
             </IconButton>
           </li>
           <li className={style.socialLink}>
-            <IconButton>
+            <IconButton onClick={() => onClickSocial("instagram")}>
               <InstagramIcon fontSize="small" />
             </IconButton>
           </li>
           <li className={style.socialLink}>
-            <IconButton>
+            <IconButton onClick={() => onClickSocial("linkedin")}>
               <LinkedInIcon fontSize="small" />
             </IconButton>
           </li>
           <li className={style.socialLink}>
-            <IconButton>
+            <IconButton onClick={() => onClickSocial("vimeo")}>
               <img width={15} src={vimeoIcon} alt="vimeo-fute" />
             </IconButton>
           </li>
           <li className={style.socialLink}>
-            <IconButton>
+            <IconButton onClick={() => onClickSocial("youtube")}>
               <YouTubeIcon fontSize="small" />
             </IconButton>
           </li>

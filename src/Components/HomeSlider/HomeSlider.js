@@ -141,7 +141,7 @@ function HomeSlider() {
               key={index}
               //animate={current==index ? "focus" : "other"}
             >
-              <img
+              <LazyLoadImage
                 className={styles.mainImage}
                 src={isWebpSupported ? slide.url : slide.fallbackImg}
                 // srcSet={slide.fallbackImg}

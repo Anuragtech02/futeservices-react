@@ -139,10 +139,10 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
         }}
         autoplay={{ disableOnInteraction: true, delay: 5000 }}
         breakpoints={{
-          1100: {
+          1300: {
             slidesPerView: 4,
           },
-          900: {
+          1100: {
             slidesPerView: 3,
           },
           700: {
