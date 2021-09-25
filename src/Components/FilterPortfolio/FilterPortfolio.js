@@ -109,7 +109,7 @@ const FilterPortfolio = ({ history }) => {
 
   useEffect(() => {
     setModalImages(portfolioData.map((image) => image.image));
-    console.log({ pData });
+    // console.log({ pData });
   }, []);
 
   useEffect(() => {
@@ -155,6 +155,7 @@ const FilterPortfolio = ({ history }) => {
               }}
               className={filterKey === item.dataFilter ? "is-selected" : ""}
               data-filter={`.${item.dataFilter}`}
+              key={item.dataFilter}
             >
               {item.name}
             </li>
