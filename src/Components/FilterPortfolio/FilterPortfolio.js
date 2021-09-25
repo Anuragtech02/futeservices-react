@@ -10,6 +10,7 @@ import "react-awesome-lightbox/build/style.css";
 import { portfolioData } from "../../Static/portfolioProjectWise";
 import { portfolio as pData } from "../../Static/portfolio";
 import VerticalCard from "../VerticalCard/VerticalCard";
+import ModalVideo from "react-modal-video";
 
 const filterMenu = [
   // {
@@ -31,7 +32,7 @@ const filterMenu = [
     name: "Walkthrough",
     link: "walkthrough",
     dataFilter: "walkthrough",
-    external: true,
+    // external: true,
   },
   {
     name: "360 & VR",
@@ -46,15 +47,15 @@ const filterMenu = [
   },
   {
     name: "3D/2D Floor Plan",
-    link: "3d-2d-floorplan",
-    external: true,
-    dataFilter: "floor-plan",
+    link: "floorplan",
+    // external: true,
+    dataFilter: "floorplan",
   },
   {
     name: "Drone & Chroma Shoot",
     link: "drone-shoot",
-    dataFilter: "drone",
-    external: true,
+    dataFilter: "drone-shoot",
+    // external: true,
   },
 ];
 
@@ -68,6 +69,13 @@ const FilterPortfolio = ({ history }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalImages, setModalImages] = useState([]);
   const [startIndexModal, setStartIndexModal] = useState(null);
+
+  const [allImages, setAllImages] = useState([]);
+
+  const [ytOpen, setYtOpen] = useState(false);
+  const [currentYt, setCurrentYt] = useState("");
+
+  const [current, setCurrent] = useState({});
 
   const { category } = useParams();
 
@@ -101,6 +109,7 @@ const FilterPortfolio = ({ history }) => {
 
   useEffect(() => {
     setModalImages(portfolioData.map((image) => image.image));
+    console.log({ pData });
   }, []);
 
   useEffect(() => {
@@ -116,6 +125,18 @@ const FilterPortfolio = ({ history }) => {
         : isotope.arrange({ filter: `.${filterKey}` });
     }
   }, [isotope, filterKey]);
+
+  useEffect(() => {
+    let projects = [];
+
+    pData.forEach((item) => {
+      item.projects.forEach((project) => {
+        projects.push(project);
+      });
+    });
+
+    setAllImages(projects);
+  }, []);
 
   return (
     <>
@@ -142,7 +163,7 @@ const FilterPortfolio = ({ history }) => {
       </div>
       <div ref={isoRef} className="grid gallery">
         <div className="grid-sizer"></div>
-        {pData?.projects?.map((image, i) => {
+        {allImages?.map((image, i) => {
           return (
             <div
               key={`${image.category + i}`}
@@ -157,15 +178,23 @@ const FilterPortfolio = ({ history }) => {
                   item={image}
                 />
               ) : (
-                <Link to={`/portfolio/${image.link}`}>
-                  <VerticalCard
-                    onLoad={() => {
-                      setCount((curr) => curr + 1);
-                    }}
-                    type="inner"
-                    item={image}
-                  />
-                </Link>
+                <VerticalCard
+                  onLoad={() => {
+                    setCount((curr) => curr + 1);
+                  }}
+                  onClick={() => {
+                    if (image.type === "yt") {
+                      setCurrentYt(extractYtID(image.youtube));
+                      setYtOpen(true);
+                      return;
+                    }
+                    setStartIndexModal(i);
+                    // setCurrent(image);
+                    console.log("Clicked");
+                  }}
+                  type="inner"
+                  item={image}
+                />
               )}
             </div>
           );
@@ -174,14 +203,31 @@ const FilterPortfolio = ({ history }) => {
       {startIndexModal !== null && (
         <div className="image-modal">
           <Lightbox
-            images={modalImages}
+            images={allImages}
             startIndex={startIndexModal}
             onClose={() => setStartIndexModal(null)}
           />
         </div>
       )}
+      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={ytOpen}
+        playsinline
+        videoId={currentYt}
+        onClose={() => {
+          setYtOpen(false);
+          setCurrentYt(null);
+        }}
+      />
     </>
   );
 };
 
 export default withRouter(FilterPortfolio);
+
+const extractYtID = (url) => {
+  return url.match(
+    /(?:youtu\.be\/|youtube\.com(?:\/embed\/|\/v\/|\/watch\?v=|\/user\/\S+|\/ytscreeningroom\?v=|\/sandalsResorts#\w\/\w\/.*\/))([^\/&]{10,12})/
+  )[1];
+};
