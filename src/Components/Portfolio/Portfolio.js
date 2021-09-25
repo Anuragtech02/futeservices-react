@@ -83,7 +83,11 @@ const Portfolio = () => {
           (item) => item?.name?.toLowerCase() === category.toLowerCase()
         ) ?? {};
       console.log({ portfolio });
-      setCurrent({ ...portfolio, category: portfolio.projects[0].category });
+      if (Array.isArray(portfolio.projects))
+        setCurrent({
+          ...portfolio,
+          category: portfolio?.projects[0]?.category,
+        });
       setCapName(capitalize(portfolio.name ?? category));
     }
   }, [category]);

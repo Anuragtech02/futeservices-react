@@ -65,11 +65,11 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
       image: cat4,
       video: walkthrough,
       fallbackVideo: walkthroughfallback,
-      link: "/portfolio/walkthrough",
+      link: "/portfolio/category/walkthrough",
     },
     {
       title: "3D Floorplan",
-      link: "/portfolio/3d-2d-floorplan",
+      link: "/portfolio/category/floorplan",
       image: fPlan,
       fallbackImg: fPlanfallback,
     },
