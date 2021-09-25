@@ -8,6 +8,7 @@ import bgImage2 from "../../Assets/fute-bg.jpg";
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
 import { portfolioData } from "../../Static/portfolioProjectWise";
+import { portfolio as pData } from "../../Static/portfolio";
 import VerticalCard from "../VerticalCard/VerticalCard";
 
 const filterMenu = [
@@ -141,7 +142,7 @@ const FilterPortfolio = ({ history }) => {
       </div>
       <div ref={isoRef} className="grid gallery">
         <div className="grid-sizer"></div>
-        {portfolioData.map((image, i) => {
+        {pData?.projects?.map((image, i) => {
           return (
             <div
               key={`${image.category + i}`}

@@ -4,7 +4,7 @@ import cat5 from "../../Assets/projects/cat5.webp";
 import cat5fallback from "../../Assets/projects/cat5.jpg";
 import MultipleSlider from "../MultipleSlider/MultipleSlider";
 
-import bgHome from "../../Assets/video/fute-home.mp4";
+import bgHome from "../../Assets/video/fute-large.mp4";
 import { withRouter } from "react-router";
 import HomeSlider from "../HomeSlider/HomeSlider";
 import TeamSlider from "../TeamSlider/TeamSlider";

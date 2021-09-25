@@ -82,8 +82,8 @@ const Portfolio = () => {
         pData.find(
           (item) => item?.name?.toLowerCase() === category.toLowerCase()
         ) ?? {};
-      // console.log({ portfolio });
-      setCurrent(portfolio);
+      console.log({ portfolio });
+      setCurrent({ ...portfolio, category: portfolio.projects[0].category });
       setCapName(capitalize(portfolio.name ?? category));
     }
   }, [category]);
@@ -153,7 +153,7 @@ const Portfolio = () => {
       <MetaTags title="Portfolio" type="other" />
       <Banner
         image={bgImage2}
-        title={current?.title || category || "Portfolio"}
+        title={current?.category || category || "Portfolio"}
       />
       <section className={"portfolio"}>
         <Grid container spacing={0}>
