@@ -29,6 +29,8 @@ const Portfolio = lazy(() => import("./Components/Portfolio/Portfolio"));
 const About = lazy(() => import("./Components/About/About"));
 const NotFound = lazy(() => import("./Components/404/NotFound"));
 
+const NewsRoom = lazy(() => import("./Components/NewsRoom/NewsRoom"));
+
 export const WebpContextProvider = createContext({});
 
 const App = () => {
@@ -135,6 +137,7 @@ const App = () => {
               exact
               component={PortfolioPage}
             /> */}
+            <Route path="/news-room" component={NewsRoom} />
             <Route component={NotFound} />
           </Switch>
           <div className={style.footer}>
