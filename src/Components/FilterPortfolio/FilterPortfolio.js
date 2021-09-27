@@ -195,6 +195,7 @@ const FilterPortfolio = ({ history }) => {
                   }}
                   type="inner"
                   item={image}
+                  height="auto"
                 />
               )}
             </div>

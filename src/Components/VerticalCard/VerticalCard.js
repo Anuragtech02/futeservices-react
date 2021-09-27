@@ -16,6 +16,7 @@ const VerticalCard = ({
   autoplay,
   onLoad,
   animation,
+  height,
 }) => {
   const { isWebpSupported, isWebmSupported } = useContext(WebpContextProvider);
 
@@ -59,7 +60,8 @@ const VerticalCard = ({
       onClick={handleClick}
       className={classNames(
         styles.card,
-        !animation ? styles.noAnimation : styles.animation
+        !animation ? styles.noAnimation : styles.animation,
+        height === "auto" ? styles.autoHeight : styles.fillContainer
       )}
     >
       {item?.type === "video" ? (
