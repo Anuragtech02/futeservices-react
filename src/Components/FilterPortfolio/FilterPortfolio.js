@@ -8,7 +8,7 @@ import bgImage2 from "../../Assets/fute-bg.jpg";
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
 import { portfolioData } from "../../Static/portfolioProjectWise";
-import { portfolio as pData } from "../../Static/portfolio";
+import { portfolio as pData, allProjects } from "../../Static/portfolio";
 import VerticalCard from "../VerticalCard/VerticalCard";
 import ModalVideo from "react-modal-video";
 
@@ -135,6 +135,18 @@ const FilterPortfolio = ({ history }) => {
       });
     });
 
+    // let newData = [];
+    // projects.forEach((newItem) => {
+    //   var img = new Image();
+    //   img.src = newItem.image;
+    //   img.onload = () => {
+    //     newData.push({ ...newItem, height: img.naturalHeight });
+    //   };
+    // });
+
+    // localStorage.setItem("fute", JSON.stringify(newData));
+    // console.log({ newData });
+
     setAllImages(projects);
   }, []);
 
@@ -172,17 +184,18 @@ const FilterPortfolio = ({ history }) => {
             >
               {image?.external ? (
                 <VerticalCard
-                  onLoad={() => {
-                    setCount((curr) => curr + 1);
-                  }}
+                  // onLoad={() => {
+                  //   setCount((curr) => curr + 1);
+                  // }}
                   type="inner"
                   item={image}
+                  height="auto"
                 />
               ) : (
                 <VerticalCard
-                  onLoad={() => {
-                    setCount((curr) => curr + 1);
-                  }}
+                  // onLoad={() => {
+                  //   setCount((curr) => curr + 1);
+                  // }}
                   onClick={() => {
                     if (image.type === "yt") {
                       setCurrentYt(extractYtID(image.youtube));

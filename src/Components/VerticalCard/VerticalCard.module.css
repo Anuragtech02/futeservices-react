@@ -198,8 +198,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 300px;
-  height: 80vh;
+  min-height: 400px;
   cursor: pointer !important;
 }
 .card span {
@@ -274,6 +273,9 @@
   opacity: 1;
 }
 
+.fillContainer {
+  height: 80vh;
+}
 .fillContainer img,
 .fillContainer video {
   width: 100%;
@@ -289,7 +291,6 @@
 }
 .autoHeight img,
 .autoHeight video {
-  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }

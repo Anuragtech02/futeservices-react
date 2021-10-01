@@ -1,4 +1,5 @@
 @import "../common.module.scss";
+@import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 
 .portfolio-menu {
   @extend .flexRow;
@@ -57,10 +58,10 @@
   min-height: 10px;
   cursor: pointer;
 
-  img {
-    max-width: 100%;
-    object-fit: cover;
-  }
+  // img {
+  //   max-width: 100%;
+  //   object-fit: cover;
+  // }
 
   &:hover {
     .title {

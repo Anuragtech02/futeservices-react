@@ -7,6 +7,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { WebpContextProvider } from "../../App";
 import classNames from "classnames";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import "lazysizes";
+// import a plugin
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 const VerticalCard = ({
   item,
@@ -63,6 +66,7 @@ const VerticalCard = ({
         !animation ? styles.noAnimation : styles.animation,
         height === "auto" ? styles.autoHeight : styles.fillContainer
       )}
+      style={{ height: `${item.height}px` }}
     >
       {item?.type === "video" ? (
         <video
@@ -77,7 +81,14 @@ const VerticalCard = ({
         <LazyLoadImage
           effect="blur"
           src={isWebpSupported ? item.image || item.src : item.fallbackImg}
+          placeholder={item.src}
           alt={item.title}
+          // height={item.height}
+          onLoad={(e) => {
+            // const curr = JSON.parse(localStorage.getItem("fute")) || [];
+            // curr.push({ ...item, height: e.target.height });
+            // localStorage.setItem("fute", JSON.stringify(curr));
+          }}
         />
       )}
       <Link
