@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./QuoteEnquiry.module.css";
 import {
   FormControl,
@@ -10,11 +10,11 @@ import {
 } from "@material-ui/core";
 import cat1 from "../../Assets/projects/cat1.webp";
 import { Helmet } from "react-helmet";
-import backImage from "../../Assets/back-img.jpg";
 import CallIcon from "@material-ui/icons/Call";
 import EmailIcon from "@material-ui/icons/Email";
 import bgImg from "../../Assets/fute-bg1.jpg";
 import Banner from "../Banner/Banner";
+import axios from "axios";
 
 export const QuoteEnquiry = () => {
   React.useEffect(() => {
@@ -69,8 +69,43 @@ const useStyles = makeStyles((theme) => ({
 const QuoteEnquiryForm = () => {
   const classes = useStyles();
   const [category, setCategory] = React.useState("");
+
   const handleChange = (event) => {
     setCategory(event.target.value);
+  };
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [message, setMessage] = useState("");
+  const [mailSent, setMailSent] = useState(false);
+  const [error, setError] = useState(null);
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setMailSent(false);
+    setError(null);
+    axios({
+      method: "POST",
+      url: "http://www.futeservices.com/demo-new/api/contact.php",
+      headers: { "content-type": "application/json" },
+      data: {
+        name,
+        email,
+        service: category?.toUpperCase(),
+        company,
+        message,
+      },
+    })
+      .then((result) => {
+        setMailSent(result.data.sent);
+        setName("");
+        setEmail("");
+        setCompany("");
+        setCategory("");
+        setMessage("");
+      })
+      .catch((error) => setError(error.message));
   };
 
   return (
@@ -164,13 +199,22 @@ const QuoteEnquiryForm = () => {
           </div>
         </Grid>
         <Grid item md={6} sm={12}>
-          <form className={style.formContainer}>
+          <form className={style.formContainer} onSubmit={onSubmit}>
             <div className={style.nameEmail}>
-              <input required name="name" type="text" placeholder="Your Name" />
+              <input
+                required
+                name="name"
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
               <input
                 required
                 name="email"
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your Email"
               />
             </div>
@@ -180,6 +224,8 @@ const QuoteEnquiryForm = () => {
               name="company"
               type="text"
               placeholder="Your Company"
+              value={company}
+              onChange={(e) => setCompany(e.target.value)}
             />
             <FormControl variant="filled" className={classes.formControl}>
               <InputLabel id="category-input">Service</InputLabel>
@@ -201,6 +247,8 @@ const QuoteEnquiryForm = () => {
               col="40"
               name="message"
               placeholder="Enter Your Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
             <br />
             <button
@@ -210,6 +258,9 @@ const QuoteEnquiryForm = () => {
             >
               Send
             </button>
+            {mailSent || error ? (
+              <p>{mailSent ? "Thank you for contact us :)" : error}</p>
+            ) : null}
           </form>
         </Grid>
       </Grid>

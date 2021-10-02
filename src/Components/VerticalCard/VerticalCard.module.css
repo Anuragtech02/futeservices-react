@@ -288,9 +288,11 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  height: 80vh;
 }
 .autoHeight img,
 .autoHeight video {
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }

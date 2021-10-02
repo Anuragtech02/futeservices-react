@@ -11,6 +11,8 @@ import { portfolioData } from "../../Static/portfolioProjectWise";
 import { portfolio as pData, allProjects } from "../../Static/portfolio";
 import VerticalCard from "../VerticalCard/VerticalCard";
 import ModalVideo from "react-modal-video";
+import _debounce from "lodash/debounce";
+import Masonry from "react-masonry-css";
 
 const filterMenu = [
   // {
@@ -176,6 +178,12 @@ const FilterPortfolio = ({ history }) => {
       </div>
       <div ref={isoRef} className="grid gallery">
         <div className="grid-sizer"></div>
+        {/* <Masonry
+        breakpointCols={2}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      > */}
+        {/* array of JSX items */}
         {allImages?.map((image, i) => {
           return (
             <div
@@ -193,9 +201,12 @@ const FilterPortfolio = ({ history }) => {
                 />
               ) : (
                 <VerticalCard
-                  // onLoad={() => {
-                  //   setCount((curr) => curr + 1);
-                  // }}
+                  onLoad={() => {
+                    if (isotope) {
+                      _debounce(() => isotope.reloadItems(), 500);
+                      // isotope.reloadItems();
+                    }
+                  }}
                   onClick={() => {
                     if (image.type === "yt") {
                       setCurrentYt(extractYtID(image.youtube));
@@ -214,11 +225,14 @@ const FilterPortfolio = ({ history }) => {
             </div>
           );
         })}
+        {/* </Masonry> */}
       </div>
       {startIndexModal !== null && (
         <div className="image-modal">
           <Lightbox
-            images={allImages}
+            images={allImages.map((img) =>
+              img.image ? img.image : img.src || img.fallback
+            )}
             startIndex={startIndexModal}
             onClose={() => setStartIndexModal(null)}
           />

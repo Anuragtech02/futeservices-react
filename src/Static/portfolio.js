@@ -87,6 +87,30 @@ import floorplan7 from "../Assets/projects/floorplan/floorplan-7.webp";
 import floorplan7fallback from "../Assets/projects/floorplan/floorplan-7.jpg";
 import floorplan8 from "../Assets/projects/floorplan/floorplan-8.webp";
 import floorplan8fallback from "../Assets/projects/floorplan/floorplan-8.jpg";
+import floorplan9 from "../Assets/projects/floorplan/floorplan-9.webp";
+import floorplan9fallback from "../Assets/projects/floorplan/floorplan-9.jpg";
+import floorplan10 from "../Assets/projects/floorplan/floorplan-10.webp";
+import floorplan10fallback from "../Assets/projects/floorplan/floorplan-10.jpg";
+import floorplan11 from "../Assets/projects/floorplan/floorplan-11.webp";
+import floorplan11fallback from "../Assets/projects/floorplan/floorplan-11.jpg";
+import floorplan12 from "../Assets/projects/floorplan/floorplan-12.webp";
+import floorplan12fallback from "../Assets/projects/floorplan/floorplan-12.jpg";
+import floorplan13 from "../Assets/projects/floorplan/floorplan-13.webp";
+import floorplan13fallback from "../Assets/projects/floorplan/floorplan-13.jpg";
+
+import floorplanThumb1 from "../Assets/projects/floorplan/floorplan-thumb-1.jpg";
+import floorplanThumb2 from "../Assets/projects/floorplan/floorplan-thumb-2.jpg";
+import floorplanThumb3 from "../Assets/projects/floorplan/floorplan-thumb-3.jpg";
+import floorplanThumb4 from "../Assets/projects/floorplan/floorplan-thumb-4.jpg";
+import floorplanThumb5 from "../Assets/projects/floorplan/floorplan-thumb-5.jpg";
+import floorplanThumb6 from "../Assets/projects/floorplan/floorplan-thumb-6.jpg";
+import floorplanThumb7 from "../Assets/projects/floorplan/floorplan-thumb-7.jpg";
+import floorplanThumb8 from "../Assets/projects/floorplan/floorplan-thumb-8.jpg";
+import floorplanThumb9 from "../Assets/projects/floorplan/floorplan-thumb-9.jpg";
+import floorplanThumb10 from "../Assets/projects/floorplan/floorplan-thumb-10.jpg";
+import floorplanThumb11 from "../Assets/projects/floorplan/floorplan-thumb-11.jpg";
+import floorplanThumb12 from "../Assets/projects/floorplan/floorplan-thumb-12.jpg";
+import floorplanThumb13 from "../Assets/projects/floorplan/floorplan-thumb-13.jpg";
 
 import phoenix0 from "../Assets/projects/commercial/phoenix/0.webp";
 import phoenix1 from "../Assets/projects/commercial/phoenix/1.webp";
@@ -240,6 +264,23 @@ import runwalcentralFallback14 from "../Assets/projects/residential/runwalcentra
 import runwalcentralFallback15 from "../Assets/projects/residential/runwalcentral/15.jpg";
 import runwalcentralFallback16 from "../Assets/projects/residential/runwalcentral/16.jpg";
 
+import runwalcentralThumb1 from "../Assets/projects/residential/runwalcentral/thumb1.jpg";
+import runwalcentralThumb2 from "../Assets/projects/residential/runwalcentral/thumb2.jpg";
+import runwalcentralThumb3 from "../Assets/projects/residential/runwalcentral/thumb3.jpg";
+import runwalcentralThumb4 from "../Assets/projects/residential/runwalcentral/thumb4.jpg";
+import runwalcentralThumb5 from "../Assets/projects/residential/runwalcentral/thumb5.jpg";
+import runwalcentralThumb6 from "../Assets/projects/residential/runwalcentral/thumb6.jpg";
+import runwalcentralThumb7 from "../Assets/projects/residential/runwalcentral/thumb7.jpg";
+import runwalcentralThumb8 from "../Assets/projects/residential/runwalcentral/thumb8.jpg";
+import runwalcentralThumb9 from "../Assets/projects/residential/runwalcentral/thumb9.jpg";
+import runwalcentralThumb10 from "../Assets/projects/residential/runwalcentral/thumb10.jpg";
+import runwalcentralThumb11 from "../Assets/projects/residential/runwalcentral/thumb11.jpg";
+import runwalcentralThumb12 from "../Assets/projects/residential/runwalcentral/thumb12.jpg";
+import runwalcentralThumb13 from "../Assets/projects/residential/runwalcentral/thumb13.jpg";
+import runwalcentralThumb14 from "../Assets/projects/residential/runwalcentral/thumb14.jpg";
+import runwalcentralThumb15 from "../Assets/projects/residential/runwalcentral/thumb15.jpg";
+import runwalcentralThumb16 from "../Assets/projects/residential/runwalcentral/thumb16.jpg";
+
 import lntraintree1 from "../Assets/projects/residential/lntraintree/1.webp";
 import lntraintree2 from "../Assets/projects/residential/lntraintree/2.webp";
 import lntraintree3 from "../Assets/projects/residential/lntraintree/3.webp";
@@ -263,6 +304,14 @@ import oberoiRealityFallback4 from "../Assets/projects/residential/oberoiReality
 import oberoiRealityFallback5 from "../Assets/projects/residential/oberoiReality/5.jpg";
 import oberoiRealityFallback6 from "../Assets/projects/residential/oberoiReality/6.jpg";
 import oberoiRealityFallback7 from "../Assets/projects/residential/oberoiReality/7.jpg";
+
+import oberoiRealityThumb1 from "../Assets/projects/residential/oberoiReality/thumb1.jpg";
+import oberoiRealityThumb2 from "../Assets/projects/residential/oberoiReality/thumb2.jpg";
+import oberoiRealityThumb3 from "../Assets/projects/residential/oberoiReality/thumb3.jpg";
+import oberoiRealityThumb4 from "../Assets/projects/residential/oberoiReality/thumb4.jpg";
+import oberoiRealityThumb5 from "../Assets/projects/residential/oberoiReality/thumb5.jpg";
+import oberoiRealityThumb6 from "../Assets/projects/residential/oberoiReality/thumb6.jpg";
+import oberoiRealityThumb7 from "../Assets/projects/residential/oberoiReality/thumb7.jpg";
 
 import runwalnirvana1 from "../Assets/projects/residential/runwalnirvana/1.webp";
 import runwalnirvana2 from "../Assets/projects/residential/runwalnirvana/2.webp";
@@ -295,6 +344,22 @@ import runwalnirvanaFallback15 from "../Assets/projects/residential/runwalnirvan
 import runwalnirvanaFallback17 from "../Assets/projects/residential/runwalnirvana/17.jpg";
 import runwalnirvanaFallback18 from "../Assets/projects/residential/runwalnirvana/18.jpg";
 import runwalnirvanaFallback19 from "../Assets/projects/residential/runwalnirvana/19.jpg";
+
+import runwalnirvanaThumb1 from "../Assets/projects/residential/runwalnirvana/thumb1.jpg";
+import runwalnirvanaThumb2 from "../Assets/projects/residential/runwalnirvana/thumb2.jpg";
+import runwalnirvanaThumb3 from "../Assets/projects/residential/runwalnirvana/thumb3.jpg";
+import runwalnirvanaThumb5 from "../Assets/projects/residential/runwalnirvana/thumb5.jpg";
+import runwalnirvanaThumb6 from "../Assets/projects/residential/runwalnirvana/thumb6.jpg";
+import runwalnirvanaThumb7 from "../Assets/projects/residential/runwalnirvana/thumb7.jpg";
+import runwalnirvanaThumb8 from "../Assets/projects/residential/runwalnirvana/thumb8.jpg";
+import runwalnirvanaThumb9 from "../Assets/projects/residential/runwalnirvana/thumb9.jpg";
+import runwalnirvanaThumb12 from "../Assets/projects/residential/runwalnirvana/thumb12.jpg";
+import runwalnirvanaThumb13 from "../Assets/projects/residential/runwalnirvana/thumb13.jpg";
+import runwalnirvanaThumb14 from "../Assets/projects/residential/runwalnirvana/thumb14.jpg";
+import runwalnirvanaThumb15 from "../Assets/projects/residential/runwalnirvana/thumb15.jpg";
+import runwalnirvanaThumb17 from "../Assets/projects/residential/runwalnirvana/thumb17.jpg";
+import runwalnirvanaThumb18 from "../Assets/projects/residential/runwalnirvana/thumb18.jpg";
+import runwalnirvanaThumb19 from "../Assets/projects/residential/runwalnirvana/thumb19.jpg";
 
 import gmInfinite0 from "../Assets/projects/residential/gmInfinite/0.webp";
 import gmInfinite1 from "../Assets/projects/residential/gmInfinite/1.webp";
@@ -337,6 +402,14 @@ import theGreenTerraceFallback5 from "../Assets/projects/residential/theGreenTer
 import theGreenTerraceFallback7 from "../Assets/projects/residential/theGreenTerrace/7.jpg";
 import theGreenTerraceFallback8 from "../Assets/projects/residential/theGreenTerrace/8.jpg";
 import theGreenTerraceFallback9 from "../Assets/projects/residential/theGreenTerrace/9.jpg";
+
+import theGreenTerraceThumb1 from "../Assets/projects/residential/theGreenTerrace/thumb1.jpg";
+import theGreenTerraceThumb3 from "../Assets/projects/residential/theGreenTerrace/thumb3.jpg";
+import theGreenTerraceThumb4 from "../Assets/projects/residential/theGreenTerrace/thumb4.jpg";
+import theGreenTerraceThumb5 from "../Assets/projects/residential/theGreenTerrace/thumb5.jpg";
+import theGreenTerraceThumb7 from "../Assets/projects/residential/theGreenTerrace/thumb7.jpg";
+import theGreenTerraceThumb8 from "../Assets/projects/residential/theGreenTerrace/thumb8.jpg";
+import theGreenTerraceThumb9 from "../Assets/projects/residential/theGreenTerrace/thumb9.jpg";
 
 import infosysCampus1 from "../Assets/projects/commercial/infosysCampus/1.webp";
 import infosysCampus2 from "../Assets/projects/commercial/infosysCampus/2.webp";
@@ -671,6 +744,7 @@ const runwalCentral = {
       image: runwalcentral1,
       fallBackImg: runwalcentralFallback1,
       category: "residential",
+      thumbnail: runwalcentralThumb1,
     },
     {
       name: "runwal-central",
@@ -678,6 +752,7 @@ const runwalCentral = {
       image: runwalcentral2,
       fallBackImg: runwalcentralFallback2,
       category: "residential",
+      thumbnail: runwalcentralThumb2,
     },
     {
       name: "runwal-central",
@@ -685,6 +760,7 @@ const runwalCentral = {
       image: runwalcentral3,
       fallBackImg: runwalcentralFallback3,
       category: "residential",
+      thumbnail: runwalcentralThumb3,
     },
     {
       name: "runwal-central",
@@ -692,6 +768,7 @@ const runwalCentral = {
       image: runwalcentral4,
       fallBackImg: runwalcentralFallback4,
       category: "residential",
+      thumbnail: runwalcentralThumb4,
     },
     {
       name: "runwal-central",
@@ -699,6 +776,7 @@ const runwalCentral = {
       image: runwalcentral5,
       fallBackImg: runwalcentralFallback5,
       category: "residential",
+      thumbnail: runwalcentralThumb5,
     },
     {
       name: "runwal-central",
@@ -706,6 +784,7 @@ const runwalCentral = {
       image: runwalcentral6,
       fallBackImg: runwalcentralFallback6,
       category: "residential",
+      thumbnail: runwalcentralThumb6,
     },
     {
       name: "runwal-central",
@@ -713,6 +792,7 @@ const runwalCentral = {
       image: runwalcentral7,
       fallBackImg: runwalcentralFallback7,
       category: "residential",
+      thumbnail: runwalcentralThumb7,
     },
     {
       name: "runwal-central",
@@ -720,6 +800,7 @@ const runwalCentral = {
       image: runwalcentral8,
       fallBackImg: runwalcentralFallback8,
       category: "residential",
+      thumbnail: runwalcentralThumb8,
     },
     {
       name: "runwal-central",
@@ -727,6 +808,7 @@ const runwalCentral = {
       image: runwalcentral9,
       fallBackImg: runwalcentralFallback9,
       category: "residential",
+      thumbnail: runwalcentralThumb9,
     },
     {
       name: "runwal-central",
@@ -734,6 +816,7 @@ const runwalCentral = {
       image: runwalcentral10,
       fallBackImg: runwalcentralFallback10,
       category: "residential",
+      thumbnail: runwalcentralThumb10,
     },
     {
       name: "runwal-central",
@@ -741,6 +824,7 @@ const runwalCentral = {
       image: runwalcentral11,
       fallBackImg: runwalcentralFallback11,
       category: "residential",
+      thumbnail: runwalcentralThumb11,
     },
     {
       name: "runwal-central",
@@ -748,6 +832,7 @@ const runwalCentral = {
       image: runwalcentral12,
       fallBackImg: runwalcentralFallback12,
       category: "residential",
+      thumbnail: runwalcentralThumb12,
     },
     {
       name: "runwal-central",
@@ -755,6 +840,7 @@ const runwalCentral = {
       image: runwalcentral13,
       fallBackImg: runwalcentralFallback13,
       category: "residential",
+      thumbnail: runwalcentralThumb13,
     },
     {
       name: "runwal-central",
@@ -762,6 +848,7 @@ const runwalCentral = {
       image: runwalcentral14,
       fallBackImg: runwalcentralFallback14,
       category: "residential",
+      thumbnail: runwalcentralThumb14,
     },
     {
       name: "runwal-central",
@@ -769,6 +856,7 @@ const runwalCentral = {
       image: runwalcentral15,
       fallBackImg: runwalcentralFallback15,
       category: "residential",
+      thumbnail: runwalcentralThumb15,
     },
     {
       name: "runwal-central",
@@ -776,6 +864,7 @@ const runwalCentral = {
       image: runwalcentral16,
       fallBackImg: runwalcentralFallback16,
       category: "residential",
+      thumbnail: runwalcentralThumb16,
     },
   ],
 };
@@ -790,6 +879,7 @@ const oberoiReality = {
       image: oberoiReality1,
       fallBackImg: oberoiRealityFallback1,
       category: "residential",
+      thumbnail: oberoiRealityThumb1,
     },
     {
       name: "oberoi-reality",
@@ -797,6 +887,7 @@ const oberoiReality = {
       image: oberoiReality2,
       fallBackImg: oberoiRealityFallback2,
       category: "residential",
+      thumbnail: oberoiRealityThumb2,
     },
     {
       name: "oberoi-reality",
@@ -804,6 +895,7 @@ const oberoiReality = {
       image: oberoiReality3,
       fallBackImg: oberoiRealityFallback3,
       category: "residential",
+      thumbnail: oberoiRealityThumb3,
     },
     {
       name: "oberoi-reality",
@@ -811,6 +903,7 @@ const oberoiReality = {
       image: oberoiReality4,
       fallBackImg: oberoiRealityFallback4,
       category: "residential",
+      thumbnail: oberoiRealityThumb4,
     },
     {
       name: "oberoi-reality",
@@ -818,6 +911,7 @@ const oberoiReality = {
       image: oberoiReality5,
       fallBackImg: oberoiRealityFallback5,
       category: "residential",
+      thumbnail: oberoiRealityThumb5,
     },
     {
       name: "oberoi-reality",
@@ -825,6 +919,7 @@ const oberoiReality = {
       image: oberoiReality6,
       fallBackImg: oberoiRealityFallback6,
       category: "residential",
+      thumbnail: oberoiRealityThumb6,
     },
     {
       name: "oberoi-reality",
@@ -832,6 +927,7 @@ const oberoiReality = {
       image: oberoiReality7,
       fallBackImg: oberoiRealityFallback7,
       category: "residential",
+      thumbnail: oberoiRealityThumb7,
     },
   ],
 };
@@ -855,6 +951,7 @@ const runwalNirvana = {
       image: runwalnirvana1,
       fallBackImg: runwalnirvanaFallback1,
       category: "residential",
+      thumbnail: runwalnirvanaThumb1,
     },
     {
       name: "runwal-nirvana",
@@ -862,6 +959,7 @@ const runwalNirvana = {
       image: runwalnirvana2,
       fallBackImg: runwalnirvanaFallback2,
       category: "residential",
+      thumbnail: runwalnirvanaThumb2,
     },
     {
       name: "runwal-nirvana",
@@ -869,6 +967,7 @@ const runwalNirvana = {
       image: runwalnirvana3,
       fallBackImg: runwalnirvanaFallback3,
       category: "residential",
+      thumbnail: runwalnirvanaThumb3,
     },
     {
       name: "runwal-nirvana",
@@ -876,6 +975,7 @@ const runwalNirvana = {
       image: runwalnirvana5,
       fallBackImg: runwalnirvanaFallback5,
       category: "residential",
+      thumbnail: runwalnirvanaThumb5,
     },
     {
       name: "runwal-nirvana",
@@ -883,6 +983,7 @@ const runwalNirvana = {
       image: runwalnirvana6,
       fallBackImg: runwalnirvanaFallback6,
       category: "residential",
+      thumbnail: runwalnirvanaThumb6,
     },
     {
       name: "runwal-nirvana",
@@ -890,6 +991,7 @@ const runwalNirvana = {
       image: runwalnirvana7,
       fallBackImg: runwalnirvanaFallback7,
       category: "residential",
+      thumbnail: runwalnirvanaThumb7,
     },
     {
       name: "runwal-nirvana",
@@ -897,6 +999,7 @@ const runwalNirvana = {
       image: runwalnirvana8,
       fallBackImg: runwalnirvanaFallback8,
       category: "residential",
+      thumbnail: runwalnirvanaThumb8,
     },
     {
       name: "runwal-nirvana",
@@ -904,6 +1007,7 @@ const runwalNirvana = {
       image: runwalnirvana9,
       fallBackImg: runwalnirvanaFallback9,
       category: "residential",
+      thumbnail: runwalnirvanaThumb9,
     },
     {
       name: "runwal-nirvana",
@@ -911,6 +1015,7 @@ const runwalNirvana = {
       image: runwalnirvana12,
       fallBackImg: runwalnirvanaFallback12,
       category: "residential",
+      thumbnail: runwalnirvanaThumb12,
     },
     {
       name: "runwal-nirvana",
@@ -918,6 +1023,7 @@ const runwalNirvana = {
       image: runwalnirvana13,
       fallBackImg: runwalnirvanaFallback13,
       category: "residential",
+      thumbnail: runwalnirvanaThumb13,
     },
     {
       name: "runwal-nirvana",
@@ -925,6 +1031,7 @@ const runwalNirvana = {
       image: runwalnirvana14,
       fallBackImg: runwalnirvanaFallback14,
       category: "residential",
+      thumbnail: runwalnirvanaThumb14,
     },
     {
       name: "runwal-nirvana",
@@ -932,6 +1039,7 @@ const runwalNirvana = {
       image: runwalnirvana15,
       fallBackImg: runwalnirvanaFallback15,
       category: "residential",
+      thumbnail: runwalnirvanaThumb15,
     },
     {
       name: "runwal-nirvana",
@@ -939,6 +1047,7 @@ const runwalNirvana = {
       image: runwalnirvana17,
       fallBackImg: runwalnirvanaFallback17,
       category: "residential",
+      thumbnail: runwalnirvanaThumb17,
     },
     {
       name: "runwal-nirvana",
@@ -946,6 +1055,7 @@ const runwalNirvana = {
       image: runwalnirvana18,
       fallBackImg: runwalnirvanaFallback18,
       category: "residential",
+      thumbnail: runwalnirvanaThumb18,
     },
     {
       name: "runwal-nirvana",
@@ -953,6 +1063,7 @@ const runwalNirvana = {
       image: runwalnirvana19,
       fallBackImg: runwalnirvanaFallback19,
       category: "residential",
+      thumbnail: runwalnirvanaThumb19,
     },
   ],
 };
@@ -2083,49 +2194,92 @@ export const portfolio = [
         title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan1,
+        thumbnail: floorplanThumb1,
         fallbackImg: floorplan1fallback,
       },
       {
         title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan2,
+        thumbnail: floorplanThumb2,
         fallbackImg: floorplan2fallback,
       },
       {
         title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan3,
+        thumbnail: floorplanThumb3,
         fallbackImg: floorplan3fallback,
       },
       {
         title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan4,
+        thumbnail: floorplanThumb4,
         fallbackImg: floorplan4fallback,
       },
       {
         title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan5,
+        thumbnail: floorplanThumb5,
         fallbackImg: floorplan5fallback,
       },
       {
         title: "3D Floorplan",
         category: "Floorplan",
         image: floorplan6,
+        thumbnail: floorplanThumb6,
         fallbackImg: floorplan6fallback,
       },
       {
         title: "2D Floorplan",
         category: "Floorplan",
         image: floorplan7,
+        thumbnail: floorplanThumb7,
         fallbackImg: floorplan7fallback,
       },
       {
         title: "2D Floorplan",
         category: "Floorplan",
         image: floorplan8,
+        thumbnail: floorplanThumb8,
         fallbackImg: floorplan8fallback,
+      },
+      {
+        title: "3D Floorplan",
+        category: "Floorplan",
+        image: floorplan9,
+        thumbnail: floorplanThumb9,
+        fallbackImg: floorplan9fallback,
+      },
+      {
+        title: "3D Floorplan",
+        category: "Floorplan",
+        image: floorplan10,
+        thumbnail: floorplanThumb10,
+        fallbackImg: floorplan10fallback,
+      },
+      {
+        title: "3D Floorplan",
+        category: "Floorplan",
+        image: floorplan11,
+        thumbnail: floorplanThumb11,
+        fallbackImg: floorplan11fallback,
+      },
+      {
+        title: "3D Floorplan",
+        category: "Floorplan",
+        image: floorplan12,
+        thumbnail: floorplanThumb12,
+        fallbackImg: floorplan12fallback,
+      },
+      {
+        title: "3D Floorplan",
+        category: "Floorplan",
+        image: floorplan13,
+        thumbnail: floorplanThumb13,
+        fallbackImg: floorplan13fallback,
       },
     ],
   },

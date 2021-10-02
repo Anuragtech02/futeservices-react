@@ -7,9 +7,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { WebpContextProvider } from "../../App";
 import classNames from "classnames";
 import YouTubeIcon from "@material-ui/icons/YouTube";
-import "lazysizes";
-// import a plugin
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const VerticalCard = ({
   item,
@@ -58,6 +56,9 @@ const VerticalCard = ({
     }
   }, [autoplay, vidRef]);
 
+  const placeHolder =
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
+
   return (
     <div
       onClick={handleClick}
@@ -66,7 +67,7 @@ const VerticalCard = ({
         !animation ? styles.noAnimation : styles.animation,
         height === "auto" ? styles.autoHeight : styles.fillContainer
       )}
-      style={{ height: `${item.height}px` }}
+      // style={{ height: `${item.height}px` }}
     >
       {item?.type === "video" ? (
         <video
@@ -79,16 +80,12 @@ const VerticalCard = ({
         ></video>
       ) : (
         <LazyLoadImage
-          effect="blur"
+          // effect="blur"
           src={isWebpSupported ? item.image || item.src : item.fallbackImg}
-          placeholder={item.src}
+          // placeholderSrc={item.thumbnail}
           alt={item.title}
           // height={item.height}
-          onLoad={(e) => {
-            // const curr = JSON.parse(localStorage.getItem("fute")) || [];
-            // curr.push({ ...item, height: e.target.height });
-            // localStorage.setItem("fute", JSON.stringify(curr));
-          }}
+          onLoad={onLoad}
         />
       )}
       <Link
