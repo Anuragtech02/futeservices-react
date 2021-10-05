@@ -8,6 +8,9 @@ import { WebpContextProvider } from "../../App";
 import classNames from "classnames";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import "lazysizes";
+// import a plugin
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 const VerticalCard = ({
   item,
@@ -79,13 +82,14 @@ const VerticalCard = ({
           src={isWebmSupported ? item?.video : item?.fallbackVideo}
         ></video>
       ) : (
-        <LazyLoadImage
+        <img
           // effect="blur"
-          src={isWebpSupported ? item.image || item.src : item.fallbackImg}
+          data-src={isWebpSupported ? item.image || item.src : item.fallbackImg}
           // placeholderSrc={item.thumbnail}
           alt={item.title}
           // height={item.height}
           onLoad={onLoad}
+          className="lazyload"
         />
       )}
       <Link

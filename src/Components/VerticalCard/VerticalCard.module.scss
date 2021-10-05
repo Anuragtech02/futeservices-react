@@ -104,12 +104,12 @@
 
 .autoHeight {
   height: fit-content;
-  height: 80vh;
+  // height: 80vh;
 
   img,
   video {
     // width: 100%;
-    height: 100%;
+    // height: 100%;
     object-fit: contain;
   }
 }
