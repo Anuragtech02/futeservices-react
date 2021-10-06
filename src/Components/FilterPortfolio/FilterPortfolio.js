@@ -11,7 +11,7 @@ import { portfolioData } from "../../Static/portfolioProjectWise";
 import { portfolio as pData, allProjects } from "../../Static/portfolio";
 import VerticalCard from "../VerticalCard/VerticalCard";
 import ModalVideo from "react-modal-video";
-import $ from "jquery";
+// import $ from "jquery";
 
 const filterMenu = [
   // {
@@ -112,7 +112,7 @@ const FilterPortfolio = ({ history }) => {
       );
     }
     // }
-  }, [isotope, count, totalImages]);
+  }, [isotope, count, totalImages, category]);
 
   useEffect(() => {
     setModalImages(portfolioData.map((image) => image.image));
@@ -121,9 +121,9 @@ const FilterPortfolio = ({ history }) => {
 
   useEffect(() => {
     if (category?.length) {
-      setFilterKey(category.toLowerCase());
+      if (isotope) setFilterKey(category.toLowerCase());
     }
-  }, [category]);
+  }, [category, isotope]);
 
   useEffect(() => {
     if (isotope) {
