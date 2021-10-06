@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Counters.module.css";
-import { useCountUp } from "react-countup";
+import CountUp, { useCountUp } from "react-countup";
 import dotsImage from "../../Assets/dots.svg";
 import clientsImage from "../../Assets/customer.svg";
 import movieImage from "../../Assets/movie.svg";
@@ -66,21 +66,32 @@ const Counters = ({ start }) => {
 export default Counters;
 
 const Counter = ({ st, counter }) => {
-  const { countUp, start } = useCountUp({
-    start: counter.from,
-    end: counter.to,
-    delay: 1000,
-    duration: 2,
-    suffix: counter.diff ? " acre" : "+",
-  });
+  // const { countUp, start } = useCountUp({
+  //   start: counter.from,
+  //   end: counter.to,
+  //   delay: 1000,
+  //   duration: 2,
+  //   suffix: counter.diff ? " acre" : "+",
+  // });
+
+  const [startCounter, setStartCounter] = useState(false);
 
   useEffect(() => {
     const isComplete = parseInt(sessionStorage.getItem("fute-counters"));
-    if (st && start && isComplete !== 4) {
-      start();
+    if (st && isComplete !== 4) {
+      setStartCounter(true);
       sessionStorage.setItem("fute-counters", parseInt(isComplete + 1) || 0);
     }
-  }, [st, start]);
+  }, [st]);
 
-  return countUp;
+  return (
+    startCounter && (
+      <CountUp
+        start={counter.from}
+        end={counter.to}
+        duration={2}
+        suffix={counter.diff ? " acre" : "+"}
+      />
+    )
+  );
 };

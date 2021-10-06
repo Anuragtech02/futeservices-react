@@ -1,0 +1,5 @@
+@import "../common.module.scss";
+
+.details {
+  @extend .flexRow;
+}

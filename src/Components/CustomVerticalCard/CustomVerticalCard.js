@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useEffect } from "react";
-import styles from "./VerticalCard.module.css";
+import styles from "./CustomVerticalcard.css";
 import { Link, withRouter } from "react-router-dom";
 import homeVideo from "../../Assets/video/fute-video-bg.webm";
 // import Img from "react-optimized-image";
@@ -11,9 +11,8 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
-import futeLogo from "../../Assets/logo.png";
 
-const VerticalCard = ({
+const CustomVerticalcard = ({
   item,
   history,
   type,
@@ -22,8 +21,6 @@ const VerticalCard = ({
   onLoad,
   animation,
   height,
-  logo,
-  fitHeight,
 }) => {
   const { isWebpSupported, isWebmSupported } = useContext(WebpContextProvider);
 
@@ -42,9 +39,8 @@ const VerticalCard = ({
       onClickLink(item?.link);
       return;
     }
-    if (item?.category?.includes("360")) {
+    if (item?.category?.includes("ar")) {
       onClickLink(item.link);
-      return;
     } else if (type !== "inner") {
       history.push(
         item.link ||
@@ -67,16 +63,16 @@ const VerticalCard = ({
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
 
   return (
-    <div
-      onClick={handleClick}
-      className={classNames(
-        styles.card,
-        !animation ? styles.noAnimation : styles.animation,
-        height === "auto" ? styles.autoHeight : styles.fillContainer,
-        fitHeight ? styles.autoHeight : ""
-      )}
-      // style={{ height: `${item.height}px` }}
-    >
+    <>
+      {/* // <div
+    //   onClick={handleClick}
+    //   className={classNames(
+    //     styles.card,
+    //     !animation ? styles.noAnimation : styles.animation,
+    //     height === "auto" ? styles.autoHeight : styles.fillContainer
+    //   )}
+    //   // style={{ height: `${item.height}px` }}
+    // > */}
       {item?.type === "video" ? (
         <video
           ref={vidRef}
@@ -122,13 +118,9 @@ const VerticalCard = ({
           <p>Open</p>
         </div>
       </div>
-      {logo && (
-        <div className={styles.logo}>
-          <img src={futeLogo} alt="fute-logo" />
-        </div>
-      )}
-    </div>
+      {/* </div> */}
+    </>
   );
 };
 
-export default withRouter(VerticalCard);
+export default withRouter(CustomVerticalcard);

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <script>
+      window.lazySizesConfig = window.lazySizesConfig || {};
+      //only for demo in production I would use normal expand option
+      window.lazySizesConfig.expand = 9;
+    </script>
+    <script
+      src="//cdn.jsdelivr.net/g/lazysizes(lazysizes.min.js)"
+      async=""
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./isotope.js"></script>
+
+    <div class="isotope-wrapper">
+      <form class="isotope-toolbar">
+        <label
+          ><input
+            type="radio"
+            data-type="residential"
+            checked=""
+            name="isotope-filter"
+          />
+          residential</label
+        >
+        <label
+          ><input type="radio" data-type="commercial" name="isotope-filter" />
+          commercial</label
+        >
+        <label
+          ><input type="radio" data-type="walkthrough" name="isotope-filter" />
+          walkthrough</label
+        >
+        <label
+          ><input type="radio" data-type="animals" name="isotope-filter" />
+          animals</label
+        >
+      </form>
+      <div class="isotope-box" id="isotope-container">
+        <!-- <div class="isotope-item" data-type="nature">
+          <img
+            data-src="http://lorempixel.com/400/240/nature/7/"
+            class="lazyload"
+          />
+        </div> -->
+      </div>
+    </div>
+    <script src="./scripts.js"></script>
+    <script>
+      $(".isotope-wrapper").each(function () {
+        var $isotope = $(".isotope-box", this);
+        var $filterCheckboxes = $('input[type="radio"]', this);
+
+        var filter = function () {
+          var type = $filterCheckboxes.filter(":checked").data("type") || "*";
+          if (type !== "*") {
+            type = '[data-type="' + type + '"]';
+          }
+          $isotope.isotope({ filter: type });
+        };
+
+        $isotope.isotope({
+          itemSelector: ".isotope-item",
+          layoutMode: "masonry",
+        });
+
+        $(this).on("change", filter);
+        filter();
+      });
+    </script>
+  </body>
+</html>

@@ -1,4 +1,81 @@
-@import "../common.module.scss";
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+// body {
+//   background: radial-gradient(
+//     ellipse at center,
+//     rgba(0, 85, 107, 1) 0%,
+//     rgba(0, 0, 0, 1) 100%
+//   );
+// }
+
+.isotope-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 90%;
+  min-width: 480px;
+  margin: auto;
+}
+
+.isotope-box {
+  position: relative;
+  width: 100%;
+}
+
+.isotope-toolbar {
+  background: rgba(66, 66, 99, 0.3);
+  padding: 10px;
+  margin: 10px;
+  color: #eee;
+}
+.isotope-toolbar p {
+  border-top: 1px solid #fff;
+  padding-top: 15px;
+}
+.isotope-toolbar a {
+  color: #fff;
+}
+
+.isotope-item {
+  position: relative;
+  width: 48%;
+  margin: 1%;
+  // box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.9);
+}
+
+.isotope-item:before {
+  content: "";
+  display: inline-block;
+  padding-top: 60%;
+}
+
+.item-portrait:before {
+  padding-top: 120%;
+}
+
+.isotope-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* object-fit: contain; */
+}
+
+.lazyload {
+  background: #f7f7f7;
+}
+
+.lazyloading {
+  background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif)
+    no-repeat center;
+  min-height: 60px;
+}
+
+@import "./common.module.scss";
 
 .card {
   position: relative;
@@ -12,14 +89,14 @@
   span {
     height: 100%;
   }
-  img,
-  video {
-    width: 100%;
-    // height: 100%;
-    object-fit: contain;
-    transition: all 5s ease-in-out;
-    transform-origin: center center;
-  }
+  // img,
+  // video {
+  //   width: 100%;
+  //   // height: 100%;
+  //   object-fit: contain;
+  //   transition: all 5s ease-in-out;
+  //   transform-origin: center center;
+  // }
 
   .playBtn {
     position: absolute;
@@ -84,17 +161,6 @@
       @extend .flexRow;
     }
   }
-
-  .logo {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-
-    img {
-      width: 150px;
-    }
-  }
-
   &:hover {
     .categoryCardTitle {
       background: rgba(0, 0, 0, 0.3);
@@ -114,14 +180,13 @@
 }
 
 .autoHeight {
-  // height: fit-content;
-  height: 50vh;
+  height: fit-content;
+  // height: 80vh;
 
   img,
   video {
     // width: 100%;
-    height: 100%;
-    object-fit: contain;
+    // height: 100%;
     //   position: absolute;
     //   top: 0;
     //   left: 0;

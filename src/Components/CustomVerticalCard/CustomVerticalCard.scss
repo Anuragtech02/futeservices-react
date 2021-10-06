@@ -84,17 +84,6 @@
       @extend .flexRow;
     }
   }
-
-  .logo {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-
-    img {
-      width: 150px;
-    }
-  }
-
   &:hover {
     .categoryCardTitle {
       background: rgba(0, 0, 0, 0.3);
@@ -115,19 +104,18 @@
 
 .autoHeight {
   // height: fit-content;
-  height: 50vh;
+  // height: 80vh;
 
   img,
   video {
     // width: 100%;
+    // height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    object-fit: contain;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   display: block;
+    display: block;
   }
 }
 
@@ -174,4 +162,60 @@
   background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif)
     no-repeat center;
   min-height: 60px;
+}
+
+.grid-item {
+  position: relative;
+  width: 48%;
+  margin: 1%;
+  min-height: 10px;
+  cursor: pointer;
+
+  // img {
+  //   max-width: 100%;
+  //   object-fit: cover;
+  // }
+
+  &:hover {
+    .title {
+      opacity: 1;
+    }
+  }
+  .title {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2),
+      transparent
+    );
+    transition: all 0.3s ease-in-out;
+    h4 {
+      font-size: 1.1rem;
+      text-transform: capitalize;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    padding-top: 60%;
+  }
+}
+.grid-item-portrait:before {
+  padding-top: 165%;
+}
+
+.grid-sizer {
+  width: 1%;
 }

@@ -36,6 +36,12 @@ const filterMenu = [
     // external: true,
   },
   {
+    name: "Interior",
+    link: "interior",
+    dataFilter: "interior",
+    // external: true,
+  },
+  {
     name: "360 & VR",
     link: "vr360",
     dataFilter: "vr360",
@@ -175,6 +181,7 @@ const FilterPortfolio = ({ history }) => {
           ))}
         </ul>
       </div>
+
       <div ref={isoRef} className="grid gallery">
         <div className="grid-sizer"></div>
         {allImages?.map((image, i) => {
@@ -190,7 +197,9 @@ const FilterPortfolio = ({ history }) => {
                   // }}
                   type="inner"
                   item={image}
-                  height="auto"
+                  // height="auto"
+                  fitHeight={image.category.toLowerCase() === "floorplan"}
+                  logo={image.category.toLowerCase() !== "floorplan"}
                 />
               ) : (
                 <VerticalCard
@@ -212,7 +221,9 @@ const FilterPortfolio = ({ history }) => {
                   }}
                   type="inner"
                   item={image}
-                  height="auto"
+                  // height="auto"
+                  fitHeight={image.category.toLowerCase() === "floorplan"}
+                  logo={image.category.toLowerCase() !== "floorplan"}
                 />
               )}
             </div>

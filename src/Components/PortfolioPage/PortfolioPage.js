@@ -5,8 +5,8 @@ import { PortfolioData } from "../../Static/PortfolioData";
 import notFoundImg from "../../Assets/not-found.svg";
 import cat1 from "../../Assets/projects/cat1.webp";
 import { Helmet } from "react-helmet";
-import "video-react/dist/video-react.css";
-import { Player, BigPlayButton } from "video-react";
+// import "video-react/dist/video-react.css";
+// import { Player, BigPlayButton } from "video-react";
 import homeVideo from "../../Assets/video/fute-video-bg.webm";
 import Banner from "../Banner/Banner";
 import MetaTags from "../MetaTags/MetaTags";
@@ -43,10 +43,10 @@ const PortfolioPage = () => {
       <MetaTags title={capName} type="other" image={current?.image ?? cat1} />
       <Banner image={current?.image ?? cat1} title={current.name ?? name} />
       <section className="react-youtube">
-        <Player>
+        {/* <Player>
           <source src={homeVideo} />
           <BigPlayButton position="center" />
-        </Player>
+        </Player> */}
       </section>
       <section className={"portfolioContainer"}>
         <div className="grid gallery">
