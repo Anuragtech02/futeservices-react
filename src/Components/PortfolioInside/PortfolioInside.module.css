@@ -289,6 +289,7 @@
 @media screen and (max-width: 1200px) {
   .container .row {
     flex-direction: column;
+    margin: 40px auto;
   }
   .container .row .content {
     position: relative;
@@ -299,6 +300,17 @@
   }
   .container .row img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .row {
+    width: 90%;
+    padding: 20px 0;
+  }
+  .container .row img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: auto;
   }
 }
 .container .row .logo {

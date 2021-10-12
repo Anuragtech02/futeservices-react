@@ -2339,13 +2339,13 @@ export const portfolio = [
         fallBackImg: lntitparkFallback5,
         category: "commercial",
       },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark6,
-        fallBackImg: lntitparkFallback6,
-        category: "commercial",
-      },
+      // {
+      //   name: "lnt-it-park",
+      //   title: "L&T IT Park (Bangalore)",
+      //   image: lntitpark6,
+      //   fallBackImg: lntitparkFallback6,
+      //   category: "commercial",
+      // },
       {
         name: "lnt-it-park",
         title: "L&T IT Park (Bangalore)",

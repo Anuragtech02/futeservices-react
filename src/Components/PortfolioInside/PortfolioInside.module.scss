@@ -97,6 +97,7 @@
     }
     @media screen and (max-width: 1200px) {
       flex-direction: column;
+      margin: 40px auto;
       .content {
         position: relative;
         top: auto;
@@ -106,6 +107,16 @@
       }
       img {
         width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 90%;
+      padding: 20px 0;
+
+      img {
+        object-fit: contain;
+        height: auto;
       }
     }
     .logo {
