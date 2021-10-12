@@ -67,12 +67,12 @@ const CategoriesSlider = ({ history, autoPlayVid }) => {
       fallbackVideo: walkthroughfallback,
       link: "/portfolio/category/walkthrough",
     },
-    {
-      title: "3D Floorplan",
-      link: "/portfolio/category/floorplan",
-      image: fPlan,
-      fallbackImg: fPlanfallback,
-    },
+    // {
+    //   title: "3D Floorplan",
+    //   link: "/portfolio/category/floorplan",
+    //   image: fPlan,
+    //   fallbackImg: fPlanfallback,
+    // },
     {
       title: "360 Panaroma/AR/VR",
       type: "360",
