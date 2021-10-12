@@ -108,6 +108,17 @@
         width: 100%;
       }
     }
+    .logo {
+      position: absolute;
+      bottom: 4rem;
+      left: auto;
+      right: 3rem;
+      img {
+        width: 100px !important;
+        min-width: 50px !important;
+        height: auto !important;
+      }
+    }
   }
   .rowRight {
     .content {
@@ -119,6 +130,16 @@
       margin-right: 30%;
       @media screen and (max-width: 1300px) {
         margin-right: 0;
+      }
+    }
+    .logo {
+      bottom: 4rem;
+      right: auto;
+      left: 2rem;
+      img {
+        width: 100px !important;
+        min-width: 50px !important;
+        height: auto !important;
       }
     }
   }

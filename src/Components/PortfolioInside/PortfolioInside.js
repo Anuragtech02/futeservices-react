@@ -18,8 +18,9 @@ import droneShoot from "../../Assets/drone-shoot.jpg";
 import floorplan from "../../Assets/categories/3d-floorplan.jpg";
 import scaleModel from "../../Assets/categories/scale-model.jpg";
 
-import fPlan from "../../Assets/categories/hogar-iso.png";
+import fPlan from "../../Assets/categories/floorplan-1.jpg";
 import scModel from "../../Assets/categories/scale-model-th.png";
+import futeLogo from "../../Assets/logo.png";
 
 const PortfolioInside = () => {
   // const { category } = useParams();
@@ -96,6 +97,9 @@ const CategoryComponent = ({ item, dir }) => {
       ) : (
         <img src={item?.image ?? bg} alt={item?.title ?? "fute"} />
       )}
+      <div className={styles.logo}>
+        <img src={futeLogo} alt="fute-logo" />
+      </div>
     </div>
   );
 };

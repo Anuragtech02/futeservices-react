@@ -301,6 +301,17 @@
     width: 100%;
   }
 }
+.container .row .logo {
+  position: absolute;
+  bottom: 4rem;
+  left: auto;
+  right: 3rem;
+}
+.container .row .logo img {
+  width: 100px !important;
+  min-width: 50px !important;
+  height: auto !important;
+}
 .container .rowRight .content {
   left: auto;
   right: 0;
@@ -313,4 +324,14 @@
   .container .rowRight img {
     margin-right: 0;
   }
+}
+.container .rowRight .logo {
+  bottom: 4rem;
+  right: auto;
+  left: 2rem;
+}
+.container .rowRight .logo img {
+  width: 100px !important;
+  min-width: 50px !important;
+  height: auto !important;
 }/*# sourceMappingURL=PortfolioInside.module.css.map */

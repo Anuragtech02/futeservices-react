@@ -176,6 +176,7 @@ const Portfolio = () => {
                 }}
                 type="inner"
                 item={project}
+                logo
               />
             </Grid>
           ))}
