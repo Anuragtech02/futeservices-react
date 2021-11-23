@@ -15,6 +15,8 @@ import EmailIcon from "@material-ui/icons/Email";
 import bgImg from "../../Assets/fute-bg1.jpg";
 import Banner from "../Banner/Banner";
 import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
+import classNames from "classnames";
 
 export const QuoteEnquiry = () => {
   React.useEffect(() => {
@@ -80,9 +82,14 @@ const QuoteEnquiryForm = () => {
   const [message, setMessage] = useState("");
   const [mailSent, setMailSent] = useState(false);
   const [error, setError] = useState(null);
+  const [captchaVerified, setCaptchaVerified] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
+    if (!captchaVerified) {
+      setError("Please verify captcha");
+      return;
+    }
     setMailSent(false);
     setError(null);
     axios({
@@ -107,6 +114,10 @@ const QuoteEnquiryForm = () => {
       })
       .catch((error) => setError(error.message));
   };
+
+  function handleChangeCaptcha() {
+    setCaptchaVerified(true);
+  }
 
   return (
     <div className={style.content}>
@@ -251,15 +262,21 @@ const QuoteEnquiryForm = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
             <br />
-            <button
-              style={{ opacity: 1 }}
-              className={style.btnDrakFilled}
-              type="submit"
-            >
-              Send
-            </button>
+            <div className={style.submit}>
+              <ReCAPTCHA
+                sitekey="6LepQFIdAAAAABTWy-Z6jEGZYpKCkEzRpnBjKV1-"
+                onChange={handleChangeCaptcha}
+              />
+              <button
+                style={{ opacity: 1 }}
+                className={style.btnDrakFilled}
+                type="submit"
+              >
+                Send
+              </button>
+            </div>
             {mailSent || error ? (
-              <p>{mailSent ? "Thank you for contact us :)" : error}</p>
+              <p>{mailSent ? "Thank you for contacting us :)" : error}</p>
             ) : null}
           </form>
         </Grid>

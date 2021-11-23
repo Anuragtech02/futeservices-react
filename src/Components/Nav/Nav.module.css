@@ -215,7 +215,7 @@
   justify-content: center;
 }
 .container .brandName img {
-  max-width: 180px;
+  max-width: 200px;
   min-width: 100px;
   cursor: pointer !important;
 }

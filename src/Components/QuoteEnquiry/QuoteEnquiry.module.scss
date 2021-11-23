@@ -120,17 +120,21 @@
         }
       }
     }
-    .btnDrakFilled {
-      border-radius: 50px;
-      padding: 10px 50px;
-      font-size: 1rem;
-      font-family: "Oswald", sans-serif;
-      border-color: var(--clr-primary);
-      &::after {
-        background: var(--clr-primary) !important;
-      }
-      @media screen and(max-width: 500px) {
-        width: 100%;
+    .submit {
+      @extend .flexRow;
+      justify-content: space-between;
+      .btnDrakFilled {
+        border-radius: 50px;
+        padding: 10px 50px;
+        font-size: 1rem;
+        font-family: "Oswald", sans-serif;
+        border-color: var(--clr-primary);
+        &::after {
+          background: var(--clr-primary) !important;
+        }
+        @media screen and(max-width: 500px) {
+          width: 100%;
+        }
       }
     }
     @media screen and(max-width: 500px) {

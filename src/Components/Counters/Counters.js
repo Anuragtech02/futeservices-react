@@ -29,7 +29,7 @@ const Counters = ({ start }) => {
     },
     {
       from: 0,
-      to: 500,
+      to: 22,
       title: "Project Scale Handled",
       icon: scaleImage,
       diff: true,
@@ -90,7 +90,7 @@ const Counter = ({ st, counter }) => {
         start={counter.from}
         end={counter.to}
         duration={2}
-        suffix={counter.diff ? " acre" : "+"}
+        suffix={counter.diff ? " M Sq. Ft." : "+"}
       />
     )
   );

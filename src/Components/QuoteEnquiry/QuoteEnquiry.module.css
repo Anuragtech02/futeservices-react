@@ -180,7 +180,7 @@
   margin: auto auto;
 }
 
-.flexRow, .content .formContainer .nameEmail, .content .floatLeft .contact span, .content .floatLeft .contact,
+.flexRow, .content .formContainer .submit, .content .formContainer .nameEmail, .content .floatLeft .contact span, .content .floatLeft .contact,
 .flexColumn,
 .content .floatLeft .contact .numbers,
 .content .floatLeft {
@@ -303,18 +303,21 @@
     width: 100%;
   }
 }
-.content .formContainer .btnDrakFilled {
+.content .formContainer .submit {
+  justify-content: space-between;
+}
+.content .formContainer .submit .btnDrakFilled {
   border-radius: 50px;
   padding: 10px 50px;
   font-size: 1rem;
   font-family: "Oswald", sans-serif;
   border-color: var(--clr-primary);
 }
-.content .formContainer .btnDrakFilled::after {
+.content .formContainer .submit .btnDrakFilled::after {
   background: var(--clr-primary) !important;
 }
 @media screen and (max-width: 500px) {
-  .content .formContainer .btnDrakFilled {
+  .content .formContainer .submit .btnDrakFilled {
     width: 100%;
   }
 }
