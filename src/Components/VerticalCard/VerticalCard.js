@@ -24,6 +24,7 @@ const VerticalCard = ({
   height,
   logo,
   fitHeight,
+  useRequire,
 }) => {
   const { isWebpSupported, isWebmSupported } = useContext(WebpContextProvider);
 

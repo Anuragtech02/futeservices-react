@@ -509,6 +509,82 @@ import hiltonFallback7 from "../Assets/projects/commercial/hilton/7.jpg";
 import hiltonFallback8 from "../Assets/projects/commercial/hilton/8.jpg";
 import hiltonFallback9 from "../Assets/projects/commercial/hilton/9.jpg";
 
+// import residentialFallback1 from "../Assets/projects/residential-new/1.jpg";
+// import residentialFallback2 from "../Assets/projects/residential-new/2.jpg";
+// import residentialFallback3 from "../Assets/projects/residential-new/3.jpg";
+// import residentialFallback4 from "../Assets/projects/residential-new/4.jpg";
+// import residentialFallback5 from "../Assets/projects/residential-new/5.jpg";
+// import residentialFallback6 from "../Assets/projects/residential-new/6.jpg";
+// import residentialFallback7 from "../Assets/projects/residential-new/7.jpg";
+// import residentialFallback8 from "../Assets/projects/residential-new/8.jpg";
+// import residentialFallback9 from "../Assets/projects/residential-new/9.jpg";
+// import residentialFallback10 from "../Assets/projects/residential-new/10.jpg";
+// import residentialFallback11 from "../Assets/projects/residential-new/11.jpg";
+// import residentialFallback12 from "../Assets/projects/residential-new/12.jpg";
+// import residentialFallback13 from "../Assets/projects/residential-new/13.jpg";
+// import residentialFallback14 from "../Assets/projects/residential-new/14.jpg";
+// import residentialFallback15 from "../Assets/projects/residential-new/15.jpg";
+// import residentialFallback16 from "../Assets/projects/residential-new/16.jpg";
+// import residentialFallback17 from "../Assets/projects/residential-new/17.jpg";
+// import residentialFallback18 from "../Assets/projects/residential-new/18.jpg";
+// import residentialFallback19 from "../Assets/projects/residential-new/19.jpg";
+// import residentialFallback20 from "../Assets/projects/residential-new/20.jpg";
+// import residentialFallback21 from "../Assets/projects/residential-new/21.jpg";
+// import residentialFallback22 from "../Assets/projects/residential-new/22.jpg";
+// import residentialFallback23 from "../Assets/projects/residential-new/23.jpg";
+// import residentialFallback24 from "../Assets/projects/residential-new/24.jpg";
+// import residentialFallback25 from "../Assets/projects/residential-new/25.jpg";
+// import residentialFallback26 from "../Assets/projects/residential-new/26.jpg";
+// import residentialFallback27 from "../Assets/projects/residential-new/27.jpg";
+// import residentialFallback28 from "../Assets/projects/residential-new/28.jpg";
+// import residentialFallback29 from "../Assets/projects/residential-new/29.jpg";
+// import residentialFallback30 from "../Assets/projects/residential-new/30.jpg";
+// import residentialFallback31 from "../Assets/projects/residential-new/31.jpg";
+// import residentialFallback32 from "../Assets/projects/residential-new/32.jpg";
+// import residentialFallback33 from "../Assets/projects/residential-new/33.jpg";
+// import residentialFallback34 from "../Assets/projects/residential-new/34.jpg";
+// import residentialFallback35 from "../Assets/projects/residential-new/35.jpg";
+// import residentialFallback36 from "../Assets/projects/residential-new/36.jpg";
+// import residentialFallback37 from "../Assets/projects/residential-new/37.jpg";
+
+// import residential1 from "../Assets/projects/residential-new/1.webp";
+// import residential2 from "../Assets/projects/residential-new/2.webp";
+// import residential3 from "../Assets/projects/residential-new/3.webp";
+// import residential4 from "../Assets/projects/residential-new/4.webp";
+// import residential5 from "../Assets/projects/residential-new/5.webp";
+// import residential6 from "../Assets/projects/residential-new/6.webp";
+// import residential7 from "../Assets/projects/residential-new/7.webp";
+// import residential8 from "../Assets/projects/residential-new/8.webp";
+// import residential9 from "../Assets/projects/residential-new/9.webp";
+// import residential10 from "../Assets/projects/residential-new/10.webp";
+// import residential11 from "../Assets/projects/residential-new/11.webp";
+// import residential12 from "../Assets/projects/residential-new/12.webp";
+// import residential13 from "../Assets/projects/residential-new/13.webp";
+// import residential14 from "../Assets/projects/residential-new/14.webp";
+// import residential15 from "../Assets/projects/residential-new/15.webp";
+// import residential16 from "../Assets/projects/residential-new/16.webp";
+// import residential17 from "../Assets/projects/residential-new/17.webp";
+// import residential18 from "../Assets/projects/residential-new/18.webp";
+// import residential19 from "../Assets/projects/residential-new/19.webp";
+// import residential20 from "../Assets/projects/residential-new/20.webp";
+// import residential21 from "../Assets/projects/residential-new/21.webp";
+// import residential22 from "../Assets/projects/residential-new/22.webp";
+// import residential23 from "../Assets/projects/residential-new/23.webp";
+// import residential24 from "../Assets/projects/residential-new/24.webp";
+// import residential25 from "../Assets/projects/residential-new/25.webp";
+// import residential26 from "../Assets/projects/residential-new/26.webp";
+// import residential27 from "../Assets/projects/residential-new/27.webp";
+// import residential28 from "../Assets/projects/residential-new/28.webp";
+// import residential29 from "../Assets/projects/residential-new/29.webp";
+// import residential30 from "../Assets/projects/residential-new/30.webp";
+// import residential31 from "../Assets/projects/residential-new/31.webp";
+// import residential32 from "../Assets/projects/residential-new/32.webp";
+// import residential33 from "../Assets/projects/residential-new/33.webp";
+// import residential34 from "../Assets/projects/residential-new/34.webp";
+// import residential35 from "../Assets/projects/residential-new/35.webp";
+// import residential36 from "../Assets/projects/residential-new/36.webp";
+// import residential37 from "../Assets/projects/residential-new/37.webp";
+
 const laxmiInfobahn = {
   name: "laxmi-infobahn",
   title: "Laxmi Infobahn (Hyderabad)",
@@ -1951,184 +2027,570 @@ const hilton = {
   ],
 };
 
+// export const portfolio = [
+
+//   // {
+//   //   name: "walkthrough",
+//   //   projects: [
+//   //     {
+//   //       title: "Prestige, Jindal City",
+//   //       image: walkthrough1,
+//   //       fallbackImg: walkthrough1fallback,
+//   //       category: "Walkthrough",
+//   //     },
+//   //     {
+//   //       title: "Runwal Group",
+//   //       image: walkthrough2,
+//   //       fallbackImg: walkthrough2fallback,
+//   //       category: "Walkthrough",
+//   //     },
+//   //   ],
+//   // },
+//   {
+//     name: "3d-rendering-interior",
+//     title: "Interior Visualization",
+//     projects: [
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior1,
+//         fallbackImg: interior1fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior2,
+//         fallbackImg: interior2fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior3,
+//         fallbackImg: interior3fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior4,
+//         fallbackImg: interior4fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior5,
+//         fallbackImg: interior5fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior6,
+//         fallbackImg: interior6fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior7,
+//         fallbackImg: interior7fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior8,
+//         fallbackImg: interior8fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior9,
+//         fallbackImg: interior9fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior10,
+//         fallbackImg: interior10fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior11,
+//         fallbackImg: interior11fallback,
+//       },
+//       {
+//         title: "Interior",
+//         category: "Interior",
+//         image: interior12,
+//         fallbackImg: interior12fallback,
+//       },
+//     ],
+//   },
+//   {
+//     name: "3d-rendering-exterior",
+//     title: "Exterior Visualisation",
+//     projects: [
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior1,
+//         fallbackImg: exterior1fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior2,
+//         fallbackImg: exterior2fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior3,
+//         fallbackImg: exterior3fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior4,
+//         fallbackImg: exterior4fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior5,
+//         fallbackImg: exterior5fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior6,
+//         fallbackImg: exterior6fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior7,
+//         fallbackImg: exterior7fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior8,
+//         fallbackImg: exterior8fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior9,
+//         fallbackImg: exterior9fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior10,
+//         fallbackImg: exterior10fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior11,
+//         fallbackImg: exterior11fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior12,
+//         fallbackImg: exterior12fallback,
+//       },
+//       {
+//         title: "Exterior",
+//         category: "Exterior",
+//         image: exterior13,
+//         fallbackImg: exterior13fallback,
+//       },
+//     ],
+//   },
+//   {
+//     name: "ar-vr-panaroma",
+//     title: "AR/VR/360 Panaroma",
+//     projects: [
+//       {
+//         title: "AR/VR",
+//         category: "vr360",
+//         image: arvr1,
+//         fallbackImg: arvr1fallback,
+//         link: "http://www.futeservices.com/enchanta/",
+//       },
+//       {
+//         title: "AR/VR",
+//         category: "vr360",
+//         image: arvr2,
+//         fallbackImg: arvr2fallback,
+//         link: "http://futeservices.com/palatia/",
+//       },
+//       {
+//         title: "AR/VR",
+//         category: "vr360",
+//         image: arvr3,
+//         fallbackImg: arvr3fallback,
+//         link: "http://futeservices.com/pegasus%20Final/",
+//       },
+//       // {
+//       //   title: "AR/VR",
+//       //   category: "vr360",
+//       //   image: arvr4,
+//       //   fallbackImg: arvr4fallback,
+//       //   link: "http://futeservices.com/Phoenix%20India.html",
+//       // },
+//       // {
+//       //   title: "AR/VR",
+//       //   category: "vr360",
+//       //   image: arvr5,
+//       //   fallbackImg: arvr5fallback,
+//       //   link: "http://www.futeservices.com/flut/",
+//       // },
+//       // {
+//       //   title: "AR/VR",
+//       //   category: "vr360",
+//       //   image: arvr6,
+//       //   fallbackImg: arvr6fallback,
+//       //   link: "http://www.futeservices.com/garfinal08/index.html",
+//       // },
+//       // {
+//       //   title: "AR/VR",
+//       //   category: "vr360",
+//       //   image: arvr7,
+//       //   fallbackImg: arvr7fallback,
+//       //   link: "http://futeservices.com/Green/",
+//       // },
+//     ],
+//   },
+//   {
+//     name: "3d-2d-floorplan",
+//     title: "3D/2D Floorplan",
+//     projects: [
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan1,
+//         thumbnail: floorplanThumb1,
+//         fallbackImg: floorplan1fallback,
+//       },
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan2,
+//         thumbnail: floorplanThumb2,
+//         fallbackImg: floorplan2fallback,
+//       },
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan3,
+//         thumbnail: floorplanThumb3,
+//         fallbackImg: floorplan3fallback,
+//       },
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan4,
+//         thumbnail: floorplanThumb4,
+//         fallbackImg: floorplan4fallback,
+//       },
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan5,
+//         thumbnail: floorplanThumb5,
+//         fallbackImg: floorplan5fallback,
+//       },
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan6,
+//         thumbnail: floorplanThumb6,
+//         fallbackImg: floorplan6fallback,
+//       },
+//       {
+//         title: "2D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan7,
+//         thumbnail: floorplanThumb7,
+//         fallbackImg: floorplan7fallback,
+//       },
+//       {
+//         title: "2D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan8,
+//         thumbnail: floorplanThumb8,
+//         fallbackImg: floorplan8fallback,
+//       },
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan9,
+//         thumbnail: floorplanThumb9,
+//         fallbackImg: floorplan9fallback,
+//       },
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan10,
+//         thumbnail: floorplanThumb10,
+//         fallbackImg: floorplan10fallback,
+//       },
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan11,
+//         thumbnail: floorplanThumb11,
+//         fallbackImg: floorplan11fallback,
+//       },
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan12,
+//         thumbnail: floorplanThumb12,
+//         fallbackImg: floorplan12fallback,
+//       },
+//       {
+//         title: "3D Floorplan",
+//         category: "Floorplan",
+//         image: floorplan13,
+//         thumbnail: floorplanThumb13,
+//         fallbackImg: floorplan13fallback,
+//       },
+//     ],
+//   },
+//   { ...phoenix },
+//   {
+//     name: "lnt-it-park",
+//     title: "L&T IT Park (Bangalore)",
+//     projects: [
+//       // {
+//       //   name: "lnt-it-park",
+//       //   title: "L&T IT Park (Bangalore)",
+//       //   image: lntitpark0,
+//       //   fallBackImg: lntitparkFallback0,
+//       //   category: "commercial",
+//       //   type: "yt",
+//       //   youtube: "https://youtu.be/55mmvJmJye4",
+//       // },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark0,
+//         fallBackImg: lntitparkFallback0,
+//         category: "commercial",
+//       },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark1,
+//         fallBackImg: lntitparkFallback1,
+//         category: "commercial",
+//       },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark2,
+//         fallBackImg: lntitparkFallback2,
+//         category: "commercial",
+//       },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark3,
+//         fallBackImg: lntitparkFallback3,
+//         category: "commercial",
+//       },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark4,
+//         fallBackImg: lntitparkFallback4,
+//         category: "commercial",
+//       },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark5,
+//         fallBackImg: lntitparkFallback5,
+//         category: "commercial",
+//       },
+//       // {
+//       //   name: "lnt-it-park",
+//       //   title: "L&T IT Park (Bangalore)",
+//       //   image: lntitpark6,
+//       //   fallBackImg: lntitparkFallback6,
+//       //   category: "commercial",
+//       // },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark7,
+//         fallBackImg: lntitparkFallback7,
+//         category: "commercial",
+//       },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark8,
+//         fallBackImg: lntitparkFallback8,
+//         category: "commercial",
+//       },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark9,
+//         fallBackImg: lntitparkFallback9,
+//         category: "commercial",
+//       },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark10,
+//         fallBackImg: lntitparkFallback10,
+//         category: "commercial",
+//       },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark11,
+//         fallBackImg: lntitparkFallback11,
+//         category: "commercial",
+//       },
+//       {
+//         name: "lnt-it-park",
+//         title: "L&T IT Park (Bangalore)",
+//         image: lntitpark12,
+//         fallBackImg: lntitparkFallback12,
+//         category: "commercial",
+//       },
+//     ],
+//   },
+//   {
+//     name: "etv",
+//     title: "ETV",
+//     projects: [
+//       {
+//         name: "etv",
+//         title: "ETV",
+//         image: ETV0,
+//         fallBackImg: ETVFallback0,
+//         category: "commercial",
+//       },
+//       {
+//         name: "etv",
+//         title: "ETV",
+//         image: ETV1,
+//         fallBackImg: ETVFallback1,
+//         category: "commercial",
+//       },
+//       {
+//         name: "etv",
+//         title: "ETV",
+//         image: ETV2,
+//         fallBackImg: ETVFallback2,
+//         category: "commercial",
+//       },
+//       {
+//         name: "etv",
+//         title: "ETV",
+//         image: ETV3,
+//         fallBackImg: ETVFallback3,
+//         category: "commercial",
+//       },
+//       {
+//         name: "etv",
+//         title: "ETV",
+//         image: ETV4,
+//         fallBackImg: ETVFallback4,
+//         category: "commercial",
+//       },
+//       {
+//         name: "etv",
+//         title: "ETV",
+//         image: ETV5,
+//         fallBackImg: ETVFallback5,
+//         category: "commercial",
+//       },
+//     ],
+//   },
+//   { ...laxmiInfobahn },
+//   { ...runwalCentral },
+//   { ...lntraintree },
+//   { ...oberoiReality },
+//   { ...runwalNirvana },
+//   { ...gmInfinite },
+//   { ...theGreenTerrace },
+//   { ...dosti },
+//   { ...columbia },
+//   // { ...infosysCampus },
+//   { ...dostiScaleModel },
+//   { ...model1 },
+//   { ...model2 },
+//   { ...miscScaleModel },
+//   { ...droneShoot },
+//   { ...walkthrough },
+//   { ...hilton },
+// ];
+
 export const portfolio = [
-  // {
-  //   name: "walkthrough",
-  //   projects: [
-  //     {
-  //       title: "Prestige, Jindal City",
-  //       image: walkthrough1,
-  //       fallbackImg: walkthrough1fallback,
-  //       category: "Walkthrough",
-  //     },
-  //     {
-  //       title: "Runwal Group",
-  //       image: walkthrough2,
-  //       fallbackImg: walkthrough2fallback,
-  //       category: "Walkthrough",
-  //     },
-  //   ],
-  // },
   {
-    name: "3d-rendering-interior",
-    title: "Interior Visualization",
+    name: "residential",
+    title: "Residential",
     projects: [
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior1,
-        fallbackImg: interior1fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior2,
-        fallbackImg: interior2fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior3,
-        fallbackImg: interior3fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior4,
-        fallbackImg: interior4fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior5,
-        fallbackImg: interior5fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior6,
-        fallbackImg: interior6fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior7,
-        fallbackImg: interior7fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior8,
-        fallbackImg: interior8fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior9,
-        fallbackImg: interior9fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior10,
-        fallbackImg: interior10fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior11,
-        fallbackImg: interior11fallback,
-      },
-      {
-        title: "Interior",
-        category: "Interior",
-        image: interior12,
-        fallbackImg: interior12fallback,
-      },
+      ...Array(37)
+        .fill({})
+        .map((_, i) => ({
+          name: "residential",
+          title: "Residential",
+          image: require(`../Assets/projects/residential-new/residential-${
+            i + 1
+          }.webp`).default,
+          fallBackImg:
+            require(`../Assets/projects/residential-new/residential-${
+              i + 1
+            }.jpg`).default,
+          category: "residential",
+        })),
     ],
   },
   {
-    name: "3d-rendering-exterior",
-    title: "Exterior Visualisation",
+    name: "commercial",
+    title: "Commercial",
     projects: [
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior1,
-        fallbackImg: exterior1fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior2,
-        fallbackImg: exterior2fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior3,
-        fallbackImg: exterior3fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior4,
-        fallbackImg: exterior4fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior5,
-        fallbackImg: exterior5fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior6,
-        fallbackImg: exterior6fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior7,
-        fallbackImg: exterior7fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior8,
-        fallbackImg: exterior8fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior9,
-        fallbackImg: exterior9fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior10,
-        fallbackImg: exterior10fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior11,
-        fallbackImg: exterior11fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior12,
-        fallbackImg: exterior12fallback,
-      },
-      {
-        title: "Exterior",
-        category: "Exterior",
-        image: exterior13,
-        fallbackImg: exterior13fallback,
-      },
+      ...Array(24)
+        .fill({})
+        .map((_, i) => ({
+          name: "commercial",
+          title: "Commercial",
+          image: require(`../Assets/projects/commercial-new/commercial-${
+            i + 1
+          }.webp`).default,
+          fallBackImg: require(`../Assets/projects/commercial-new/commercial-${
+            i + 1
+          }.jpg`).default,
+          category: "commercial",
+        })),
+    ],
+  },
+  {
+    name: "interior",
+    title: "Interior",
+    projects: [
+      ...Array(24)
+        .fill({})
+        .map((_, i) => ({
+          name: "interior",
+          title: "Interior",
+          image: require(`../Assets/projects/interior-new/interior-${
+            i + 1
+          }.webp`).default,
+          fallBackImg: require(`../Assets/projects/interior-new/interior-${
+            i + 1
+          }.jpg`).default,
+          category: "interior",
+        })),
     ],
   },
   {
@@ -2187,274 +2649,8 @@ export const portfolio = [
     ],
   },
   {
-    name: "3d-2d-floorplan",
-    title: "3D/2D Floorplan",
-    projects: [
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan1,
-        thumbnail: floorplanThumb1,
-        fallbackImg: floorplan1fallback,
-      },
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan2,
-        thumbnail: floorplanThumb2,
-        fallbackImg: floorplan2fallback,
-      },
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan3,
-        thumbnail: floorplanThumb3,
-        fallbackImg: floorplan3fallback,
-      },
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan4,
-        thumbnail: floorplanThumb4,
-        fallbackImg: floorplan4fallback,
-      },
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan5,
-        thumbnail: floorplanThumb5,
-        fallbackImg: floorplan5fallback,
-      },
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan6,
-        thumbnail: floorplanThumb6,
-        fallbackImg: floorplan6fallback,
-      },
-      {
-        title: "2D Floorplan",
-        category: "Floorplan",
-        image: floorplan7,
-        thumbnail: floorplanThumb7,
-        fallbackImg: floorplan7fallback,
-      },
-      {
-        title: "2D Floorplan",
-        category: "Floorplan",
-        image: floorplan8,
-        thumbnail: floorplanThumb8,
-        fallbackImg: floorplan8fallback,
-      },
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan9,
-        thumbnail: floorplanThumb9,
-        fallbackImg: floorplan9fallback,
-      },
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan10,
-        thumbnail: floorplanThumb10,
-        fallbackImg: floorplan10fallback,
-      },
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan11,
-        thumbnail: floorplanThumb11,
-        fallbackImg: floorplan11fallback,
-      },
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan12,
-        thumbnail: floorplanThumb12,
-        fallbackImg: floorplan12fallback,
-      },
-      {
-        title: "3D Floorplan",
-        category: "Floorplan",
-        image: floorplan13,
-        thumbnail: floorplanThumb13,
-        fallbackImg: floorplan13fallback,
-      },
-    ],
+    ...walkthrough,
   },
-  { ...phoenix },
-  {
-    name: "lnt-it-park",
-    title: "L&T IT Park (Bangalore)",
-    projects: [
-      // {
-      //   name: "lnt-it-park",
-      //   title: "L&T IT Park (Bangalore)",
-      //   image: lntitpark0,
-      //   fallBackImg: lntitparkFallback0,
-      //   category: "commercial",
-      //   type: "yt",
-      //   youtube: "https://youtu.be/55mmvJmJye4",
-      // },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark0,
-        fallBackImg: lntitparkFallback0,
-        category: "commercial",
-      },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark1,
-        fallBackImg: lntitparkFallback1,
-        category: "commercial",
-      },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark2,
-        fallBackImg: lntitparkFallback2,
-        category: "commercial",
-      },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark3,
-        fallBackImg: lntitparkFallback3,
-        category: "commercial",
-      },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark4,
-        fallBackImg: lntitparkFallback4,
-        category: "commercial",
-      },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark5,
-        fallBackImg: lntitparkFallback5,
-        category: "commercial",
-      },
-      // {
-      //   name: "lnt-it-park",
-      //   title: "L&T IT Park (Bangalore)",
-      //   image: lntitpark6,
-      //   fallBackImg: lntitparkFallback6,
-      //   category: "commercial",
-      // },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark7,
-        fallBackImg: lntitparkFallback7,
-        category: "commercial",
-      },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark8,
-        fallBackImg: lntitparkFallback8,
-        category: "commercial",
-      },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark9,
-        fallBackImg: lntitparkFallback9,
-        category: "commercial",
-      },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark10,
-        fallBackImg: lntitparkFallback10,
-        category: "commercial",
-      },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark11,
-        fallBackImg: lntitparkFallback11,
-        category: "commercial",
-      },
-      {
-        name: "lnt-it-park",
-        title: "L&T IT Park (Bangalore)",
-        image: lntitpark12,
-        fallBackImg: lntitparkFallback12,
-        category: "commercial",
-      },
-    ],
-  },
-  {
-    name: "etv",
-    title: "ETV",
-    projects: [
-      {
-        name: "etv",
-        title: "ETV",
-        image: ETV0,
-        fallBackImg: ETVFallback0,
-        category: "commercial",
-      },
-      {
-        name: "etv",
-        title: "ETV",
-        image: ETV1,
-        fallBackImg: ETVFallback1,
-        category: "commercial",
-      },
-      {
-        name: "etv",
-        title: "ETV",
-        image: ETV2,
-        fallBackImg: ETVFallback2,
-        category: "commercial",
-      },
-      {
-        name: "etv",
-        title: "ETV",
-        image: ETV3,
-        fallBackImg: ETVFallback3,
-        category: "commercial",
-      },
-      {
-        name: "etv",
-        title: "ETV",
-        image: ETV4,
-        fallBackImg: ETVFallback4,
-        category: "commercial",
-      },
-      {
-        name: "etv",
-        title: "ETV",
-        image: ETV5,
-        fallBackImg: ETVFallback5,
-        category: "commercial",
-      },
-    ],
-  },
-  { ...laxmiInfobahn },
-  { ...runwalCentral },
-  { ...lntraintree },
-  { ...oberoiReality },
-  { ...runwalNirvana },
-  { ...gmInfinite },
-  { ...theGreenTerrace },
-  { ...dosti },
-  { ...columbia },
-  // { ...infosysCampus },
-  { ...dostiScaleModel },
-  { ...model1 },
-  { ...model2 },
-  { ...miscScaleModel },
-  { ...droneShoot },
-  { ...walkthrough },
-  { ...hilton },
 ];
 
 export const allProjects = [

@@ -142,6 +142,8 @@ const FilterPortfolio = ({ history }) => {
       });
     });
 
+    // console.log({ projects });
+
     // let newData = [];
     // projects.forEach((newItem) => {
     //   var img = new Image();
@@ -197,6 +199,7 @@ const FilterPortfolio = ({ history }) => {
                   // }}
                   type="inner"
                   item={image}
+                  useRequire
                   // height="auto"
                   fitHeight={image.category.toLowerCase() === "floorplan"}
                   logo={image.category.toLowerCase() !== "floorplan"}
@@ -219,6 +222,7 @@ const FilterPortfolio = ({ history }) => {
                     // setCurrent(image);
                     console.log("Clicked");
                   }}
+                  useRequire
                   type="inner"
                   item={image}
                   // height="auto"
