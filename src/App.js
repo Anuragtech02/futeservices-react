@@ -58,6 +58,24 @@ const App = () => {
       webm = "" !== testEl.canPlayType('video/webm; codecs="vp8, vorbis"');
     }
     setIsWebmSupported(Boolean(webm));
+
+    document.addEventListener(
+      "contextmenu",
+      function (e) {
+        e.preventDefault();
+      },
+      false
+    );
+
+    return () => {
+      document.addEventListener(
+        "contextmenu",
+        function (e) {
+          e.preventDefault();
+        },
+        false
+      );
+    };
   }, []);
 
   useEffect(() => {
