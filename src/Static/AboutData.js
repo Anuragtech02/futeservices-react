@@ -78,7 +78,7 @@ export const teamData = [
     image: member3,
     fallbackImg: member3fallback,
     name: "Mr. Ratish Kovvammal",
-    position: "CHIEF EXECUTIVE OFFICER",
+    position: "Founder & CEO",
     desc: "A Visionary with over 14 years of experience in Sales, Marketing, Software Development, and Customer Relations. A firm believer that for a business to be successful, it needs to embrace the customer’s needs and satisfaction. He rightly believes that “It’s not about the brand, it’s about you, about your style, about the ideas that shaped your brand even before it was established and about the challenges you face laying the foundation, because no one understands your product better than you.” His dynamic and charismatic personality makes him a highly results-driven and commercially focused person with consummate ability to deliver top of the spectrum business performance and management skills. He has a vision of being a strategic thinker as well as an innovative manager specializing in new business development, market share and growth opportunities.",
   },
 ];

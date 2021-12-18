@@ -94,7 +94,7 @@ const QuoteEnquiryForm = () => {
     setError(null);
     axios({
       method: "POST",
-      url: "http://www.futeservices.com/demo-new/api/contact.php",
+      url: "http://www.futeservices.com/api/contact.php",
       headers: { "content-type": "application/json" },
       data: {
         name,

@@ -31,7 +31,7 @@
       $mail->Port = 587;
 
       // Email ID from which you want to send the email
-      $mail->setFrom($email,"PCS Website");
+      $mail->setFrom($email,"Futeservices Contact Form");
       // Recipient Email ID where you want to receive emails
       $mail->addAddress("apal895@gmail.com", "Anurag Pal");
 
